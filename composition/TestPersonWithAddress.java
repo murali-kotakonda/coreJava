@@ -13,7 +13,12 @@ public class TestPersonWithAddress {
 		p1.currAddress = a1;
 
 		p1.display();
-		a1.showAddr();
-
+		p1.currAddress.showAddr();
+		
+		System.out.println(p1.currAddress.city);
+		System.out.println(p1.currAddress.country);
+		System.out.println(p1.currAddress.hno);
+		System.out.println(p1.currAddress.pinCode);
+		System.out.println(p1.currAddress.state);
 	}
 }
