@@ -3,10 +3,10 @@ package threadsSync;
 class Account {
 	int bal = 600;
 	public  void withdraw(int amt) {
-			synchronized(this){
+			//synchronized(this){
 			bal = bal-amt;
 			System.out.println("amt = "+amt +"bal=" +bal);
-		}
+		//}
 	}
 }
 
