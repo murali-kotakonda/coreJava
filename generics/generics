@@ -1,0 +1,52 @@
+compile-time type checking
+risk of ClassCastException  
+generic method with Integer arrays, Double arrays, String arrays and so on,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E – Element (used extensively by the Java Collections 
+Framework, for example ArrayList, Set etc.)
+K – Key (Used in Map)
+N – Number
+T – Type
+V – Value (Used in Map)
+
+
+
+
+
+
+
+
+
+
+
+
+
