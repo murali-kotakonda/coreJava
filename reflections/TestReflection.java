@@ -8,7 +8,7 @@ import oops.composition.Address;
 public class TestReflection {
 
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-		Class  classObj = Class.forName("serialize63.Address");
+		Class  classObj = Class.forName("Address");
 		Field[] fields = classObj.getFields();
 	
 		for(Field field: fields){
