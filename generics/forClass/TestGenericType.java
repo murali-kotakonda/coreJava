@@ -1,7 +1,6 @@
 package generics.forClass;
 
-import com.mnp.collections.arrays36.Person;
-
+import ds.collections.al.Person;
 
 public class TestGenericType {
 
@@ -12,7 +11,7 @@ public class TestGenericType {
 		System.out.println(str);
 
 		GenericType<Person> personType= new GenericType<Person>();
-		personType.set(new Person(123, "aaaa"));
+		personType.set(new Person(123, "aaaa",67));
 		Person p = personType.get();
 		System.out.println(p);
 	}

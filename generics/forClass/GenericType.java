@@ -2,13 +2,13 @@ package generics.forClass;
  
 public class GenericType<E> {
 
-	private E t;
+	private E data;
 	
 	public E get(){
-		return this.t;
+		return this.data;
 	}
 	
 	public void set(E t1){
-		this.t=t1;
+		this.data=t1;
 	}
 }

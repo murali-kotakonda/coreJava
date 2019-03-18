@@ -13,8 +13,8 @@ public class TestFileOutputStream {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		File fileOut = new File("C:\\Project\\output.csv");
-		FileOutputStream fos = new FileOutputStream(fileOut);
+		File file = new File("C:\\Project\\output.csv");
+		FileOutputStream fos = new FileOutputStream(file);
 		try {
 			fos.write("krishns,28,1313".getBytes());
 			fos.write("\r\n".getBytes());
