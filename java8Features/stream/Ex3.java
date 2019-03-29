@@ -15,7 +15,8 @@ public class Ex3 {
 		productsList.add(new Product(5, "Apple Laptop", 90000f));
 		// Using Collectors's method to sum the prices.
 		double totalPrice3 = 
-				productsList.stream().collect(Collectors.summingDouble(product -> product.price));
+				productsList.stream()
+				.collect(Collectors.summingDouble(product -> product.price));
 		System.out.println(totalPrice3);
 
 	}

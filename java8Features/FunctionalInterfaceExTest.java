@@ -11,6 +11,8 @@ package java8Features;
 		public static void main(String[] args) {
 			FunctionalInterfaceEx obj = new FunctionalInterfaceExTest();
 			obj.process("test");
+			obj.log("hi");
+			FunctionalInterfaceEx.print("bye");
 		}
 		
 	}

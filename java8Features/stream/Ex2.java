@@ -1,7 +1,7 @@
 package java8Features.stream;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List;import org.omg.Messaging.SyncScopeHelper;
 
 public class Ex2 {
 
@@ -15,8 +15,14 @@ public class Ex2 {
 		productsList.add(new Product(5, "Apple Laptop", 90000f));
 		// This is more compact approach for filtering data
 		
+		//print all product names
+		productsList.stream().forEach(p-> System.out.println(p.name));
+		productsList.forEach(p->System.out.println(p.name));
+		
+		//print whose price==3000
 		productsList.stream()
-		.filter(product -> product.price == 30000)
-		.forEach(product -> System.out.println(product.name));
+		.filter(p-> p.price==30000)
+		.forEach(p-> System.out.println(p.name));
+		
 	}
 }

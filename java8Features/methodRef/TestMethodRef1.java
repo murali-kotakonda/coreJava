@@ -15,14 +15,20 @@ class Impl {
 	}
 }
 
+
+
+
+
 public class TestMethodRef1{
 	public static void main(String[] args) {
 		// Referring static method
-		Service sayable = Impl::execute;
+		Service obj = Impl::execute;
 		// Calling interface method
-		sayable.process();
+		obj.process();
 		
-		sayable =  new Impl()::execute2;
-		sayable.process();
+		
+		
+		Service obj1 =  new Impl()::execute2;
+		obj1.process();
 	}
 }

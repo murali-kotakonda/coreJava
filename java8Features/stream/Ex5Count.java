@@ -13,7 +13,8 @@ public class Ex5Count {
 		productsList.add(new Product(4, "Sony Laptop", 28000f));
 		productsList.add(new Product(5, "Apple Laptop", 90000f));
 		// count number of products based on the filter
-		long count = productsList.stream().filter(product -> product.price < 30000).count();
+		long count = productsList
+				.stream().filter(product -> product.price < 30000).count();
 		System.out.println(count);
 	}
 }
