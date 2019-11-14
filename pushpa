@@ -118,3 +118,22 @@ public class TestCompareXMLs {
 		return document;
 	}
 }
+
+
+class XMLCompareFailure extends Exception {
+
+	private String msg;
+	public XMLCompareFailure(String string) {
+		super(string);
+		this.setMsg(string);
+	}
+	public String getMsg() {
+		return msg;
+	}
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+	
+}
+
