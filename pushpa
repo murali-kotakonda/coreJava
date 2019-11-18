@@ -1,11 +1,13 @@
-package xml;
+package xmlPushpa;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -32,10 +34,12 @@ public class TestCompareXMLs {
 
 		if (!sourceRoot.getNodeName().equals(targetRoot.getNodeName())) {
 			System.out.println(FAILURE);
-		} else if (getItems(sourceRoot).equals(getItems(targetRoot))) {
-			System.out.println(SUCCESS);
 		} else {
-			System.out.println(FAILURE);
+			if (getItems(sourceRoot).equals(getItems(targetRoot))) {
+				System.out.println(SUCCESS);
+			} else {
+				System.out.println(FAILURE);
+			}
 		}
 	}
 
@@ -88,7 +92,7 @@ public class TestCompareXMLs {
 }
 
 class Items {
-	Map<String, String> simpleElements = new HashMap<>();
+	Map<String, Set<String>> simpleElements = new HashMap<>();
 	Map<String, String> attributes = new HashMap<>();
 	List<Items> subElements = new ArrayList<>();
 
@@ -110,20 +114,21 @@ class Items {
 		this.attributes = attributes;
 	}
 
-	public Map<String, String> getSimpleElements() {
+	public Map<String, Set<String>> getSimpleElements() {
 		return simpleElements;
 	}
 
 	public void addSimpleElement(String elementName, String textContent) {
-		simpleElements.put(elementName, textContent);
+		Set<String> set = simpleElements.get(elementName);
+		if(set==null) {
+			set= new HashSet<>();
+		}
+		set.add(textContent);
+		simpleElements.put(elementName, set);
 	}
 
 	public void addAttributes(String elementName, String textContent) {
 		attributes.put(elementName, textContent);
-	}
-
-	public void setSimpleElements(Map<String, String> simpleElements) {
-		this.simpleElements = simpleElements;
 	}
 
 	@Override
@@ -148,7 +153,6 @@ class Items {
 				return false;
 			}
 		}
-		
 		if (!attributes.equals(other.attributes))
 			return false;
 		
