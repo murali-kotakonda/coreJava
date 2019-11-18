@@ -10,3 +10,7 @@ Class  classObj = Class.forName("Address");
 			System.out.println(method.getName());
 		}
 		
+			Address add = (Address)classObj.newInstance();
+		add.setCountry("3131");
+		System.out.println(add);
+		
