@@ -1,2 +1,7 @@
-	Class  classObj = Class.forName("oops.Address");
+Class  classObj = Class.forName("Address");
+		Field[] fields = classObj.getDeclaredFields();
+	
+		for(Field field: fields){
+			System.out.println(field.getName());
+		}
 	
