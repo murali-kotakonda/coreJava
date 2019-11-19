@@ -3,11 +3,10 @@ package xmlPushpa;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -26,8 +25,8 @@ public class TestCompareXMLs {
 	private static final String SUCCESS = "valid XMLS";
 
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
-		Document sourceDoc = getDocumentinstance("employeeAddr1.xml");
-		Document targetDoc = getDocumentinstance("employeeAddr2.xml");
+		Document sourceDoc = getDocumentinstance("employee1.xml");
+		Document targetDoc = getDocumentinstance("employee2.xml");
 
 		Element sourceRoot = sourceDoc.getDocumentElement();
 		Element targetRoot = targetDoc.getDocumentElement();
@@ -35,7 +34,11 @@ public class TestCompareXMLs {
 		if (!sourceRoot.getNodeName().equals(targetRoot.getNodeName())) {
 			System.out.println(FAILURE);
 		} else {
-			if (getItems(sourceRoot).equals(getItems(targetRoot))) {
+			Items src = getItems(sourceRoot);
+			Items target = getItems(targetRoot);
+			//System.out.println(src);
+			//System.out.println(target);
+			if (src.equals(target)) {
 				System.out.println(SUCCESS);
 			} else {
 				System.out.println(FAILURE);
@@ -92,7 +95,7 @@ public class TestCompareXMLs {
 }
 
 class Items {
-	Map<String, Set<String>> simpleElements = new HashMap<>();
+	Map<String, List<String>> simpleElements = new HashMap<>();
 	Map<String, String> attributes = new HashMap<>();
 	List<Items> subElements = new ArrayList<>();
 
@@ -114,17 +117,18 @@ class Items {
 		this.attributes = attributes;
 	}
 
-	public Map<String, Set<String>> getSimpleElements() {
+	public Map<String, List<String>> getSimpleElements() {
 		return simpleElements;
 	}
 
 	public void addSimpleElement(String elementName, String textContent) {
-		Set<String> set = simpleElements.get(elementName);
-		if(set==null) {
-			set= new HashSet<>();
+		List<String> list = simpleElements.get(elementName);
+		if(list==null) {
+			list= new ArrayList<>();
 		}
-		set.add(textContent);
-		simpleElements.put(elementName, set);
+		list.add(textContent);
+		Collections.sort(list);
+		simpleElements.put(elementName, list);
 	}
 
 	public void addAttributes(String elementName, String textContent) {
