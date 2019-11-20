@@ -21,18 +21,12 @@ import org.xml.sax.SAXException;
 
 public class XMLUnit {
 
-	private static final String FAILURE = "Invalid XMLS";
-	private static final String SUCCESS = "valid XMLS";
-
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
-		if(compareXMLs("employee1.xml","employee2.xml")) {
-			System.out.println(SUCCESS);
-		}else {
-			System.out.println(FAILURE);
-		}
+		System.out.println(compareXMLs("source.xml", "target.xml"));
 	}
 
-	public static boolean compareXMLs(String xml1,String xml2) throws ParserConfigurationException, SAXException, IOException {
+	public static int compareXMLs(String xml1, String xml2)
+			throws ParserConfigurationException, SAXException, IOException {
 		Document sourceDoc = getDocumentinstance(xml1);
 		Document targetDoc = getDocumentinstance(xml2);
 
@@ -40,15 +34,15 @@ public class XMLUnit {
 		Element targetRoot = targetDoc.getDocumentElement();
 
 		if (!sourceRoot.getNodeName().equals(targetRoot.getNodeName())) {
-			return false;
+			return 1;
 		} else {
 			Items src = new Items(sourceRoot.getNodeName());
-			processNodes(src,sourceRoot);
+			processNodes(src, sourceRoot);
 			Items target = new Items(targetRoot.getNodeName());
-			processNodes(target,targetRoot);
+			processNodes(target, targetRoot);
 			System.out.println(src);
 			System.out.println(target);
-			return src.equals(target);
+			return src.equals(target) ? 0 : 1;
 		}
 	}
 
@@ -60,9 +54,10 @@ public class XMLUnit {
 		document.getDocumentElement().normalize();
 		return document;
 	}
-	
-	private static void processNodes(Items parent,Node source) {
-	    updateAttributesMap(parent,source);
+
+	private static void processNodes(Items parent, Node source) {
+		updateAttributesMap(parent, source);
+
 		NodeList sourceList = source.getChildNodes();
 		for (int temp = 0; temp < sourceList.getLength(); temp++) {
 			Node sourceNode = sourceList.item(temp);
@@ -73,7 +68,7 @@ public class XMLUnit {
 				} else {
 					Items items = new Items(elementName);
 					parent.addSubElement(items);
-					processNodes(items,sourceNode);
+					processNodes(items, sourceNode);
 				}
 			}
 		}
@@ -81,9 +76,9 @@ public class XMLUnit {
 
 	private static boolean isSimpleElement(Node node) {
 		return node.getChildNodes().getLength() == 1;
-	} 
+	}
 
-	private static void updateAttributesMap(Items parent,Node node) {
+	private static void updateAttributesMap(Items parent, Node node) {
 		if (node.hasAttributes()) {
 			NamedNodeMap nodeMap = node.getAttributes();
 			for (int i = 0; i < nodeMap.getLength(); i++) {
@@ -99,7 +94,7 @@ public class XMLUnit {
 }
 
 class Items {
-	String nodeName="";
+	String nodeName = "";
 	Map<String, List<String>> simpleElements = new HashMap<>();
 	Map<String, List<String>> attributes = new HashMap<>();
 	List<Items> subElements = new ArrayList<>();
@@ -112,7 +107,6 @@ class Items {
 		super();
 		this.nodeName = nodeName;
 	}
-
 
 	public void setNodeName(String nodeName) {
 		this.nodeName = nodeName;
@@ -142,8 +136,8 @@ class Items {
 
 	public void addSimpleElement(String elementName, String textContent) {
 		List<String> list = simpleElements.get(elementName);
-		if(list==null) {
-			list= new ArrayList<>();
+		if (list == null) {
+			list = new ArrayList<>();
 		}
 		list.add(textContent);
 		Collections.sort(list);
@@ -152,8 +146,8 @@ class Items {
 
 	public void addAttributes(String elementName, String textContent) {
 		List<String> list = attributes.get(elementName);
-		if(list==null) {
-			list= new ArrayList<>();
+		if (list == null) {
+			list = new ArrayList<>();
 		}
 		list.add(textContent);
 		Collections.sort(list);
@@ -185,9 +179,9 @@ class Items {
 		}
 		if (!attributes.equals(other.attributes))
 			return false;
-		
+
 		if (!nodeName.equals(other.nodeName))
-				return false;
+			return false;
 		return true;
 	}
 }
