@@ -1,27 +1,20 @@
+public class TestThread1 {
 
-public class MyThread2 implements Runnable {
-
-	public void run() {
-		System.out.println("Thread " + Thread.currentThread().getId() + " is running");
+	 public static void main(String[] args) throws InterruptedException {
+		Thread th = new MyThread();
+		th.setName("my Thread1");
 		
+		
+		Thread th2 = new MyThread();
+		th2.setName("my Thread2");
+		th2.setPriority(10);
+		
+		th.start();
+		th2.start();
+		
+		th.join();
+		th2.join();
+		System.out.println(Thread.currentThread()+"Bye");
 	}
+
 }
-
-
-
-
-
-
-
-
-
-
- class TestThreadImpl {
-	public static void main(String[] args) {
-		Thread th = new Thread(new MyThread2());
-		th.start();	
-	}
-}
- 
-
-
