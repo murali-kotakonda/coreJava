@@ -25,8 +25,8 @@ public class TestCompareXMLs {
 	private static final String SUCCESS = "valid XMLS";
 
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
-		Document sourceDoc = getDocumentinstance("employee1.xml");
-		Document targetDoc = getDocumentinstance("employee2.xml");
+		Document sourceDoc = getDocumentinstance("employeeAddr1.xml");
+		Document targetDoc = getDocumentinstance("employeeAddr2.xml");
 
 		Element sourceRoot = sourceDoc.getDocumentElement();
 		Element targetRoot = targetDoc.getDocumentElement();
@@ -34,10 +34,12 @@ public class TestCompareXMLs {
 		if (!sourceRoot.getNodeName().equals(targetRoot.getNodeName())) {
 			System.out.println(FAILURE);
 		} else {
-			Items src = getItems(sourceRoot);
-			Items target = getItems(targetRoot);
-			//System.out.println(src);
-			//System.out.println(target);
+			Items src = new Items(sourceRoot.getNodeName());
+			processNodes(src,sourceRoot);
+			Items target = new Items(targetRoot.getNodeName());
+			processNodes(target,targetRoot);
+			System.out.println(src);
+			System.out.println(target);
 			if (src.equals(target)) {
 				System.out.println(SUCCESS);
 			} else {
@@ -55,30 +57,29 @@ public class TestCompareXMLs {
 		return document;
 	}
 	
-	private static Items getItems(Node source) {
+	private static void processNodes(Items parent,Node source) {
+	    updateAttributesMap(parent,source);
 		NodeList sourceList = source.getChildNodes();
-		Items items = new Items();
 		for (int temp = 0; temp < sourceList.getLength(); temp++) {
 			Node sourceNode = sourceList.item(temp);
 			if (sourceNode.getNodeType() == Node.ELEMENT_NODE) {
 				String elementName = sourceNode.getNodeName();
 				if (isSimpleElement(sourceNode)) {
-					items.addSimpleElement(elementName, sourceNode.getTextContent());
+					parent.addSimpleElement(elementName, sourceNode.getTextContent());
 				} else {
-					items.addSubElement(getItems(sourceNode));
+					Items items = new Items(elementName);
+					parent.addSubElement(items);
+					processNodes(items,sourceNode);
 				}
 			}
 		}
-		items.setAttributes(getAttributesMap(source));
-		return items;
 	}
 
 	private static boolean isSimpleElement(Node node) {
 		return node.getChildNodes().getLength() == 1;
-	}
+	} 
 
-	private static Map<String, String> getAttributesMap(Node node) {
-		Map<String, String> attributes = new HashMap<>();
+	private static void updateAttributesMap(Items parent,Node node) {
 		if (node.hasAttributes()) {
 			NamedNodeMap nodeMap = node.getAttributes();
 			for (int i = 0; i < nodeMap.getLength(); i++) {
@@ -87,33 +88,47 @@ public class TestCompareXMLs {
 				if (nodeName.equalsIgnoreCase("id")) {
 					continue;
 				}
-				attributes.put(nodeName, sourceNodeAttr.getNodeValue());
+				parent.addAttributes(nodeName, sourceNodeAttr.getNodeValue());
 			}
 		}
-		return attributes;
 	}
 }
 
 class Items {
+	String nodeName="";
 	Map<String, List<String>> simpleElements = new HashMap<>();
-	Map<String, String> attributes = new HashMap<>();
+	Map<String, List<String>> attributes = new HashMap<>();
 	List<Items> subElements = new ArrayList<>();
+
+	public Items() {
+		super();
+	}
+
+	public Items(String nodeName) {
+		super();
+		this.nodeName = nodeName;
+	}
+
+
+	public void setNodeName(String nodeName) {
+		this.nodeName = nodeName;
+	}
 
 	@Override
 	public String toString() {
-		return "Items [simpleElements=" + simpleElements + ", attributes=" + attributes + ", subElements=" + subElements
-				+ "]";
+		return "Items [nodeName=" + nodeName + ", simpleElements=" + simpleElements + ", attributes=" + attributes
+				+ ", subElements=" + subElements + "]";
 	}
 
 	public void addSubElement(Items subElement) {
 		subElements.add(subElement);
 	}
 
-	public Map<String, String> getAttributes() {
+	public Map<String, List<String>> getAttributes() {
 		return attributes;
 	}
 
-	public void setAttributes(Map<String, String> attributes) {
+	public void setAttributes(Map<String, List<String>> attributes) {
 		this.attributes = attributes;
 	}
 
@@ -132,7 +147,13 @@ class Items {
 	}
 
 	public void addAttributes(String elementName, String textContent) {
-		attributes.put(elementName, textContent);
+		List<String> list = attributes.get(elementName);
+		if(list==null) {
+			list= new ArrayList<>();
+		}
+		list.add(textContent);
+		Collections.sort(list);
+		attributes.put(elementName, list);
 	}
 
 	@Override
@@ -140,6 +161,7 @@ class Items {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((attributes == null) ? 0 : attributes.hashCode());
+		result = prime * result + ((nodeName == null) ? 0 : nodeName.hashCode());
 		result = prime * result + ((simpleElements == null) ? 0 : simpleElements.hashCode());
 		result = prime * result + ((subElements == null) ? 0 : subElements.hashCode());
 		return result;
@@ -160,6 +182,8 @@ class Items {
 		if (!attributes.equals(other.attributes))
 			return false;
 		
+		if (!nodeName.equals(other.nodeName))
+				return false;
 		return true;
 	}
 }
