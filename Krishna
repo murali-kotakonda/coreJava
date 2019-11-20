@@ -1,54 +1,17 @@
+import java.util.Scanner;
 
-public class MyThread1 extends Thread {
+public class TestWithoutThread {
 
-	public void run() {
-		System.out.println("Thread stated:" + Thread.currentThread().getId() + " is running");
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println("Thread ended" + Thread.currentThread().getId() + " ended");
-	}
+	 public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 
-}
+		System.out.println("Enter 2 nums");
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
 
-
-
-class TestThreadImpl2 {
-	public static void main(String[] args) {
-		System.out.println("start");
-		Thread th1 = new MyThread1();
-		th1.setName("my Thread1");
-		
-		 
-		th1.start();
-	 	System.out.println(Thread.currentThread()+"Bye");
+		System.out.println("add=" + num1 + num2);
+		System.out.println("sub =" + (num1 - num2));
+		System.out.println("mul=" + num1 * num2);
+		System.out.println("div=" + num1 / num2);
 	}
 }
- 
-
-
-
-
-class TestThreadImpl3 {
-	public static void main(String[] args) {
-		System.out.println("start");
-		Thread th1 = new MyThread1();
-		th1.setName("my Thread1");
-		
-		Thread th2 = new MyThread1();
-		th2.setName("my Thread2");
-		
-		Thread th3 = new MyThread1();
-		th3.setName("my Thread3");
-		
-		th1.start();
-		th2.start();
-		th3.start();
-		System.out.println(Thread.currentThread()+"Bye");
-	}
-}
- 
-
-
