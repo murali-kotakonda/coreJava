@@ -1,9 +1,20 @@
-package threads;
 
-public class MyThread extends Thread {
+public class TestThread {
 
-	public void run() {
-		System.out.println(Thread.currentThread()+"Hi");
+	 public static void main(String[] args) throws InterruptedException {
+		Thread th = new MyThread();
+		th.setName("my Thread1");
+		
+		
+		Thread th2 = new MyThread();
+		th2.setName("my Thread2");
+		th2.setPriority(10);
+		
+		th.start();
+		th2.start();
+		
+		System.out.println(Thread.currentThread()+"Bye");
+
 	}
 
 }
