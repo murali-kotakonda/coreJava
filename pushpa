@@ -40,8 +40,8 @@ public class XMLUnit {
 			processNodes(src, sourceRoot);
 			Items target = new Items(targetRoot.getNodeName());
 			processNodes(target, targetRoot);
-			System.out.println(src);
-			System.out.println(target);
+			//System.out.println(src);
+			//System.out.println(target);
 			return src.equals(target) ? 0 : 1;
 		}
 	}
