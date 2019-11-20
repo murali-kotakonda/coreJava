@@ -1,22 +1,39 @@
 package threadsSync;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class TestSyncronized2 {
-	public static void main(String[] args) throws InterruptedException {
-		Person person = new Person(5);
-		List<Thread> threads = new ArrayList<Thread>();
-
-		for (int i = 1; i <=10; i++) {
-			Thread th = new MyThread(person);
-			th.start();
-			threads.add(th);
-		}
-
-		for (Thread t : threads) {
-			t.join();
-		}
-		System.out.println(person.count);
+public class TestSyncronized {
+	public static void main(String[] args) {
+		Account fnew = new Account();
+		Withdraw ss = new Withdraw(fnew, 100);
+		Withdraw ss1 = new Withdraw(fnew, 200);
+		Withdraw ss2 = new Withdraw(fnew, 300);
+		
+		ss.start();
+		ss1.start();
+		ss2.start();
 	}
 }
+
+class Account {
+	int bal = 600;
+	public  void withdraw(int amt) {
+			//synchronized(this){
+			bal = bal-amt;
+			System.out.println("amt = "+amt +"bal=" +bal);
+		//}
+	}
+}
+
+class Withdraw extends Thread {
+	int amount;
+	Account fobj;
+
+	Withdraw(Account fp, int amount) {
+		fobj = fp;
+		this.amount = amount;
+	}
+
+	public void run() {
+		fobj.withdraw(amount);
+	}
+}
+
