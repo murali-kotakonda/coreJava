@@ -19,32 +19,36 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-public class TestCompareXMLs {
+public class XMLUnit {
 
 	private static final String FAILURE = "Invalid XMLS";
 	private static final String SUCCESS = "valid XMLS";
 
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
-		Document sourceDoc = getDocumentinstance("employeeAddr1.xml");
-		Document targetDoc = getDocumentinstance("employeeAddr2.xml");
+		if(compareXMLs("employee1.xml","employee2.xml")) {
+			System.out.println(SUCCESS);
+		}else {
+			System.out.println(FAILURE);
+		}
+	}
+
+	public static boolean compareXMLs(String xml1,String xml2) throws ParserConfigurationException, SAXException, IOException {
+		Document sourceDoc = getDocumentinstance(xml1);
+		Document targetDoc = getDocumentinstance(xml2);
 
 		Element sourceRoot = sourceDoc.getDocumentElement();
 		Element targetRoot = targetDoc.getDocumentElement();
 
 		if (!sourceRoot.getNodeName().equals(targetRoot.getNodeName())) {
-			System.out.println(FAILURE);
+			return false;
 		} else {
 			Items src = new Items(sourceRoot.getNodeName());
 			processNodes(src,sourceRoot);
 			Items target = new Items(targetRoot.getNodeName());
 			processNodes(target,targetRoot);
-			//System.out.println(src);
-			//System.out.println(target);
-			if (src.equals(target)) {
-				System.out.println(SUCCESS);
-			} else {
-				System.out.println(FAILURE);
-			}
+			System.out.println(src);
+			System.out.println(target);
+			return src.equals(target);
 		}
 	}
 
