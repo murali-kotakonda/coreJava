@@ -24,7 +24,15 @@ public class EmpListSort2 {
 		show(empList);
 		
 		System.out.println("\n\nsorting based on name:------");
-	     
+	   	  Comparator<Employee> aComparator = new Comparator<Employee>() {
+		        @Override
+		        public int compare(Employee e1, Employee e2) {
+		            return e1.getName().compareTo(e2.getName());
+		        }
+		    };
+		Collections.sort(empList,aComparator);
+		show(empList);
+		
 		
 		System.out.println("\n\nsorting based on age:------");
 		 
