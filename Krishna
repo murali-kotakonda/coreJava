@@ -1,15 +1,8 @@
 
-public class Outer1 {
-	private int data = 30;
-
-	public void print(){
-		System.out.println(data);
-	}
-	
-	class Inner {
-		int age;
-		void msg() {
-			System.out.println("data is " + data);
-		}
+public class Test1 {
+	public static void main(String args[]) {
+		Outer1 obj = new Outer1();
+		Outer1.Inner in = obj.new Inner();
+		in.msg();
 	}
 }
