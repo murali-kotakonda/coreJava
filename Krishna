@@ -35,10 +35,27 @@ public class EmpListSort2 {
 		
 		
 		System.out.println("\n\nsorting based on age:------");
-		 
-		 
-		 
+		Comparator<Employee> ageComp = new Comparator<Employee>() {
+	        @Override
+	        public int compare(Employee e1, Employee e2) {
+	            return e1.getAge()- e2.getAge();
+	        }
+	    };
+	    Collections.sort(empList,ageComp);
+	    show(empList);
+	
+		
+		
 		System.out.println("\n\nsorting based on sal:------");
+		Comparator<Employee> salComp = new Comparator<Employee>() {
+	        @Override
+	        public int compare(Employee e1, Employee e2) {
+	            return (int)(e1.getSalary()- e2.getSalary());
+	        }
+	    };
+	    Collections.sort(empList,salComp);
+	    show(empList);
+
 		 
 	}
 
