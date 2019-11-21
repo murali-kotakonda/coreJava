@@ -1,8 +1,12 @@
+public class StaticOuter5 {
+	static int data = 30;
+	
+	int count = 23;
 
-public class Test1 {
-	public static void main(String args[]) {
-		Outer1 obj = new Outer1();
-		Outer1.Inner in = obj.new Inner();
-		in.msg();
+	static class Inner {
+		void msg() {
+			System.out.println("data is " + data);
+			//System.out.println(count);cannot acces outer instance 
+		}
 	}
 }
