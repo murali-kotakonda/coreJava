@@ -17,7 +17,7 @@ public class EmpListSort2 {
 		Comparator<Employee> aComparator = new Comparator<Employee>() {
 		        @Override
 		        public int compare(Employee e1, Employee e2) {
-		            return e1.id-e2.id);
+		            return e1.id-e2.id;
 		        }
 		    };
 		Collections.sort(empList,aComparator);
