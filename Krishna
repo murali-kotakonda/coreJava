@@ -1,22 +1,16 @@
 
-abstract class PersonService1 {
-	abstract void print();
+interface service {
+	void process();
 }
 
-public class TestAnonymousInner23 {
+class Annonymous3 {
 	public static void main(String args[]) {
-		PersonService1 myObj = new PersonService1() {
-			void print() {
-				System.out.println("Hello");
+		service s = new service() {
+			@Override
+			public void process() {
+				System.out.println("Data processed");
 			}
 		};
-		myObj.print();
-
-		PersonService1 obj2 = new PersonService1() {
-			void print() {
-				System.out.println("bye");
-			}
-		};
-		obj2.print();
+		s.process();
 	}
 }
