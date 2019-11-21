@@ -2,3 +2,19 @@
 abstract class PersonService {
 	abstract void print();
 }
+
+
+class Child1 extends PersonService{
+	@Override
+	void print() {
+		System.out.println("hello");		
+	}
+}
+
+class Child2 extends PersonService{
+	@Override
+	void print() {
+		System.out.println("bye");		
+	}
+}
+
