@@ -1,15 +1,20 @@
 
-public class StaticOuter6 {
-	static int data = 30;
 
-	static class Inner {
-		static void msg() {
-			System.out.println("data is " + data);
+public class LocalInnerExample4 {
+	private int data = 30;// instance variable
+
+	void display() {
+		class Local {
+			void msg() {
+				System.out.println(data);
+			}
 		}
+		Local l = new Local();
+		l.msg();
 	}
 
 	public static void main(String args[]) {
-		StaticOuter6.Inner.msg();// no need to create the instance of static nested
-							// class
+		LocalInnerExample4 obj = new LocalInnerExample4();
+		obj.display();
 	}
 }
