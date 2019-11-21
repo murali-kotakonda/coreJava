@@ -12,8 +12,15 @@ public class EmpListSort2 {
 		 // sorting by id employees array using Comparable interface
 		System.out.println("before :");
 		show(empList);
+		
 		System.out.println("\n\nsorting based on id:------");
-		Collections.sort(empList);
+		Comparator<Employee> aComparator = new Comparator<Employee>() {
+		        @Override
+		        public int compare(Employee e1, Employee e2) {
+		            return e1.id-e2.id);
+		        }
+		    };
+		Collections.sort(empList,aComparator);
 		show(empList);
 		
 		System.out.println("\n\nsorting based on name:------");
