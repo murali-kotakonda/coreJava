@@ -36,7 +36,9 @@ public class XmlRemove {
 		try {
 			dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(xmlfile);
-			deleteElement(doc);
+			while(deleteElement(doc)) {
+				
+			}
 			doc.getDocumentElement().normalize();
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();
@@ -51,17 +53,26 @@ public class XmlRemove {
 		}
 	}
 
-	private static void deleteElement(Document doc) {
+	private static boolean deleteElement(Document doc) {
 		NodeList confitem = doc.getElementsByTagName(CONF_ITEM);
 		for (int i = 0; i < confitem.getLength(); i++) {
 			Node node = confitem.item(i);
-			Element confelement = (Element) node;
-			NodeList nodeL = confelement.getElementsByTagName(SHORT_NAME);
-			if (node.getNodeType() == Document.ELEMENT_NODE && DSM.equalsIgnoreCase(nodeL.item(0).getTextContent())) {
-				System.out.println("ready to remove ");
-				node.getParentNode().removeChild(confelement);
+			if (node.getNodeType() == Document.ELEMENT_NODE) {
+				Element confelement = (Element) node;
+				NodeList nodeL = confelement.getElementsByTagName(SHORT_NAME);
+				for (int j = 0; j < nodeL.getLength(); j++) {
+					Node node1 = nodeL.item(j);
+					if (node1.getNodeType() == Document.ELEMENT_NODE 
+						&& 
+						DSM.equalsIgnoreCase(node1.getTextContent())) {
+						System.out.println("ready to remove ");
+						node.getParentNode().removeChild(confelement);
+						return true;
+					}
+				}
 			}
+
 		}
+		return false;
 	}
 }
-
