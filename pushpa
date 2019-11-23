@@ -21,6 +21,10 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -44,7 +48,7 @@ public class XmlRemove {
 		setLogConfiguration();
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws XPathExpressionException {
 		logger.info("Entering main method");
 		File xmlfile = new File(INPUT_XML);
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -63,6 +67,16 @@ public class XmlRemove {
 			}
 			logger.info("deleting the CONF_ITEM completed.");
 			doc.getDocumentElement().normalize();
+			
+			
+			XPath xp = XPathFactory.newInstance().newXPath();
+			NodeList nl = (NodeList) xp.evaluate("//text()[normalize-space(.)='']", doc, XPathConstants.NODESET);
+
+			for (int i=0; i < nl.getLength(); ++i) {
+			    Node node = nl.item(i);
+			    node.getParentNode().removeChild(node);
+			}
+			
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();
 			DOMSource source = new DOMSource(doc);
@@ -139,4 +153,5 @@ public class XmlRemove {
 			}
 		};
 	}
+	
 }
