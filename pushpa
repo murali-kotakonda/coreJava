@@ -1,7 +1,18 @@
 package xmlPushpa;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Date;
+import java.util.logging.FileHandler;
+import java.util.logging.Filter;
+import java.util.logging.Formatter;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.LogRecord;
+import java.util.logging.Logger;
+import java.util.logging.StreamHandler;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -19,27 +30,40 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import logging.LoggingExample;
+
 public class XmlRemove {
-	
+
+	static Logger logger = Logger.getLogger(LoggingExample.class.getName());
+    private static final String LOG_FLE_NAME = "logger.log";
 	private static final String OUTPUT_XML = "output.xml";
 	private static final String INPUT_XML = "input.xml";
 	private static final String CONF_ITEM = "CONF-ITEM";
 	private static final String DSM = "dsm";
 	private static final String SHORT_NAME = "SHORT-NAME";
 
+	static {
+		setLogConfiguration();
+	}
+	
 	public static void main(String[] args) {
+		logger.info("Entering main method");
 		File xmlfile = new File(INPUT_XML);
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder;
-		if (xmlfile.exists()) {
-			System.out.println("xml file is present");
+		if (!xmlfile.exists()) {
+			logger.info("*********** Xml file not found. Exiting program **************");
+			return;
 		}
 		try {
 			dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(xmlfile);
+			
+			logger.info("xml parsing completed.");
 			while (deleteElement(doc)) {
-
+				
 			}
+			logger.info("deleting the CONF_ITEM completed.");
 			doc.getDocumentElement().normalize();
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();
@@ -47,14 +71,16 @@ public class XmlRemove {
 			StreamResult result = new StreamResult(new File(OUTPUT_XML));
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.transform(source, result);
-			System.out.println("xml file updated successfully");
+			logger.info("writing to output xml file success.");
 		} catch (SAXException | ParserConfigurationException | IOException | TransformerException e1) {
-			System.out.println("Exception occured while removing the xml element.");
+			logger.info("Exception occured while removing the xml element.");
 			e1.printStackTrace();
 		}
+		logger.info("Exit main method");
 	}
 
     private static boolean deleteElement(Document doc) {
+    	logger.info("Entering deleteElement .");
 		NodeList confitem = doc.getElementsByTagName(CONF_ITEM);
 		//Fetch all elements with  CONF_ITEM
 		for (int i = 0; i < confitem.getLength(); i++) {
@@ -65,17 +91,59 @@ public class XmlRemove {
 				//fetch all element with SHORT_NAME
 				for (int j = 0; j < nodeL.getLength(); j++) {
 					Node node1 = nodeL.item(j);
-					Node parentNode = node1.getParentNode();
+					Node nodeToDel = node1.getParentNode();
 					if (node1.getNodeType() == Document.ELEMENT_NODE 
 						&& 
 						DSM.equalsIgnoreCase(node1.getTextContent())) {
-							System.out.println("ready to remove ");
-							parentNode.getParentNode().removeChild(parentNode);
+						logger.info("SHORT_NAME with DSM found. Deleting the CONF_ITEM.");
+							nodeToDel.getParentNode().removeChild(nodeToDel);
 							return true;
 					}
 				}
 			}
 		}
+		logger.info("Exiting deleteElement .");
 		return false;
+	}
+    
+	private static void setLogConfiguration() {
+		try {
+            LogManager.getLogManager().readConfiguration(new FileInputStream("mylogging.properties"));
+        } catch (SecurityException | IOException e1) {
+            e1.printStackTrace();
+        }
+        logger.setLevel(Level.FINE);
+        logger.addHandler(new StreamHandler());
+        try {
+            Handler fileHandler = new FileHandler(LOG_FLE_NAME, Integer.MAX_VALUE, 1);
+            fileHandler.setFormatter(getFormatter());
+            fileHandler.setFilter(getFilter());
+            logger.addHandler(fileHandler);
+        } catch (SecurityException | IOException e) {
+            e.printStackTrace();
+        }
+	}
+
+	private static Filter getFilter() {
+		return new Filter() {
+			@Override
+			public boolean isLoggable(LogRecord log) {
+				if(log.getLevel() == Level.CONFIG) return false;
+				return true;
+			}
+		};
+	}
+
+	private static Formatter getFormatter() {
+		return new Formatter() {
+			@Override
+			public String format(LogRecord record) {
+		        return record.getSourceClassName()+"."
+		                +record.getSourceMethodName()+"-"
+		                +new Date(record.getMillis())+"::"
+		                +record.getMessage()+"\n";
+		    
+			}
+		};
 	}
 }
