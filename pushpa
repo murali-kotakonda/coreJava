@@ -3,6 +3,7 @@ package xmlPushpa;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
+import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Filter;
 import java.util.logging.Formatter;
@@ -68,7 +69,6 @@ public class XmlRemove {
 			logger.info("deleting the CONF_ITEM completed.");
 			doc.getDocumentElement().normalize();
 			
-			
 			XPath xp = XPathFactory.newInstance().newXPath();
 			NodeList nl = (NodeList) xp.evaluate("//text()[normalize-space(.)='']", doc, XPathConstants.NODESET);
 
@@ -76,6 +76,7 @@ public class XmlRemove {
 			    Node node = nl.item(i);
 			    node.getParentNode().removeChild(node);
 			}
+			logger.info("Removed the blank/empty lines in the output xml.");
 			
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();
@@ -84,9 +85,11 @@ public class XmlRemove {
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.transform(source, result);
 			logger.info("writing to output xml file success.");
-		} catch (SAXException | ParserConfigurationException | IOException | TransformerException e1) {
+			System.out.println(0);
+		} catch (Exception e1) {
 			logger.info("Exception occured while removing the xml element.");
 			e1.printStackTrace();
+			System.out.println(1);
 		}
 		logger.info("Exit main method");
 	}
@@ -119,6 +122,7 @@ public class XmlRemove {
 	}
     
 	private static void setLogConfiguration() {
+		logger.setUseParentHandlers(false);
         logger.setLevel(Level.FINE);
         logger.addHandler(new StreamHandler());
         try {
@@ -153,5 +157,4 @@ public class XmlRemove {
 			}
 		};
 	}
-	
 }
