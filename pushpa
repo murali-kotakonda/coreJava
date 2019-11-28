@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -21,10 +22,6 @@ public class GetProps {
 
 	static Map<String, String> map = new HashMap<String, String>();
 	static {
-		map.put("PRJ_BSWTOOLSET_NAME1", "PRJ_BSWTOOLSET_VERSION");
-		map.put("PRJ_WORKBENCH_NAME", "PRJ_WORKBENCH_VERSION");
-		map.put("PRJ_BUILD_NAME", "PRJ_BUILD_VERSION");
-
 		System.setProperty("logfilename", LOG_FILE_NAME);
 		PropertyConfigurator.configure("log4j.properties");
 	}
@@ -38,7 +35,7 @@ public class GetProps {
 			input = new FileInputStream(INI_FILE_LOCATION);
 			Properties prop = new Properties();
 			prop.load(input);
-
+			populateProps(prop);
 			for (Entry<String, String> entry : map.entrySet()) {
 				String nameFolder = prop.getProperty(entry.getKey());
 				String versionFolder = prop.getProperty(entry.getValue());
@@ -68,6 +65,31 @@ public class GetProps {
 		}
 	}
 
+	private static void populateProps(Properties prop) {
+		Set<Object> keys = prop.keySet();
+		for (Object k : keys) {
+			String key = (String) k;
+			String entryName = getStr(key,"_NAME");
+			if(entryName!=null) {
+				String entryVersion = getEntryVersion(prop,entryName);
+				if(entryVersion!=null) {
+					map.put(key, entryVersion);
+				}
+			}
+		}
+	}
+	 
+	private static String getEntryVersion(Properties prop, String entry) {
+		Set<Object> keys = prop.keySet();
+		for (Object k : keys) {
+			String key = (String) k;
+			if( entry .equals(getStr(key,"_VERSION"))) {
+				return key;
+			}
+		}
+		return null;
+	}
+
 	private static boolean checkFileExist(String folderToSerach) throws FileNotFoundException {
 		File f = new File(folderToSerach);
 		boolean exists = f.exists();
@@ -76,5 +98,17 @@ public class GetProps {
 			throw new FileNotFoundException(folderToSerach + " is not available.");
 		}
 		return exists;
+	}
+	
+	private static String getStr(String input,String suffix) {
+		String prefix = "PRJ_";
+		String out =null;
+		
+		if (input.startsWith(prefix) && input.endsWith(suffix)){
+            out = input.substring(prefix.length());
+            out = out.substring(0, out.length() - suffix.length());
+        }
+		
+		return out;
 	}
 }
