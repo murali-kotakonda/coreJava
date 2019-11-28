@@ -1,141 +1,80 @@
-log4j.properties:
----------------------
-
-
-# Root logger
-log4j.rootLogger=INFO, file
- 
-# Direct log messages to a log file
-log4j.appender.file=org.apache.log4j.RollingFileAppender
- 
-log4j.appender.file.File=${logfilename}
-log4j.appender.file.MaxFileSize=10MB
-log4j.appender.file.MaxBackupIndex=10
-log4j.appender.file.layout=org.apache.log4j.PatternLayout
-log4j.appender.file.layout.ConversionPattern=[%t] %-5p %c %x - %m%n
-
-
-
-
-
-Java changes:
---------------
-package xmlPushpa;
+package pushpaFileCheck;
 
 import java.io.File;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.TransformerFactoryConfigurationError;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
-public class XmlRemove {
+public class GetProps {
+	private static final String LOG_FILE_NAME = "logs.log";
+	private static final String INI_FILE_LOCATION = "C:\\Project\\test.ini";
+	private static final String FOLDER_TO_SERACH = "C:\\Project\\";
+	static Logger logger = Logger.getLogger(GetProps.class.getName());
 
-	private static final String FILE_NAME = "myResult.log";
+	static Map<String, String> map = new HashMap<String, String>();
+	static {
+		map.put("PRJ_BSWTOOLSET_NAME1", "PRJ_BSWTOOLSET_VERSION");
+		map.put("PRJ_WORKBENCH_NAME", "PRJ_WORKBENCH_VERSION");
+		map.put("PRJ_BUILD_NAME", "PRJ_BUILD_VERSION");
 
-	static Logger logger = Logger.getLogger(XmlRemove.class.getName());
-
-	private static final String OUTPUT_XML = "output.xml";
-	private static final String INPUT_XML = "input.xml";
-	private static final String CONF_ITEM = "CONF-ITEM";
-	private static final String DSM = "dsm";
-	private static final String SHORT_NAME = "SHORT-NAME";
-
-	public static void main(String[] args) throws XPathExpressionException {
-		int status = processRemoveNode(INPUT_XML,OUTPUT_XML,FILE_NAME);
-		if(status==1) {
-			System.out.println("FAILURE");
-		}else {
-			System.out.println("SUCCESS");
-		}
-	}
-
-	private static int processRemoveNode(String inputXml,String outputXml,String logFileName) throws TransformerFactoryConfigurationError {
-		System.setProperty("logfilename", logFileName);
+		System.setProperty("logfilename", LOG_FILE_NAME);
 		PropertyConfigurator.configure("log4j.properties");
-		logger.info("Entering main method");
-		File xmlfile = new File(inputXml);
-		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder dBuilder;
-		if (!xmlfile.exists()) {
-			logger.info("*********** Xml file not found. Exiting program **************");
-			return 1;
-		}
+	}
+
+	public static void main(String[] args) throws Exception {
+		logger.debug("Main method started");
+		InputStream input = null;
 		try {
-			dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(xmlfile);
+			checkFileExist(INI_FILE_LOCATION);
+			checkFileExist(FOLDER_TO_SERACH);
+			input = new FileInputStream(INI_FILE_LOCATION);
+			Properties prop = new Properties();
+			prop.load(input);
 
-			logger.info("xml parsing completed.");
-			while (deleteElement(doc)) {
-
-			}
-			logger.info("deleting the CONF_ITEM completed.");
-			doc.getDocumentElement().normalize();
-
-			XPath xp = XPathFactory.newInstance().newXPath();
-			NodeList nl = (NodeList) xp.evaluate("//text()[normalize-space(.)='']", doc, XPathConstants.NODESET);
-
-			for (int i = 0; i < nl.getLength(); ++i) {
-				Node node = nl.item(i);
-				node.getParentNode().removeChild(node);
-			}
-			logger.info("Removed the blank/empty lines in the output xml.");
-
-			TransformerFactory transformerFactory = TransformerFactory.newInstance();
-			Transformer transformer = transformerFactory.newTransformer();
-			DOMSource source = new DOMSource(doc);
-			StreamResult result = new StreamResult(new File(outputXml));
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.transform(source, result);
-			logger.info("writing to output xml file success.");
-			return 0;
-		} catch (Exception e1) {
-			logger.info("Exception occured while removing the xml element.");
-			e1.printStackTrace();
-			return 1;
-		}finally {
-			logger.info("Exit main method");
-		}
-	}
-
-	private static boolean deleteElement(Document doc) {
-		logger.info("Entering deleteElement .");
-		NodeList confitem = doc.getElementsByTagName(CONF_ITEM);
-		// Fetch all elements with CONF_ITEM
-		for (int i = 0; i < confitem.getLength(); i++) {
-			Node node = confitem.item(i);
-			if (node.getNodeType() == Document.ELEMENT_NODE) {
-				Element confelement = (Element) node;
-				NodeList nodeL = confelement.getElementsByTagName(SHORT_NAME);
-				// fetch all element with SHORT_NAME
-				for (int j = 0; j < nodeL.getLength(); j++) {
-					Node node1 = nodeL.item(j);
-					Node nodeToDel = node1.getParentNode();
-					if (node1.getNodeType() == Document.ELEMENT_NODE && DSM.equalsIgnoreCase(node1.getTextContent())) {
-						logger.info("SHORT_NAME with DSM found. Deleting the CONF_ITEM.");
-						nodeToDel.getParentNode().removeChild(nodeToDel);
-						return true;
-					}
+			for (Entry<String, String> entry : map.entrySet()) {
+				String nameFolder = prop.getProperty(entry.getKey());
+				String versionFolder = prop.getProperty(entry.getValue());
+				if (nameFolder == null || nameFolder.equals("")) {
+					logger.error("The entry " + entry.getKey() + " is not found in the ini file.");
+					throw new FileNotFoundException(entry.getKey() + " is not available.");
 				}
+				if (versionFolder == null || versionFolder.equals("")) {
+					logger.error("The entry " + entry.getValue() + " is not found in the ini file.");
+					throw new FileNotFoundException(entry.getValue() + " is not available.");
+				}
+				checkFileExist(FOLDER_TO_SERACH + nameFolder);
+				checkFileExist(FOLDER_TO_SERACH + nameFolder + "\\" + versionFolder);
 			}
+			System.out.println("*********All folders are available.*****************");
+			logger.error("Sucess.All folders are available.");
+		} catch (FileNotFoundException ex) {
+			logger.error("FileNotFoundException occured due to " + ex.getMessage());
+			System.out.println(ex.getMessage());
+		} catch (IOException ex) {
+			logger.error("IO exception occured while parsing from ini file.");
+			System.out.println("IO exception occured.please check the logs");
+		} finally {
+			if (input != null)
+				input.close();
+			logger.debug("Main method closed.");
 		}
-		logger.info("Exiting deleteElement .");
-		return false;
 	}
-	
+
+	private static boolean checkFileExist(String folderToSerach) throws FileNotFoundException {
+		File f = new File(folderToSerach);
+		boolean exists = f.exists();
+		if (!exists) {
+			logger.error("The folder " + folderToSerach + " doesnot exists. ");
+			throw new FileNotFoundException(folderToSerach + " is not available.");
+		}
+		return exists;
+	}
 }
