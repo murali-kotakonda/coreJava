@@ -31,7 +31,7 @@ public class GetProps {
 		System.setProperty("logfilename", LOG_FILE_NAME);
 		PropertyConfigurator.configure("log4j.properties");
 
-		errorMap.put("PRJ_BSWTOOLSET_version", "TB_Scripts_error_003");
+		errorMap.put("PRJ_BSWTOOLSET_VERSION", "TB_Scripts_error_003");
 		errorMap.put("PRJ_BUILD_VERSION", "TB_Scripts_error_004");
 		errorMap.put("PRJ_WORKBENCH_VERSION", "TB_Scripts_error_005");
 		errorMap.put("PRJ_SWSH_VERSION", "TB_Scripts_error_006");
