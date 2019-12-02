@@ -19,6 +19,7 @@ public class GetProps {
 	private static final String INI_FILE_LOCATION = "C:\\Project\\test.ini";
 	private static final String FOLDER_TO_SERACH = "C:\\Project\\";
 	static Logger logger = Logger.getLogger(GetProps.class.getName());
+	private static boolean isFolderMissing = false;
 
 	static Map<String, String> map = new HashMap<String, String>();
 	static {
@@ -39,29 +40,40 @@ public class GetProps {
 			for (Entry<String, String> entry : map.entrySet()) {
 				String nameFolder = prop.getProperty(entry.getKey());
 				String versionFolder = prop.getProperty(entry.getValue());
-				if (nameFolder == null || nameFolder.equals("")) {
-					logger.error("The entry " + entry.getKey() + " is not found in the ini file.");
-					throw new FileNotFoundException(entry.getKey() + " is not available.");
+				validateFolder(entry, nameFolder, versionFolder);
+				if (!isFolderMissing) {
+					checkFileExist(FOLDER_TO_SERACH + nameFolder);
+					checkFileExist(FOLDER_TO_SERACH + nameFolder + "\\" + versionFolder);
 				}
-				if (versionFolder == null || versionFolder.equals("")) {
-					logger.error("The entry " + entry.getValue() + " is not found in the ini file.");
-					throw new FileNotFoundException(entry.getValue() + " is not available.");
-				}
-				checkFileExist(FOLDER_TO_SERACH + nameFolder);
-				checkFileExist(FOLDER_TO_SERACH + nameFolder + "\\" + versionFolder);
 			}
-			System.out.println("*********All folders are available.*****************");
-			logger.error("Sucess.All folders are available.");
 		} catch (FileNotFoundException ex) {
 			logger.error("FileNotFoundException occured due to " + ex.getMessage());
 			System.out.println(ex.getMessage());
+			isFolderMissing = true;
 		} catch (IOException ex) {
 			logger.error("IO exception occured while parsing from ini file.");
 			System.out.println("IO exception occured.please check the logs");
+			isFolderMissing = true;
 		} finally {
 			if (input != null)
 				input.close();
 			logger.debug("Main method closed.");
+		}
+
+		if (!isFolderMissing) {
+			System.out.println("*********All folders are available.*****************");
+			logger.error("Sucess.All folders are available.");
+		}
+	}
+
+	private static void validateFolder(Entry<String, String> entry, String nameFolder, String versionFolder) {
+		if (nameFolder == null || nameFolder.equals("")) {
+			logger.error("The entry " + entry.getKey() + " is not found in the ini file.");
+			isFolderMissing = true;
+		}
+		if (versionFolder == null || versionFolder.equals("")) {
+			logger.error("The entry " + entry.getValue() + " is not found in the ini file.");
+			isFolderMissing = true;
 		}
 	}
 
@@ -69,43 +81,43 @@ public class GetProps {
 		Set<Object> keys = prop.keySet();
 		for (Object k : keys) {
 			String key = (String) k;
-			String entryName = getStr(key,"_NAME");
-			if(entryName!=null) {
-				String entryVersion = getEntryVersion(prop,entryName);
-				if(entryVersion!=null) {
+			String entryName = getStr(key, "_NAME");
+			if (entryName != null) {
+				String entryVersion = getEntryVersion(prop, entryName);
+				if (entryVersion != null) {
 					map.put(key, entryVersion);
 				}
 			}
 		}
 		System.out.println(map);
 	}
-	 
+
 	private static String getEntryVersion(Properties prop, String entry) {
 		Set<Object> keys = prop.keySet();
 		for (Object k : keys) {
 			String key = (String) k;
-			if( entry .equals(getStr(key,"_VERSION"))) {
+			if (entry.equals(getStr(key, "_VERSION"))) {
 				return key;
 			}
 		}
 		return null;
 	}
 
-	private static boolean checkFileExist(String folderToSerach) throws FileNotFoundException {
+	private static boolean checkFileExist(String folderToSerach) {
 		File f = new File(folderToSerach);
 		boolean exists = f.exists();
 		if (!exists) {
 			logger.error("The folder " + folderToSerach + " doesnot exists. ");
-			throw new FileNotFoundException(folderToSerach + " is not available.");
+			isFolderMissing = true;
 		}
 		return exists;
 	}
-	
-	private static String getStr(String input,String suffix) {
-		String out =null;
-		if (input.endsWith(suffix)){
-            out = input.substring(0, input.length() - suffix.length());
-        }
+
+	private static String getStr(String input, String suffix) {
+		String out = null;
+		if (input.endsWith(suffix)) {
+			out = input.substring(0, input.length() - suffix.length());
+		}
 		return out;
 	}
 }
