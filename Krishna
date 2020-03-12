@@ -18,6 +18,14 @@ public class TestHashMapObjObj {
 		
 		System.out.println("**** print map  ****");
 		printMap(map);
+		
+		System.out.println("**** add e4  ****");
+		Employee e4 = new Employee("user3",3);
+		Project p4 = new Project(1555,"pro555");
+		map.put(e4, p4);
+		
+		System.out.println("**** print map  ****");
+		printMap(map);
 	
 		
 	}
