@@ -21,6 +21,10 @@ public static void main(String[] args) {
 	
 	Employee eObj2 = map.get("user5");
 	System.out.println(eObj2);
+	
+	map.put("user2", new Employee("user22",22,"pan22")); 
+	Employee eObj3 = map.get("user2");
+	System.out.println(eObj3);
 
  
 	
