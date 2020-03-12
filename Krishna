@@ -15,6 +15,12 @@ public static void main(String[] args) {
 	
 	System.out.println("******* SHOW MAP *********");
 	printMap(map);
+	
+	Employee eObj1 = map.get("user3");
+	System.out.println(eObj1);
+	
+	Employee eObj2 = map.get("user5");
+	System.out.println(eObj2);
 
  
 	
