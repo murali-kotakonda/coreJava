@@ -1,20 +1,19 @@
-public static void main(String[] args) {
-	List<String> inputWords =	
-			Arrays.asList("java", "php", "android", "sap", 
-					"php", "java", "win", "ios", "win", "hana",
-					"android","ios","ios");
-}
+d1#e1
+d2#e2
+d1#e3
+d3#e4
+d7#e5
+d4#e6
+d5#e7
+d7#e8
+d1#e9
+d2#e10
 
-
-
-	
-	
-output:
-
-word : java, count=2
-word : php, count=2
-word : android, count=2
-word : sap, count=1
-word : win, count=2
-word : ios, count=3
-word : hana, count=1
+O/p:
+d1  ---> e1, e3 , e9
+d2  ---> e2 , e10
+d3  ---> e4
+d4  --->e6
+d5 --->e7
+d7 ---> e5 ,e8
+ 
