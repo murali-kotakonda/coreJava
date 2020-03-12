@@ -16,10 +16,7 @@ public static void main(String[] args) {
 	System.out.println("******* SHOW MAP *********");
 	printMap(map);
 
-	 
-
-	
-	printMap(map);
+ 
 	
 }
 
