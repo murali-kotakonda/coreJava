@@ -26,6 +26,11 @@ public class TestHashMapObjObj {
 		
 		System.out.println("**** print map  ****");
 		printMap(map);
+		
+		
+		
+		Employee e5 = new Employee("user2",2);
+		System.out.println(map.get(e5));
 	
 		
 	}
