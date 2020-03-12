@@ -8,8 +8,20 @@ public class TestHashMap {
 		map.put("132", "user6");
 		map.put("133", "user7");
 
+		 
 		// get the size
 		System.out.println(map.size());// 6
+
+		map.put("128", "user111"); // replace "user1" with "user111"
+		map.put("131", "user44"); // replace "user4" with "user44"
+
+		// get the size
+		System.out.println(map.size());// 6
+
+		System.out.println(map.get("128")); // "user111"
+
+		System.out.println(map.containsKey("132")); // returns true
+		System.out.println(map.containsKey("500")); // returns false
 		
 	}
 }
