@@ -31,6 +31,19 @@ public class TestHashMapObjObj {
 		
 		Employee e5 = new Employee("user2",2);
 		System.out.println(map.get(e5));
+		
+		
+		
+		
+		
+		System.out.println(" ****contains e5*****");
+		System.out.println(map.containsKey(e5));
+		
+		System.out.println(" ****remove  e5*****");
+		map.remove(e5);
+		
+		System.out.println("*****get e2******");
+		System.out.println(map.get(e2));
 	
 		
 	}
