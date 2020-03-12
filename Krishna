@@ -23,5 +23,12 @@ public class TestHashMap {
 		System.out.println(map.containsKey("132")); // returns true
 		System.out.println(map.containsKey("500")); // returns false
 		
+		// show all elements in map
+		for (Entry<String, String> entry : map.entrySet()) {
+			String key = entry.getKey();
+			String value = entry.getValue();
+			System.out.println("key === " + key + "  value ==" + value);
+		}
+		
 	}
 }
