@@ -1,38 +1,8 @@
-# Class
---------------------------
- -> Userdefined datatype
--> Class is used to represent the real time entities/structure/model.
--> class is created before run- time
-->class is a logical representation 
-->class is a template 
--> class doesnt contain any data.
+Object:
+------------
+-> Object is a variable created using Class
+-> Object is a instance for the class.
+-> when object is created memory is allocated for all the instance variables.
 
 
 
--> Class is  block for instance varibles + functions
-    a)insatance variables to hold data for entity
-    b)funtions would operate on instance varibles  
-
-
-
--> Class has 
-       Instance variables + methods
-       constructors
-       Static variables + static methods + static block
-
-
-
-public class Person {
-	
-	int id;
-	String name;
-	int age;
-	
-	 public void show(){
-		  // logic here 
-	 }
-}
-
-Here id,name,age are instance variables.
-show() is a method
-.
