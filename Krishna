@@ -33,3 +33,6 @@ public class Person {
 	 }
 }
 
+Here id,name,age are instance variables.
+show() is a method
+.
