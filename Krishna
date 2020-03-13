@@ -12,3 +12,12 @@ Obj is created in heap memory
 -> Every obj has state(instance variables) and behavior(methods) 
 -> Object has physical memory 
 ->Object has the real time data
+
+
+
+Person p = new Person()
+//  p has memory for id, name , age
+
+
+
+
