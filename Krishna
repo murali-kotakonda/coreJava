@@ -2,3 +2,7 @@
 --------------------------
  -> Userdefined datatype
 -> Class is used to represent the real time entities/structure/model.
+-> class is created before run- time
+->class is a logical representation 
+->class is a template 
+-> class doesnt contain any data.
