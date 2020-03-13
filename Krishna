@@ -1,19 +1,4 @@
-d1#e1
-d2#e2
-d1#e3
-d3#e4
-d7#e5
-d4#e6
-d5#e7
-d7#e8
-d1#e9
-d2#e10
-
-O/p:
-d1  ---> e1, e3 , e9
-d2  ---> e2 , e10
-d3  ---> e4
-d4  --->e6
-d5 --->e7
-d7 ---> e5 ,e8
- 
+# Class
+--------------------------
+ -> Userdefined datatype
+-> Class is used to represent the real time entities/structure/model.
