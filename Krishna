@@ -19,3 +19,17 @@
        Instance variables + methods
        constructors
        Static variables + static methods + static block
+
+
+
+public class Person {
+	
+	int id;
+	String name;
+	int age;
+	
+	 public void show(){
+		  // logic here 
+	 }
+}
+
