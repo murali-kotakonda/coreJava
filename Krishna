@@ -12,3 +12,10 @@
 -> Class is  block for instance varibles + functions
     a)insatance variables to hold data for entity
     b)funtions would operate on instance varibles  
+
+
+
+-> Class has 
+       Instance variables + methods
+       constructors
+       Static variables + static methods + static block
