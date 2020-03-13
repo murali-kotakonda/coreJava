@@ -6,3 +6,9 @@
 ->class is a logical representation 
 ->class is a template 
 -> class doesnt contain any data.
+
+
+
+-> Class is  block for instance varibles + functions
+    a)insatance variables to hold data for entity
+    b)funtions would operate on instance varibles  
