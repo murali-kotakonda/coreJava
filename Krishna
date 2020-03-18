@@ -1,34 +1,20 @@
-public class TestCalculator {
+
+public class TestCompare {
 	public static void main(String[] args) {
-		System.out.println("****c1 obj operations *****");
-		// create object
-		Calculator c1 = new Calculator();
+		Person p1 = new Person();
+		p1.id = 20001;
+		p1.age = 30;
+		p1.name = "user1";
 
-		// set the data
-		c1.n1 = 20;
-		c1.n2 = 10;
+		Person p2 = new Person();
+		p2.id = 20001;
+		p2.age = 30;
+		p2.name = "user1";
 
-		c1.sum();
-		c1.sub();
-		c1.div();
-		c1.mul();
-
-		System.out.println("****c2 obj operations *****");
-		Calculator c2 = new Calculator();
-		c2.n1 = 200;
-		c2.n2 = 100;
-		c2.sum();
-		c2.sub();
-		c2.div();
-		c2.mul();
-
-		System.out.println("****c3 obj operations *****");
-		Calculator c3 = new Calculator();
-		c3.n1 = 2000;
-		c3.n2 = 1000;
-		c3.sum();
-		c3.sub();
-		c3.div();
-		c3.mul();
+		if (p1 == p2) {
+			System.out.println("objs are equal");
+		} else {
+			System.out.println("objs not equal");
+		}
 	}
 }
