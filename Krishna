@@ -2,7 +2,10 @@ public class Person {
 	int id;
 	String name;
 	int age;
+	// id ,name ,mage are instance variables.
 	
+	//display() is a method .
+	//method access the instance variables
 	public void display(){
 		System.out.println(id);
 		System.out.println(name);
