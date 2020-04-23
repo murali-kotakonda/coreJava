@@ -1,0 +1,55 @@
+Abstraction:
+-> Hide unnecessary data and expose only what ever is required.
+->for every action/task there should be only funtion.
+
+
+Ex:
+Class Vechicle:
+    wheel,
+    engine
+    fuel.
+    
+    void brake(){}
+      
+    void acclerate{}
+      
+	void showFuelReading(){}
+    
+    
+Req#1:To stop vehicle 
+solution) call the brake()
+
+brake() -> changing the values for the instance variable wheel + engine
+
+
+Req#2:speedup vehicle
+solution) call accelarate() function.
+
+acclearate() - >changing the values for the instance variable wheel + engine using fuel..
+
+
+Req#3:see the fuel reading:
+solution) call the showFuelReading() function..
+
+
+conclution:
+--------------
+-> Hide the instance variables and expose the methods.
+-> change the instance varibles/read the instance variables using the functions.
+-> one action == one function
+
+
+changes in class:
+  1. make instance variables as private
+  2.expose the methods to set data and read data (setters & getters)
+  for every instance variables provide setter and getter 
+  
+  
+  
+  
+
+
+
+
+
+

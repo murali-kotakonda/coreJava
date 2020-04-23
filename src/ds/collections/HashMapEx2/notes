@@ -1,0 +1,48 @@
+/*
+ Map:
+  every entry contains two elements Key and Value
+  key any dt , value any dt
+  
+  -map is is interface
+  
+  child classes:
+  
+  HashMap   :- adds in random order
+  TreeMap   :-  adds in sorting order of key
+  LinkedHashMap :-adds elements in insertion order
+    
+    
+    Create map with with key as String ad value as String:-
+      ------------------------------------------------
+    Map<String, String> map = new HashMap<>();
+    Map<String, String> map = new TreeMap<>();
+    Map<String, String> map = new LinkedHashMap<>();
+  
+  
+  Create map with with key as Interegr and value as String:-
+      ------------------------------------------------
+    Map<Integer, String> map = new HashMap<>();
+  
+  Create map with with key as String and value as Person:-
+      ------------------------------------------------
+    Map<String, Person> map = new HashMap<>();
+  
+  
+    Create map with with key as Department and value as Person:-
+      ------------------------------------------------
+    Map<Department, Person> map = new HashMap<>();
+  
+  
+  methods:
+      Map<String, String> map = new HashMap<>();
+       map.put("133", "user7"); //key as 133 and value as user7
+	   String d= map.get("133"); // i/p is a key and return is a value...returns "user7"
+	   boolean x= map.containsKey("133"); // returns boolean
+    	map.remove("133"); // removes key + value
+      
+		map.clear();// removes all keys + values
+		map.isEmpty(); //retunns boolean , 
+		map.size() // return int size
+		map.entrySet(); returns all keys + values
+  
+ */

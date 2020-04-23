@@ -1,0 +1,16 @@
+VarArg Funtions:
+-----------------
+
+A function that can take any number of arguments as input .
+
+syntax:
+  public static void display(String... data){ // datatype of data is array
+    
+  }
+  
+  
+  display("1");
+  display("hi" , "hello" ,"kumar");
+  display("hi" , "hello" ,"kumar", "ram","shyam");
+  
+  

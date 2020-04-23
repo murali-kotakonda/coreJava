@@ -1,0 +1,39 @@
+Vector vs ArrayList
+---------------------
+->Vector is synchronized
+-> AL is not syncronized
+
+->Vector is threadsafe
+-> AL is not threadsafe
+
+->Vector can be used in multithread environment
+-> AL cannot be used in multithread environment
+
+
+
+LinkedList vs ArrayList/Vector
+---------------------------
+->Arraylist/Vector interally uses arrays
+->LinkedList internally uses linked DS , every element contain data and ref of next data.
+  
+->  Search by position is fast for AL/Vector
+-> Search by position is slow for Linkedlist
+
+
+->Insert in between/delete in between is slow for AL/Vector
+-> Insert in between/delete in between is fast for Linkedlist
+
+
+-> Memory allocated and no of elements are not same in AL/Vector.  => Leads to memory wasted.
+->Memory allocated and no of elements are same in LinkedList.
+  
+
+-> Can grow , but cannot decrease for AL/Vector
+-> Can grow and can decrease for LinkedList
+
+
+common disadv:
+-----------------------
+-> Duplicates are allowed
+-> SEARCH BY CONTENT is very slow
+  

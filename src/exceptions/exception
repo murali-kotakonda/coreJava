@@ -1,0 +1,57 @@
+Exception:
+-----------
+Unexpected scenario/event that occurs at the run time.
+
+what happens when there is an exception:
+--------------------------
+-> Prog will stop/ the flow would break.
+-> customer will see the techincal message instead of meaning ful message.
+-> affect the business 
+
+Why execption?:
+----------------
+->Bad coding practises
+->3rd party/ server/ hardware
+-> Missing testing the scenario
+-> edge case 
+
+
+Can we avoid exception during runtime?? NO
+exception handling:
+---------------------
+what to do when there is an exception
+
+What is java role?
+->Java created the exception object based on the reason
+->Exception obj contains the exception msg + what are the class+method+line nos involved for exeption(stacktrace)
+->Java stops the application flow..
+
+Exeception handling will be required when there is an exception...
+Exception handling is what to do when there is an exception..
+
+
+Adv:
+-> choice for retry/ continue/ stop
+->prepare meaning msg to the customer..
+-> resume the application flow
+->write the technical messages like execption reason+ cause to the server logs
+
+
+How to do exception handling:
+----------------------------
+try{
+  <write code that has chances for exception>
+}
+catch(){
+  //executed only when there is an exception
+  <exception handling code
+}
+finally{
+  <optionl, required only when dealing with 3rs parties>
+  //exceuted always ...
+}
+
+
+
+
+  

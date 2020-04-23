@@ -1,0 +1,36 @@
+Reflections:
+----------
+-API to get class information
+-Meta data about a classs
+-to get every detail of a class dynamically
+
+ex: Eclipse IDE , frameworks..
+  
+  
+import java.lang.reflect 
+
+class Person{
+  
+}
+
+
+
+public class Student extends Person{
+
+}
+
+
+
+1. Create class object for every class
+ex:
+		Class c = Person.class; 
+		System.out.println(c.getName());
+	
+		Class c1 = Student.class;
+		System.out.println(c.getName());
+		
+
+
+
+
+

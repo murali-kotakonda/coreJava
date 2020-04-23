@@ -1,0 +1,83 @@
+polymorphism:
+  ---------------------
+- exhibiting the features in diff forms.
+- compiletime polymorphism + runtime polymorphism.
+
+
+compiletime poly:
+-------------
+- also called as method overloading .
+
+within the same class we can have different methods having same method name but different method signature.
+
+
+ex:
+  public class Calc{
+    
+    public void show(){
+       
+    }
+     
+    public void show(int x){
+           
+    }
+    
+    public void show(float x){
+           
+    }
+    
+  }
+  
+  
+Method signature:
+  -> no of args
+  -> order of args
+  -> data type of args
+  
+No of args:
+------------
+  public int add(int a, int b) {
+		int sum = a + b;
+		return sum;
+	} 
+	
+ 	public int add(int a, int b , int c) {
+		int sum = a + b+c;
+		return sum;
+	}
+
+
+order of args:
+---------------
+public void add(int a, float b ) {
+		System.out.println(a + b);
+	}
+	
+	public void add(float a, int b ) {
+		System.out.println(a + b);
+	}
+  
+datatype of args:
+  -------------
+  public long add(long a, long b ) {
+		long sum = a + b;
+		return sum;
+	}
+ 	
+	public float add(float a, float b ) {
+		float sum = a + b;
+		return sum;
+	}
+
+
+return-type is never considerede as method signature
+ public long add(long a, long b ) {
+		long sum = a + b;
+		return sum;
+	}
+ 	
+	public int add(long a, long b ) {
+		long sum = a + b;
+		return sum;
+	}
+

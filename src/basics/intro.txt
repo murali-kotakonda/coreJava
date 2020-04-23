@@ -1,0 +1,96 @@
+Java?
+------
+->Platform independence 
+  Compile once + Run AnyTime
+->Object Oriented LANGUAGE (OOPS):
+ ex: Java, .net, python
+ :OOPS defines the common rule/regulations/guidelines for writing better progs.
+ :Modularity 
+ :Reusability
+ :Easy to understand and easy to represent any complex model
+ :Future enhancements
+->Simple,easy to learn/ understand /code..
+->Robust:
+  No pointers . [gives access to the memory location]
+  Memory allocation & meomory dealloca is taken care by java
+  Unused memory is cleanup using garbage collection.
+  Java is very strong in type checking.  [Compilation]
+  Exception hanlding[to handle the unexpected scenarios that occurs at run time]
+->Arhitecural neutral:  Java memory alloca is stable for all platforms.
+->MultiThreading : To execute multiple progs at the same time. ex: response time.
+->Diff apps:
+  standalone app/desktop app
+  web app
+  web services
+  enterprise apps
+  mobile
+  gaming
+  Machine learning , AI , ..etc....
+  tools : selenium , hybris , oracle ATG, Pega
+  frameworks: springs , hibernate
+
+
+  
+  
+  
+    Setup:
+-----
+  a) Java 8 software  + env variable config
+  b) IDE ex: Eclipse, netbeans , Injellij
+  
+  
+  Java: JDK + JRE
+  JDK -> Commands + lib for compilations
+  JRE -> commands for execution
+  
+  In every server we hav the application running & testers will do testings on these systems.
+  Dev1  --->     TS1    -->    TS2 -->     TS3 -->     PRE-PRD --->     Live  [consumed by customers]   
+  12																																					10
+  JDK+JRE        JRE          JRE          JRE          JRE              JRE
+  
+  SET PATH: make the command available every where
+  
+        
+Steps:
+1.create java project
+2.create package
+3.under package create the Java file..
+  
+  package --> folder that contains the related java files.ex: validate, ui , request , db , txn, security ...
+  
+    1.Hello.java 
+
+Steps to run java file:
+1.Compilation  
+  javac Hello.java 
+  result: Hello.class is generated[byte code file]
+2.Execution 
+  java Hello
+  result : <some output>       
+  
+    
+jar:    [java archive] - exposing the code 
+java library. 
+contains multiple .class files
+large no files to share with the team , then create jar file that contains .class files.
+  
+  
+    
+Structure of java file:
+-----------------------------
+  Hello.java
+  
+  
+  1.package name
+  2.import statements
+  3.  class name
+  4.inside a class we can define  instance variables + methods + conctr + static variables + static methods + static block...
+  
+  public class Hello{}
+
+
+To run a program main() method is mandatory.
+  
+
+
+

@@ -1,0 +1,64 @@
+- Avoid duplicates
+- merge two lists by avoiding duplicates
+- merge two lists and keep in 3rd list in sorting order.
+
+
+dont take size
+enter the name 
+do you wish to continue
+if yes 
+ask for the next name
+do you wish to continue?
+If no print all the name
+
+
+
+
+
+, dont take size
+enter the num
+do you wish to continue
+if yes 
+ask for the next num
+do you wish to continue?
+If no print all the num
+
+
+
+
+
+
+taking the names and avoid the duplicates
+
+
+
+taking the names avoid the duplicates in arraylist
+
+
+
+
+take the size for the input
+take the numbers 
+after taking input 
+print it
+sort it in order
+
+
+
+
+ask for id name age
+then if you wish to continue? If yes then 
+ask for id name age
+if no print all the data
+add person objects in arraylist, size as an input, do you wish to add person
+
+
+
+
+taking string as an input and search it in the array
+found or not found 
+
+
+
+insert in between or delete in between
+

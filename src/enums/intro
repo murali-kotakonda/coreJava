@@ -1,0 +1,50 @@
+  Enum:
+  -> Enum is also a class
+  -> For enum  we cannot create the object
+  -> Enum has predefined objects, 
+     Enum has limited objs
+     we need to use the same objects..
+ 
+  -> Predefined objs also mentioned in the enum class..
+
+  Class - > i.v + i.m + constr +setters +getters + static
+  Enum -> i.v. + i.m + contsr  + +setters +getters +predefined objects..
+  if LoanType is a a classs
+  But we have only 6 types of loans Personal, Home, education , vehical i.e. we should allow to create only 6 objs.
+    ex: How do you know what are loantypes supported...???
+
+
+  ex: LoanType , UserType , CardType , PaymentMode ,
+
+  Enum can be used as contants :
+  Im supporting 5 colors : use enum...
+
+  syntax:
+
+  public enum ColorType { // ColorType is a enum 
+
+    BLUE,  // ColorType BLUE = new ColorType();
+    RED,  // ColorType RED = new ColorType();
+    BLACK,
+    GREEN,
+    WHITE;
+
+  }
+
+
+  ColorType x = new ColorType() ; // gives compilation...
+
+  print(ColorType.BLUE) ;// get obj
+  print(ColorType.RED) ;// get obj
+
+  ->Get the predefined Obj using the enum name;;
+
+  -?How to get all Objs?
+  ColorType[] objs = ColorType.values()
+
+
+
+
+
+
+

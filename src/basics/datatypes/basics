@@ -1,0 +1,112 @@
+Setup:
+----------
+  Java 8
+  Eclipse
+  Selenium integration
+  Test NG integration
+
+
+
+
+
+Platform Independence:
+-----------------------
+  
+  For running a prog we need a) Conmpilation 2) Execution
+  
+  Compilationn checks for  syntax erros and prog lang rules.
+  Excution -> running prog + interpretor ( convert from hight level lang to low level lang )  
+  If compilation fails then execution never happens..
+    
+    
+  - C/C++ ---->>  If compilation is scucess it genarted .obj and .exe   +  Run the .exe file
+  
+  - Java ----->>If compilation is scucess it genarted .class +  Run the .class file
+   							Hello.java (source code)  -------Compile------> Hello.class (byte code/ compiled file)
+
+    
+   
+    
+    
+    
+    
+    Dev1  ---->  XP  uses  Java lang  Hello.java[source code] ----> Hello.class[compiled files]
+    
+    Dev2  ---->  Linux Hello.c -----> Hello.tar
+    
+    
+    Requiremt:
+		Run the same prog on dev2 system
+    
+    
+    Steps????
+    Option 1. Copy source code Hello.java from Dev1 to Dev2
+    	   Problms:
+	  				1.Code modification
+    				2.Recompilation
+            
+            
+    Option2 : Copy compiled Hello.class file from dev1 to dev2
+      
+      JVM ----> OS -----> Microprocessor
+      
+      
+      DEV---->TS1 -----> TS2 --------> TS3-----> PRE PROD ------> LIVE
+      
+      jdk     JRE        jre          jre         jre             jre
+      jre
+      
+      
+      
+	  
+	  Java Basics + OOPS + Collections + exception handling
+Selenium Framework
+Test NG framework with reporting
+
+Project for web application
+
+
+- Manual effor 
+- Physial presence
+- Time
+
+
+- Automation 
+Cost + learning
+
+
+
+QTP   -- licenced        + standalone , - webaplicatiom
+Toscha - li              + standalone + webapplciation
+Selenium + cucumber - freee + webapplication
+apium - free
+
+
+WIKI
+JIRA
+Github ---> storage test cases 
+
+dev---->TS1 ---> TS2 -> UAT --> pre prod ---> Prodcution
+D1--> 
+
+
+Jenkins setup [config for url ] + test cases from github 
+
+
+9886386717
+
+															---------
+TEST_Java_PROJECT ------------Internet---------------------> || Webapp  |||
+															----------
+											
+
+
+
+      
+      
+    
+    
+    
+    
+    
+    

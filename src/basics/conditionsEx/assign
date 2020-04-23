@@ -1,0 +1,67 @@
+1. Take two numbers as input and find the big number
+2. Take two numbers as input and find the small number
+3. take 3 nums, find big + small
+4. take two strings and print if the strings are equal or not
+ 
+5. take input for
+    id(int) , age(int) , usertype(string)
+    validations
+    id should be positive
+    age should be greater than 18
+    usertype should be "admin"
+    o/p:
+    1) valid id            
+       valid age
+       valid usertype
+       
+    2) invalid id
+       valid age
+       valid usertype
+       
+
+6.take bankname(string) as input ,
+  if bankname value is "sbi"  o/p => ROI = 10%
+  if bankname value is "icici"  o/p => ROI = 11%  
+  if bankname value is "hdfc"  o/p => ROI = 12%  
+  if bankname value is "citi"  o/p => ROI = 13%  
+  other than this o/p => invalid bank
+7. take input for
+    id(int) , age(int) , usertype(string)
+    validations
+    id should be positive
+    age should be greater than 18
+    usertype should be "admin"
+  
+    if id is wrong, then dont check for age 
+    if id is valid , then only check for age
+       if age is wrong, then dont check for userType 
+       if age is valid , then only check for userType
+       
+    o/p:
+    invlaid id or invlaid age or invalid usertype or valid data
+8.    input username  and  password
+      if username value ="admin" and password value is "admin"  o/p => login success
+      if not => login failure
+9. take cityname as input 
+   if cityname is "hyd"  or "chennai" or "bangalore" or "mumbai" o/p=> service is provided
+   if cityname is other than what is mentioned above o/p => servcie is not provided.
+10.  take input for
+    id(int) , age(int) , usertype(string)
+    validations
+    id should be positive
+    age should be greater than 18
+    usertype should be "admin"
+  
+    o/p : If all 3 inputs are valid o/p=>Valid Data
+    		  If any input is wrong o/p => Invalid Data
+     
+
+
+    
+    
+    
+    
+  
+  
+    
+  

@@ -1,0 +1,60 @@
+Inheritence:
+
+-> there are two types of classes.
+  
+  a)Parent class/SUper class/Basse class
+  b) sub class/child class/derived class
+    
+    
+Public properties and methods are inherited/available to child classes.
+
+adv: 
+reusability
+
+synatx:
+
+public class Person {
+	  String name;
+	  int age;
+	  int id;
+  
+  private int count;
+  
+  pubic void m1(){
+    
+  }
+  
+  private void m3(){
+    
+  }
+  
+  public static void m4(){
+    
+  }
+}
+
+
+
+
+
+public class Employee extends Person{
+
+	String pan;
+	String pfNo;
+
+  public void m2(){
+    
+  }
+}
+
+
+    
+How many I.V are in Person : 3 
+How manyI.V are in Employee : 5 
+  
+How many METHODS are in Person : 1 
+How many METHODS are in Employee : 2
+  
+  
+  
+  

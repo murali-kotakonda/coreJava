@@ -1,0 +1,32 @@
+Collections/Data Structures:
+--------------------------------
+->Isrequired when we have large group of data.
+-> collecting and manipulating a group of objects.
+->Operations : searching, sorting, insertion, manipulation, deletion, updation. 
+  
+ex: 
+Arrays , List (ArrayList + LinkedList + Vector) +Set(HashSet + TreeSet +LinkedHashSet) + Map(HashMap + TreeMap + LinkedHashMap)
+
+java.util -> all the Collection classes.
+  
+
+  Arrays:
+-------
+-> Need to specify the size first 
+-> Arrays uses index/position based operations. 
+-> insert , update , delete , read based on positions.
+
+  syntax:
+int[] numbers = new int[5];  or int numbers[] = new int[5];  // int array with size as 5
+String[] numbers = new String[6]; // string array with size of 6
+ 
+ 
+disadv:
+-> Specify size early.
+-> Size cannot be increased or decreased 
+-> insert in between[multiple right shift operations] or remove in between[multiple ledt shift operations] s costly.
+-> search by content is costly
+
+
+  
+  

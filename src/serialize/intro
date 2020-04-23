@@ -1,0 +1,23 @@
+Serialization:
+----------------
+-> process for storing obj state in the file system or when we need to send obj over the network..
+
+Steps:
+  1. Class has to implement Serializable interface
+  
+
+  Serialize:
+    1.create file obj
+    2.FileOutputStream
+    3.ObjectOutputStream
+    4.use writeObject method to serialize
+    
+    
+    
+  Deseriaize:
+     1.create file obj
+    2.FileInputream
+    3.ObjectInput
+    4.use readObject method to serialize
+    
+      

@@ -1,0 +1,54 @@
+- represent a special type of relationship that is
+ it can access all the members (data members and methods) of
+  outer class including private.
+
+- used to develop more readable and maintainable code 
+because it logically group classes 
+and interfaces in one place only.
+
+- It requires less code to write.
+
+
+ 
+	Member inner class
+	static inner class
+	Anonymous inner class
+	Local inner class
+	
+Member inner class:
+public class Outer{
+ class Inner{
+ 
+ }
+}
+Outer outerObject = new Outer();
+Outer.Inner innerObject = outerObject.new Inner();
+
+
+Static nested class
+--------------------------------
+
+A static class i.e. created inside a class is called static nested class in java. 
+It cannot access non-static data members and methods. It can be accessed by outer class name.
+
+It can access static data members of outer class including private.
+Static nested class cannot access non-static (instance) data member or method.
+
+
+
+public class Outer {
+	static class Inner {
+
+
+		}
+}
+
+Outer.Inner nestedObject =
+     new Outer.Inner();
+
+
+
+
+Local inner class
+----------------------
+A class i.e. created inside a method is called local inner class in java. If you want to invoke the methods of local inner class, you must instantiate this class inside the method.

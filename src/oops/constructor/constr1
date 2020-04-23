@@ -1,0 +1,105 @@
+Constructor:
+-------------------
+When obj is created constr is called automatically.
+With constr we can set the data during obj creation.
+  
+  
+class Person{
+  int id;
+  String name;
+  ing age;
+  
+}
+
+Req: create obj + set data
+
+
+
+without constr:  [requires 4 lines]
+---------------------
+Person p = new Person(); //set the data after obj creation
+p.id =1000;
+p.name="user1";
+p.age=45;
+
+
+with constr:  [requires 1 lines]
+---------------------
+Person p = new Person(1000,"user1",45); // set the data along with obj creation
+
+
+
+
+ex:
+		1.create obj
+		2.set data
+
+1. create obj + set data
+
+points:
+------------
+we need to write constr within the class.
+Constr name is equal to class name.
+Constr doesnt have any return type.
+We can have any number of constr in a single class -> constr overloading..
+A constr is called only one time for one obj..
+
+
+
+
+Adv:
+  creat obj + set the data in single line.
+
+
+syntax:
+  
+class Person  
+ {
+   int id;
+   String name;
+   int age;
+   
+   
+   // zero arg constructor
+	public Person() {  
+		System.out.println("zero arg constructr");
+	}
+
+	// param arg bconstructor
+	public Person(int id, int age, String pName) {  
+		this.id = id;
+		this.age = age;
+		this.name = pName;
+	}
+   
+  
+}
+  
+  
+main(){
+  
+  
+  Person p = new Person();
+  Person p1 = new Person(200,"user3",45);  
+    
+}
+  
+  
+  
+ //diff
+ 1.constr is called one time
+ methid can b claled any no of times
+ 2.constr name = class name
+ method  name can be anything
+ 3.contsr doesnt have any return (even void)
+ method have return type ...
+ 4.cosntr is called during obj creation
+ constr is automatic call
+ 
+ method should be called after obj created.
+ method is explict call
+ 
+ constr logic -> only initializing i.v
+ method logic -> any logic
+ 
+  

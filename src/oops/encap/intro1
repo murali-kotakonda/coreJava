@@ -1,0 +1,97 @@
+Encapsulation & abstraction:
+----------------------------
+-> Required for better designing the classes.
+->Guidelines & sense for creating class.
+
+Encapsulation:
+->Class is a building block for instance variables & methods
+-> We need to create one class per entity
+-> Class should contain related instance varibales + methods
+
+
+Case#1:
+Class Person:
+  id, name , age,aadhar
+  
+Class PersonDetails:
+  id,name,age,pan
+  
+Req: Create a obj and set data for id,name,age.
+solution:  delete any one of the two classes.
+ Class Person:
+    id,name,age,pan,aadhar
+
+    
+    
+Case#2:
+Maintain a vehicle showroom .
+capture vehicle & customer info.
+
+class Data:
+  vehicleId
+  vehicelName
+  vechicleBrand
+  custId
+  custName
+  custMobile
+  
+  
+If the vechicle comes to showroom then create obj for  Data and set values for vehicleId  +  vehicelName  + vechicleBrand
+If the customer comes to showroom then create obj for  Data and set values for custId  + custName + custMobile
+
+
+Problmes:
+  1.This class has unrelated instance variables.
+  2. Memory wastage
+  3. future enhancement
+  4.Ends up creating one more class
+  
+
+solutions:
+  create seperate class for vechicle info
+  and create seperate class for customer info
+
+class Vehicle:
+  vehicleId
+  vehicelName
+  vechicleBrand
+
+class Customer:
+  custId
+  custName
+  custMobile  
+  
+  
+  
+Case#3:
+class Person:
+  id, name , age
+  
+  void sum(self,x,y){
+    print("sum = " , (x+y))
+   }
+    
+
+req: call sum funtion
+  Person p = Person()
+  p.sum(10,20)
+
+
+Problem:
+  1.Class has unrelated method
+  2.Memory waste
+  
+  solution:
+    -> remove sum() futn from Person class
+
+class Cal:
+   void sum(x,y):
+      print(x+y)
+          
+          
+  
+    
+
+
+
+  

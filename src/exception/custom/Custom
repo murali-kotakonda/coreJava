@@ -1,0 +1,56 @@
+custom Exception/User Defined Exception:
+--------------------------------------
+-> dev is not handling execption using throws ()
+-> dev is handling execption  using try+ catch
+-> dev is creating execption using throw 
+	ArithmeticException ex = new ArithmeticException("num2 cannot be 0");
+	throw ex;
+ArithmeticException is a exception class from java lib..
+
+Can we create our own exception class??
+Yes
+
+-> Dev will create Exception class
+-> Dev will create exception obj & throw
+-> Dev will handle the exception
+
+Why should we create exception class?
+ans) To handle the neagtive sceanrios in the project.
+ex: 
+age < 18 is invalid for the application ,but it is valid for java ...
+any invalid data for id , name , usertype  is found we have to create exception.
+
+age < 18 cannot be ArithmeticException.
+
+
+
+Syntax :
+------
+1.create a exception class which is a child class for java.lang.Exception
+2. provide private final inst variables + contr + getter methods..
+
+
+ex:
+public class BusinessException extends Exception {
+
+}
+
+
+
+
+
+
+req:
+
+take input for name , age, city , usertype
+
+valiadtion for name, age , city usertype ,
+ if invalid data found then throw exception for BusinessException
+
+name cannot be > 15 char
+age between 18 & 60
+city should be either hyd or bang or cheanni
+usertype should be admin or agent
+
+
+if  data is valid save to the db

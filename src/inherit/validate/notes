@@ -1,0 +1,274 @@
+
+Person has ->id name age
+Employee has -> pf pan extend person
+Staff has ->contact id contact period ext employee
+
+Perform:
+
+1.input 
+2.validate 
+3.print
+
+ 
+validation: id should be positive
+name should be min 10 characters
+age 18-60
+pan exact 13 out of which 2 of them is numbers
+pf 4ch-4ch-4ch
+contract id string begins with C_ or P_
+contract period 6-24
+
+
+package inheritenceValidate;
+
+public class Employee extends Person {
+	 pan exact 13 out of which 2 of them is numbers
+	 pf 4ch-4ch-4ch
+	/*
+	 * this class has 5 instance variables as it extends Person class
+	 */
+	String pf = " ";
+	String pan = "";
+
+	public Employee() {
+		super();
+		setPf();
+		setPan();
+	}
+
+	public String getPf() {
+		return pf;
+	}
+
+	public void setPf() {
+		System.out.println("enter pf: ");
+		String pf = sc.next();
+		int l = pf.length();
+		/*
+		 * char array[] = pf.toCharArray(); 
+		 * System.out.println("string length " + l);
+		 * int length = array.length; 
+		 * System.out.println("char array length " + length);
+		 */
+		if (l == 14) {
+			char c = pf.charAt(4);
+			char c1 = pf.charAt(9);
+			if (c == '-' && c1 == '-') {
+				this.pf = pf;
+			} else {
+				System.out.print("wrong input");
+			}
+		} else {
+			System.out.print("wrong input");
+		}
+
+	}
+
+	public String getPan() {
+		return pan;
+	}
+
+	public void setPan() {
+		at least 2 numbers should be there in pan
+		System.out.println("enter pan: ");
+		String pan = sc.next();
+		if (pan.length() == 13) {
+			int count = 0;
+			for(int i =0; i < 13; i++) {
+				char c = pan.charAt(i);
+				if(Character.isDigit(c)) {
+					count++;
+				}
+			}
+			if(count >= 2) {
+				this.pan = pan;
+			}
+			else {
+				System.out.println("Wrong input");
+				}
+			
+		}
+		else {
+		System.out.println("Wrong input");
+		}
+	}
+	
+	public void show() {
+		super.show();
+		System.out.println(getPf() + " " + getPan() );
+	}
+
+}
+
+
+
+
+
+package inheritenceValidate;
+
+import java.util.Scanner;
+
+id name age
+pf pan extend person
+contact id contact period ext employee
+input validate print 
+validation: id should be positive
+name should be min 10 characters
+age 18-60
+pan exact 13 out of which 2 of them is numbers
+pf 4ch-4ch-4ch
+contract id string begins with C_ or P_
+contract period 6-24
+public class Person {
+	int id = 0;
+	String name = "";
+	int age = 0;
+	int min = 10;
+	Scanner sc = new Scanner(System.in);
+	
+	public Person() {
+		super();
+		setId();
+		setAge();
+		setName();
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId() {
+		System.out.println("enter id: ");
+		int id = sc.nextInt();
+		if (id >= 0) {
+			this.id = id;
+		}
+		else {
+		System.out.println("Wrong input");
+		}
+		
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName() {
+		System.out.println("enter name: ");
+		String name = sc.next();
+		if (name.length() >= min) {
+			this.name = name;
+		}
+		else {
+		System.out.println("Wrong input");
+		}
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge() {
+		System.out.println("enter age: ");
+		int age = sc.nextInt();
+		if (age > 17 && age < 60) {
+			this.age = age;
+		}
+		else {
+		System.out.println("Wrong input");
+		}
+	}
+	
+	public void show() {
+		System.out.println(getName() + " " + getAge() + " " + getId());
+	}
+	
+
+}
+
+
+
+package inheritenceValidate;
+
+public class Staff extends Employee{
+contact id contact period ext employee
+contract id string begins with C_ or P_
+contract period 6-24
+/*
+ * this class has 7 instance variables as it extends Employee and Employee extends 
+ * Person class
+ */
+	String contractId = " ";
+	int contractPeriod = 0;
+	
+	
+	
+	public Staff() {
+		super();
+		setContractId();
+		setContractPeriod();
+		
+	}
+	public String getContractId() {
+		return contractId;
+	}
+	public void setContractId() {
+		System.out.println("enter contract Id: ");
+		String c = sc.next();
+		if (c.startsWith("C_") || c.startsWith("P_")) {
+			this.contractId = c;
+		}
+		else {
+		System.out.println("Wrong input");
+		}
+		
+	}
+	public int getContractPeriod() {
+		return contractPeriod;
+	}
+	public void setContractPeriod() {
+		System.out.println("enter contract Period: ");
+		int contractPeriod = sc.nextInt();
+		if ( contractPeriod > 5 && contractPeriod < 25) {
+			this.contractPeriod = contractPeriod;
+		}
+		else {
+		System.out.println("Wrong input");
+		}
+		
+	}
+	public void show() {
+		super.show();
+		System.out.println(getContractId() + " " + getContractPeriod() );
+	}
+	
+	
+}
+
+
+package inheritenceValidate;
+
+public class Test {
+	public static void main(String[] args) {
+		Person p = new Person();
+		p.show();
+		System.out.println("*******************************************");
+		Employee m = new Employee();
+		m.show();
+		System.out.println("*******************************************");
+		Staff s = new Staff();
+		s.show();
+		
+		
+	}
+	
+
+}
+
+id name age
+pf pan extend person
+contact id contact period ext employee
+input validate print 
+validation: id should be positive
+name should be min 10 characters
+age 18-60
+pan exact 13 out of which 2 of them is numbers
+pf 4ch-4ch-4ch
+contract id string begins with C_ or P_
+contract period 6-24
+

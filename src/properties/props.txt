@@ -1,0 +1,31 @@
+Properties file:
+------------------
+config.properties
+
+-> for config parameters
+all proj related properties
+
+-> every line contain two things: property name+ property value
+
+config.properties:
+--------------------------
+IPADDRESS=128.9.10.90
+portNo=9089
+dbName=oracle
+name=kmr
+user=1234
+pass=45667
+reultsperpage=20
+
+
+
+steps:
+------
+1.create file obj for .properties file
+2.create FileInputStream obj
+3.create properties obj
+4.read any property using properties obj
+
+
+
+ 

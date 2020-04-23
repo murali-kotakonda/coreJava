@@ -1,0 +1,74 @@
+In list no need to specify size.
+List is dynamically growing ...
+
+
+
+List (interface)
+---------------------
+
+ 
+Child classes:
+------------------
+  -ArrayList
+  -Vector
+  -LinkedList
+  
+  
+List<String> names= new ArrayList<String>();   -> create arraylist for String
+List<String> names= new Vector<String>();     -> create Vector for String
+List<String> names= new LinkedList<String>(); -> create LinkedList for String
+
+List<Integer> nums= new ArrayList<Integer>();   -> create arraylist for Integer
+List<Integer> nums= new Vector<Integer>();     -> create Vector for Integer
+List<Integer> nums= new LinkedList<Integer>(); -> create LinkedList for Integer
+
+
+
+List<Float> nums= new ArrayList<Float>();   -> create arraylist for Float
+List<Float> nums= new Vector<Float>();     -> create Vector for Float
+List<Float> nums= new LinkedList<Float>(); -> create LinkedList for Float
+
+
+List<Person> persons= new ArrayList<Person>();   -> create arraylist for Person
+List<Person> persons= new Vector<Person>();     -> create Vector for Person
+List<Person> persons= new LinkedList<Person>(); -> create LinkedList for Person
+
+
+Method names: [ArrayList/Vector/Linkedlist]
+
+List<String> names = new ArrayList<String>();
+
+// add new element
+names.add("user1");
+names.add("user2");
+names.add("user4");
+
+
+
+names.add(2, "user5");  // adds new element at 2nd position
+
+names.clear(); // deletes all elements
+
+
+
+String data = names.get(1); // search by position . ex: gets the element at 2nd position.
+
+
+boolean found = names.contains("user4"); // returns boolean , search by content
+
+
+boolean content = names.isEmpty(); // returns boolean to check whether list is empty or not
+
+
+int count = names.size(); // to find size
+
+
+names.remove("user2"); // to remove element
+
+
+
+
+
+
+
+

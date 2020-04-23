@@ -1,0 +1,99 @@
+abstract class:
+-> should be used only in inherience.
+-> always a parent class.
+->we cannot create object
+
+has instance variables + constr 
+->syntax for abstract clasS:
+public abstract class RBI{
+  
+  
+}
+->Abstract class has two types of methods:
+   1. Non abstract methods  (method declaration + method body)
+   public void display(){
+   
+   }
+   2. abstract methods (has only method declaration ; abstract method does not have any logic)
+   public abstract void display1();
+   
+-> If a class has one abstract method then class has to be abstract class...
+  
+--> create a class that extends the Abstract class [ only way to use abstract class]  
+-->  For a child class overriding is mandatory for the abstract methods, 
+
+ CREATE CHILD CLASS FOR ABSTRACT CLASS
+public class SBI extends RBI{
+  // Overriding the display1 method is mandatory 
+  
+  public abstract void display1(){
+  
+  }
+}
+
+
+
+Interface:
+-> should be used only in inherience.
+->we cannot create object
+
+Interface = 100 % abstract class
+->Interafce has only abstract methods   and only public static final variables.
+-> No instance variables + constr 
+
+
+->syntax for interface clasS:
+public interface RBI{
+    
+  
+}
+
+
+Whats the only way to use interface?   
+--> create a class that implements Interface    
+-->  For a child class overriding is mandatory for the abstract methods,
+
+Interface:
+-----------
+
+	public interface RBI {
+    
+     public static final int count =50;
+  		 public abstract void display();
+  	   public abstract void show();
+  
+   }
+
+Extends --> normal class+ abstarct class
+implements --> interface  
+
+child class for interface:
+public class SBI implements RBI {
+  //overriding the display() and show() are mandatory....
+  
+}
+
+Interface supports multiple inhertence.
+  
+public interface RBI {
+  		 public abstract void display();
+  	   public abstract void show();
+  
+   }
+
+public interface WB {
+  		 public abstract void ppf();
+  	   public abstract void draft();
+  
+   }
+
+
+
+public class SBI implements  RBI, WB  {
+  //overriding the display() and show()  ppf() and draft()  are mandatory....
+  
+}
+  
+  
+
+

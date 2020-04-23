@@ -1,0 +1,64 @@
+# Class
+--------------------------
+
+
+x=90 #global variable
+      
+      
+def sum(x,y):  #global funtion
+  s = x+y    # local variables are x, y , s
+	print(s)
+    
+    
+class Person:
+  #instance variables
+	id=None
+	name=None
+	age=None
+
+  #instance funtion
+	def show(self):
+		print("hello inside show")
+      
+      
+Object:
+---------
+# varible for the class
+# instance for the class
+# object is created during run time .
+# when obj is created memory is allocated for all instance variables.
+# object logical + physical representation
+
+#Syntax for obj creation
+Person p1 = new Person()
+
+#Class will decide property names for all objs
+#Obj will decide property values..
+  
+#Set data
+p1.id =30000
+p1.name ="user1"
+p1.age=45  
+
+#display data
+print(p1.id)
+print(p1.name)
+print(p1.age)
+  
+  
+  
+
+1.Requiremnet to capture id,name,age for 10 persons.
+solution:
+without oops we have to create 30 varibles
+without oops we have to create 10 varibles
+
+
+
+
+
+  
+  
+  
+  
+

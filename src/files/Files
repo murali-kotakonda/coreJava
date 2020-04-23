@@ -1,0 +1,58 @@
+	File handling:
+---------------
+-> Create file/folder
+-> delete file/folder
+-> Write to file
+-> Read from file
+
+For working with files  use java.io package...
+
+->There are two types of files.
+1. charater stream  ex: only text files
+Write : FileWriter class
+Read : FileReader class
+
+
+2. Byte stream   ex: text and non text files image, pdf, document, etc....
+Write : FileOutputStream class
+Read : FileInputStream class
+
+ 
+ Exception handling is mandatory for the file operations...........
+ 
+
+FileWriter examples:
+------------------------
+1.Create file obj
+2.Create FileWriterObj using file obj
+3.use write() method to write the data to the file [pass string ]
+4.close filewriter
+
+Fileoutputstream example:
+-----------------------
+1.Crate file obj
+2.Create Fileoutputstream using file obj
+3.use write() method to write the data to the file [pass bytes]
+4.close filewriter
+
+
+
+FileReader:
+----------------
+
+1.Create file obj
+2.Create FileReader using file obj
+3.use read() method to read the data from file (read char by char)
+4.close FileReader
+
+
+Fileinput stream:
+---------------
+1.Create file obj
+2.Create FileInputStream(fis) using file obj
+3. create BufferedReader using fis
+4.use readLine() method to read the data from file (bye by byte)
+5.close BufferedReader
+6.close FileInputStream
+
+

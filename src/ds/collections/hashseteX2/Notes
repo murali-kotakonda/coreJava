@@ -1,0 +1,45 @@
+Set:
+----------
+Set is a interface
+
+Child classes:
+------------------
+HashSet
+TreeSet
+LinkedHashSet
+
+
+Common :
+----------------
+-> Duplicates are not allowed
+-> SEARCH BY CONTENT is very fast
+
+search by position is not applicable in set.
+  
+
+
+Syntax:
+Set<String> names = new HashSet<String>();
+		
+Set<String> names = new TreeSet<String>();
+		
+Set<String> names = new LinkedHashSet<String>();
+
+
+Methods:
+-----------------
+names.add("java");  -> add element and avoids duplicates
+boolean contains = names.contains("user1");   -> serach by content
+names.clear();                ->to remove all elements
+names.isEmpty(); //returns boolean  -> to check if the set is empty or not
+names.remove("user2"); -> remove by content
+names.size();   -> returns the no of elements added
+
+
+display all:
+for(String p : names){
+			System.out.println(p);
+		}
+
+
+	
