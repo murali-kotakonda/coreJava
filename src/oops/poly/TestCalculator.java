@@ -10,8 +10,11 @@ public class TestCalculator {
 		int sum2 = cal.add(1,2,3);
 		System.out.println(sum2);
 		
-	 	float sum3 = cal.add(12f,  10.0f);
+		long sum3 = cal.add(343535l, 525252l);
 		System.out.println(sum3);
+		
+	 	float sum4 = cal.add(12f,  10.0f);
+		System.out.println(sum4);
 		
 		long sum4 = cal.add(12l, 10l);
 		System.out.println(sum4);

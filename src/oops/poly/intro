@@ -1,14 +1,16 @@
 polymorphism:
-  ---------------------
+---------------------
 - exhibiting the features in diff forms.
-- compiletime polymorphism + runtime polymorphism.
+- a) compiletime polymorphism  or method overloading  
+  b) runtime polymorphism or method overriding    -->(inheritence)
 
 
 compiletime poly:
 -------------
 - also called as method overloading .
 
-within the same class we can have different methods having same method name but different method signature.
+within the same class we can have different methods having same method name 
+but different method signature.
 
 
 ex:
@@ -46,6 +48,8 @@ No of args:
 		return sum;
 	}
 
+add(  5,  6.45f )   -> 
+add(  10.78f , 7899) -> 
 
 order of args:
 ---------------
@@ -56,6 +60,11 @@ public void add(int a, float b ) {
 	public void add(float a, int b ) {
 		System.out.println(a + b);
 	}
+
+add(5,6)   -> 
+add(10,20,30) -> 
+
+
   
 datatype of args:
   -------------
@@ -68,6 +77,9 @@ datatype of args:
 		float sum = a + b;
 		return sum;
 	}
+
+add(1313131L ,131313131L)
+add(14214124.5454f , 235353.343f)
 
 
 return-type is never considerede as method signature

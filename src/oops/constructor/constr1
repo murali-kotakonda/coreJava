@@ -88,11 +88,14 @@ main(){
   
  //diff
  1.constr is called one time
- methid can b claled any no of times
+ method can b called any no of times
+ 
  2.constr name = class name
  method  name can be anything
+ 
  3.contsr doesnt have any return (even void)
  method have return type ...
+ 
  4.cosntr is called during obj creation
  constr is automatic call
  
