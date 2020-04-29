@@ -1,10 +1,11 @@
 static variables:
   --------------
+  -> static variable is declared inside the class
   global variables.
   memory is created only one time
   static varibales are like the common data for all objs
   
-  for instance varables , memoery is created every time when obj is created.
+  for instance varables , memory is created every time when obj is created.
   static variables memeory is created one time during class loading.
   
   
@@ -17,21 +18,51 @@ static variables:
   }
   
   static variables ---> common data for all obj
-  inst varibales ---> speceific data for every data.
+  inst variables ---> specific data for every data.
     
   static variables can be accessed without objcet.
   But for accessing the instance variables we need obj.
   
+  class Student{
+  
+  #instance  variables
+  int id;
+  String name;
+  int semNo;
+  
+  static String colleageName ; //  static variable memory allocated one time
+  
+}
+  
+  -> for accessing static variable object is not required, Class name is sufficient.
+  we can call static varibale as "class variables"
+  -> for accessing instance variable object is required.
   
   synatx:
-    1.access instance varibale
+  ex1:
+    ex:
+  #change static varible
+  Student.colleageName ="KMR";
+  
+  
+  #access static variable
+  System.outr.println(Student.colleageName)   ;
+  
+ #create obj and set data
+    Student s = newe Student();
+    s.id=2000;
+	s.name="kumar";
+	s.semNo=3;
+		
+  ex2:
+    
     Person p = new Person
     p.id= 67
     syso(p.id)
     
     
     2.acces sstatic varia
-    
+    Person.count =
   
   
   static methods:
@@ -39,6 +70,11 @@ static variables:
 
 static methods can be called without object creation.
 instance methods should be called only after object creation.
+static methods can access only static variables,
+static methods cannot access instance variables.
+
+to operate on instance variable we need instance methods.
+to operate on static variables we need static methods.
 
 syntax:
   public static void showCount(){
@@ -47,7 +83,6 @@ syntax:
   
   instance methods -> set/read data for instance variables
   static  methods -> set/read data for static variables
-  
   
   
   syntax:

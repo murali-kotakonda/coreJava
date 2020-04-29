@@ -1,14 +1,21 @@
 package oops.staticVari;
 
-public class Employee {
+public class Person {
 	int id;
 	String name;
 	int sal;
 
 	static int count=6000;
 	
+	public Person(int id, String name, int sal) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.sal = sal;
+	}
+
 	//param arg bconstructor
-	public Employee(int sal, String name){
+	public Person(int sal, String name){
 		id = count++;
 		this.sal = sal;
 		this.name = name;

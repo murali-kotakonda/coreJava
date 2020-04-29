@@ -1,32 +1,36 @@
 package oops.staticMethods;
 
-
 public class Service {
-	//instance variable
-	String dbName= "oracle";
-	
-	//static variable
-	static double rateOfIntrest = 12.5d;
-	
-	public void m1(){
-		System.out.println(dbName);
-		System.out.println(rateOfIntrest);
-		m2();
-		m4();
+	// instance variable
+	String v1 = "oracle";
+
+	// static variable
+	static double v2 = 12.5d;
+
+	// instance method
+	public void m1() {
+		System.out.println(v1); // access i.v.
+		System.out.println(v2); // access static variable
+		m2(); // access i.m.
+		m4(); // access s.m.
 	}
-	
-	public void m2(){ 
-		System.out.println("inside  display2");
+
+	// instance method
+	public void m2() {
+		System.out.println("inside  m2");
 	}
-	
-	public static void m3(){ 
-		//System.out.println(dbName);// cannot acces instance variable
-		System.out.println(rateOfIntrest);
-		//m2();//cannot access instance method
-		m4();
+
+	// static method
+	public static void m3() {
+		//System.out.println(v1); // access i.v., gives compilation
+		System.out.println(v2); // access static variable
+		//m2(); // access i.m. gives compilation
+		m4(); // access s.m.
 	}
-	
-	public static void m4(){
-		System.out.println("in static getData2");
+
+	// static method
+	public static void m4() {
+		System.out.println("in static m4");
 	}
+
 }

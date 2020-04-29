@@ -16,9 +16,8 @@ public class TestCalculator {
 	 	float sum4 = cal.add(12f,  10.0f);
 		System.out.println(sum4);
 		
-		long sum4 = cal.add(12l, 10l);
-		System.out.println(sum4);
+		long sum5 = cal.add(12l, 10l);
+		System.out.println(sum5);
 		
-		System.out.println(String.format(" data is %s and %s", "HI", "HELLO"));
 	}
 }

@@ -1,0 +1,36 @@
+Refactoring:
+->change made to the internal structure to make it easy to understand and cheaper to modify 
+without changing the observable behaviour.
+
+
+without refactor:
+-> productivity decreases.
+->duplicated code accumulates
+->logic becomes complex.
+
+
+reasons for bad coding practises:
+----------------------------------
+-> not enough experience
+->lazy coding
+->time deadlines
+
+
+
+->Code Smell
+----------------------------
+Refer refactor.png diagram
+Refer codesmell1.ong
+Refer code smell taxonomy
+
+->Code Smell categories:
+-----------------------------------------------
+->Bloaters
+->Object oriented abusres
+->change preventers
+->couplers
+->dispensables
+
+
+
+

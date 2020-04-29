@@ -93,3 +93,14 @@ return-type is never considerede as method signature
 		return sum;
 	}
 
+
+
+
+
+
+if a method expects long , then the method can be called by passing int or long
+
+if a method expects float , then the method can be called by passing int or float
+  
+if a method expects double  , then the method can be called by passing int or float  or long or double   
+
