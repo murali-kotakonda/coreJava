@@ -22,7 +22,6 @@ solution:  delete any one of the two classes.
     id,name,age,pan,aadhar
 
     
-    
 Case#2:
 Maintain a vehicle showroom .
 capture vehicle & customer info.
@@ -36,14 +35,14 @@ class Data:
   custMobile
   
   
-If the vechicle comes to showroom then create obj for  Data and set values for vehicleId  +  vehicelName  + vechicleBrand
+If the vehicle comes to showroom then create obj for  Data and set values for vehicleId  +  vehicelName  + vechicleBrand
 If the customer comes to showroom then create obj for  Data and set values for custId  + custName + custMobile
 
 
 Problmes:
   1.This class has unrelated instance variables.
   2. Memory wastage
-  3. future enhancement
+  3. future enhancement and class becomes complex.
   4.Ends up creating one more class
   
 
@@ -64,10 +63,12 @@ class Customer:
   
   
 Case#3:
-class Person:
-  id, name , age
+class Person{
+  int id; 
+  String name; 
+  int age;
   
-  void sum(self,x,y){
+  void sum(int x, int y){
     print("sum = " , (x+y))
    }
     
@@ -88,6 +89,8 @@ class Cal:
    void sum(x,y):
       print(x+y)
           
+  p = Cal()
+  p.sum(10,20)
           
   
     

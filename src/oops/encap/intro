@@ -4,17 +4,23 @@ Abstraction:
 
 
 Ex:
-Class Vechicle:
+Class Vehicle{
     wheel,
     engine
     fuel.
     
-    void brake(){}
+    void brake(){
+    //logic to stop car
+    }
       
-    void acclerate{}
+    void acclerate(){
+    //logic to speed accelerate
+    }
       
-	void showFuelReading(){}
-    
+	void showFuelReading(){
+	//logic to show fuel reading
+	}
+  }
     
 Req#1:To stop vehicle 
 solution) call the brake()
@@ -30,19 +36,31 @@ acclearate() - >changing the values for the instance variable wheel + engine usi
 
 Req#3:see the fuel reading:
 solution) call the showFuelReading() function..
+shows the current state of the fuel
 
 
 conclution:
 --------------
 -> Hide the instance variables and expose the methods.
--> change the instance varibles/read the instance variables using the functions.
--> one action == one function
+-> change the instance varibles/read the instance variables using the methods.
+[any actn on obj perform using the method]
+-> one action == one method
 
 
 changes in class:
   1. make instance variables as private
   2.expose the methods to set data and read data (setters & getters)
   for every instance variables provide setter and getter 
+  
+    
+  Person p = new Person();
+//set data directly
+p.id=9000;
+p.name="user1";
+p.age=45;
+
+//for set data to object use the methods.
+  
   
   
   
