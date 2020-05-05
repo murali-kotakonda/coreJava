@@ -8,6 +8,11 @@ public class TetInherit {
 		p.age=50;
 		p.id = 65556;
 
+		System.out.println("displaying person info");
+		p.displayPerson();
+		
+		
+		
 		
 		//create obj for employee
 		Employee emp = new Employee();
@@ -19,11 +24,10 @@ public class TetInherit {
 		emp.pfNo="testPfNo";
 		
 		
-		System.out.println("displaying person info");
-		p.displayPerson();
 		
 		System.out.println("displaying employee info");
 		emp.displayPerson();
 		emp.displayEmp();
 	}
+	//displayPerson() method can be called by Person obj and Employee obj also.
 }

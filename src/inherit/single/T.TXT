@@ -1,17 +1,75 @@
 Inheritence:
-
+relationship between two classes.
+-> its a Is-a relation.
 -> there are two types of classes.
   
   a)Parent class/SUper class/Basse class
-  b) sub class/child class/derived class
+  b)sub class/child class/derived class
     
     
-Public properties and methods are inherited/available to child classes.
-
+Public properties and methods are inherited/available to child class from parene class.
+private, static are not eligible for inheritence.
+  
+  
 adv: 
 reusability
 
-synatx:
+syntax:
+
+
+Req:
+Person has id,name, age
+Employee has id, name, age, pan , pf
+
+
+Without Inheritence:
+
+public class Person {
+	  String name;
+	  int age;
+	  int id;
+}
+
+
+
+public class Employee {
+	  String name;
+	  int age;
+	  int id;
+  String pan;
+  String pf;
+
+  
+}
+
+
+
+
+With Inheritence:
+
+    
+public class Person {
+	  String name;
+	  int age;
+	  int id;
+}
+    
+
+
+
+public class Employee extends Person {
+  String pan;
+  String pf;
+
+  
+}
+
+
+
+Write Properties/Method in parent class and reuse for Parent class and child class.
+
+
+
 
 public class Person {
 	  String name;
@@ -37,7 +95,7 @@ public class Person {
 
 
 
-public class Employee extends Person{
+public class Employee extends Person{// Here Employee is the Child claas and Person is parent class
 
 	String pan;
 	String pfNo;

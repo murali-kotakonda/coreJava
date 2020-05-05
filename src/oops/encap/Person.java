@@ -1,7 +1,7 @@
 package oops.encap;
 
 public class Person {
-	// instance variables
+	// instance variables are private 
 	private int id;
 	private String name;
 	private int age;
