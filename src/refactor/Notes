@@ -3,6 +3,7 @@ Refactoring:
 without changing the observable behaviour.
 
 
+
 without refactor:
 -> productivity decreases.
 ->duplicated code accumulates
