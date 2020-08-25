@@ -5,7 +5,12 @@ public class TestHDFC {
 		// CREATE OBJ FOR ICICI
 		Hdfc h = new 	Hdfc();
 		h.createAccount();// from RBI
-		h.processLoan();  // FROM HDFC
+		h.processLoan();   // from hdfc
+		h.demat();
 	}
 }
 
+
+//when a method is called using the object
+//java will check in the same class
+//if not then java will check in the parent class

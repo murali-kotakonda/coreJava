@@ -9,6 +9,16 @@ public class Address {
 	private String country;
 	private String pin;
 	
+	public Address(String hno, String streetName, String city, String state, String country, String pin) {
+		super();
+		this.hno = hno;
+		this.streetName = streetName;
+		this.city = city;
+		this.state = state;
+		this.country = country;
+		this.pin = pin;
+	}
+
 	public void displayAddress(){
 		System.out.println(hno);
 		System.out.println(streetName);
@@ -17,6 +27,11 @@ public class Address {
 		System.out.println(country);
 		System.out.println(pin);
 	}
+	
+	
+	
+	
+	
 	public String getHno() {
 		return hno;
 	}

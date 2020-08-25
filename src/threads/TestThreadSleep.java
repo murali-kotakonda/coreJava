@@ -7,6 +7,7 @@ package threads;
 class TestThreadSleep {
 	public static void main(String[] args) {
 		System.out.println("main: start");
+		
 		Thread th1 = new MyThreadSleep();
 		th1.setName("my Thread1");
 		

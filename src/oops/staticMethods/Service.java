@@ -22,9 +22,9 @@ public class Service {
 
 	// static method
 	public static void m3() {
-		//System.out.println(v1); // access i.v., gives compilation
+		//System.out.println(v1); // access i.v.
 		System.out.println(v2); // access static variable
-		//m2(); // access i.m. gives compilation
+		//m2(); // access i.m.
 		m4(); // access s.m.
 	}
 

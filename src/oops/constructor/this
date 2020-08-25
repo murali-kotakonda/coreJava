@@ -1,0 +1,27 @@
+
+public class Person {
+	// instance variables
+	int id;
+	String name;
+	int age;
+	
+
+// param arg constructor [3 args]
+	public Person(int id, int age, String name) {// local variables
+		System.out.println("3 args constructr");
+		this.id = id; // local variable value assigning to the instance variable
+		this.age = age;
+		this.name = name;
+	}
+	
+}
+
+
+
+
+this keyword:
+-------------------
+this refers to the current object
+
+If the instance variables name and local variables names are same , then use this keyword to differeentiate.
+

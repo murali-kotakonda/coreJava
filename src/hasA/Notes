@@ -1,0 +1,29 @@
+
+1. Person has
+id, name , age , street , city , state , country , pin
+
+
+2. Student has 
+id , fname, lastname , sem , street , city , state , country , pin
+
+
+3.Employee has 
+id, fname , lname , pfno , ppfno  +
+3 addresses
+1.street , city , state , country , pin for permannet address
+2.street , city , state , country , pin for present address
+3.street , city , state , country , pin for ofice address
+
+
+
+
+
+Problm:
+-----------
+1.If we need add new property "landmark" for every address, we need to modify every class
+2.Employee class is complex due to many addresses 
+the class many instance variables
+
+solution:
+-> Create a seperate class for Address
+-> Use address obj as the instance variable for all the classes

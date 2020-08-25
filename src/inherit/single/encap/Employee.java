@@ -2,13 +2,13 @@ package inherit.single.encap;
 
 public class Employee extends Person{
 
-	String pan;
-	String pfNo;
+	private String pan;
+	private String pfNo;
 	
+	 
 	public String getPan() {
 		return pan;
 	}
-
 
 	public void setPan(String pan) {
 		this.pan = pan;
@@ -19,9 +19,11 @@ public class Employee extends Person{
 		return pfNo;
 	}
 
+
 	public void setPfNo(String pfNo) {
 		this.pfNo = pfNo;
 	}
+
 
 	public void displayEmp(){
 		System.out.println(pan);

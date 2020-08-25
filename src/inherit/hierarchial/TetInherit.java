@@ -2,26 +2,26 @@ package inherit.hierarchial;
 
 public class TetInherit {
 	public static void main(String[] args) { 
+		System.out.println("************Icici operations**************");
 		// CREATE OBJ FOR ICICI
-		Icici icici = new Icici();
-		icici.createAccount();
-		icici.processLoan(); 
-		icici.getKYC();
-		icici.createPPF();
+		Icici i = new Icici();
+		i.createAccount();
+		i.processLoan();
+		i.createPPF();
 		
-		
+		System.out.println("************SBI operations**************");
 		// CREATE OBJ FOR SBI
-		SBI sbi = new SBI();
-		sbi.createAccount();
-		sbi.processLoan();
-		sbi.getKYC();
-		sbi.createPPF();
+		SBI s = new SBI();
+		s.createAccount();
+		s.processLoan();
+		s.createPPF();
 		
-		// CREATE OBJ FOR HDFC
-		Hdfc hdfc = new Hdfc();
-		hdfc.createAccount();
-		hdfc.processLoan();
-		hdfc.getKYC();
-		hdfc.createPPF();
+		// CREATE OBJ FOR HDFC.
+		 System.out.println("************HDFC operations**************");
+		 Hdfc h = new Hdfc();
+			h.createAccount();
+			h.processLoan();
+			h.createPPF();
+		 
 	}
 }

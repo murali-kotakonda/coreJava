@@ -17,9 +17,28 @@ Class PersonDetails:
   id,name,age,pan
   
 Req: Create a obj and set data for id,name,age.
+
+
+
+
+
+
+
+
+
+
+
+
 solution:  delete any one of the two classes.
+ 
+ 
  Class Person:
     id,name,age,pan,aadhar
+
+
+
+
+
 
     
 Case#2:
@@ -39,12 +58,17 @@ If the vehicle comes to showroom then create obj for  Data and set values for ve
 If the customer comes to showroom then create obj for  Data and set values for custId  + custName + custMobile
 
 
+
+
+
+
 Problmes:
   1.This class has unrelated instance variables.
   2. Memory wastage
   3. future enhancement and class becomes complex.
   4.Ends up creating one more class
-  
+
+
 
 solutions:
   create seperate class for vechicle info
@@ -72,6 +96,8 @@ class Person{
     print("sum = " , (x+y))
    }
     
+}
+
 
 req: call sum funtion
   Person p = Person()
@@ -81,6 +107,7 @@ req: call sum funtion
 Problem:
   1.Class has unrelated method
   2.Memory waste
+
   
   solution:
     -> remove sum() futn from Person class
@@ -92,9 +119,3 @@ class Cal:
   p = Cal()
   p.sum(10,20)
           
-  
-    
-
-
-
-  

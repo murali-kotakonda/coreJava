@@ -4,7 +4,6 @@ package java8Features;
 	// It can have any number of default, static methods but can contain only one abstract method.
 	//	helps to achieve functional programming approach.
 
-
 	@FunctionalInterface
 	public interface FunctionalInterfaceEx {
 

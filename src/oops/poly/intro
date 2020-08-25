@@ -5,7 +5,7 @@ polymorphism:
   b) runtime polymorphism or method overriding    -->(inheritence)
 
 
-compiletime poly:
+compile time poly:
 -------------
 - also called as method overloading .
 
@@ -48,8 +48,12 @@ No of args:
 		return sum;
 	}
 
-add(  5,  6.45f )   -> 
-add(  10.78f , 7899) -> 
+add(5,6)   -> 
+add(10,20,30) -> 
+
+
+
+
 
 order of args:
 ---------------
@@ -61,9 +65,8 @@ public void add(int a, float b ) {
 		System.out.println(a + b);
 	}
 
-add(5,6)   -> 
-add(10,20,30) -> 
-
+add(  5,  6.45f )   -> 
+add(  10.78f , 7899) -> 
 
   
 datatype of args:
@@ -82,7 +85,7 @@ add(1313131L ,131313131L)
 add(14214124.5454f , 235353.343f)
 
 
-return-type is never considerede as method signature
+return-type is never considered  as method signature
  public long add(long a, long b ) {
 		long sum = a + b;
 		return sum;
@@ -92,9 +95,6 @@ return-type is never considerede as method signature
 		long sum = a + b;
 		return sum;
 	}
-
-
-
 
 
 

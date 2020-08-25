@@ -4,10 +4,16 @@ public class TetInherit {
 	public static void main(String[] args) {
 		// create obj for person
 		Person p = new Person();
+		//use the set methods for setting the data
 		p.setName("testUser2");
 		p.setAge(50);
 		p.setId(65556);
 
+		System.out.println("displaying person info");
+		System.out.println(p.getId());
+		System.out.println(p.getName());
+		System.out.println(p.getAge());
+		
 		
 		//create obj for employee
 		Employee emp = new Employee();
@@ -17,12 +23,6 @@ public class TetInherit {
 		emp.setId(12345);
 		emp.setPan("bnadh671a6");
 		emp.setPfNo("testPfNo");
-		
-		
-		System.out.println("displaying person info");
-		System.out.println(p.getId());
-		System.out.println(p.getName());
-		System.out.println(p.getAge());
 		
 		System.out.println("displaying employee info");
 		System.out.println(emp.getId());

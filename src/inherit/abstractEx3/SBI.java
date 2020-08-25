@@ -1,6 +1,6 @@
 package inherit.abstractEx3;
 
-public class SBI extends RBIBank{
+public class SBI extends RBI{
 
 	@Override
 	public void createPPF() {

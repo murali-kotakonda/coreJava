@@ -1,0 +1,92 @@
+OOPS:
+-------
+Object Oriented Programming
+
+-> Programming style
+-> ex: java, .net , python , php , groovy ,go , php , javascript , anagular js
+
+-> defines common, rules,  regulations, standards, guideliesn for writing modern code.
+
+-> class, object , enapsulation , abstraction , inheritence, polymorphism.
+
+# Class
+--------------------------
+ -> Userdefined datatype
+-> Class is used to represent the real time entities/structure/model.
+ex: Company, Branch , Dep, sub-dept, Project , Employee ,
+-> Class doesnt contain any data.
+-> class is created before run-time
+->class is a logical representation
+->class is a template
+
+
+-> Class is  block for instance varibles + functions
+    a)insatance variables to hold data for entity
+    b)funtion logic would operate on instance varibles
+
+
+ 
+syntax for a class:
+
+class Person{
+  
+	int id;
+	String name;
+	int age;
+// here id,name , age are instance variables.
+  
+	public void  show(){
+		syso("hello inside show")
+	}
+//show is a instance method.
+
+}
+	
+.......
+
+Object:
+---------
+# varible for the class
+# instance for the class
+# object is created during run time .
+# when obj is created memory is allocated for all instance variables.
+# object logical + physical representation
+
+#Syntax for obj creation
+p1 = Person()
+
+#Class will decide property names for all objs
+#Obj will decide property values..
+
+#Set data
+p1.id =30000
+p1.name ="user1"
+p1.age=45
+
+#display data
+print(p1.id)
+print(p1.name)
+print(p1.age)
+
+
+# global varibales ------> outside class   --> memory is alocatted 1 time
+# local varibales -------> inside function ---> memory is alocated every time
+
+# instance variables -----> inside class    ---> every time when obj is crated , access with obj
+# static/class varibles----> inside class ----> memory allocated 1 time  , access with class
+
+
+1.Requiremnet to capture id,name,age for 10 persons.
+solution:
+without oops we have to create 30 varibles
+without oops we have to create 10 varibles
+
+
+
+
+
+
+
+
+
+

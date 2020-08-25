@@ -1,21 +1,22 @@
 package inherit.abstractEx3;
 
-public class Icici extends RBIBank{
+/**
+ Icici has to override all 3 methods
+ */
+public class Icici extends RBI{
 
 	@Override
 	public void createPPF() {
-		System.out.println("ICICI: Createppf");
-
+		System.out.println("Icici : createPPF");
 	}
 
 	@Override
 	public void createAccount() {
-		System.out.println("ICICI: CREATE ACCOUNT");
+		System.out.println("Icici : createAccount");
 	}
 
 	@Override
 	public void getKYC() {
-		System.out.println("ICICI KYC");
+		System.out.println("Icici : getKYC");
 	}
-
 }

@@ -10,16 +10,21 @@ class Service{
   
 }
 
+
+
+
            	    v1(i.v)                  v2(s.v)                  m2()(i.m.)                      m4()(s.m)
 ---------------------------------------------------------------------------------------------------------------------------------
-m1()(i.m.)         Y                        Y                        Y                               Y
+m1() (i.m)         Y                        Y                        Y                               Y
 ---------------------------------------------------------------------------------------------------------------------------------
-m3()(s.m)          N                        Y                        N                               Y
+m3() (s.m)         N                        Y                        N                               Y
 ---------------------------------------------------------------------------------------------------------------------------------
   
                   
-static method can accees only static methods and static variables.
-                  
+static method can access only static methods and static variables.
+instanc method can access both instance and static variables.
+
+                
 
 
 

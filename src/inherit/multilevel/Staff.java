@@ -11,3 +11,6 @@ public class Staff extends Employee {
 	}
 	 
 }
+//how many instance varibles are in Staff ??
+//7 ( ID, NAME , AGE , PAN , PFNO, contractID, contractPeriod )
+

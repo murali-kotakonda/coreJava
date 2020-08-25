@@ -77,20 +77,25 @@ to operate on instance variable we need instance methods.
 to operate on static variables we need static methods.
 
 syntax:
-  public static void showCount(){
+    
+  syntax:
+   public class Data{
+   //static method
+    public static void showCount(){
 	  // some logic
 	}
+	
+	//instance method
+	
+	 public  void display(){
+	  // some logic
+	}
+   }
   
   instance methods -> set/read data for instance variables
   static  methods -> set/read data for static variables
   
-  
-  syntax:
-   public class Data{
-    public static void showCount(){
-	  // some logic
-	}
-   }
+
     
 
     Data.showCount();

@@ -6,5 +6,4 @@ public static void main(String[] args) {
 	Dao.updateCount(90); // add 90 to the static variable
 	Dao.showCount(); // prints 990
 }
-
 }

@@ -3,39 +3,23 @@ package inherit.override6;
 
 public class Employee extends Person {
 
+	//instance varibles
 	private String pan;
 	private String pfNo;
 
+	
+	//constr
 	public Employee(String name, int age, int id, String pan, String pfNo) {
-		super(name, age, id);
+		super(name, age, id); // call the parent constr from child const
 		this.pan = pan;
 		this.pfNo = pfNo;
 	}
-
+	
+	//instance method
 	public void display() {
-		super.display();
+		super.display();// call the display method of Person class
 		System.out.println(pan);
 		System.out.println(pfNo);
-	}
-
-	public Employee() {
-	}
-
-	public String getPan() {
-		super.display();
-		return pan;
-	}
-
-	public void setPan(String pan) {
-		this.pan = pan;
-	}
-
-	public String getPfNo() {
-		return pfNo;
-	}
-
-	public void setPfNo(String pfNo) {
-		this.pfNo = pfNo;
 	}
 
 }

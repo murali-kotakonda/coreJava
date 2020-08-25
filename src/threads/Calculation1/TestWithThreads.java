@@ -5,7 +5,13 @@ import java.util.Scanner;
 public class TestWithThreads {
 
 	/**
-	 * @param args
+	 take two nos as input and perform
+	 add
+	 mul
+	 sub
+	 div
+	 
+	 using threads
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

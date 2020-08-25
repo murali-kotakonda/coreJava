@@ -1,18 +1,19 @@
+
 Inheritence:
 relationship between two classes.
 -> its a Is-a relation.
 -> there are two types of classes.
   
-  a)Parent class/SUper class/Basse class
+  a)Parent class/Super class/Base class
   b)sub class/child class/derived class
     
     
-Public properties and methods are inherited/available to child class from parene class.
+Public properties and methods are inherited/available to child class from parent class.
 private, static are not eligible for inheritence.
   
   
-adv: 
-reusability
+advantage: 
+reusability of instance varibles and methods in multiple classes
 
 syntax:
 
@@ -45,9 +46,14 @@ public class Employee {
 
 
 
-With Inheritence:
+With inheritance:
+Person is parent
+Employee is child class
 
-    
+How to specify  the inheritance between Person and Employee??
+ public class Employee extends Person {
+ }
+   
 public class Person {
 	  String name;
 	  int age;
@@ -76,21 +82,17 @@ public class Person {
 	  int age;
 	  int id;
   
-  private int count;
   
   pubic void m1(){
     
   }
   
-  private void m3(){
-    
-  }
-  
-  public static void m4(){
-    
-  }
 }
 
+
+Eligible for inheritence:
+1.id,name, age 
+2. m1() 
 
 
 
@@ -108,11 +110,47 @@ public class Employee extends Person{// Here Employee is the Child claas and Per
 
     
 How many I.V are in Person : 3 
-How manyI.V are in Employee : 5 
+How many I.V are in Employee : 5 
   
 How many METHODS are in Person : 1 
 How many METHODS are in Employee : 2
   
   
+ Case#2:
+
+public class Person {
+	  String name;
+	  int age;
+	  int id;
   
+  private int count;
   
+  pubic void m1(){
+    
+  }
+  
+  private void m3(){
+    
+  }
+  
+  public static void m4(){
+    
+  }
+}
+
+
+Eligible for inheritence:
+1.id,name, age 
+2. m1() 
+
+  
+
+
+Types of inheritence:
+-----------------------
+1.Single
+2.Multi Level
+3.Hierarchial
+4.Multiple inheritence is not allowed n java
+
+

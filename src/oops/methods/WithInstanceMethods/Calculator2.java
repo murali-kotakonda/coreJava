@@ -1,5 +1,17 @@
 package oops.methods.WithInstanceMethods;
 
+/*
+1. create the obj
+2.call the methods using the obj and by passing the dataas args.
+data we need to pass for every method.
+
+
+Approach#1: Calculator2.java and TestCalculator2.java
+Approach#2: Calculator.java and TestCalculator.java
+
+
+* */
+
 public class Calculator2 {
 
 	public void sum(int n1, int n2) {

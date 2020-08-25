@@ -8,12 +8,11 @@ public class TetInherit {
 		p.age=50;
 		p.id = 65556;
 
-		System.out.println("displaying person info");
+		System.out.println("*************displaying person info**************");
 		p.displayPerson();
 		
 		
-		
-		
+
 		//create obj for employee
 		Employee emp = new Employee();
 		//set data for inherited props
@@ -23,9 +22,7 @@ public class TetInherit {
 		emp.pan = "bnadh671a6";
 		emp.pfNo="testPfNo";
 		
-		
-		
-		System.out.println("displaying employee info");
+		System.out.println("*************displaying Employee info**************");
 		emp.displayPerson();
 		emp.displayEmp();
 	}

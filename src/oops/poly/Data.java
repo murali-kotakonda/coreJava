@@ -1,6 +1,7 @@
 package oops.poly;
 
 public class Data {
+	
 	public void save(Person p){
 		System.out.println("save person");
 	}
@@ -9,4 +10,4 @@ public class Data {
 		System.out.println("save string");
 	}
 	
-	}
+}

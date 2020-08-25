@@ -1,7 +1,25 @@
 Constructor:
 -------------------
-When obj is created constr is called automatically.
-With constr we can set the data during obj creation.
+- constr we need to write inside the classs.
+- When obj is created constr is called automatically.
+- With constr we can set the data during obj creation.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
 class Person{
@@ -36,6 +54,7 @@ ex:
 
 1. create obj + set data
 
+
 points:
 ------------
 we need to write constr within the class.
@@ -45,10 +64,10 @@ We can have any number of constr in a single class -> constr overloading..
 A constr is called only one time for one obj..
 
 
-
-
 Adv:
   creat obj + set the data in single line.
+
+
 
 
 syntax:

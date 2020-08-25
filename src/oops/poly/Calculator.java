@@ -1,7 +1,8 @@
 package oops.poly;
 
 public class Calculator {
-
+	
+	// no of args
 	public int add(int a, int b) {
 		System.out.println("called add(int a, int b)");
 		int sum = a + b;
@@ -14,6 +15,7 @@ public class Calculator {
 		return sum;
 	}
 
+ 	//data type of args
  	public long add(long a, long b ) {
  		System.out.println("called add(long a, long b )");
 		long sum = a + b;
@@ -26,6 +28,7 @@ public class Calculator {
 		return sum;
 	}
 	
+	//order of args
 	public void add(int a, float b ) {
 		System.out.println("called add(int a, float b )");
 		System.out.println(a + b);
@@ -35,4 +38,6 @@ public class Calculator {
 		System.out.println("called add(float a, int b )");
 		System.out.println(a + b);
 	}
+	
+	
 }

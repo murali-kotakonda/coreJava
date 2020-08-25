@@ -3,6 +3,7 @@ package oops.methods.WithInstanceMethods;
 public class TestCalculator {
 	public static void main(String[] args) {
 		System.out.println("****c1 obj operations *****");
+		
 		// create object
 		Calculator c1 = new Calculator();
 
@@ -10,11 +11,13 @@ public class TestCalculator {
 		c1.n1 = 20;
 		c1.n2 = 10;
 
+		//call the methods using the object
 		c1.sum();
 		c1.sub();
 		c1.div();
 		c1.mul();
-
+		
+				
 		System.out.println("****c2 obj operations *****");
 		Calculator c2 = new Calculator();
 		c2.n1 = 200;
@@ -23,6 +26,14 @@ public class TestCalculator {
 		c2.sub();
 		c2.div();
 		c2.mul();
+		
+		
+		
+		
+		
+		
+		
+		
 
 		System.out.println("****c3 obj operations *****");
 		Calculator c3 = new Calculator();

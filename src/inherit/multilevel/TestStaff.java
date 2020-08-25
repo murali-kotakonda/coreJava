@@ -2,13 +2,16 @@ package inherit.multilevel;
 
 public class TestStaff {
 	public static void main(String[] args) {
-
+		
+		System.out.println("***************printing person info******************");
 		Person p = new Person();
 		p.name = "person1";
 		p.id = 123;
 		p.age = 21;
 		p.displayPerson();
 
+		
+		System.out.println("***************printing employee info******************");
 		Employee e = new Employee();
 		e.name = "emplyee1";
 		e.id = 23;
@@ -18,8 +21,9 @@ public class TestStaff {
 		e.displayPerson();
 		e.displayEmp();
 
+		
+		System.out.println("***************printing Staff info******************");
 		Staff sf = new Staff();
-		int id = 123;// sc.nextInt()
 		sf.id = 23;
 		sf.age = 29;
 		sf.name = "user1";

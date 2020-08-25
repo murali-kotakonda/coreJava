@@ -2,10 +2,9 @@ package threads.Calculation2;
 
 public class CalculatorThread extends Thread {
 
+	//instance variables
 	private String operation;
-
 	private int num1;
-
 	private int num2;
 	
 
@@ -27,5 +26,4 @@ public class CalculatorThread extends Thread {
 			System.out.println("div "+num1 / num2);
 		}
 	}
-
 }

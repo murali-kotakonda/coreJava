@@ -10,3 +10,6 @@ public class Employee extends Person {
 		System.out.println(pan);
 	}
  }
+
+// how many instance varibles are in Employee ??
+// 5 ( ID, NAME , AGE , PAN , PFNO)

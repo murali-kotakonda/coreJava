@@ -2,9 +2,14 @@ package inherit.override2;
 
 public class Icici extends RBIBank{
 
-	public void processLoan(){
-		super.processLoan();
-		System.out.println("Icici:: added 5000 as service charge.");
-		System.out.println("Icici:: documnet charges: 2000");
+	//overriding
+	public  void processLoan(){
+		super.processLoan(); // call the parent method from the child method
+		System.out.println("ICICI:: Additional charge of Rs.2000");
 	}
+	
+	// super is a keyword
+	// use super keyword only in child class
+	// use super when parent  methods and child methods have the same name.
+	
 }

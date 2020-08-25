@@ -5,7 +5,7 @@ public class MyThreadSleep extends Thread {
 	public void run() {
 		System.out.println("Thread stated:" + Thread.currentThread().getId() + " is running");
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(5000);// wait for 5 seconds
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

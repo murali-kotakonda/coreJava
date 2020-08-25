@@ -8,7 +8,7 @@ public class TetInherit {
 		System.out.println("Enter your sal bank:");
 		String salBank = sc.next();
 
-		RBIBank r = null;
+		RBI r = null;
 
 		if (salBank.equals("hdfc")) {
 			r = new Hdfc();

@@ -1,14 +1,23 @@
+special classes in inheritance:
+->abstract class
+->interface
+
+BOTH ARE PARENT CLASSES
+
 abstract class:
--> should be used only in inherience.
+-> should be used only in Inheritance.
 -> always a parent class.
 ->we cannot create object
+-> abstract class has  concrete methods  [ abstract methods and non-abstract methods ]
+ -> If a class has one abstract method then class has to be abstract class...
+->syntax for abstract class:
 
-has instance variables + constr 
-->syntax for abstract clasS:
 public abstract class RBI{
   
   
 }
+
+
 ->Abstract class has two types of methods:
    1. Non abstract methods  (method declaration + method body)
    public void display(){
@@ -17,7 +26,7 @@ public abstract class RBI{
    2. abstract methods (has only method declaration ; abstract method does not have any logic)
    public abstract void display1();
    
--> If a class has one abstract method then class has to be abstract class...
+
   
 --> create a class that extends the Abstract class [ only way to use abstract class]  
 -->  For a child class overriding is mandatory for the abstract methods, 
@@ -33,29 +42,31 @@ public class SBI extends RBI{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 Interface:
 -> should be used only in inherience.
 ->we cannot create object
 
 Interface = 100 % abstract class
-->Interafce has only abstract methods   and only public static final variables.
+->Interface has only abstract methods  
+and only public static final variables.
 -> No instance variables + constr 
 
 
-->syntax for interface clasS:
-public interface RBI{
-    
-  
-}
-
-
-Whats the only way to use interface?   
---> create a class that implements Interface    
--->  For a child class overriding is mandatory for the abstract methods,
-
-Interface:
------------
-
+->syntax for interface class:
+ 
 	public interface RBI {
     
      public static final int count =50;
@@ -63,9 +74,17 @@ Interface:
   	   public abstract void show();
   
    }
+   
 
-Extends --> normal class+ abstarct class
-implements --> interface  
+Whats the only way to use interface?   
+--> create a class that implements Interface    
+-->  For a child class overriding is mandatory for the abstract methods,
+
+ 
+
+
+Use Extends --> normal class+ abstarct class
+Use implements --> interface  
 
 child class for interface:
 public class SBI implements RBI {

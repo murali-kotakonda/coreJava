@@ -5,6 +5,8 @@ Abstraction:
 
 Ex:
 Class Vehicle{
+   
+    //instance variables
     wheel,
     engine
     fuel.
@@ -22,10 +24,20 @@ Class Vehicle{
 	}
   }
     
+   
+  
+    
+    
+    
+#call the instance method instead of changing/accessing it directly
+
+    
+    
 Req#1:To stop vehicle 
 solution) call the brake()
 
 brake() -> changing the values for the instance variable wheel + engine
+
 
 
 Req#2:speedup vehicle
@@ -34,9 +46,11 @@ solution) call accelarate() function.
 acclearate() - >changing the values for the instance variable wheel + engine using fuel..
 
 
+
 Req#3:see the fuel reading:
 solution) call the showFuelReading() function..
 shows the current state of the fuel
+
 
 
 conclution:
@@ -47,13 +61,52 @@ conclution:
 -> one action == one method
 
 
+
+
+
 changes in class:
   1. make instance variables as private
   2.expose the methods to set data and read data (setters & getters)
   for every instance variables provide setter and getter 
   
+  
+  
+  
+  
+1. make instance variables as private
+   
+public class Person {
+	// instance variables are private 
+	private int id;
+	private String name;
+	private int age;
+	private int sal;
+	
+  }
+  
+  
+  
+ 
+ 2.expose the methods to set data and read data (setters & getters)
+ 
+ ex:
+ 
+ public int getId() {
+		return id;
+}
+
+public void setId(int id) {
+		this.id = id;
+}
+	
+	
+	
+	
+	 
+  
     
-  Person p = new Person();
+ Person p = new Person();
+ 
 //set data directly
 p.id=9000;
 p.name="user1";
@@ -62,12 +115,3 @@ p.age=45;
 //for set data to object use the methods.
   
   
-  
-  
-  
-
-
-
-
-
-

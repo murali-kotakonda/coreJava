@@ -21,26 +21,31 @@ public static void main(String[] args) {
 	boolean check2 = input.startsWith("Hi");
 	System.out.println("String starting  with Hi:: "+check2);
 	
-	//replace
-	String old ="kumar";
-	String newStr ="shyam";
-	System.out.println("Replace all you with ::"+input.replaceAll(old, newStr));
-	System.out.println("replaceFirst  ::"+input.replaceFirst(old, newStr));
-	
+	System.out.println("to upper ::"+input.toUpperCase());
+	System.out.println("to Lower :: "+input.toLowerCase());
+
+
 	//compare two string by ingnoring the case ex:: comparing user name 
 	System.out.println("compare with equalsIgnoreCase  ::"+"india".equalsIgnoreCase(input));
 	
 	//compare  two string with exact match ex:: comparing password
 	System.out.println("compare with equals::"+"india".equals(input));
 
-	System.out.println("to upper ::"+input.toUpperCase());
-	System.out.println("to Lower :: "+input.toLowerCase());
-
-	String data =" dvdgdgdgd vsdgdgdg dgdgdgdg ";
+	
+	
+	//replace
+	String old ="kumar";
+	String newStr ="shyam";
+	input = "hello mkumar how are you kumar";
+	System.out.println("Replace all you with ::"+input.replaceAll(old, newStr));
+	System.out.println("replaceFirst  ::"+input.replaceFirst(old, newStr));
+	
+	String data ="          hello welcome to java world                ";
 	System.out.println("Before:--"+data+"--");
 	System.out.println("To Trim:--"+data.trim()+"--");
 
 	//substring
+	input = "Java is a program language";
 	System.out.println("sub string from 6 to 10:: "+input.substring(5, 10));
 	System.out.println("sub string from 6 to end:: "+input.substring(5));
 	
