@@ -2,7 +2,6 @@ package inherit.abstractEx1;
 
 public class Icici extends RBIBank{
 
-	@Override
 	public void createPPF() {
 		System.out.println("Icici : created ppf");
 	}

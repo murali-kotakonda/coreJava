@@ -56,7 +56,7 @@ public class SBI extends RBI{
 
 
 Interface:
--> should be used only in inherience.
+-> should be used only in inheritance.
 ->we cannot create object
 
 Interface = 100 % abstract class
@@ -76,23 +76,27 @@ and only public static final variables.
    }
    
 
+syntax for child class for a interface:
+public class SBI implements RBI {
+  //overriding the display() and show() are mandatory....
+  
+}
+
+
 Whats the only way to use interface?   
 --> create a class that implements Interface    
 -->  For a child class overriding is mandatory for the abstract methods,
 
  
 
-
+For a child class:
+---------------------------
 Use Extends --> normal class+ abstarct class
 Use implements --> interface  
 
-child class for interface:
-public class SBI implements RBI {
-  //overriding the display() and show() are mandatory....
-  
-}
 
-Interface supports multiple inhertence.
+
+Interface supports multiple inheritance.
   
 public interface RBI {
   		 public abstract void display();
@@ -112,7 +116,12 @@ public class SBI implements  RBI, WB  {
   //overriding the display() and show()  ppf() and draft()  are mandatory....
   
 }
-  
+ 
+SBI is the child class for RBI and WB.
+
+- One class can extend only one parent class , but it can implement multiple interfaces.
+
+
   
 
 

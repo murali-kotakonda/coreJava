@@ -9,7 +9,6 @@ package inherit.abstractEx1;
   HDFC is the child class for RBI.
   for HDFC overriding the abstract method is mandatory .  
   HDFC has to write createPPF()  method.
-  
       
  */
 public abstract class RBIBank {
@@ -24,7 +23,5 @@ public abstract class RBIBank {
 	}
 	
 	public abstract void createPPF() ;
-		
 }
-
 
