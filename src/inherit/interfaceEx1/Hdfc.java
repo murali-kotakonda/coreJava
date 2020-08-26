@@ -1,6 +1,6 @@
 package inherit.interfaceEx1;
 
-public class Hdfc implements RBIBank {
+public class Hdfc implements RBI {
 	public void createAccount() {
 		System.out.println("Hdfc:: createAccount");		
 	}

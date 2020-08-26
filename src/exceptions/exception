@@ -10,7 +10,7 @@ what happens when there is an exception:
 
 Why execption?:
 ----------------
-->Bad coding practises
+->Bad coding practices
 ->3rd party/ server/ hardware
 -> Missing testing the scenario
 -> edge case 
@@ -26,7 +26,7 @@ What is java role?
 ->Exception obj contains the exception msg + what are the class+method+line nos involved for exeption(stacktrace)
 ->Java stops the application flow..
 
-Exeception handling will be required when there is an exception...
+Exception handling will be required when there is an exception...
 Exception handling is what to do when there is an exception..
 
 

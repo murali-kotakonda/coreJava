@@ -2,11 +2,19 @@ package ds.collections.arrays;
 
 import java.util.Scanner;
 
-public class TestStringArrays0Declaration {
+/**
+ Create a string array of size 6 and perform
+ - Insert
+ - Read by position
+ - Read all
+ 
+ */
+public class TestString1 {
 	public static void main(String[] args) {
+		
 		String[] names = new String[6];
 
-		// insert the elements
+		// insert the elements from position 0 TO position 5
 		names[0] = "user1";
 		names[1] = "kumar";
 		names[2] = "ram";
@@ -14,7 +22,9 @@ public class TestStringArrays0Declaration {
 		names[4] = "rakul";
 		names[5] = "shyam";
 
-		// read elements
+		
+		//read by position
+		System.out.println("*********** Read by position ***************");
 		System.out.println(names[0]);
 		System.out.println(names[1]);
 		System.out.println(names[2]);
@@ -22,16 +32,10 @@ public class TestStringArrays0Declaration {
 		System.out.println(names[4]);
 		System.out.println(names[5]);
 
-		// read all for loop
-		System.out.println("Print ALL using for loop");
-		for (int i = 0; i < 5; i++) {
-			System.out.println(names[i]);
-		}
-
-		// read all enhances for loop
-		System.out.println("Print ALL using enhanced for  loop");
-		for (String p : names) {
-			System.out.println(p);
+		//Read all using enhanced for loop
+		System.out.println("*********** Read all elements ***************");
+		for(String d :  names) {
+			System.out.println(d);
 		}
 
 	}

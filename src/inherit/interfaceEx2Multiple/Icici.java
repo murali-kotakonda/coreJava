@@ -9,6 +9,4 @@ public class Icici implements RBIBank, WorldBank{
 	public void processLoan() {
 		System.out.println("ICICI: processLoan");
 	}
-	 
-	 
 }

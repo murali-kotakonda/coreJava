@@ -14,9 +14,14 @@ abstract class:
 
 public abstract class RBI{
   
-  
+  public void display(){
+   
+   }
+   
+   public abstract void display1();
 }
 
+The only way to use abstract class is by creating child class
 
 ->Abstract class has two types of methods:
    1. Non abstract methods  (method declaration + method body)
@@ -54,7 +59,6 @@ public class SBI extends RBI{
 
 
 
-
 Interface:
 -> should be used only in inheritance.
 ->we cannot create object
@@ -63,6 +67,10 @@ Interface = 100 % abstract class
 ->Interface has only abstract methods  
 and only public static final variables.
 -> No instance variables + constr 
+
+
+RBI : interface
+SBI : child class for RBI
 
 
 ->syntax for interface class:
@@ -97,7 +105,12 @@ Use implements --> interface
 
 
 Interface supports multiple inheritance.
-  
+ 
+ RBI : interface
+ WB : interface
+ SBI is the child class for RBI and WB.
+ 
+ 
 public interface RBI {
   		 public abstract void display();
   	   public abstract void show();
@@ -117,7 +130,7 @@ public class SBI implements  RBI, WB  {
   
 }
  
-SBI is the child class for RBI and WB.
+
 
 - One class can extend only one parent class , but it can implement multiple interfaces.
 

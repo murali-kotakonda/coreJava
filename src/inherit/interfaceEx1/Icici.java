@@ -1,7 +1,6 @@
 package inherit.interfaceEx1;
 
-public class Icici implements RBIBank{
-
+public class Icici implements RBI{
 
 	public void createAccount() {
 		System.out.println(rateOfIntrest);
@@ -10,14 +9,10 @@ public class Icici implements RBIBank{
 
 	public void getKYC() {
 		System.out.println("Icici:: getKYC");	
-		
 	}
 
 	public void createPPF() {
 		System.out.println("Icici:: createPPF");	
 	}
-	 
-
-	 
-	 
+	
 }

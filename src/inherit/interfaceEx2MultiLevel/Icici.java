@@ -9,6 +9,5 @@ public class Icici implements RBIBank{
 	public void processLoan() {
 		System.out.println("ICICI: processLoan");
 	}
-	 
-	 
+	
 }

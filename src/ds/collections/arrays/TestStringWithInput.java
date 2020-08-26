@@ -2,7 +2,7 @@ package ds.collections.arrays;
 
 import java.util.Scanner;
 
-public class TestStringArraysWithInput {
+public class TestStringWithInput {
 	public static void main(String[] args) {
 		// input n Strings and display it
 		//1. input size

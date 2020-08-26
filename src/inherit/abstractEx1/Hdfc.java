@@ -7,10 +7,7 @@ package inherit.abstractEx1;
  */
 public class Hdfc extends RBIBank{
 
-	@Override
 	public void createPPF() {
 		System.out.println("HDFC : createPPF completed");
 	}
-
-	 
 }

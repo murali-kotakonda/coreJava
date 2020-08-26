@@ -1,6 +1,6 @@
 package inherit.interfaceEx1;
 
-public class SBI implements RBIBank{
+public class SBI implements RBI{
 
 	public void createAccount() {
 		System.out.println(rateOfIntrest);

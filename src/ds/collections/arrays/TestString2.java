@@ -2,7 +2,7 @@ package ds.collections.arrays;
 
 import java.util.Scanner;
 
-public class TestStringArrays0 {
+public class TestString2 {
 	public static void main(String[] args) {
 		String[] names = { "user1",  "kumar",  "ram", "raj","rakul","shyam"};
 
