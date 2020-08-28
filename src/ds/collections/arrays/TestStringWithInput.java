@@ -21,7 +21,6 @@ public class TestStringWithInput {
 		}		
 		
 		System.out.println("Items in array are:");
-		
 		for(String p : names){
 			System.out.println(p);
 		}

@@ -2,7 +2,7 @@ package ds.collections.arrays;
 
 import java.util.Scanner;
 
-public class TestPersonsArray {
+public class TestPersonsWithInput {
 	public static void main(String[] args) {
 
 		// 1. input size

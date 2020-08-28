@@ -16,19 +16,20 @@ public class TestIntWithInput {
 		int size = sc.nextInt();
 
 		// 2. declare the array with size
-		int [] numbers = new int[size];
+		int[] nums = new int[size];
 		
 		// 3. input the numbers
-		for(int i=0; i< size ; i++) {
-			System.out.println("Enter number : "+  (i+1));
-			int num = sc.nextInt();
-			numbers[i] = num;
+		for(int i=0;i<size;i++) {
+			System.out.println("enter number : " + (i+1));
+			int n = sc.nextInt();
+			//store every data inside the array
+			nums[i] = n;
 		}
 
 		// display integers
 		System.out.println("**********print all elements****************");
-		for(int d : numbers) {
-			System.out.println(d);
+		for(int n : nums) {//n contains every element of array for every run
+			System.out.println(n);
 		}
 	}
 }

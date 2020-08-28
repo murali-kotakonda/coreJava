@@ -11,29 +11,29 @@ package ds.collections.arrays;
 public class TestInt {
 	public static void main(String[] args) {
 		
- 	int[] numbers = new int[5];// create int arrayof size 5
+	// create int array of size 5
+	int[] nums = new int[5];
 	
 	//Insert from position 0 TO position 4
-	numbers[0]=12;
-	numbers[1]=98;
-	numbers[2]=15;
-	numbers[3]=14;
-	numbers[4]=34;
-	
-	
-	//read by position
+	nums[0]=89;
+	nums[1]=1;
+	nums[2]=24;
+	nums[3]=47;
+	nums[4]=90;
+			
 	System.out.println("*********** Read by position ***************");
-	System.out.println(numbers[0]);  
-	System.out.println(numbers[1]);  
-	System.out.println(numbers[2]);  
-	System.out.println(numbers[3]);  
-	System.out.println(numbers[4]);  
+	//read by position
+	System.out.println(nums[0]);
+	System.out.println(nums[1]);
+	System.out.println(nums[2]);
+	System.out.println(nums[3]);
+	System.out.println(nums[4]);
 	
 	
 	//Read all using enhanced for loop
 	System.out.println("*********** Read all elements ***************");
-	for(int x : numbers) {
-		System.out.println(x);
+	for(int n : nums) {//n contains every element of array for every run
+		System.out.println(n);
 	}
 	
 }

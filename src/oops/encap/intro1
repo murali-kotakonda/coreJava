@@ -16,18 +16,9 @@ Class Person:
 Class PersonDetails:
   id,name,age,pan
   
-Req: Create a obj and set data for id,name,age.
-
-
-
-
-
-
-
-
-
-
-
+Req: 
+-Create a obj and set data for id,name,age.
+- add lastname for a person 
 
 solution:  delete any one of the two classes.
  
@@ -62,11 +53,11 @@ If the customer comes to showroom then create obj for  Data and set values for c
 
 
 
-Problmes:
+Problems:
   1.This class has unrelated instance variables.
   2. Memory wastage
   3. future enhancement and class becomes complex.
-  4.Ends up creating one more class
+  4.Ends up creating one more class or add more unrelated props 
 
 
 

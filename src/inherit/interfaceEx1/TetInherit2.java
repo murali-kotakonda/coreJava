@@ -5,8 +5,8 @@ public class TetInherit2 {
 		
 		RBI r =  new Icici();// create obj for child and refer by RBI
 		
-		r.createAccount();// icici
-		r.createPPF();// icici
-		r.getKYC();// icici
+		r.createAccount();  // Icici
+		r.createPPF();   // Icici
+		r.getKYC();      // Icici
 	}
 }

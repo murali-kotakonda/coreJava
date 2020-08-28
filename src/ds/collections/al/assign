@@ -3,13 +3,40 @@
 - merge two lists and keep in 3rd list in sorting order.
 
 
+
+Ex1: [arrays or arraylist/Vector/LinkedList]
+Take size as input
+take the numbers for size no of times
+store each number inside the ArrayList
+finally print all nums
+
+
+
+Ex2:[ arraylist/Vector/LinkedList ]
 dont take size
 enter the name 
-do you wish to continue
-if yes 
-ask for the next name
-do you wish to continue?
-If no print all the name
+store every name inside the arraylist
+if name value is "END" then stop taking the input
+finally print all names
+ 
+
+SAMPLE RUN:
+Enter names and type END to stop :
+Enter name :
+user1
+Enter name :
+kumar
+Enter name :
+shyam
+Enter name :
+END
+Entered NAMES ARE :
+user1
+kumar
+shyam
+
+
+
 
 
 
@@ -37,10 +64,6 @@ taking the names avoid the duplicates in arraylist
 
 
 
-take the size for the input
-take the numbers 
-after taking input 
-print it
 sort it in order
 
 

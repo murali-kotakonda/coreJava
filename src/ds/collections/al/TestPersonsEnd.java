@@ -1,10 +1,10 @@
-package ds.collections.arrayList;
+package ds.collections.al;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class TestPersonsArray {
+public class TestPersonsEnd {
 	public static void main(String[] args) {
 
 		List<Person> persons = new ArrayList<Person>();

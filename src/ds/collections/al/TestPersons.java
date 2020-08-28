@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class TestPersons0 {
+public class TestPersons {
 	public static void main(String[] args) {
 
 		List<Person> persons = new ArrayList<Person>();

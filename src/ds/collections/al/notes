@@ -1,6 +1,13 @@
-In list no need to specify size.
-List is dynamically growing ...
-
+Advantages:
+--------------------
+-> No need to specify the size
+-> we have inbuilt methods for the operations 
+-> List is dynamically growing ...
+-> List internally uses array
+-> Search by position is fast
+-> search by content is slow
+-> Insert in between and delete in between is slow
+-> delete an element is slow
 
 
 List (interface)
@@ -12,31 +19,45 @@ Child classes:
   -ArrayList
   -Vector
   -LinkedList
-  
-  
-List<String> names= new ArrayList<String>();   -> create arraylist for String
-List<String> names= new Vector<String>();     -> create Vector for String
-List<String> names= new LinkedList<String>(); -> create LinkedList for String
-
-List<Integer> nums= new ArrayList<Integer>();   -> create arraylist for Integer
-List<Integer> nums= new Vector<Integer>();     -> create Vector for Integer
-List<Integer> nums= new LinkedList<Integer>(); -> create LinkedList for Integer
 
 
-
-List<Float> nums= new ArrayList<Float>();   -> create arraylist for Float
-List<Float> nums= new Vector<Float>();     -> create Vector for Float
-List<Float> nums= new LinkedList<Float>(); -> create LinkedList for Float
-
-
-List<Person> persons= new ArrayList<Person>();   -> create arraylist for Person
-List<Person> persons= new Vector<Person>();     -> create Vector for Person
-List<Person> persons= new LinkedList<Person>(); -> create LinkedList for Person
+Raw List:
+------------------------
+List  names= new ArrayList();   // array list that stores and manages any datatype
+List  names= new Vector();   // Vector that stores and manages any datatype
+List  names= new LinkedList();   // LinkedList that stores and manages any datatype
 
 
-Method names: [ArrayList/Vector/Linkedlist]
+ArrayList:
+----------------------------
+-->List<String> names= new ArrayList<String>();  // array list that stores and manages only string
+-->List<Integer> names= new ArrayList<Integer>();  // array list that stores and manages only Integer
+-->List<Float> nums= new ArrayList<Float>();   // create arraylist for Float
+-->List<Person> persons= new ArrayList<Person>();   // create arraylist for Person
+
+
+Vector:
+-------------
+-->List<String> names= new Vector<String>();  // Vector that stores and manages only string
+-->List<Integer> names= new Vector<Integer>();  // Vector that stores and manages only Integer
+-->List<Float> nums= new Vector<Float>();   // create Vector for Float
+-->List<Person> persons= new Vector<Person>();   // create Vector for Person
+
+ 
+LinkedList:
+-------------
+-->List<String> names= new LinkedList<String>();  // LinkedList that stores and manages only string
+-->List<Integer> names= new LinkedList<Integer>();  // LinkedList that stores and manages only Integer
+-->List<Float> nums= new LinkedList<Float>();   // create LinkedList for Float
+-->List<Person> persons= new LinkedList<Person>();   // LinkedList Vector for Person
+
+
+
+Methods(Arraylist/vector/linkedlist): 
+-------------------------------------------
 
 List<String> names = new ArrayList<String>();
+
 
 // add new element
 names.add("user1");
@@ -44,30 +65,37 @@ names.add("user2");
 names.add("user4");
 
 
+// adds new element at 2nd position
+names.add(2, "user5");  
 
-names.add(2, "user5");  // adds new element at 2nd position
-
-names.clear(); // deletes all elements
-
-
-
-String data = names.get(1); // search by position . ex: gets the element at 2nd position.
-
-
-boolean found = names.contains("user4"); // returns boolean , search by content
-
-
-boolean content = names.isEmpty(); // returns boolean to check whether list is empty or not
-
-
-int count = names.size(); // to find size
-
-
-names.remove("user2"); // to remove element
+// deletes all elements
+names.clear(); 
 
 
 
+// search by position . ex: gets the element at 2nd position.
+String data = names.get(1);   
 
+
+ // search by content returns boolean , 
+boolean found = names.contains("user4");
+if(found) {
+			System.out.println("  available");
+}else {
+			System.out.println( " is not available");
+}
+
+
+// returns boolean to check whether list is empty or not
+boolean content = names.isEmpty(); 
+
+
+// to find size
+int count = names.size(); 
+
+
+// to remove element
+names.remove("user2"); 
 
 
 

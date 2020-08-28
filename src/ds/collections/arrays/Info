@@ -13,7 +13,7 @@ Map(HashMap + TreeMap + LinkedHashMap)
 java.util -> all the Collection classes.
   
 
-  Arrays:
+Arrays:
 -------
 -> Need to specify the size first 
 -> Arrays uses index/position based operations. 
@@ -36,11 +36,7 @@ String[] data = new String[6]; // string array with size of 6
 float[] nums = new float[10]; // float array with size of 10
  nums -> is the array
  
-4. Create array for string with size of 6
-String[] data = new String[6]; // string array with size of 6
- data -> is the array
- 
-5. Create array for person with size of 7
+4. Create array for person with size of 7
 Person[] persons = new Person[7]; // string array with size of 7
  persons  -> is the array
  

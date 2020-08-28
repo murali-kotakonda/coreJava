@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class TestPersonArrayList1 {
+public class TestPersonInput {
 	public static void main(String[] args) {
 		// 1. input size
 		Scanner sc = new Scanner(System.in);
