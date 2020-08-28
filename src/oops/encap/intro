@@ -53,7 +53,7 @@ shows the current state of the fuel
 
 
 
-conclution:
+conclusion:
 --------------
 -> Hide the instance variables and expose the methods.
 -> change the instance varibles/read the instance variables using the methods.

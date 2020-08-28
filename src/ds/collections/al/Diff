@@ -11,25 +11,50 @@ Vector vs ArrayList
 
 
 
+
 LinkedList vs ArrayList/Vector
 ---------------------------
 ->Arraylist/Vector interally uses arrays
-->LinkedList internally uses linked DS , every element contain data and ref of next data.
+->LinkedList internally uses linked DataStructure , every element contain data and reference of next data.
+  chain of data.
+  10 -> 20-> 30-> 40
   
-->  Search by position is fast for AL/Vector
--> Search by position is slow for Linkedlist
+-> Search by position is fast for AL/Vector
+-> Search by position is slow for Linkedlist , as it uses linear search 
+Req: list has 500 elements ,get element at 400 position
+AL/Vector : 1 search
+Linkedlist : 400 searches
 
+-> Search by content is slow for AL/Vector , as it uses linear search 
+-> Search by content is slow for Linkedlist , as it uses linear search 
+Req: list has 500 elements ,check if "delhi" exists  , and "delhi" is in 500 position
+AL/Vector : 500 search
+Linkedlist : 500 searches
 
 ->Insert in between/delete in between is slow for AL/Vector
--> Insert in between/delete in between is fast for Linkedlist
+->Insert in between/delete in between is fast for Linkedlist
+list.add(5, "kumar");  // fast in Linkedlist , but slow for AL/Vector.
 
 
--> Memory allocated and no of elements are not same in AL/Vector.  => Leads to memory wasted.
+->Memory allocated and no of elements are not same in AL/Vector.  => Leads to memory wasted.
+1.add 100 elements
+2.delete 50 elements
+==>memory: 100
+==>how many element:  50
+
 ->Memory allocated and no of elements are same in LinkedList.
+1.add 100 elements
+2.delete 50 elements
+==>memory: 50
+==>how many element:  50
   
+-> Allows duplicates for  AL/Vector
+-> Allows duplicates for  LinkedList
 
--> Can grow , but cannot decrease for AL/Vector
--> Can grow and can decrease for LinkedList
+-> AL/Vector : Can grow , but cannot decrease  size
+-> LinkedList : Can grow and can decrease for LinkedList
+
+
 
 
 common disadv:

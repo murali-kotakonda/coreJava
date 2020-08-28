@@ -1,14 +1,12 @@
 package ds.collections.arrays;
 
-import java.util.Scanner;
 
 /**
  * @author I335484
- - Req: store the person objs inside the array and display.
  
+ Req: store the person objs inside the array and display.
  array will have multiple objs.
  and every obj will has id,name
- 
  
  */
 public class TestPersons {

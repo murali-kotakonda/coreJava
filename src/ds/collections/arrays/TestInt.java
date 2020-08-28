@@ -5,8 +5,6 @@ package ds.collections.arrays;
  - Insert
  - Read by position
  - Read all
- 
- *
  */
 public class TestInt {
 	public static void main(String[] args) {
@@ -32,7 +30,7 @@ public class TestInt {
 	
 	//Read all using enhanced for loop
 	System.out.println("*********** Read all elements ***************");
-	for(int n : nums) {//n contains every element of array for every run
+	for( int n : nums) {
 		System.out.println(n);
 	}
 	

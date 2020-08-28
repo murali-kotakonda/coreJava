@@ -2,7 +2,6 @@ package ds.collections.al;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class TestPersons {
 	public static void main(String[] args) {

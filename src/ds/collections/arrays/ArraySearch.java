@@ -26,6 +26,10 @@ import java.util.Scanner;
    1 [ search by position is fast ] 
   
   
+ search by content.
+ check if  the given element is available in the array or not.
+ 
+ 
  */
 public class ArraySearch {
 	public static void main(String[] args) {
@@ -38,18 +42,19 @@ public class ArraySearch {
 		String search = sc.next();
 		
 		//compare input with every element inside the array
-		boolean found= false;
-		for(String name:names) {
-			if(search.equals(name)) {
+		boolean found = false;
+		
+		for( String name: names) {
+			if(search .equals(name)) {
 				found = true;
 				break;
 			}
 		}
 		
 		if(found) {
-			System.out.println(search +" is available");
+			System.out.println(search + " is   available .");
 		}else {
-			System.out.println(search +" is not available");
+			System.out.println(search + " is  not available. ");
 		}
 		
 	}
