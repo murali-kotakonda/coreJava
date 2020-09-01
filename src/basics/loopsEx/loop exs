@@ -9,7 +9,9 @@ O/p :
 1 2 3 4 5
 
 
-
+2.
+Input = 5
+O/p :
 1
 22
 333
@@ -18,7 +20,7 @@ O/p :
 
 
 
-2.Input : 5
+3.Input : 5
 o/p:
 5
 5 4
@@ -26,7 +28,7 @@ o/p:
 5 4 3 2
 5 4 3 2 1
 
-3. Take inputL 10
+4. Take inputL 10
 print numbers from 1 to 10
 print all evens from 1 to 10
 print all odd from 2 to 10
@@ -34,15 +36,17 @@ Find the factorial of 5
 sum of nums till 10
 Print multiplication table
 
-4. Input hw many nums and what are the nums:
+5. Input hw many nums and what are the nums:
 and print sum , big , small nums
 
-5.Help teacher to find first rank for input
-student name + sub1 + sub2 + sub3
-How many students  = size
+6.Help teacher to find first rank for input
+Take input for no of students
+For every student  take input for name + sub1 + sub2 + sub3
+
+print the student name who got first rank
 
 
-6.input 3:
+7.input 3:
 
 O/p:
 1 2 3

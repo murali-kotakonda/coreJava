@@ -35,5 +35,15 @@ public class Test5 {
 	    	 String text = "  i   b     love   tea   d   ";
 	        int n = WordCount3(text);
 	        System.out.println(n);
+	        
 	    }
 	}
+//Program to print the number of words in a given sentence
+
+//Program to print the following in he given sentence
+//-> No of digits
+//-> No of Alphabets/spl chars
+//Hint use : Character.isAlphabetic(codePoint) & Character.isDigit(ch)
+
+
+

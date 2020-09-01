@@ -1,12 +1,11 @@
-package ds.collections.HashSetEx;
+package ds.collections.hashseteX2;
 
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-import ds.collections.arrayList.Person;
 
-public class TestPersonHashset {
+public class TestPersonEnd {
 	public static void main(String[] args) {
 		Set<Person> persons = new HashSet<Person>();
 		Scanner sc = new Scanner(System.in);

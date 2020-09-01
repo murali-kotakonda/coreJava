@@ -1,6 +1,12 @@
 package basics.StrEx;
 
-public class TestStr {
+/**
+  There are two ways for string variable creation.
+  String t1= "user1";
+  String t6= new String("user1");
+  
+ */
+public class TestStr4 {
 public static void main(String[] args) {
 	String t1= "user1";
 	String t2= "user1";
@@ -14,10 +20,7 @@ public static void main(String[] args) {
 	String t9= new String("user1");
 	String t10= new String("user1");
 	
-	if(t1.equals(t2)){
-		System.out.println("strings are equal");
-	}else{
-		System.out.println("strings are not equal");
-	}
+	//How many memory locations are allocated?
+	//6
 }
 }

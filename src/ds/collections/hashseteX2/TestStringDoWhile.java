@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class TestTreeSetString6 {
+public class TestStringDoWhile {
 	public static void main(String[] args) {
 		//1. input size
 		Scanner  sc = new Scanner(System.in);

@@ -1,9 +1,9 @@
 package basics.StrEx;
 
-public class TestStrPooling {
+public class TestStr2 {
 	public static void main(String[] args) {
-		String text1 = new String("user1");
-		String text2 = new String("user1");
+		String text1 =  "user1" ;// new memory is allocated
+		String text2 =  "user1" ;// no new memory is allocated; uses existing memory
 
 		if (text1 == text2) {
 			System.out.println("text1, text2 String address are same");
@@ -11,6 +11,22 @@ public class TestStrPooling {
 			System.out.println("text1, text2 String address are diff");
 		}
 
+	}
+}
+//How many memory locations are allocated
+// 1
+
+
+
+
+
+
+
+
+
+
+/*
+ 
 		String text3 = "user2";
 		String text4 = "user2";
 
@@ -29,5 +45,7 @@ public class TestStrPooling {
 		}else {
 			System.out.println("text5, text6 String content are diff");
 		}
-	}
-}
+  
+  
+ * */
+  

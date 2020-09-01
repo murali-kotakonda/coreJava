@@ -3,7 +3,7 @@ package ds.collections.hashseteX2;
 import java.util.HashSet;
 import java.util.Set;
 
-public class TestHashSetPerson2 {
+public class TestInterview1 {
 	public static void main(String[] args) {
 		Set<Person> persons = new HashSet<Person>();
 
@@ -13,6 +13,7 @@ public class TestHashSetPerson2 {
 		Person p2 = new Person(123, "user5", 45);
 		
 		System.out.println(persons.contains(p1));
-		System.out.println(persons.contains(p2));
+		System.out.println(persons.contains(p2)); //returns true p2 is a duplicate of p1,
+		
 	}
 }

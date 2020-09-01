@@ -10,7 +10,20 @@ relationship between two classes.
     
 Public properties and methods are inherited/available to child class from parent class.
 private, static are not eligible for inheritence.
-  
+
+
+ Ex:
+ 1.Parent class : Loan
+ Child classes: Vehicleloan, marriageLoan, personalLoan
+
+ 2.Parent class : Account
+ Child classes: CurrentAccount , LoanAccount ,CreditCardAccount
+ 
+ 3.Parent class : Card
+ Child classes: CreditCard , DebitCard , VirtalCard
+ 
+ 
+   
   
 advantage: 
 reusability of instance varibles and methods in multiple classes

@@ -1,12 +1,7 @@
 package ds.collections.hashseteX2;
 
-import java.util.HashSet;
-import java.util.Set;
-
-public class TestHashSetPerson3 {
+public class TestInterview2 {
 	public static void main(String[] args) {
-		Set<Person> persons = new HashSet<>();
-
 		Person p1 = new Person(123, "user5", 45);
 
 		Person p2 = new Person(123, "user5", 45);
@@ -18,5 +13,7 @@ public class TestHashSetPerson3 {
 		System.out.println(p3.hashCode());
 	}
 }
+//If two objs are equal then their hashcode will also be same.
+
 
 

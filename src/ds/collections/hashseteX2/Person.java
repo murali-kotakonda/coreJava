@@ -1,22 +1,12 @@
 package ds.collections.hashseteX2;
 
 public class Person {
+	// INSTANCE variables
 	private String name;
 	private int age;
 	private int id;
 
-	public Person(String name, int id) {
-		super();
-		this.name = name;
-		this.id = id;
-	}
-
-	public Person() {
-		super();
-	}
-
-	private float sal;
-
+	//constr
 	public Person(int id ,String name, int age ) {
 		this.name = name;
 		this.age = age;
@@ -47,18 +37,16 @@ public class Person {
 		this.id = id;
 	}
 
-	public float getSal() {
-		return sal;
-	}
+	 
+	//setters and getters
+	
+	
+	//private float sal;
 
-	public void setSal(float sal) {
-		this.sal = sal;
-	}
-
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", id=" + id
-				+ ", sal=" + sal + "]";
+	public Person(String name, int id) {
+		super();
+		this.name = name;
+		this.id = id;
 	}
 
 	@Override
@@ -92,6 +80,8 @@ public class Person {
 		return true;
 	}
 
-	
- 
+	public Person() {
+		super();
+	}
+
 }

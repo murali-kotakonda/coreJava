@@ -1,11 +1,19 @@
 OOPS:
 -------
 Object Oriented Programming
+->Programming style that defines the common rules , regulations,standards , guidelines for writing better programming
 
 -> Programming style
 -> ex: java, .net , python , php , groovy ,go , php , javascript , anagular js
 
--> defines common, rules,  regulations, standards, guideliesn for writing modern code.
+Adv:
+--------
+Modularity
+Easy to read and write
+Avoids complexity
+code Maintainance
+future enhancements.
+
 
 -> class, object , enapsulation , abstraction , inheritence, polymorphism.
 
