@@ -59,7 +59,7 @@ Methods(Arraylist/vector/linkedlist):
 List<String> names = new ArrayList<String>();
 
 
-// add new element
+// add new element use add() method
 names.add("user1");
 names.add("user2");
 names.add("user4");

@@ -4,7 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 	
-public class TestStringEnd {
+/**
+ 
+avoid duplicates:
+1. check if the name exists   
+	 use names.contains(name) 
+2.if name doesnt exist then add the name
+
+if(!names.contains(name)) {
+				names.add(name); // add to the arraylist
+	}
+
+
+ */
+public class TestStringEndAvoidDuplicates {
 	public static void main(String[] args) {
 		List<String> names = new ArrayList<String>();
 		Scanner sc = new Scanner(System.in);
@@ -19,7 +32,10 @@ public class TestStringEnd {
 			if ("END".equals(name)) {
 				break;  // exit from loop
 			}
-			names.add(name); // add to the arraylist
+			
+			if(!names.contains(name)) {
+				names.add(name); // add to the arraylist
+			}
 		}
 		
 		System.out.println("Entered NAMES ARE :");

@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-public class TestAllMaps {
+public class TestMap2 {
 	public static void main(String[] args) {
 		System.out.println("************** HASHMAP ********************");
 		

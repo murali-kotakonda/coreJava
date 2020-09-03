@@ -22,6 +22,37 @@ ex: division of two nums:
 if the second num is zeo then throw the exception
 
 
+throws keyword:
+---------------------
+- throws we need write at the method declaration.
+- the method is not reponsible for handling the exception
+
+
+syntax for  throws:
+-------------------------------
+ex1:
+public void m4() throws SQLException{
+
+<some logic here>
+
+}
+m4 method will not hadnle the SQLException
+m4 method will not write the try + catch block for SQLException
+
+
+
+
+ex2:
+public void show() throws FileException ,IOException{
+
+<some logic here>
+
+}
+show method will not handle the FileException ,IOException 
+show method will not write the try + catch block for FileException ,IOException 
+
+
+
 
 Requirement:
 ----------------
@@ -30,6 +61,28 @@ Requirement:
 main() calls m2()
 m2() calls m3()
 m3() calls m4()
+
+
+
+vaidation logic is in m4() 
+if validation is failed in m4() ----> only code that should execute is to give message to customer
+if validation fails <some code4> , <some code6> should not execute.....
+
+solutions:
+in m4() -> create exception obj using throw 
+in main() -> write try + catch 
+
+
+when exception is created the only code to execute is catch() block , and catch block is in main method..
+m4() , m3() , m2()  should not handle exception , they have to rethrow the exception to the caller..
+m4() + m3() + m2()  =====> write throws keyword at method declaration
+
+
+code in m4() to throw exception:
+----------------------------------
+SQLException ex = new SQLException("num2 cannot be 0");
+throw ex;
+
 
 
 main()
@@ -59,62 +112,16 @@ m3() throws SQLException
 m4() throws SQLException
 {
   <some code to validate emp deatils>
+  SQLException ex = new SQLException("num2 cannot be 0");
+	throw ex;
    
 }
-
-vaidation logic is in m4() 
-if validation is failed in m4() ----> only code that should execute is to give message to customer
-if validation fails <some code4> , <some code6> should not execute.....
-
-solutions:
-in m4() -> throw exception 
-in main() -> write try + catch 
-
-
-when exception is created the only code to execute is catch() block , and catch block is in main method..
-
-m4() , m3() , m2()  should not handle exception , they have to rethrow the exception to the caller..
-
-m4() + m3() + m2()  =====> write throws keyword 
-
-
-code in m4() to throw exception:
-----------------------------------
-SQLException ex = new SQLException("num2 cannot be 0");
-throw ex;
-
-
-throws keyword:
----------------------
-throws we need write at the method declaration.
-the method is not reponsible for the exception
-ex:
-m3() throws SQLException, IOException
-{
-  <some code5>
-   m4()
-   <some code6 save emp deatils>
-}
-
-m3() method will not have try + catch block only for  SQLException, IOException
-m3() method is not responsible for handling SQLException, IOException
-
 
 
 
 summmary:
 ------------
   1.create exception in m4() using throw keyword
-  2.m2, m3, ,m4() will  not handle exceptio , write throws keyword at method declaratn
+  2.m2, m3, ,m4() will  not handle exception , write throws keyword at method declaration
   3.main() write try catch
   
-  
-throw:
-to create new exception
-throw logic write in method body.
-
-
-throws:
-specify method will  not handle exception
-throw logic write in method declaration.
-

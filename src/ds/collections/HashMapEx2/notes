@@ -1,13 +1,15 @@
 /*
  Map:
   every entry contains two elements Key and Value
-  key any dt , value any dt
+    key can be any datatype
+   , value can be any datatype.
+    
   
-  -map is is interface
-  
+  -Map A is interface
+  //In Map Key is always unique; duplicate keys are not allowed.
   child classes:
   
-  HashMap   :- adds in random order
+	HashMap   :- adds entries  in random order; Insertion  order is not maintained.
   TreeMap   :-  adds in sorting order of key
   LinkedHashMap :-adds elements in insertion order
     
@@ -28,21 +30,71 @@
     Map<String, Person> map = new HashMap<>();
   
   
-    Create map with with key as Department and value as Person:-
-      ------------------------------------------------
-    Map<Department, Person> map = new HashMap<>();
+ - Map   is A interface
+  
+  child classes:
+  ------------------------------------------
+  HashMap   :- adds in random order
+  TreeMap   :-  adds in sorting order of key
+  LinkedHashMap :-adds elements in insertion order
+  
+  Map:
+  every entry contains two elements  1.Key and 2.Value 
+  
+    key can be any datatype
+    , value can be any datatype.
+    
+    
+ HashMap:
+ --------------------
+  Map<String, String> map = new HashMap<>(); // key as String and value as String:-
+  Map<Integer, String> map = new HashMap<>(); // key as Integer and value as String:- 
+  Map<String, Person> map = new HashMap<>();// key as String and value as Person obj
+  Map<Department, Person> map = new HashMap<>();  // Create map with with key as Department obj and value as Person obj:-
+  
+   LinkedHashMap:
+ --------------------
+  Map<String, String> map = new LinkedHashMap<>(); // key as String and value as String:-
+  Map<Integer, String> map = new LinkedHashMap<>(); // key as Integer and value as String:- 
+  Map<String, Person> map = new LinkedHashMap<>();// key as String and value as Person obj
+  Map<Department, Person> map = new LinkedHashMap<>();  // Create map with with key as Department obj and value as Person obj:-
+  
+   TreeMap:
+ --------------------
+  Map<String, String> map = new TreeMap<>(); // key as String and value as String:-
+  Map<Integer, String> map = new TreeMap<>(); // key as Integer and value as String:- 
+  Map<String, Person> map = new TreeMap<>();// key as String and value as Person obj
+  Map<Department, Person> map = new TreeMap<>();  // Create map with with key as Department obj and value as Person obj:-
   
   
+
   methods:
-      Map<String, String> map = new HashMap<>();
-       map.put("133", "user7"); //key as 133 and value as user7
+     Map<String, String> map = new HashMap<>();
+    
+    // add new entry
+     map.put("133", "user7"); //key as 133 and value as user7
+     
+     // get by value based on the key 
 	   String d= map.get("133"); // i/p is a key and return is a value...returns "user7"
+     
+     // check if the key exist
 	   boolean x= map.containsKey("133"); // returns boolean
-    	map.remove("133"); // removes key + value
+     
+    //remove the entry using key 
+    map.remove("133"); // removes key + value
       
+     //remove all elements 
 		map.clear();// removes all keys + values
+    
+    //check if map is empty
 		map.isEmpty(); //retunns boolean , 
+    
+    //get the no of entries in map
 		map.size() // return int size
+    
+    //get all entries 
+    //every entry has key + value
 		map.entrySet(); returns all keys + values
+  
   
  */

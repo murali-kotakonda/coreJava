@@ -3,19 +3,39 @@ package exceptions;
 import java.util.Scanner;
 /*
  
- write commmon exception handling for
-ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException   ==> client error
+write common exception handling for
+ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException   ==> print "client error"
 
-and write global exception  ==========> server error
+and write global exception  ==========> print "server error"   
+
+
+write common exception handling for
+
+1.ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException   ==> print "client error"
+solution:
+ catch (ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException ex) { //
+			//common exception handling for dividebyzero/Nullpointer/arrayindex
+			System.out.println("client error :" + ex.getMessage());
+		}
+
+
+2.write global exception  ==========> print "server error"   
+solution:
+catch (Exception ex) {// for any exception 
+			//global exception handling 
+			System.out.println("server error" + ex.getMessage());
+} 
+    
+    
+
+
 
 
 * 
  */
-public class TestException225 {
+public class TestMultiAndGenericException {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 		String name = "";
-		System.out.println("enter two numbers");
 		int num1 = 20;
 		int num2 = 1;
 		int nums[] = new int[5];

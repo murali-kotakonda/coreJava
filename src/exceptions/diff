@@ -1,0 +1,9 @@
+
+throw:
+to create new exception
+throw logic write in method body.
+
+
+throws:
+To specify method  not  to handle exception
+throws logic write in method declaration.

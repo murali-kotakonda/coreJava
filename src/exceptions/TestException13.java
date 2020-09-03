@@ -8,7 +8,7 @@ public class TestException13 {
 		} 
 		catch (NullPointerException ex) {
 			// ex.printStackTrace();
-			System.out.println("obj is null:"
+			System.out.println("obj is null: please create obj"
 					+ ex.getMessage());
 		} 
 		finally {

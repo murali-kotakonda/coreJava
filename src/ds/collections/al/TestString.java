@@ -1,20 +1,15 @@
 package ds.collections.al;
 
 
-/**
-  Req: create ArrayList for String.
-       store strings inside the ArrayList.
-       print the ArrayList
- */
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 
 public class TestString {
 	public static void main(String[] args) {
 			
-			//1.Create arraylist for String
-			List<String> names = new ArrayList<String>();
+			//1.Create Vector for String
+			List<String> names = new LinkedList<String>();
 			
 			// 2. add names
 			names.add("kumar");
@@ -25,7 +20,7 @@ public class TestString {
 			
 			//3. display names:
 			System.out.println("******print all names**********");
-			for(String n: names) {
+			for(String n : names) {
 				System.out.println(n);
 			}
 		}

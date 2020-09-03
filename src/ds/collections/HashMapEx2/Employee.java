@@ -44,6 +44,14 @@ public class Employee {
 		this.id = id;
 	}
 
+	public String getPan() {
+		return pan;
+	}
+
+	public void setPan(String pan) {
+		this.pan = pan;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -78,5 +86,4 @@ public class Employee {
 		return true;
 	}
 
-	 
 }

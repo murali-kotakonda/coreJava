@@ -1,10 +1,14 @@
 package ds.collections.al;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ - size as input
+ - add names till size no of times
+ - print all names
+ */
 public class TestStringInput {
 	public static void main(String[] args) {
 		//1. input size
@@ -12,22 +16,18 @@ public class TestStringInput {
 		
 		//2. create string array
 		List<String> names = new ArrayList<String> ();
-		//input name for size number of times
-		String inputCh = null;
 		
-		do{
-			System.out.println("Enter name:");
-			String name = sc.next();
-			names.add(name);
-			
-			System.out.println("DO you want to contiue(yes/no??");
-			inputCh = sc.next();
-		}while(inputCh.equalsIgnoreCase("yes"));
-
+		System.out.println("Enter size::");
+		int size = sc.nextInt();
+		
+		for(int i=1;i<=size;i++) {
+			System.out.println("Enter name :"+ i);
+			String name= sc.next(); // take name as input
+			names.add(name); // add to the arraylist
+		}
 		
 		//display names:
 		System.out.println("Entered names are::");
-		
 		for(String name: names){
 			System.out.println(name);
 		}
