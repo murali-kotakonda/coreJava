@@ -2,6 +2,21 @@ package exception.custom;
 
 import java.util.Scanner;
 
+/**
+  main() ---> validateAndSave()
+  
+  validateAndSave() --->validate()  
+  
+  validate() ---> register() -->
+  
+  
+  validate():   create the exception obj using throw for BusinessException
+  main()   : write execption handling using try + catch 
+  validateAndSave() -> declare throws.
+  
+  when exception is created then only the catch block is executed.
+  
+ */
 public class TestRegistration {
 
 	public static void main(String[] args) {
@@ -40,7 +55,7 @@ public class TestRegistration {
 		validate(person);
 		System.out.println("peson data processed"+person);
 		
-		register(person);
+		
 	}
 	
 	private static void validate(Person person)
@@ -67,7 +82,7 @@ public class TestRegistration {
 			BusinessException ex = new BusinessException("ERRO4","name is invalid");
 			throw ex;
 		}
-
+		register(person);
 
 	}
 

@@ -31,14 +31,15 @@ public class TestPassByValue {
 	
 	/*
 	  int x= 90;
-	  System.out.println(x);
+	  System.out.println(x); 
 	  
-	  int y =x;
-	  System.out.println(y);
-	  
-	  y =45;
+	  int num =x;
+	  System.out.println(num);
+	  num =45;
+	  System.out.println(num);
+	   
 	  System.out.println(x);
-	  System.out.println(y);
+	 
 	  
 	 */
 }

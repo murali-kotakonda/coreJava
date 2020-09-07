@@ -1,5 +1,13 @@
 package oops.methodEx2;
 
+/**
+ 
+  Req:
+  create 3 person objs
+  set data
+  display data
+
+ */
 public class TestPerson1 {
 	public static void main(String[] args) {
 		// create obj

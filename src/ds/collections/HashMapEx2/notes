@@ -1,34 +1,5 @@
 /*
- Map:
-  every entry contains two elements Key and Value
-    key can be any datatype
-   , value can be any datatype.
     
-  
-  -Map A is interface
-  //In Map Key is always unique; duplicate keys are not allowed.
-  child classes:
-  
-	HashMap   :- adds entries  in random order; Insertion  order is not maintained.
-  TreeMap   :-  adds in sorting order of key
-  LinkedHashMap :-adds elements in insertion order
-    
-    
-    Create map with with key as String ad value as String:-
-      ------------------------------------------------
-    Map<String, String> map = new HashMap<>();
-    Map<String, String> map = new TreeMap<>();
-    Map<String, String> map = new LinkedHashMap<>();
-  
-  
-  Create map with with key as Interegr and value as String:-
-      ------------------------------------------------
-    Map<Integer, String> map = new HashMap<>();
-  
-  Create map with with key as String and value as Person:-
-      ------------------------------------------------
-    Map<String, Person> map = new HashMap<>();
-  
   
  - Map   is A interface
   
@@ -44,7 +15,9 @@
     key can be any datatype
     , value can be any datatype.
     
-    
+   //In Map Key is always unique; duplicate keys are not allowed.
+ 
+   
  HashMap:
  --------------------
   Map<String, String> map = new HashMap<>(); // key as String and value as String:-
@@ -92,6 +65,14 @@
     //get the no of entries in map
 		map.size() // return int size
     
+    
+    //get only keys
+    map.keySet()
+    
+    //get only values
+    map.values()
+    
+    //get both keys + values
     //get all entries 
     //every entry has key + value
 		map.entrySet(); returns all keys + values

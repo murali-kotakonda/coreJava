@@ -4,6 +4,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
+/**
+  Requirement:
+  Create map with string as key , string as value.
+  
+ */
 public class TestMap1 {
 	public static void main(String[] args) {
 		System.out.println("************** TreeMap ********************");

@@ -10,9 +10,10 @@ public enum ColorType {
 	BROWN;
 	
 	public static boolean isValidColor(String input) {
-		ColorType[] objs = ColorType.values();
+		ColorType[] objs = ColorType.values();// get all objs
+	
 		boolean found= false;
-		for(ColorType obj :objs) {
+		for(ColorType obj :objs) { // compare input with each color
 			if(input.equals(obj.toString())) {
 				found= true;
 				break;

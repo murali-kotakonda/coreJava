@@ -4,11 +4,6 @@ public class TestCopy {
 
 	public static void main(String[] args) {
 		
-		int x = 20;
-		int y =x; // copy value of x to y
-		y=35;
-		System.out.println(x);
-		System.out.println(y);
 		
 		
 		Person p = new Person();

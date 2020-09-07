@@ -37,9 +37,7 @@ public class Person {
 		this.id = id;
 	}
 
-	 
 	//setters and getters
-	
 	
 	//private float sal;
 
@@ -83,5 +81,4 @@ public class Person {
 	public Person() {
 		super();
 	}
-
 }

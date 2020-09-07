@@ -1,0 +1,7 @@
+local variable:
+--------------------------
+local variables are created inside method
+memory is alocatd in stack
+memeory is created when method is called
+memory is deleted when method execution completes.
+scope is only within method.[ one local variable in one method is visible only till that method; and it isnot visisble outside the method]

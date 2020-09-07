@@ -19,6 +19,7 @@ public class CloningTest {
 		System.out.println(e2);
 		
 		
+		System.out.println("************changing e1 *******************");
 		e1.setId(2);
 		e1.setName("kumar");
 		
@@ -28,13 +29,16 @@ public class CloningTest {
 		System.out.println("showing e2");
 		System.out.println(e2);
 		
-		
-		Employee e3= e1;
-
-		System.out.println("emp and e3 == test: " + (e1 == e3));
-		// Check whether the emp and clonedEmp attributes are same or different
-		System.out.println("emp and e2 == test: " + (e1 == e2));
 
 	}
  
 }
+
+
+/*
+ Employee e3= e1;
+
+		System.out.println("emp and e3 == test: " + (e1 == e3));
+		// Check whether the emp and clonedEmp attributes are same or different
+		System.out.println("emp and e2 == test: " + (e1 == e2));
+ * */

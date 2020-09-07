@@ -8,7 +8,7 @@ Requirement:
 Add multiple Person objects inside the HashSet.
 
 syntax:
-Set<Person> persons = new HashSet<Person>() ;  // HashSet for Person 
+Set<Person> persons = new HashSet<>() ;  // HashSet for Person 
 
 
 add person obj:
@@ -28,7 +28,7 @@ public class TestPerson {
 public static void main(String[] args) {
 
 	//create hashset for persons
-	Set<Person> persons = new HashSet<Person>();
+	Set<Person> persons = new HashSet<>();
 
 	//create person objs
 	Person p1 = new Person(1000, "user1", 27);
@@ -48,6 +48,7 @@ public static void main(String[] args) {
 	//print all the persons
 	System.out.println("Entered persons ARE :");
 	for (Person p : persons) {
+		System.out.println("***********************************");
 		System.out.println(p.getId()  +  " , " + p.getName() + " , " + p.getAge());
 	}
 	

@@ -1,5 +1,16 @@
 package oops.methodEx2;
 
+/**
+ 
+  Req:
+  create 3 person objs
+  set data
+  display data
+  write print logic one time and reuse for all objs.
+  
+  solution:
+  write a method that takes obj as argument and print obj data
+ */
 public class TestPerson2 {
 	public static void main(String[] args) {
 		//create obj

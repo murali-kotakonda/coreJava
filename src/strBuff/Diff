@@ -1,0 +1,22 @@
+StringBuffer vs StringBuilder
+---------------------
+->StringBuffer is synchronized
+-> StringBuilder is not synchronized
+
+->StringBuffer is thread-safe
+-> StringBuilder is not thread-safe
+
+->StringBuffer can be used in multi-threaded environment
+-> StringBuilder cannot be used in multi-threaded environment
+
+
+HashTable vs HashMap:
+--------------------------------------
+->HashTable is synchronized
+-> HashMap is not synchronized
+
+->HashTable is thread-safe
+-> HashMap is not thread-safe
+
+->HashTable can be used in multi-threaded environment
+-> HashMap cannot be used in multi-threaded environment

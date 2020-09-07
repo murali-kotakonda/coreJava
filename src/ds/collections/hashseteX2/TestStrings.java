@@ -1,16 +1,15 @@
 package ds.collections.hashseteX2;
 
-import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class TestStrings {
 	public static void main(String[] args) {
 
-		//create LinkedHashSet for strings
-		Set<String> names = new LinkedHashSet<String>();
+		//create  HashSet for strings
+		Set<String> names = new  TreeSet<String>();
 		
-		
-		//add text in LinkedHashSet
+		//add text in  HashSet
 		names.add("java");
 		names.add("sap");
 		names.add("hana");

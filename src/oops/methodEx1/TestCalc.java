@@ -1,8 +1,8 @@
 package oops.methodEx1;
 
-public class TestOperations {
+public class TestCalc {
 	public static void main(String[] args) {
-		Operations3 calc = new Operations3();
+		Calculator calc = new Calculator();
 
 		int num1= 40;
 		int num2= 20;

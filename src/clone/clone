@@ -19,7 +19,7 @@ public class Employee implements Cloneable {
 }
 
 
-3.How  to create clone obj:
+3.How  to create clone obj:use clone() method 
   
   //create emp obj with data
 		Employee e1 = new Employee();

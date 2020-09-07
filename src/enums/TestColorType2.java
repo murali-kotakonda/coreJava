@@ -2,6 +2,17 @@ package enums;
 
 import java.util.Scanner;
 
+/**
+  take color name as input .
+  
+  if color is BLUE OR RED OR BLACK, OR GREEN, OR WHITE, OR 	BROWN => VALID COLOR
+  IF NOT print invalid color
+  
+  
+  if application needs  2 more colors : YELLOW , MERUN
+  then we need to write two ENTRY inside the enum;
+  
+ */
 public class TestColorType2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -9,9 +20,9 @@ public class TestColorType2 {
 		String input= sc.next();
 
 		//get all objs
-		boolean found = ColorType.isValidColor(input);
-		if(found) {
-			System.out.println("valid color");
+		boolean validColor = ColorType.isValidColor(input);
+		if(validColor) {
+			System.out.println("Valid color");
 		}else {
 			System.out.println("invalid color");
 		}

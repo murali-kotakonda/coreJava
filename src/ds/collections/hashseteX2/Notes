@@ -21,25 +21,25 @@ search by position is not applicable in set.
 HashSet:
 ---------------------------
 Set<String> names = new HashSet<String>() ;  // HashSet for string 
-Set<Integer> names = new HashSet<IntegerString>() ;  // HashSet for Integer 
-Set<Person> names = new HashSet<Person>() ;  // HashSet for Person 
+Set<Integer> names = new HashSet<>() ;  // HashSet for Integer 
+Set<Person> names = new HashSet<>() ;  // HashSet for Person objs 
 
 
 
 TreeSet:
 ---------------------------
-Set<String> names = new TreeSet<String>() ;  // TreeSet for string 
-Set<Integer> names = new TreeSet<String>() ;  // TreeSet for Integer 
-Set<Person> names = new TreeSet<Person>() ;  // TreeSet for Person 
+Set<String> names = new TreeSet<>() ;  // TreeSet for string 
+Set<Integer> names = new TreeSet<>() ;  // TreeSet for Integer 
+Set<Person> names = new TreeSet<>() ;  // TreeSet for Person 
 
 
 
 
 LinkedHashSet:
 ---------------------------
-Set<String> names = new LinkedHashSet<String>() ;  // LinkedHashSet for string 
-Set<Integer> names = new LinkedHashSet<String>() ;  // LinkedHashSet for Integer 
-Set<Person> names = new LinkedHashSet<Person>() ;  // LinkedHashSet for Person 
+Set<String> names = new LinkedHashSet<>() ;  // LinkedHashSet for string 
+Set<Integer> names = new LinkedHashSet<>() ;  // LinkedHashSet for Integer 
+Set<Person> names = new LinkedHashSet<>() ;  // LinkedHashSet for Person 
 
 
 
@@ -63,11 +63,12 @@ HashSet  -> avoids duplicates ; But stores the elements in random order ;
 Insertion order is not maintained.
 
 
+LinkedHashSet -> avoids duplicates ; Insertion order maintained.
+
 Treeset  -> avoids duplicates ; But stores the elements in sorting order ; 
 Insertion order is not maintained.
 
 
-LinkedHashSet -> avoids duplicates ; Insertion order maintained.
 
 
 Insertion order : the order in whiuch data is added to the set

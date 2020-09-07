@@ -6,7 +6,7 @@ import java.util.Set;
 public class TestInterview3 {
 	public static void main(String[] args) {
 		//create hashset
-		Set<Person> persons = new HashSet<Person>();
+		Set<Person> persons = new HashSet<>();
 
 		//create p1 , add p1
 		Person p1 = new Person(123, "user5", 45);
@@ -16,8 +16,11 @@ public class TestInterview3 {
 		
 		//create p2 , remove p2
 		Person p2 = new Person(123, "user5", 45);
-		persons.remove(p2); // if p2 is removed then p1 is also removed from set because pa and p2 are duplicates.
+		persons.remove(p2); 
 		
 		System.out.println("size = " + persons.size());
 	}
 }
+
+
+//if p2 is removed then p1 is also removed from set because p1 and p2 are duplicates.

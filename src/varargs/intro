@@ -14,3 +14,12 @@ syntax:
   display("hi" , "hello" ,"kumar", "ram","shyam");
   
   
+  
+ -> var arg argument must be the last argument in the function.
+ 
+ 
+  Req:
+  write a var arg function for printing multiple int
+  write a var arg function for printing multiple float
+  write a var arg function for findling big of  multiple int
+  write a var arg function for findling small of  multiple int

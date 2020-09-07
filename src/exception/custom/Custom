@@ -1,3 +1,25 @@
+case#1 :
+java will throw exception  obj using predefined exception class
+dev will handle the exception
+
+
+case#2 :
+dev will throw exception  obj using predefined exception cla
+dev will handle the exception
+
+
+ArithmeticException ex = new ArithmeticException("num2 cannot be 0");
+throw ex;
+
+here ArithmeticException is a predefined class.
+
+
+case#3 :
+-> Dev will create Exception class
+-> Dev will create exception obj & throw
+-> Dev will handle the exception
+
+
 custom Exception/User Defined Exception:
 --------------------------------------
 -> dev is not handling execption using throws ()
@@ -10,28 +32,37 @@ ArithmeticException is a exception class from java lib..
 Can we create our own exception class??
 Yes
 
--> Dev will create Exception class
--> Dev will create exception obj & throw
--> Dev will handle the exception
-
-Why should we create exception class?
+  Why should we create exception class?
 ans) To handle the neagtive sceanrios in the project.
+
 ex: 
 age < 18 is invalid for the application ,but it is valid for java ...
-any invalid data for id , name , usertype  is found we have to create exception.
+if invalid data is identified for id , name , usertype then we have to create exception object using custom exception classs
 
 age < 18 cannot be ArithmeticException.
 
 
-
-Syntax :
-------
+Steps for creating exception class:
+-----------------------------------------------------------------
 1.create a exception class which is a child class for java.lang.Exception
-2. provide private final inst variables + contr + getter methods..
+2.from the constructor call the parent constructor 
+3.provide private final inst variables + contr + getter methods..
 
 
 ex:
 public class BusinessException extends Exception {
+
+
+	private final int erorrCode;
+	
+	public BusinessException(String msg , int errorCode){
+		super(msg);
+		this.erorrCode=erorrCode;
+	}
+	
+	public int getErorrCode(){
+		return this.erorrCode;
+	}
 
 }
 
@@ -47,7 +78,7 @@ take input for name , age, city , usertype
 valiadtion for name, age , city usertype ,
  if invalid data found then throw exception for BusinessException
 
-name cannot be > 15 char
+name cannot be > 12 char
 age between 18 & 60
 city should be either hyd or bang or cheanni
 usertype should be admin or agent

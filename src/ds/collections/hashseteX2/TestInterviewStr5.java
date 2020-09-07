@@ -13,10 +13,13 @@ public class TestInterviewStr5 {
 		names.add(x);
 
 		String y ="user1";
-		if(names.contains(y)){  // y is a duplicate x 
+		
+		if(names.contains(y)){   
 			System.out.println("y exists");
 		}else{
 			System.out.println("y doesnt exists");
 		}
 	}
 }
+
+//y is a duplicate x

@@ -1,8 +1,8 @@
 package oops.methods.WithInstanceMethods;
 
 /*
-1. create the obj
-2.call the methods using the obj and by passing the dataas args.
+1.create the obj
+2.call the methods using the obj and by passing the data as args.
 data we need to pass for every method.
 
 

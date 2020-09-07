@@ -1,0 +1,13 @@
+
+Checked Exceptions:
+Exception handling is mandatory
+if we dont write it will give compilations
+ex:IOException , FileException , SQLException ...
+use either try + catch or use Throws.
+
+
+UnChecked Exceptions:
+Exception handling is not mandatory
+if we dont write it will not give compilations
+ex: RunTimeExceptions [NullPointerException /AarrayIndexOutOfBound / Arithmetic Exception ..etc] ...
+no nedd to use  either try + catch or  Throws.

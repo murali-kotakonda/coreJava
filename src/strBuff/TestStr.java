@@ -1,5 +1,16 @@
 package strBuff;
 
+/**
+ 
+When string is modified, every time new object is created. ===> memory wastage
+
+solution: 
+use StringBuilder/StringBuffer
+
+create obj for StringBuilder/StringBuffer
+use append() method to update the string
+
+ */
 public class TestStr {
 	public static void main(String[] args) {
 		String text ="user1";
@@ -9,7 +20,9 @@ public class TestStr {
 		text = text + " user5";
 		System.out.println(text);
 		
+		//9 objs are created; 1 is active
 		
+		//one obj is created
 		StringBuffer textBuf =new StringBuffer("user1");
 		textBuf.append(" user2");
 		textBuf.append( " user3");
@@ -17,6 +30,8 @@ public class TestStr {
 		textBuf.append( " user5");
 		System.out.println(textBuf.toString());
 		
+		
+		//one obj is created
 		StringBuilder textBuild =new StringBuilder("user1");
 		textBuild.append(" user2");
 		textBuild.append( " user3");

@@ -6,6 +6,11 @@
 -> Read from file
 
 For working with files  use java.io package...
+Exception handling is mandatory for the file operations...........
+ 
+
+File obj is used to represent a file or folder.
+
 
 ->There are two types of files.
 1. charater stream  ex: only text files
@@ -18,8 +23,6 @@ Write : FileOutputStream class
 Read : FileInputStream class
 
  
- Exception handling is mandatory for the file operations...........
- 
 
 FileWriter examples:
 ------------------------
@@ -30,10 +33,20 @@ FileWriter examples:
 
 Fileoutputstream example:
 -----------------------
-1.Crate file obj
+1.Create file obj
 2.Create Fileoutputstream using file obj
 3.use write() method to write the data to the file [pass bytes]
 4.close filewriter
+
+
+
+
+How to convert to byte:
+-------------------------------------
+String data ="hello wherea are you " ;
+byte[] dataInByte = data..getBytes();
+
+
 
 
 
