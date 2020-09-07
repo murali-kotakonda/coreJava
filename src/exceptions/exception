@@ -2,11 +2,6 @@ Exception:
 -----------
 Unexpected scenario/event that occurs at the run time.
 
-what happens when there is an exception:
---------------------------
--> Prog will stop/ the flow would break.
--> customer will see the techincal message instead of meaning ful message.
--> affect the business 
 
 Why do we have Exception?:
 ----------------
@@ -16,19 +11,23 @@ Why do we have Exception?:
 -> edge case 
 
 
+what happens when there is an exception:
+--------------------------
+-> Prog will stop/ the flow would break.
+-> customer will see the techincal message instead of meaning ful message.
+-> affect the business 
+
+
+
 
 Can we avoid exception during runtime?? NO
+
 exception handling:
 ---------------------
-what to do when there is an exception
-
-What is java role?
-->Java created the exception object based on the reason
-->Exception obj contains the exception msg + what are the class+method+line nos involved for exeption(stacktrace)
-->Java stops the application flow..
-
+To handle negative scenarios
 Exception handling will be required when there is an exception...
 Exception handling is what to do when there is an exception..
+
 
 
 Adv:
@@ -36,6 +35,14 @@ Adv:
 ->prepare meaning msg to the customer..
 -> resume the application flow
 ->write the technical messages like execption reason+ cause to the server logs
+
+
+What is java role?
+->Java creates the exception object based on the reason
+->Exception obj contains the exception msg + what are the class+method+line nos involved for exeption(stacktrace)
+->Java stops the application flow..
+
+
 
 
 How to do exception handling:
@@ -56,6 +63,7 @@ finally{
   <optionl, required only when dealing with 3rd parties like db, file, web connections...>
   //executed always ...
 }
+
 
 
 

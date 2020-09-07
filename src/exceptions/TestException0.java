@@ -13,8 +13,7 @@ public class TestException0 {
 		}
 		catch(NumberFormatException ex) {
 			 //if exception occurs then give meaning msg to customer
-			System.out.println("invalid input ::"+age+". " +
-					"please try again");
+			System.out.println("invalid input ::"+age+". " + "please try again");
 		}finally {
 			System.out.println("finally completed");
 		}

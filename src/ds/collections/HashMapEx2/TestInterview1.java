@@ -3,13 +3,6 @@ package ds.collections.HashMapEx2;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
-  
-  128- user111
-  133- user7
-  131 - user44
-  
- */
 public class TestInterview1 {
 	public static void main(String[] args) {
 		
@@ -20,17 +13,27 @@ public class TestInterview1 {
 
 		// get the size
 		System.out.println(map.size());
+		System.out.println(map.get("128"));
+		System.out.println(map.get("133"));
 		
-		map.put("128", "user111");   // dupliate KEY IS NOT ALLowed,
-		                             // value is replaced
-		                             // user1 is replaced with user111
+		System.out.println("********** Add dupliacte key ***********");
+		map.put("128", "user111");  // user1 is replaced with user111
 		map.put("131", "user44");  
-		
-		//In Map Key is always unique; duplicate keys are not allowed.
-		
 		// get the size
 		System.out.println(map.size());  // 
 		
-		System.out.println(map.get("128")) ;  // "user111"
+		System.out.println(map.get("128")) ;  //  
 	}
 }
+/**
+
+128- user111
+133- user7
+131 - user44
+
+*/
+//dupliate KEY IS NOT ALLowed,
+// user1 is replaced with user111
+
+// when same key is added, then the value will be replaced.
+//In Map Key is always unique; duplicate keys are not allowed.

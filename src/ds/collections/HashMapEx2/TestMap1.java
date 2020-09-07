@@ -1,20 +1,21 @@
 package ds.collections.HashMapEx2;
-
+/**
+Requirement:
+Create map with string as key , string as value.
+*/
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.TreeMap;
+import java.util.Set;
 
-/**
-  Requirement:
-  Create map with string as key , string as value.
-  
- */
+
 public class TestMap1 {
 	public static void main(String[] args) {
-		System.out.println("************** TreeMap ********************");
+		System.out.println("************** HashMap ********************");
+		//create hashmap
+		Map<String, String> map = new HashMap<>();
 		
-		Map<String, String> map = new TreeMap<>();
-		
+		//add elements
 		map.put("129", "user2");
 		map.put("132", "abcd");
 		map.put("128", "user1");
@@ -29,7 +30,6 @@ public class TestMap1 {
 			String key = entry.getKey();
 			String value = entry.getValue();
 			System.out.println("key === " + key + "  value ==" + value);
-	}
-
+		}
 	}
 }
