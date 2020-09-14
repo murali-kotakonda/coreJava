@@ -12,11 +12,6 @@ public class Data {
 	}
 	
 	
-	
-	
-	
-	
-	
 	public static void main(String[] args) {
 		// Referring static method
 		Service obj = Data::execute;

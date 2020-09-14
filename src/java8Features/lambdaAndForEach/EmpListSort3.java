@@ -1,4 +1,4 @@
-package java8Features.lambda;
+package java8Features.lambdaAndForEach;
 
 import java.util.ArrayList;
 import java.util.Collections;

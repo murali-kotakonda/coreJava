@@ -1,12 +1,4 @@
-package java8Features.lambda;
-
-interface Service1 {
-	public void process();
-}
-
-public class TestLambda {
-	
-	/*
+/*
 	 * Lambda expressions better way to represent one method interface using an expression. 
 	 *It is very useful in 
 	 *- collection library. It helps to iterate, filter and extract data from collection.
@@ -26,29 +18,37 @@ public class TestLambda {
 		*usage: (argument-list) -> {body}  
 		*
 		* */
+		
 	
-		public static void main(String[] args) {
-			// without lambda, Drawable implementation using anonymous class
-			Service1 d = new Service1() {
-				public void process() {
-					System.out.println("Hello user1:: ");
-				}
-			};
-			
-			Service1 d1 = () -> {
-				System.out.println("bye");
-			};
-			
-			//with lambda No Parameter
-			Service1 d2=()->{  
-	            System.out.println("Hello user2::  ");  
-	        }; 
-	        
-	    	Service1 d23=()->{  
-	            System.out.println("Hello user3::  ");  
-	        }; 
-	        
-	    	d.process();    
-	        d2.process(); 
-		}
+Lambda:
+----------------------	
+  allows funtional programming.
+  readable and concise code
+  easier to use APIs and libs.
+  enables support for parallel processing.
+  used along with functional interfaces.[Lambda expression provides implementation of functional interface]
+  simplified version for anonymous inner class.
+  
+  
+  
+  
+ Service.java:
+---------------------------------------
+public interface Service {
+	public void process();
 }
+
+
+
+Req:
+call the process method and Print HI
+call the process method and Print hello
+call the process method and Print welcome
+
+
+solution:
+1.anonymous inner class
+OR
+2.Lambda expressions
+ 
+ 

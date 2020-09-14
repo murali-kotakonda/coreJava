@@ -1,4 +1,4 @@
-package java8Features.lambda;
+package java8Features.lambdaAndForEach;
 
 public class TestThreadLambda {
 

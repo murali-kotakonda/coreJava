@@ -1,4 +1,4 @@
-package java8Features.lambda;
+package java8Features.lambdaAndForEach;
 
 interface Controller {
 	public void access(String name);
@@ -16,7 +16,7 @@ interface MathCalc {
 
 
 
-public class TestL2 {
+public class TestLambdaAssignments {
 public static void main(String[] args) {
 	
 	Controller c = (name) -> System.out.println("Hello "+ name);
