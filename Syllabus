@@ -1,0 +1,53 @@
+
+
+OOPS
+-class
+-Object
+-instance methods
+-construtor
+-instance variables
+-static variables
+-static methods
+-static block
+-polymorphism
+-encapsulation
+-abstraction 
+Inheritance
+Collections
+Exception handling
+Date operations
+File handling
+string buffer, string operations
+wrapper classes.
+var args
+enum
+scopes
+Generics
+Reflections
+Annotations
+Inner classes
+java 8 features
+Threads
+sorting
+Mutable class
+
+
+
+
+
+Java 8 FEATURES:
+---------------------------------------
+Functional interfaces,
+Default methods,
+Static methods in interface,
+Lambda expressions,
+ForEach() method,
+
+
+Method references,
+Stream API,
+Collectors class,
+
+Optional class,
+Concurrency Enhancements,
+JDBC Enhancements etc.
