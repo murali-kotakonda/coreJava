@@ -12,20 +12,22 @@
 
   
   -> Generics is used for all the collections ..
-  -> write code independendent of the datatype
+  -> write code in-dependent of the datatype
+   ->Write code once and apply for any data type..
   
-  List names = new ArrayList();// add int/float/string/double/long
+  
+Raw list issues:  
+---------------
+List names = new ArrayList();// add int/float/string/double/long
   names.add("user1");
   names.add(1222);
   names.add(1313.11313f);
   
-Raw list issues:  
----------------
 compile-time type checking
 risk of ClassCastException 
 
--> write code independendent of the datatype->
- ->Write code once and apply for any data type..
+ 
+
 
 
 -> generic method
@@ -34,22 +36,36 @@ risk of ClassCastException
 Generic Method:
 ---------------
 
-public static void print1(String data) { // can be called by passing only string
+
+Case#1: 
+public void print1(String data) { // can be called by passing only string
 		System.out.println(data);
 	}
-
-public static <E>  void print2(E data) {// can be called by passing any datatype, ex: int, string, float..etc..
-                                       
+ 
+ print1("hello") ;
+ print1("kumar");
+ print1("ram");
+ print1(123); //this wil give compilation
+ 
+ Case#2: [generic method] 
+public <E> void print2(E data) { // can be called by passing any datatype, ex: int, string, float..etc..
 		System.out.println(data);
 	}
-
-
-EX: print1("hello")
+  <E>    ---> code is related to generic, E is generic type 
   
-     print2(1)
-     print2(1232.131313f)
-     print2("Hellooo")
+     print2(1); // here E will be integer 
+     print2(1232.131313f); // here E will be float
+     print2("Hellooo"); // here E will be String
     
+  
+  
+<E> – Element (used extensively by the Java Collections 
+Framework, for example ArrayList, Set etc.)
+<K> – Key (Used in Map)
+<V> – Value (Used in Map)
+<N> – Number
+<T> – Type
+
     
     
     

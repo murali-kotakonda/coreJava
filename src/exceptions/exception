@@ -3,6 +3,15 @@ Exception:
 Unexpected scenario/event that occurs at the run time.
 
 
+what happens when there is an exception:
+--------------------------
+-> Prog will stop/ the flow would break.
+-> customer will see the technical message instead of meaning ful message.
+-> affect the business 
+
+
+
+
 Why do we have Exception?:
 ----------------
 ->Bad coding practices
@@ -10,12 +19,6 @@ Why do we have Exception?:
 -> Missing testing the scenario
 -> edge case 
 
-
-what happens when there is an exception:
---------------------------
--> Prog will stop/ the flow would break.
--> customer will see the techincal message instead of meaning ful message.
--> affect the business 
 
 
 
@@ -34,7 +37,7 @@ Adv:
 -> choice for retry/ continue/ stop
 ->prepare meaning msg to the customer..
 -> resume the application flow
-->write the technical messages like execption reason+ cause to the server logs
+->write the technical messages like exception reason+ cause to the server logs
 
 
 What is java role?

@@ -7,7 +7,7 @@ public class TestStudent {
 		// access static variables using class name
 		Student.colleageName = "REVA enggg colleg";
 		
-		// access instance varible using object
+		// access instance variable using object
 		Student s = new Student();
 		s.id=1200;
 		

@@ -1,7 +1,7 @@
-polymorphism:
+Polymorphism:
 ---------------------
 - exhibiting the features in diff forms.
-- a) compiletime polymorphism  or method overloading  
+- a) compile-time polymorphism  or method overloading  
   b) runtime polymorphism or method overriding    -->(inheritence)
 
 
@@ -48,11 +48,11 @@ No of args:
 		return sum;
 	}
 
-add(5,6)   -> 
-add(10,20,30) -> 
-
-
-
+add(20,30)  -> calls add method with 2 int args 
+add(1,2,3)  -> calls add method with 3 int args 
+  
+  
+  
 
 
 order of args:
@@ -64,10 +64,11 @@ public void add(int a, float b ) {
 	public void add(float a, int b ) {
 		System.out.println(a + b);
 	}
-
-add(  5,  6.45f )   -> 
-add(  10.78f , 7899) -> 
-
+  
+add(  5,  6.45f )   -> calls add method with int and float as args
+add(  10.78f , 7899) ->  calls add method with   float and int as args
+  
+  
   
 datatype of args:
   -------------
@@ -81,8 +82,10 @@ datatype of args:
 		return sum;
 	}
 
-add(1313131L ,131313131L)
-add(14214124.5454f , 235353.343f)
+
+add(1313131L ,131313131L)-> calls add method with two long as args
+add(14214124.5454f , 235353.343f)-> calls add method with two float as args
+  
 
 
 return-type is never considered  as method signature

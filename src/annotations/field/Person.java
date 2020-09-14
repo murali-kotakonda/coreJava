@@ -20,6 +20,4 @@ public class Person {
 	public void setId(String id) {
 		this.id = id;
 	}
-	
-	
 }

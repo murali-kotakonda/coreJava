@@ -1,16 +1,22 @@
-
-Inheritence:
+Inheritance:
+--------------------------------------------
 relationship between two classes.
 -> its a Is-a relation.
+
+
 -> there are two types of classes.
-  
   a)Parent class/Super class/Base class
   b)sub class/child class/derived class
     
     
 Public properties and methods are inherited/available to child class from parent class.
-private, static are not eligible for inheritence.
+private, static are not eligible for Inheritance.
 
+
+
+Parent class doesnt know what are the child specific properties/methods.
+Relation ship is between parent class and child class , but not betweeen the parent obj and child obj.
+i.e. parent obj and child obj are independent to each other
 
  Ex:
  1.Parent class : Loan
@@ -23,21 +29,20 @@ private, static are not eligible for inheritence.
  Child classes: CreditCard , DebitCard , VirtalCard
  
  
-   
-  
+    
 advantage: 
-reusability of instance varibles and methods in multiple classes
+re-usability of instance variables and methods in multiple classes
 
-syntax:
-
+ 
 
 Req:
+---------------------------------------------------------------
 Person has id,name, age
 Employee has id, name, age, pan , pf
 
 
-Without Inheritence:
-
+Without Inheritance:
+----------------------------------------------------------------
 public class Person {
 	  String name;
 	  int age;
@@ -50,16 +55,15 @@ public class Employee {
 	  String name;
 	  int age;
 	  int id;
-  String pan;
-  String pf;
-
-  
+  	  String pan;
+      String pf;
 }
 
 
 
 
 With inheritance:
+---------------------------------------------------------
 Person is parent
 Employee is child class
 
@@ -79,8 +83,6 @@ public class Person {
 public class Employee extends Person {
   String pan;
   String pf;
-
-  
 }
 
 
@@ -89,7 +91,8 @@ Write Properties/Method in parent class and reuse for Parent class and child cla
 
 
 
-
+Case#1:
+--------------------------------------------------------------------------
 public class Person {
 	  String name;
 	  int age;
@@ -103,14 +106,13 @@ public class Person {
 }
 
 
-Eligible for inheritence:
+Eligible for Inheritance:
 1.id,name, age 
 2. m1() 
 
 
 
-
-public class Employee extends Person{// Here Employee is the Child claas and Person is parent class
+public class Employee extends Person{// Here Employee is the Child class and Person is parent class
 
 	String pan;
 	String pfNo;
@@ -119,7 +121,6 @@ public class Employee extends Person{// Here Employee is the Child claas and Per
     
   }
 }
-
 
     
 How many I.V are in Person : 3 
@@ -130,6 +131,7 @@ How many METHODS are in Employee : 2
   
   
  Case#2:
+ ---------------------------------------------------------------------------------
 
 public class Person {
 	  String name;
@@ -156,14 +158,18 @@ Eligible for inheritence:
 1.id,name, age 
 2. m1() 
 
+How many I.V are in Person :   
+How many I.V are in Employee :   
   
+How many METHODS are in Person :   
+How many METHODS are in Employee :  
 
 
-Types of inheritence:
+Types of Inheritance:
 -----------------------
 1.Single
 2.Multi Level
 3.Hierarchial
-4.Multiple inheritence is not allowed n java
+4.Multiple Inheritance is not allowed n java
 
 

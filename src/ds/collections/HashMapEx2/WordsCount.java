@@ -32,9 +32,11 @@ public class WordsCount {
 					"php", "java", "win", "ios", "win", "hana",
 					"android","ios","ios");
 	
-	Map<String,Integer> wordsCount = new HashMap<>();
+	Map<String,Integer> wordsCount = new HashMap<>(); // 
+	//create a hash map key as string  and integer as value
+	//process each word and add to map using the loop
 	
-	//process each word and add to map
+	
 	for(String word:inputWords){
 		if(wordsCount.containsKey(word)){
 			int currCount = wordsCount.get(word);

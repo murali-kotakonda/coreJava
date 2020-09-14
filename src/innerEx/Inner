@@ -8,21 +8,32 @@ and interfaces in one place only.
 
 - It requires less code to write.
 
-
  
+ Types:
+ ------------------
 	Member inner class
 	static inner class
 	Anonymous inner class
 	Local inner class
 	
 Member inner class:
+---------------------------------------------------------------------------
 public class Outer{
  class Inner{
  
  }
 }
+
+//inner class can access everything from outer class  including private.
+//For creating inner obj  we need the outer object.
+
+
+//create obj for outer class
 Outer outerObject = new Outer();
+
+//create obj for inner class
 Outer.Inner innerObject = outerObject.new Inner();
+
 
 
 Static nested class
@@ -43,8 +54,12 @@ public class Outer {
 		}
 }
 
-Outer.Inner nestedObject =
-     new Outer.Inner();
+
+//create obj for outer class
+Outer outerObject = new Outer();
+
+//create obj for inner class
+Outer.Inner nestedObject = new Outer.Inner();
 
 
 

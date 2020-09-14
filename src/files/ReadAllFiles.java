@@ -10,7 +10,7 @@ boolean isDir = file.isDirectory();
 
 
 Read all files/folders names in the given folder
-use listFiles() method to read all the files/Folder ; this retuns the array of files obj.
+use listFiles() method to read all the files/Folder ; this returns the array of files obj.
   
  */
 public class ReadAllFiles {

@@ -3,16 +3,33 @@ VarArg Funtions:
 
 A function that can take any number of arguments as input .
 
-syntax:
-  public static void display(String... data){ // datatype of data is array
-    
+Case#1:
+
+   // write a method
+  public void display(String data){ // datatype of data is string
+   
   }
   
-  
+  //code for call method
+   display("hi");
+   display("hello" );
+   display("kumar");
+ 
+ 
+ 
+Case#2:
+   // write a var-arg method
+ public void display(String... data){ // method will accept any no of string
+ 
+ }
+ here display()method is a var-arg method.
+ datatype of data is array
+ 
+ //code for calling  var-arg method
   display("1");
   display("hi" , "hello" ,"kumar");
   display("hi" , "hello" ,"kumar", "ram","shyam");
-  
+ );
   
   
  -> var arg argument must be the last argument in the function.

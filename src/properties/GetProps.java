@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class GetProps {
 	public static void main(String[] args) throws IOException {
-		File f = new File("C:\\Project\\config.properties");
+		File f = new File("C:\\test\\config.properties");
 		InputStream input= new FileInputStream(f);
 
 		// load a properties file

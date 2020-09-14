@@ -79,7 +79,7 @@ public class TestException {
 
 	java creates ArithmeticException object.
 	 */
-	public static void main(String[] args) {
+	public static void main9(String[] args) {
 		int num1 = 20;
 		int num2 = 0;
 
@@ -116,7 +116,7 @@ public class TestException {
 
 	 */
 	
-	public static void main2(String[] args) {
+	public static void main8(String[] args) {
 		int nums[] = new int[5]; // array size is 5
 		System.out.println(nums[9]); // access 10 element
 	}
@@ -124,8 +124,7 @@ public class TestException {
 	
 	
 	
-	
-	public static void main3(String[] args) {
+	public static void main5(String[] args) {
 		String name = null;
 		int len =name.length();
 		System.out.println("length = "+len);
@@ -133,14 +132,16 @@ public class TestException {
 
 	
 	
+	
+	
+	
+	
 	/**
-	 solution: try with multiple catches
- 	 at a time only one exception is created.
  	  solution: try with multiple catches
  			at a time only one exception is created.
  			at a time only one catch block is executed.
 	 */
-	public static void main4(String[] args) {
+	public static void main(String[] args) {
 		String name = null;
 		int num1= 20;
 		int num2 = 0;

@@ -7,12 +7,8 @@ public class TestException14 {
 			System.out.println(name.length());
 		} 
 		catch (NullPointerException ex) {
-			// ex.printStackTrace();
-			System.out.println("obj is null: please create obj"
+			System.out.println("obj is null: please create obj "
 					+ ex.getMessage());
 		} 
-		finally {
-			System.out.println("Program ends");
-		}
 	}
 }

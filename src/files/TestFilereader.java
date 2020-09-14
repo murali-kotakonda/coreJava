@@ -8,8 +8,8 @@ public class TestFilereader {
     	  File file = new File("C:\\test\\test1.txt");	
           FileReader fr=new FileReader(file);    
           int i;    
-          while((i=fr.read())!=-1)    
-          System.out.print((char)i);    
-          fr.close();    
+          while((i=fr.read())!=-1) {    
+        	  System.out.print((char)i);
+          }
     }
 }

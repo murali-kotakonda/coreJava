@@ -1,5 +1,13 @@
 package wrapper;
 
+/**
+  
+  convert the int/float/long/double/boolean to string.
+  solution:
+  use String.valueOf() method
+  
+  
+ */
 public class TestConversion {
 	public static void main(String[] args) {
 
@@ -7,41 +15,31 @@ public class TestConversion {
 		int intValue = 5;
 		String intToStrValue = String.valueOf(intValue);
 		
-		
 		float floatValue = 23f;
 		String floatToStrValue = String.valueOf(floatValue);
 		
 		double doubleValue = 12D;
 		String doubleToStrValue = String.valueOf(doubleValue);
 		
-		
 		long longValue = 56l;
 		String longToStrValue = String.valueOf(longValue);
 
+		boolean found= true;
+		String foundStr = String.valueOf(found);
 		
-		System.out.println(
-				"To String =" + intToStrValue + "_" + floatToStrValue + "_" + doubleToStrValue + "_" + longToStrValue);
+		System.out.println(intToStrValue);
+		System.out.println(floatToStrValue);
+		System.out.println(doubleToStrValue);
+		System.out.println(longToStrValue);
+		System.out.println(foundStr);
+		
+		
+		Integer y1 = new Integer(900);  // Integer z= 899; 
+		Float y2 = new Float(900.878787); // Float y2 = 900.878787; 
+		Long y3 = new Long(90013131); //Long y3 = 90013131;
+		Double y4 = new Double(900.1113131);
+		Character y5 = new Character('c');
+		Boolean y6 = new Boolean(true);
 
-		 //any data received from third party is considered as string
-		// converting String to int
-		String intStr = "12";
-		int fromInt = Integer.parseInt(intStr);
-		
-    
-		// 	converting String to float
-		String floatstr = "134.00";
-		float fromfloat = Float.parseFloat(floatstr);
-				
-        
-		// converting String to double   
-		String doubleStr = "346.00567";
-		double fromdouble = Double.parseDouble(doubleStr);
-		
-    
-		// converting String to long
-		String longStr = "346877997";
-		long fromlong = Long.parseLong(longStr);
-
-		System.out.println("To data types  =" + fromInt + "_" + fromfloat + "_" + fromdouble + "_" + fromlong);
 	}
 }

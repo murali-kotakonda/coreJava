@@ -3,18 +3,18 @@ package annotations.field;
 public class TestField {
 
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, SecurityException {
-		Person p = new Person("af");
-		User u = new User("pan_949289897979797");
-		Product  prod = new Product("prod_214");
+		String pId = "1234";
+		String userPan = "testpan";
 		
+		Person p = new Person(pId);
+		User u = new User(userPan);
+		
+		// get the annotation value 
 		int s1 = ReadAnnotationValue.getDeclaredSize("annotations.field.Person","id");
 		int s2 = ReadAnnotationValue.getDeclaredSize("annotations.field.User","pan");
-		int s3 = ReadAnnotationValue.getDeclaredSize("annotations.field.Product","productId");
 		
 		validate(p.getId(),s1);
 		validate(u.getPan(),s2);
-		validate(prod.getProductId(),s3);
-		System.out.println("C$/(B$+C$)".replaceAll("\\$", "2"));
 	}
 
 	private static void validate(String value, int size) {

@@ -2,16 +2,6 @@ package oops.staticMethods;
 
 public class Dao {
 
-	//instance method
-	public void show() {
-		System.out.println("hello from instance");
-	}
-	
-	//static method
-	public static void print(){
-		System.out.println("hello from static");
-	}
-	
 	//static variable
 	static int count =900;
 	
@@ -24,6 +14,5 @@ public class Dao {
 	public static void updateCount(int increment){
 		count= count+ increment;
 	}
-	
 	
 }

@@ -1,5 +1,12 @@
 package generics.forClass;
 
+/**
+ Write generic class with 
+two instance variables  : [both i.v. are generic]
+constr   -> to set the data for i.v.
+print method  -> to print the data for i.v.
+
+ */
 class GenericType2<T, U>
 {
     T data1;  // An object of type T

@@ -18,6 +18,4 @@ public class User {
 		this.pan = pan;
 	}
 	
-	
-
 }

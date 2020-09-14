@@ -22,6 +22,23 @@ public class TestVarArgs {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 public static void display2(int... data){

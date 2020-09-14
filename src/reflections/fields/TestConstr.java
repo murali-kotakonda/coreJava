@@ -22,7 +22,7 @@ public class TestConstr {
 			System.out.println ("Constrctor modifier : "+Modifier.toString(modifiers));
 			
 			// Get and print parameter types 
-			Class[] constrParams=constructor.getParametdterTypes();
+			Class[] constrParams=constructor.getParameterTypes();
 			System.out.print ("Constrctor parameter types :"); 
 			for (Class class1 : constrParams) { 
 				System.out.println(class1.getName() +" ");

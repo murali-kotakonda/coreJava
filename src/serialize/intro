@@ -2,22 +2,39 @@ Serialization:
 ----------------
 -> process for storing obj state in the file system or when we need to send obj over the network..
 
+Serialize:
+[ obj data --------> save to file ]
+
+
+DeSerialize:
+[ read from file --------> convert to obj]
+
+
 Steps:
   1. Class has to implement Serializable interface
   
-
-  Serialize:
+   
+   Serialize:
     1.create file obj
-    2.FileOutputStream
-    3.ObjectOutputStream
-    4.use writeObject method to serialize
+    2.create FileOutputStream obj usinh file obj
+    3.create ObjectOutputStream ising FOS OBJ
+    4.use writeObject method and pass the obj to serialize 
     
     
     
-  Deseriaize:
-     1.create file obj
-    2.FileInputream
-    3.ObjectInput
-    4.use readObject method to serialize
+  De-Serialize:
+    1.create file obj
+    2.create FileInputream using  file obj
+    3.create ObjectInput using FIS obj
+    4.use readObject method to Deserialize 
     
-      
+    
+  -> transient variable cannot be serialized.
+   
+   
+  Req:
+  Student has id , name ,refNo
+  perform Seralizationn and Deserialization  for obj
+  
+  
+   

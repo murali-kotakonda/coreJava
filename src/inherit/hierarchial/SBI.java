@@ -6,3 +6,5 @@ public class SBI extends RBIBank {
 		System.out.println("SBI:: createed ppf");
 	}
 }
+//How many methods are in SBI?
+//3  [  createAccount() , processLoan() , createPPF()   ]

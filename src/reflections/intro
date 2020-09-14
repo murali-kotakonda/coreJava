@@ -1,11 +1,26 @@
-Reflections:
-----------
+Reflection API:
+------------------
 -API to get class information
--Meta data about a classs
+-To fetch Meta data about a class
 -to get every detail of a class dynamically
 
-ex: Eclipse IDE , frameworks..
-  
+
+ The Reflection API is mainly used in:
+
+IDE (Integrated Development Environment) e.g. Eclipse, MyEclipse, NetBeans etc.
+Debugger
+Test Tools 
+frameworks..[hibernate , springs ]
+
+
+
+Class  - > is a class to hold class info
+
+step1:
+1.Create the class object for any class
+
+
+
   
 import java.lang.reflect 
 

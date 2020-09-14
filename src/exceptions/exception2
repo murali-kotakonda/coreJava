@@ -25,7 +25,7 @@ if the second num is zeo then throw the exception
 throws keyword:
 ---------------------
 - throws we need write at the method declaration.
-- the method is not reponsible for handling the exception
+- the method is not responsible for handling the exception
 
 
 syntax for  throws:

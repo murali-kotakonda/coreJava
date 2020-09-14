@@ -9,10 +9,11 @@ public class TetInherit {
 		p.setAge(50);
 		p.setId(65556);
 
-		System.out.println("displaying person info");
+		System.out.println("*********************** person info *********************************");
 		System.out.println(p.getId());
 		System.out.println(p.getName());
 		System.out.println(p.getAge());
+		//p.displayPerson();
 		
 		
 		//create obj for employee
@@ -24,11 +25,13 @@ public class TetInherit {
 		emp.setPan("bnadh671a6");
 		emp.setPfNo("testPfNo");
 		
-		System.out.println("displaying employee info");
+		System.out.println("*********************** employee info *********************************");
 		System.out.println(emp.getId());
 		System.out.println(emp.getName());
 		System.out.println(emp.getAge());
 		System.out.println(emp.getPan());
 		System.out.println(emp.getPfNo());
+		//emp.displayPerson();
+		//emp.displayEmp();
 	}
 }

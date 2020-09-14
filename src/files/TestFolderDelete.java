@@ -9,7 +9,8 @@ public class TestFolderDelete {
 
 		if (file.exists()) { // check if the folder exists
 			file.delete(); // this will delete "test1" folder
+		}else {
+			System.out.println("folder doesnot exist");
 		}
 	}
-
 }

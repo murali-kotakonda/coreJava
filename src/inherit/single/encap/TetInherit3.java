@@ -16,3 +16,6 @@ public class TetInherit3 {
 		p.displayPerson();
 	}
 }
+
+//constr is one time set data during obj cretion
+//setters is anytime to set data after the obj creation

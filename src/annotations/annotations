@@ -1,10 +1,29 @@
+Example:
+
+public interface RBI {
+	 	public abstract void createAccount() ;
+}
+
+
+
+public class Hdfc implements RBI {
+
+	@Override  // this is an annotation
+	public void createAccount() {
+		// TODO Auto-generated method stub
+		
+	}
+  
+}
+
 annotations:
 -------------
-- is used by frameworks like hibernate,springs
 - to specify configuration
+- is used by frameworks like hibernate,springs
 
-annotatons are created by frameworks but 
-annotation usage is specified by developer...
+
+Create a Annotation          -> Frameowrk
+Use/Apply the annotation     -> Developer
   
   
   
@@ -25,61 +44,156 @@ where can we specify annotation:
 -class
 -Instance variable
 -method
--constrctr
+-Constructor
 
 
-Marker Annotation
-@interface MyAnnotation{}  
+how to create annotation?
+-----------------------------------------------------------
+@interface Config{
+  <some attribute specification here>
+} 
+
+ Case#1: Marker Annotation
+-------------------------------------------------------
+1.Create annotation
+	
+  Config.java:
+  @interface Config{  // here Config is the annotation name
+
+  }  
+  
+2.Apply the annotation
+
+	public class Emp{  
+  
+    @Config
+  	String id;
+    
+    @Config
+    String name;
+  
+  }
 
 
-Single-Value Annotation
-@interface MyAnnotation{  
-int min();  
+Case#2:
+-------------------------------------------------------
+1.Create annotation
+	 
+   @interface Size{   //Here Size is the annotation , 
+			int min();       // min is the attribute, specifying min is mandatory
+		}  	
+	
+2.Apply the annotation
+	public class Emp{  
+  
+    @Size ( min=10) 
+  	String id;
+    
+    @Size ( min =8)
+    String name;
+  
+  }
+
+
+Case#3:
+-------------------------------------------------------
+1.Create annotation
+
+	@interface range{    // here range is the annotaion
+		int value() default 0;   // value is the attribute , specifying the value is optional
+	} 
+  
+2.Apply the annotation
+	
+  public class Emp{  
+  
+    @range ( value=5) 
+  	String id;
+    
+    @range  
+    String name;
+  
+  }
+
+
+Case#4:
+---------------------------------------------------------------
+1.Create annotation
+	@interface Config{    // Config is the  annotation
+			int min();  
+			String value1();  
+			String value2();    // min, value1 , value2 are attributes  and all attributes are mandatory
+	}  
+ 
+2.Apply the annotation
+	
+  public class Emp{ 
+  
+   @Config( min=5 ,value1 ="test1" , value2 ="test2" ) 
+   String id;
+  
+  }
+
+
+
+
+Case#5:
+---------------------------------
+Can we apply multiple annotations?
+Yes
+
+1.Create annotation
+
+	@interface range{    // here range is the annotation
+		int value()    // value is the attribute  
+	} 
+	
+	
+	@interface Config{    // Config is the  annotation
+		int min();   // min is the attribute  
+	}
+  
+  
+ 2.Apply the annotation
+	
+  public class Emp{ 
+  
+   @range( value= 5)
+   @Config(min = 10)
+   String id;
+  
+  } 
+  
+  
+  
+
+For creating a annotations we need to specify:
+-------------------------------------------------------  
+1.@Target - mandatory
+2.@Retention - mandatory
+3.@Inherited
+4.@Documented
+
+
+Syntax:
+
+@Retention(RetentionPolicy.RUNTIME)  
+@Target(ElementType.METHOD)  
+@Inherited
+@Documented
+@interface Config{    //here Config is the annotation 
+	int value();   // value is the attribute
 }  
-
-public class Emp{  
-
- @MyAnnotation(min=10)  
- String data;
  
- @MyAnnotation(min=8)  
- String data1;
- 
-}
-
-@interface MyAnnotation{  
-int value() default 0;  
-}  
-
-public class Emp{  
-
- @MyAnnotation(min=10)  
- String data;
- 
- @MyAnnotation  
- String data1;
- 
-}
-
-@interface MyAnnotation{  
-int min();  
-String value2();  
-String value3();  
-}  
-}
-
-public class Emp{  
-
- @MyAnnotation(min=10,value2="aadadad",value3="adadadada")  
- String data;
-}
 
 Built-in Annotations used in custom annotations in java
 
-@Target
+ 
+@Target  [ where annotation can be applied ] 
+------------------------------------------------------------------------
 
 TYPE	class, interface or enumeration
-FIELD	fields
+FIELD	fields/insancde variables
 METHOD	methods
 CONSTRUCTOR	constructors
  
@@ -95,6 +209,7 @@ int value1();
 String value2();  
 }  
 
+
 @MyAnnotation(value1="abc", value2="xyz")
 public class Emp
 {
@@ -108,6 +223,7 @@ public class Emp
 }
 
 @Retention
+--------------------------------------------------------------------------------------
 
 RetentionPolicy.SOURCE	refers to the source code, discarded during compilation. It will not be available in the compiled class.
 RetentionPolicy.CLASS	refers to the .class file, available to java compiler but not to JVM . It is included in the class file.

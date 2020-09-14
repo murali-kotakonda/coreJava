@@ -2,31 +2,22 @@ Wrapper classes:-
 -------------------
 For every primitive data type we have a Class available from Java.
 
-int         Integer
+primitive       class
+--------------------------------
+int             Integer
 float		    Float
 long		    Long
-double		  Double
+double		    Double
 character		Character
-boolan		  Boolean
+boolan		    Boolean
 
 
-ex:
+
+Req:
+add multiple int in a list
+
 List<Integer> nums = new ArrayList<>();
 
-for all collections we need to store primitive values using wrappers.
-
-
-int x = 90;
-
-Integer y = new Integer(900);
-Integer z= 899;
-
-here y & z are objects, y & z can be null
-x is a variable , not an obj.. but x cannot be null
-
-
-
-ex:
 
 1.List of integers
 List<int> list = new ArrayList<>(); // wrong
@@ -35,11 +26,30 @@ List<Integer> list = new ArrayList<>();
 2.If a method is expecting object, then we have to pass integer obj but not int value..
 3.
 
+
+for all collections we need to store primitive values using wrappers.
+
+
+declaration:
+--------------------
+int x = 90;
+
+Integer y = new Integer(900);
+Integer z= 899;
+
+here y & z are objects, y & z can be null
+x is a variable , not an obj.. and x cannot be null
+
+
+
+ 
+
 public class Student {
 
-	Integer sub2;
-	int sub1;
+	Integer sub2; // default value is null
+	int sub1; // default value is 0
 }
+
 // null means student is absent
 // 0 means he got 0 marks
 // > 0 some marks
@@ -53,12 +63,13 @@ print(s.sub2); // null
 
 How to create Objs for the wrapper:
 ---------------------------------------
-Integer y1 = new Integer(900);
-Float y2 = new Float(900.878787);
-Long y3 = new Long(900a13131);
+Integer y1 = new Integer(900);  // Integer z= 899; 
+Float y2 = new Float(900.878787); // Float y2 = 900.878787; 
+Long y3 = new Long(90013131); //Long y3 = 90013131;
 Double y4 = new Double(900.1113131);
 Character y5 = new Character('c');
-Boolean y6 = new Boolean(900);
+Boolean y6 = new Boolean(true);
+
 
 
 
@@ -70,36 +81,10 @@ Integer y1 = new Integer(a);
 
 How to convert wrapper to primitive
 -------------------------------------
-
-public static void main(String[] args) {
-		Integer i = new Integer(1313);
-		Float f = new Float(12.114f);
-		Long l = new Long(13131311);
-		Double d = new Double(11313131d);
-		Character c = new Character('c');
-		Boolean b = new Boolean(true);
-		
-		
-		
-		// convert int obj  to int primitive
-		int i1 = i.intValue();
-    
-    // convert float obj  to float primitive
-		float f1 = f.floatValue();
-    
-    // convert long obj  to long primitive
-		long l1 = l.longValue();
-    
-    // convert double obj  to double primitive
-		double d1 = d.doubleValue();
-
-		System.out.println(i1);
-		System.out.println(f1);
-		System.out.println(l1);
-		System.out.println(d1);
-	}
+WrapperTest.java
 
 
 
+ 
 
 		

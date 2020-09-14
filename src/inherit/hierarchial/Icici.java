@@ -6,3 +6,5 @@ public class Icici extends RBIBank{
 		System.out.println("Icici:: createed ppf");
 	}
 }
+//How many methods are in Icici?
+//3  [  createAccount() , processLoan() , createPPF()   ]

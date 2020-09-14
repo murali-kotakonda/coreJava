@@ -12,7 +12,8 @@ public class Person {
 		System.out.println(name);
 		System.out.println(age);
 	}
-	
+
+
 	// param arg constructor [3 args]
 	public Person(int id, int age, String name) {// local variables
 		System.out.println("3 args constructr");
@@ -34,3 +35,8 @@ public class Person {
 	}
 	
 }
+
+//this refer to the current object under execution
+//use this keyword , when instance variables names and local variable names are same
+
+

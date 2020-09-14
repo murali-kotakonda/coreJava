@@ -1,9 +1,10 @@
 Abstraction:
 -> Hide unnecessary data and expose only what ever is required.
-->for every action/task there should be only funtion.
+->for every action/task there should be only function.
 
 
-Ex:
+Case#1:
+-----------------------------------------------------
 Class Vehicle{
    
     //instance variables
@@ -34,7 +35,8 @@ Class Vehicle{
     
     
 Req#1:To stop vehicle 
-solution) call the brake()
+solution:
+call the brake()
 
 brake() -> changing the values for the instance variable wheel + engine
 
@@ -56,8 +58,8 @@ shows the current state of the fuel
 conclusion:
 --------------
 -> Hide the instance variables and expose the methods.
--> change the instance varibles/read the instance variables using the methods.
-[any actn on obj perform using the method]
+-> change the instance variables/read the instance variables using the methods.
+[any action on obj perform using the method]
 -> one action == one method
 
 
@@ -69,7 +71,7 @@ changes in class:
   2.expose the methods to set data and read data (setters & getters)
   for every instance variables provide setter and getter 
   
-  
+  private instance variables cannot be accessed outside the class.
   
   
   

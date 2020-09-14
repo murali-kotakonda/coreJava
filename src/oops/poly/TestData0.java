@@ -10,6 +10,7 @@ public class TestData0 {
 		// can we call save method by passing null?????
 		data.save(p);
 		data.save(s);
+		
 		//data.save(null);
 		//this will give compilation
 		// compiler is confused which method to call..

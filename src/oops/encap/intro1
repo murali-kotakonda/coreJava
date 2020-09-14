@@ -6,7 +6,7 @@ Encapsulation & abstraction:
 Encapsulation:
 ->Class is a building block for instance variables & methods
 -> We need to create one class per entity
--> Class should contain related instance varibales + methods
+-> Class should contain related instance variables + methods
 
 
 Case#1:
@@ -17,13 +17,13 @@ Class PersonDetails:
   id,name,age,pan
   
 Req: 
--Create a obj and set data for id,name,age.
-- add lastname for a person 
+-Create a obj and set data for id,name,age, which class should we use?
 
-solution:  delete any one of the two classes.
- 
- 
- Class Person:
+solution:  
+delete any one of the two classes and maintain only one class.
+delete PersonDetails class and retain the details  only in person class.
+
+Class Person:
     id,name,age,pan,aadhar
 
 
@@ -33,7 +33,7 @@ solution:  delete any one of the two classes.
 
     
 Case#2:
-Maintain a vehicle showroom .
+Maintain a vehicle show-room .
 capture vehicle & customer info.
 
 class Data:
@@ -45,8 +45,8 @@ class Data:
   custMobile
   
   
-If the vehicle comes to showroom then create obj for  Data and set values for vehicleId  +  vehicelName  + vechicleBrand
-If the customer comes to showroom then create obj for  Data and set values for custId  + custName + custMobile
+If the vehicle comes to show-room then create obj for  Data and set values for vehicleId  +  vehicelName  + vechicleBrand
+If the customer comes to show-room then create obj for  Data and set values for custId  + custName + custMobile
 
 
 
@@ -62,7 +62,7 @@ Problems:
 
 
 solutions:
-  create seperate class for vechicle info
+  create seperate class for vehicle info
   and create seperate class for customer info
 
 class Vehicle:

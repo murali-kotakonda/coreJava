@@ -1,0 +1,109 @@
+Annonymous Inner class:
+----------------------------------
+is required only for abstract class and interface.
+annnymous class : class without name  
+ 
+ 
+Ex:
+
+interface service {
+	void process();
+}
+
+Req:
+call process() method and print "Hello"
+call process() method and print "Bye"
+
+
+Solution:
+-----------------------
+1.Without Anonymous 
+2.With Anonymous
+
+
+1.Without Anonymous 
+---------------------------------------
+1.Create child class 1 for Service
+2.provide the logic for process() method for printing "Hello"
+3.Create child class 2 for Service
+4.provide the logic for process() method for printing "Bye"
+5.create the object for Child1 and call the process method
+6.create the object for Child2 and call the process method
+
+
+
+1.Create child class 1 for Service
+2.provide the logic for process() method for printing "Hello"
+
+  public class Child1 implements  service{
+   	
+    void process() {
+				System.out.println("Hello");		
+    }
+	}
+   
+   }  
+   
+   
+3.Create child class 2 for Service
+4.provide the logic for process() method for printing "Bye"
+
+	public class Child2 implements  service{
+   	
+    void process() {
+				System.out.println("Bye");		
+    }
+	}
+   
+   }  
+  
+5.create the object for Child1 and call the process method
+6.create the object for Child2 and call the process method
+Child1 c1 = new Child1();
+c1.process();
+
+
+Child2 c2 = new Child2();
+c2.process();
+
+
+2.With Annonymous
+------------------------------ 
+annonymous class : class without name  
+
+adv of annonymous :
+---------------------
+-Create child class + provide the implementation + create the Obj can be taken care in a single line.
+-Avoid creating multiple child classes.
+
+steps:
+1.create the object c1 for Service anonymous +  provide the logic  and call the process method
+1.create the object c2 for Service anonymous +  provide the logic  and call the process method
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+abstract class Validation {
+	abstract void validate();
+}
+
+Req:
+call validate() method and print "Customer validation done"
+call validate() method and print "Employee validation done"
+
+ 
+

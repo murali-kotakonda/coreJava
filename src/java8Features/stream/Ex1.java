@@ -31,6 +31,5 @@ public class Ex1 {
 		.map(p -> p.name)
 		.collect(Collectors.toSet());
 		System.out.println(names);
-		
 	}
 }

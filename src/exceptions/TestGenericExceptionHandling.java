@@ -19,7 +19,7 @@ public class TestGenericExceptionHandling {
 	public static void main(String[] args) {
 		String name = "";
 		int num1= 20;
-		int num2 = 1;
+		int num2 = 0;
 		int nums[] = new int[5];
 		try {
 			//can fail due to number format

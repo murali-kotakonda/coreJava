@@ -1,0 +1,43 @@
+Generic class:
+------------------
+
+the instance variables are generic
+the instance methods are generic
+
+
+Non Generic class:
+------------------------
+public class Person {
+
+	private int data; // instance variable is always Integer
+	
+	public int get(){
+		return this.data;
+	}
+	
+	public void set(int t1){
+		this.data=t1;
+	}
+}
+
+
+
+Generic class:
+--------------------------------------------
+public class Person<T> {
+
+	private T data; // instance variacle can be any data type
+	
+	public T get(){
+		return this.data;
+	}
+	
+	public void set(T t1){
+		this.data=t1;
+	}
+}
+
+
+
+While creating the object , specify the data type
+

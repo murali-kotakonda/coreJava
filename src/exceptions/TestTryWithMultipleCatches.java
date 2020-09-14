@@ -30,10 +30,14 @@ public class TestTryWithMultipleCatches {
 			System.out.println(nums[9]);
 		} catch (ArithmeticException ex) {
 			System.out.println("ArithmeticException created. invalid arithmetic operation" + ex.getMessage());
+		
 		} catch (NullPointerException ex) {
 			System.out.println("NullPointerException created.obj is null:" + ex.getMessage());
+		
+		
 		} catch (ArrayIndexOutOfBoundsException ex) {
 			System.out.println("ArrayIndexOutOfBoundsException created .invalid array acess:" + ex.getMessage());
+		
 		} catch (NumberFormatException ex) {
 			System.out.println("NumberFormatException created .str convertion failed :" + ex.getMessage());
 		}  

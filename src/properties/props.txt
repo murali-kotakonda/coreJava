@@ -1,11 +1,11 @@
 Properties file:
 ------------------
-config.properties
 
--> for config parameters
-all proj related properties
 
--> every line contain two things: property name+ property value
+Properties file contais the configuration for the application.
+
+-> every line contain two elements: 
+property name+ property value
 
 config.properties:
 --------------------------
@@ -27,5 +27,5 @@ steps:
 4.read any property using properties obj
 
 
-
+file path----> fileObj ----> FileInputStream obj  ---> Properties Obj 
  

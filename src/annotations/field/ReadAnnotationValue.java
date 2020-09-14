@@ -24,13 +24,9 @@ public class ReadAnnotationValue {
 
 		System.out.println("Person.id --> "+ReadAnnotationValue.getDeclaredSize("annotations.field.Person", "id"));
 		System.out.println("Person.name --> "+ReadAnnotationValue.getDeclaredSize("annotations.field.Person", "name"));
-		
-		System.out.println("Product.productId --> "+ReadAnnotationValue.getDeclaredSize("annotations.field.Product", "productId"));
-		
 		System.out.println("User.pan --> "+ReadAnnotationValue.getDeclaredSize("annotations.field.User", "pan"));
-		
+		//System.out.println("Product.productId --> "+ReadAnnotationValue.getDeclaredSize("annotations.field.Product", "productId"));
 	}
-
 }
 
 

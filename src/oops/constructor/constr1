@@ -5,21 +5,7 @@ Constructor:
 - With constr we can set the data during obj creation.
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+   
   
   
 class Person{
@@ -31,6 +17,8 @@ class Person{
 
 Req: create obj + set data
 
+
+ 
 
 
 without constr:  [requires 4 lines]
@@ -48,16 +36,8 @@ Person p = new Person(1000,"user1",45); // set the data along with obj creation
 
 
 
-ex:
-		1.create obj
-		2.set data
-
-1. create obj + set data
-
-
 points:
 ------------
-we need to write constr within the class.
 Constr name is equal to class name.
 Constr doesnt have any return type.
 We can have any number of constr in a single class -> constr overloading..
@@ -70,13 +50,15 @@ Adv:
 
 
 
-syntax:
+syntax for writing constr:
+------------------------------------
   
 class Person  
  {
    int id;
    String name;
    int age;
+   // id, name, age are instance variables
    
    
    // zero arg constructor
@@ -89,6 +71,9 @@ class Person
 		this.id = id;
 		this.age = age;
 		this.name = pName;
+	}
+	
+	public void show(){ // this is method
 	}
    
   
@@ -112,16 +97,17 @@ main(){
  2.constr name = class name
  method  name can be anything
  
- 3.contsr doesnt have any return (even void)
- method have return type ...
+  3.contsr doesnt have any return type(not even void)
+ method have return type(atleast void) ...
  
  4.cosntr is called during obj creation
- constr is automatic call
+  method should be called after obj created.
  
- method should be called after obj created.
- method is explict call
  
- constr logic -> only initializing i.v
+5.constr is automatic call
+method is explict call
+ 
+6. constr logic -> only initializing i.v
  method logic -> any logic
  
   

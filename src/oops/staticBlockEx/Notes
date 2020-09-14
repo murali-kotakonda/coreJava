@@ -1,8 +1,8 @@
  static block:
 ------------------
--> static block is exceuted only 1 time , during class loading
--> static block contains code ; code only for initializing the static variables.
--> static block is exceuted before the constr.
+-> static block is executed only 1 time , during class loading
+-> static block contains code  only for initializing the static variables.
+-> static block is executed before the constructor.
 -> write static block inside the class  
 
 syntax:
@@ -16,8 +16,8 @@ static{
 }
 
 
-instance varibles + instace method + constr   ---> 1 set
-(specific data)        ( any logic)     ( initialzing the i.v. when obj is created)
+instance variables + instance method + constr   ---> 1 set
+(specific data)        ( any logic)     ( initializing the i.v. when obj is created)
 
-static varibles + static methods + static block ---> 1 set
-(common data)      ( logic for s.v.)  ( intilizing the s.v. during class loading)
+static variables + static methods + static block ---> 1 set
+(common data)      ( logic for s.v.)  ( initializing the s.v. during class loading)

@@ -5,7 +5,7 @@ import java.io.IOException;
 
 /**
 1.create file obj by specifying file path. [ make sure folder exists ]
-2. call createNewFile(); method
+2.call createNewFile(); method
 
  */
 public class TestFileCreate {

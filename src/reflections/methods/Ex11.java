@@ -25,15 +25,18 @@ public class Ex11 {
 				System.out.println(class1.getName() + " ");
 			}
 			System.out.println();
-
-			Class[] guru99ExceptionList = method.getExceptionTypes();
-			System.out.print("Excpetion thrown by method :");
-			for (Class class1 : guru99ExceptionList) {
-				System.out.println(class1.getName() + " ");
-			}
+			
 			System.out.println();
 			System.out.println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ");
 
 		}
 	}
 }
+
+/*
+Class[] exceptionList = method.getExceptionTypes();
+			System.out.print("Excpetion thrown by method :");
+			for (Class class1 : exceptionList) {
+				System.out.println(class1.getName() + " ");
+			}
+ * */

@@ -1,16 +1,22 @@
 package oops.objCompare;
 
 /**
-  
- two objs are equal if the id, name, age of 1st obj == id,name,age of second obj
- step1 : write the equals() method inside the Person classs
- step2: use equals method for comparing two objects.
-
+   Generate the equals method in the person class 
+   
+   p1==p2 , will not compare the content of objs
+   use p1.equals(p2) for comparing the objs. 
+ 
  */
 public class Person {
 	int id;
 	String name;
 	int age;
+	
+	public Person(int id, String name, int age) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
 
 	@Override
 	public int hashCode() {
@@ -42,16 +48,4 @@ public class Person {
 			return false;
 		return true;
 	}
-
-	public Person() {
-
-	}
-
-//param arg bconstructor
-	public Person(int id, int age, String pName) {
-		this.id = id;
-		this.age = age;
-		name = pName;
-	}
-
 }

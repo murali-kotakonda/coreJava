@@ -113,4 +113,17 @@ import java.lang.reflect.*;
 int value();  
 }  
   
-//Applying annotation  
+
+
+
+1. Create the annotation                     -> Framework
+2.Apply the annotations for Person , User , Product:       -> Developer
+3.Read the annotation Values         -> Framework
+ Use the Reflection API
+ using the class get the annotation value
+4.Validate the data with the annotated size      -> Framework
+
+
+
+
+

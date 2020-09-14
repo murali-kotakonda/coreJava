@@ -4,11 +4,7 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 /*
-  1.create exception in m4() using throw keyword
-  2.m2, m3, ,m4() will  not handle exception , write throws keyword at method declaration
-  3.main() write try catch
-  
-  to perform divison of two numbers
+ to perform divison of two numbers
   
   main() -> take two nums as input
   	     -> calls m2
@@ -21,9 +17,15 @@ import java.util.Scanner;
   m4() -> if the num2 is zero throw exception , if not perform division.
   
   
+  1.create exception in m4() using throw keyword
+  2.m2, m3, ,m4() will  not handle exception , write throws keyword at method declaration
+  3.main() write try catch
+  
+  
 */
 
 public class TestThrows {
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter num1");
@@ -39,7 +41,6 @@ public class TestThrows {
 			System.out.println(e.getMessage());
 		}
 		System.out.println("output = " + output);
-
 	}
 
 	private static int m2(int num1, int num2) throws SQLException {

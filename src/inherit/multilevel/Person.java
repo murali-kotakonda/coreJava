@@ -15,6 +15,10 @@ Staff class will get inheritance from Person and Employee.
 
 create the objs , set data and print.
 
+Employee class Extends Person class
+Staff class Extends Employee class.
+
+
 */
 public class Person {
 

@@ -1,0 +1,84 @@
+
+
+
+
+Interface:
+-> should be used only in inheritance.
+->we cannot create object
+
+Interface = 100 % abstract class
+->Interface has only abstract methods  
+and only public static final variables.
+-> No instance variables + constr 
+->interface method cannot be static
+->
+
+RBI : interface
+SBI : child class for RBI
+
+
+->syntax for interface class:
+ 
+	public interface RBI {
+    
+     public static final int count =50;
+  		 public abstract void display();
+  	   public abstract void show();
+  
+   }
+   
+
+syntax for child class for a interface:
+public class SBI implements RBI {
+  //overriding the display() and show() are mandatory....
+  
+}
+
+
+Whats the only way to use interface?   
+--> create a class that implements Interface    
+-->  For a child class overriding is mandatory for the abstract methods,
+
+ 
+
+For a child class:
+---------------------------
+Use Extends --> normal class+ abstarct class
+Use implements --> interface  
+
+
+
+Interface supports multiple inheritance.
+ 
+ RBI : interface
+ WB : interface
+ SBI is the child class for RBI and WB.
+ 
+ 
+public interface RBI {
+  		 public abstract void display();
+  	   public abstract void show();
+  
+   }
+
+public interface WB {
+  		 public abstract void ppf();
+  	   public abstract void draft();
+  
+   }
+
+
+
+public class SBI implements  RBI, WB  {
+  //overriding the display() and show()  ppf() and draft()  are mandatory....
+  
+}
+ 
+
+
+- One class can extend only one parent class , but it can implement multiple interfaces.
+
+
+  
+
+

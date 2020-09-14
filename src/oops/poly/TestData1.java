@@ -12,5 +12,8 @@ public class TestData1 {
 		float a1 = data.add(4, 5);//int, int
 		System.out.println(a1);
 		
+		
+		float a3 = data.add(13131313L,42424242L);
+		System.out.println(a3);
 	}
 }

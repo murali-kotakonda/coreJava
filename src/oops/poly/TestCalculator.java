@@ -15,11 +15,10 @@ public class TestCalculator {
 		long sum3 = cal.add(343535l, 525252l); // long , long
 		System.out.println(sum3);
 		
-	 	float sum4 = cal.add(12f,  10.0f);
+	 	float sum4 = cal.add(12f,  10.0f);//float, float
 		System.out.println(sum4);
 		
-		long sum5 = cal.add(12l, 10l);
-		System.out.println(sum5);
-		
+		 cal.add(123 , 123f);// int , float
+		 cal.add(12f, 5656); //float, int
 	}
 }

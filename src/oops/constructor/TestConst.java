@@ -3,17 +3,17 @@ package oops.constructor;
 public class TestConst {
 public static void main(String[] args) {
 	//old approach
-	Person p1 = new Person();
+	Person p1 = new Person();// calls zero-arg constr
 	p1.id=20001;
 	p1.name="user1";
 	p1.age=29;
 	
 	//new approach
-	Person p3 = new Person(20003,31, "user3");
-	Person p4 = new Person(20004,32, "user4");
+	Person p3 = new Person(20003,31, "user3");// calls 3-arg constr
+	Person p4 = new Person(20004,32, "user4");// calls 3-arg constr
 
 
-	Person p5 = new Person(39, "user5");
+	Person p5 = new Person(39, "user5");// calls 2-arg constr
 	p5.id= 20005;
 	
 	System.out.println("********showing p1 data ****************");

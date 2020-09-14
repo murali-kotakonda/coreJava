@@ -9,8 +9,6 @@ ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException   ==
 and write global exception  ==========> print "server error"   
 
 
-write common exception handling for
-
 1.ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException   ==> print "client error"
 solution:
  catch (ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException ex) { //

@@ -17,11 +17,6 @@ public static void main(String[] args) {
     Arrays.sort(strArr);
     System.out.println(Arrays.toString(strArr));
     
-    
-
-    
-    
-    
     //sorting list of objects of Wrapper classes
     List<String> strList = new ArrayList<String>();
     strList.add("Cow");

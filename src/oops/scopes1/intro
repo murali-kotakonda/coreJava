@@ -1,0 +1,56 @@
+Modifiers:
+------------------
+
+
+
+              class             instance variables/static varibales               instance  methods/static methods       local variables
+
+public        Y                           Y                                              Y                                   N
+private       N                           Y					                             Y                                   N
+protected     N                           Y (I.V.) , N(S.V.)                             Y (I.M.) , N(S.M.)                  N
+DEFAULT       Y                           Y                                              Y                                   Y
+final         Y                           Y                                              Y                                   Y
+transient     N                           Y (I.V.) , N(S.V.)                             N                                   N
+SYNCRONIZED   N                           N                                              Y                                   N
+volatile      N                           Y (I.V.) , N(S.V.)                             N                                   N
+
+
+
+public   : access any where [ inside the class/outside class [same pkg] /outside class [diff pkg]
+private  : access only within the class
+DEFAULT  : access only within the packge
+protected : access only within the packge or access available only for child classes.
+
+
+
+Within same class
+Differt class [same pkg]
+Differt class [diff pkg]
+Differt class , but child class [diff pkg]
+
+												Within same class          Differt class [same pkg]          Differt class [diff pkg]              Differt class , but child class [diff pkg]
+
+public                      Y                              Y                                Y                                           Y
+private                     Y                              N                                N                                           N
+default                     Y                              Y                                N                                           N
+protected                   Y                              Y                                N                                           Y
+
+
+
+
+
+scopes1: [package name]
+-----------------------
+Info.java
+Info2.java
+
+
+
+
+
+scopes2:[package name]
+--------------------------
+Info3.java
+Info4.java   [ child class for Info] 
+
+

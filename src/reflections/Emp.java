@@ -3,9 +3,9 @@ package reflections;
 public class Emp {
 
 	public int id = 1111;
-	int age = 23;
-	String name = "kumar";
-	static String course = "Java";
+	public int age = 23;
+	public String name = "kumar";
+	public static String course = "Java";
 
 	public Emp() {
 		super();

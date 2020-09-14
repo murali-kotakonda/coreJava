@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Size{
-	int value() default 1;
+public @interface Size{  // Size is the annotation 
+	int value() default 1; //value is the attribute
 }

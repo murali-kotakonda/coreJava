@@ -12,19 +12,16 @@ public class WrapperTest {
 		Character c = new Character('c');
 		Boolean b = new Boolean(true);
 		
-		
-		
-		
 		// convert int obj  to int primitive
 		int i1 = i.intValue();
     
-    // convert float obj  to float primitive
+		// convert float obj  to float primitive
 		float f1 = f.floatValue();
-    
-    // convert long obj  to long primitive
+		
+		// convert long obj  to long primitive
 		long l1 = l.longValue();
     
-    // convert double obj  to double primitive
+		// convert double obj  to double primitive
 		double d1 = d.doubleValue();
 
 		System.out.println(i1);
@@ -32,6 +29,23 @@ public class WrapperTest {
 		System.out.println(l1);
 		System.out.println(d1);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public void check() {
 		List<Integer> al = new ArrayList<>();
