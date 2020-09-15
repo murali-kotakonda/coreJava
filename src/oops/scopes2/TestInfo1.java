@@ -8,9 +8,9 @@ public class TestInfo1 {
 		//access everything within class
 		Info i = new Info();
 		System.out.println(i.id);
-		System.out.println(i.name);
-		System.out.println(i.age);
-		System.out.println(i.count);
+		//System.out.println(i.name);
+		//System.out.println(i.age);
+		//System.out.println(i.count);
 	}
 	
 	
@@ -40,7 +40,7 @@ public class TestInfo1 {
 		Info i = new Info();
 		i.id = 12000;
 		//i.name ="adad"; private cannot be accessed outside class
-		i.age=45;
-		i.count=1;
+		//i.age=45;
+		//i.count=1;
 	}
 }

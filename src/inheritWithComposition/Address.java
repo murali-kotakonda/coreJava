@@ -28,10 +28,10 @@ public class Address {
 		System.out.println(pin);
 	}
 	
-	
-	
-	
-	
+	public Address() {
+		super();
+	}
+
 	public String getHno() {
 		return hno;
 	}

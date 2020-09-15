@@ -1,4 +1,4 @@
-package com.mnp.object.copy;
+package oops.constructor.copy;
 
 public class TestObjCopy {
 

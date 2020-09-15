@@ -1,21 +1,21 @@
 package sort;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  Sorting arrays:
 ------------------------
-use  Arrays.sort() method with Collections.reverseOrder()  to sort any array in DESC order
+
+use  Arrays.sort() method to sort any array in ASC order
 use Arrays.toString() method for printing
+
+
  */
-public class ArraysSort2 {
+public class ArraysSort1 {
 public static void main(String[] args) {
 	 //sort primitives array like int array
-    Integer[] intArr = {5,9,1,10,3,10,78,23,4,7};
-   
-    Arrays.sort(intArr , Collections.reverseOrder());
-    
+    int[] intArr = {5,9,1,10,3,10,78,23,4,7};
+    Arrays.sort(intArr);
     System.out.println(Arrays.toString(intArr));
 }
 }

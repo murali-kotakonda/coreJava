@@ -18,6 +18,7 @@ public class TestMethodRef2 {
 		Service1 sayable = methodReference::execute;
 		// Calling interface method
 		sayable.process();
+		
 		// Referring non-static method using anonymous object
 		Service1 sayable2 = new TestMethodRef2()::execute; // You can use anonymous object also
 		// Calling interface method

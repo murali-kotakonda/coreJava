@@ -1,7 +1,9 @@
 Modifiers:
 ------------------
 
-
+final class cannot be inherited
+final method cannot be OVERRIDDEN
+final variable cannot be changed
 
               class             instance variables/static varibales               instance  methods/static methods       local variables
 
@@ -28,7 +30,7 @@ Differt class [same pkg]
 Differt class [diff pkg]
 Differt class , but child class [diff pkg]
 
-												Within same class          Differt class [same pkg]          Differt class [diff pkg]              Differt class , but child class [diff pkg]
+					Within same class          Differt class [same pkg]          Differt class [diff pkg]                    child class [diff pkg]
 
 public                      Y                              Y                                Y                                           Y
 private                     Y                              N                                N                                           N

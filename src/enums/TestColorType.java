@@ -13,9 +13,9 @@ public class TestColorType {
 		
 		System.out.println("***************Print all objs****************************");
 		//get all objs
-		ColorType[] objs = ColorType.values();// retuns all objs
-		for(ColorType obj :objs) {
-			System.out.println(obj);
+		ColorType[] colors = ColorType.values();// retuns all objs
+		for(ColorType color :colors) {
+			System.out.println(color);
 		}
 		
 	}

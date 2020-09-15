@@ -12,15 +12,14 @@ abstract class PersonService {
 	abstract void validate();
 }
 
-
-class Child1 extends PersonService{
+class Child3 extends PersonService{
 	@Override
 	void validate() {
 		System.out.println("hello");		
 	}
 }
 
-class Child2 extends PersonService{
+class Child4 extends PersonService{
 	@Override
 	void validate() {
 		System.out.println("bye");		
@@ -30,10 +29,10 @@ class Child2 extends PersonService{
 
 public class TestAnonymousInner2 {
 	public static void main(String args[]) {
-		PersonService sb = new Child1();
+		PersonService sb = new Child3();
 	    sb.validate();
 	 
-	 PersonService sb2 = new Child2();
+	 PersonService sb2 = new Child4();
 	 sb2.validate();
 	 
 	}

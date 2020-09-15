@@ -1,4 +1,4 @@
-package com.mnp.poly3;
+package oops.poly.poly3;
 
 public class TestPoly2 {
 	public static void main(String[] args) {

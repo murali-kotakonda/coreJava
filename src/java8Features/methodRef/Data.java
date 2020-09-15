@@ -2,26 +2,26 @@ package java8Features.methodRef;
 
 public class Data {
 
-	public static void execute() {
-		System.out.println("processing cust & payment static info");
+	//static method
+	public static void execute1() {
+		System.out.println("Hello User");
 	}
 	
 	
+	//instance method
 	public void execute2() {
-		System.out.println("processing cust & paymnet obj info");
+		System.out.println("Welcome User");
 	}
 	
-	
-	public static void main(String[] args) {
-		// Referring static method
-		Service obj = Data::execute;
-		// Calling interface method
-		obj.process();
-		
-		Service obj1 =  new Data()::execute2;
-		obj1.process();
+	//consr
+	public Data() {
+		System.out.println("Bye");
 	}
+	
 }
 
-
+//consr
+	/* public Data() {
+		System.out.println("Bye");
+	}*/
 

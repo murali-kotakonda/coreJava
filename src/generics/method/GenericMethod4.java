@@ -12,7 +12,6 @@ public class GenericMethod4 {
 		Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };
 		String[] strArray = { "hyd", "banglr", "chennai" ,"Mumbai"};
 
-
 		System.out.println("******** Print string array **************");
 		print(strArray);
 		
@@ -24,6 +23,7 @@ public class GenericMethod4 {
 		
 		System.out.println("******** Print Character array **************");
 		print(charArray);
+		
 	}
 	
 	private static <T> void print(T []  elements) {

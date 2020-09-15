@@ -1,20 +1,11 @@
-package com.mnp.compositionEncap;
+package oops.compositionEncap;
 
-public class TestEmployeeWithAddress {
+public class TestEmployeeWithAddressConstructor {
 	public static void main(String[] args) {
 		Employee emp1 = getEmp1();
 		Employee emp2 = getEmp2();
 		emp1.print();
-		/*Address address = emp1.getAddress();
-		System.out.println(address.getCity());
-		System.out.println(address.getCountry());
-		System.out.println(address.getHno());
-		System.out.println(address.getPin());
-		System.out.println(address.getState());
-		System.out.println(address.getStreetName());
-		*/
 		emp2.print();
-		emp2.getAddress().print();
 	}
 
 	private static Employee getEmp2() {
@@ -35,7 +26,7 @@ public class TestEmployeeWithAddress {
 		localAdd1.setStreetName("HYD");
 		
 		//set relatn between emp and address
-		emp1.setAddress(localAdd1);
+		//emp1.setAddress(localAdd1);
 		return emp1;
 	}
 	private static Employee getEmp1() {
@@ -56,7 +47,7 @@ public class TestEmployeeWithAddress {
 		localAdd1.setStreetName("selam");
 		
 		//set relatn between emp and address
-		emp1.setAddress(localAdd1);
+		//emp1.setAddress(localAdd1);
 		return emp1;
 	}
 	 

@@ -1,14 +1,14 @@
   Generics:
   -----------------
-
-  List<String> names = new ArrayList<String> ();
+  List<String> names = new ArrayList<> (); // can add only Strings
   names.add("user1");
-
-  List<Integer> nums = new ArrayList<Integer> ();
+  
+  List<Integer> nums = new ArrayList<> ();// can add only Integer
   nums.add(245);
-
-  List<Float> sals = new ArrayList<Float> ();
+ 
+  List<Float> sals = new ArrayList<> ();// can add only Float
   sals.add(1313.131313f)
+  
 
   
   -> Generics is used for all the collections ..
@@ -18,7 +18,7 @@
   
 Raw list issues:  
 ---------------
-List names = new ArrayList();// add int/float/string/double/long
+List names = new ArrayList();// add data of any datatype int/float/string/double/long
   names.add("user1");
   names.add(1222);
   names.add(1313.11313f);
@@ -36,15 +36,17 @@ risk of ClassCastException
 Generic Method:
 ---------------
 
+Case#1:  [ code without generic ]
 
-Case#1: 
-public void print1(String data) { // can be called by passing only string
+1.code for wirting for writing method
+public void print(String data) { // can be called by passing only string
 		System.out.println(data);
 	}
- 
- print1("hello") ;
- print1("kumar");
- print1("ram");
+  
+2.code for calling methods
+ print("hello") ;
+ print("kumar");
+ print("ram");  
  print1(123); //this wil give compilation
  
  Case#2: [generic method] 

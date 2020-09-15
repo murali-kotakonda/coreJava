@@ -1,4 +1,4 @@
-package com.mnp.poly3;
+package oops.poly.poly3;
 
 public class Calculator2 {
 

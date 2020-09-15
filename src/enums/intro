@@ -4,7 +4,6 @@
   -> Enum has predefined objects, 
 	-> Enum has limited objs defined in the class
      we need to use the same objects..
- 
   -> Predefined objs also mentioned in the enum class..
 
   Class - > i.v + i.m + constr +setters +getters + static
@@ -12,21 +11,20 @@
   
   
   For class  we can create any no of objs.
-  For enum we need to use only defined objs.
+   For enum we need to use only already created objs.
   
   Ex:
-  if LoanType is a a class
+  if LoanType is a class
   We have only 6 types of loans Personal, Home, education , Vehical i.e. we should allow to create only 4 objs.
   ex: How do you know what are loantypes supported...???
-
 
   ex: LoanType , UserType , CardType , PaymentMode ,
 
   Enum can be used as constants :
  
   Ex:
-  applciation supports only 5 colours -> use enum
-  
+  application supports only 5 colors -> use enum
+  application supports only 4 LoanTypes -> use enum
 
   syntax:
 

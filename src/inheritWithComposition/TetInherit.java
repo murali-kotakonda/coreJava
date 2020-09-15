@@ -56,7 +56,6 @@ public class TetInherit {
 		e1.displayPerson();
 		e1.displayEmp();
 		e1.getAddress().displayAddress();
-		
 
 	}
 }

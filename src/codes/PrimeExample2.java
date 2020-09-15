@@ -1,6 +1,6 @@
 package codes;
 
-public public class PrimeExample2{    
+public class PrimeExample2{    
 	static void checkPrime(int n){  
 		  int i,m=0,flag=0;      
 		  m=n/2;      

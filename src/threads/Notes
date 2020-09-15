@@ -1,6 +1,7 @@
+Threads:
+------------------------
 	  threading is used for parallel programming. 
-	  Parallel programming means Executing multiple programs at the 
-	  time. we call it as countering program
+	  Parallel programming means Executing multiple programs at the time
 	  
 	  advantage of thread:
 	  -response time is improved
@@ -19,11 +20,15 @@
 	  -all the threads share the same memory which is allocated for the process
 	  
 	  when should we use thread?
+	  -----------------------------------
 	  -when the tasks are independent of each other, 
 	  i.e.the output of one task is not required for the another task
+	  - TEST the application in multiple browsers
+	  - Test multiple modules of application.
+	  
 	  -when the thread is created it would not start immediately, because it is decided
 	  by the cpu, then it would run
-	  
+	   
 	  we cannot determine when the thread would start or end.
 	  
 	  thread states:
@@ -44,7 +49,8 @@
 	 
 	 /*
  
-	  how to create a thread:
+	  How to create a thread:
+	  --------------------------------------------------------
 	  1. create the thread class [ two ways of creating thread class]
 	  2. provide run method 
 	  - contain the thread activity
@@ -53,7 +59,7 @@
 	     -thread will be in ready state
 	     - call the start method() - internally  calls the run method when the cpu is available.
 	  
-	  run method tells what the thread has to do
+	  run method tells what the thread has to do.
 	  
 	  
     create the thread class:

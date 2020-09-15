@@ -96,4 +96,8 @@ public class Person {
 		this.id = id;
 	}
 
+	public Person() {
+		super();
+	}
+
 }

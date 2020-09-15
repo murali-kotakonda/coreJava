@@ -50,3 +50,12 @@ public class Ex0Strings {
 
 	}
 }
+
+/*
+ 1.Create new list with all upper cases
+2.create new list with all lowr cases
+3.create new list with only the strings that strats with S
+4.create new list with ASC ORDER
+5.create new list with DESC ORDER
+ * */
+ 

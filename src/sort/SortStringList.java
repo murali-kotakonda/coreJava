@@ -1,24 +1,27 @@
 package sort;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class SortStringList {
 	public static void main(String[] args) {
-	    List<String> strList = new ArrayList<String>();
-	    strList.add("Cow");
-	    strList.add("Bat");
-	    strList.add("Apple");
-	    strList.add("Zebra");
-	    strList.add("Elephant");
-		
+	    List<String> names = Arrays.asList("Cow", "Zebra","Bat", "Apple","Elephant","Mango");
+
 	    System.out.println("before sorting");
-		System.out.println(strList);
+		System.out.println(names);
 
-		Collections.sort(strList);
+		System.out.println("********************ASC ORDER***********************");
+		Collections.sort(names);
 
-		System.out.println("after sorting");
-		System.out.println(strList);
+		System.out.println("after sorting in ASC");
+		System.out.println(names);
+		
+		System.out.println("********************DESC ORDER***********************");
+		Collections.sort(names, Collections.reverseOrder());
+
+		System.out.println("after sorting in DESC");
+		System.out.println(names);
+	
 	}
 }

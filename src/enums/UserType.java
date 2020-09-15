@@ -3,8 +3,8 @@ package enums;
 /**
  Assignment:
 
-application suppports follwoing usertypes:
- ADMIN,
+application supports the following user types:
+    ADMIN,
 	AGENT,
 	CUSTOMER,
 	SUPERUSER,

@@ -13,31 +13,31 @@ public class Ex0 {
 		System.out.println("***************** List ************************");
 		System.out.println(numbers);
 
-		System.out.println("***************** SQUARE ************************");
+		System.out.println("***************** create new list with square of every no ************************");
 		List<Integer> result = numbers.stream().map(num -> num * num).collect(Collectors.toList());
 		System.out.println(result);
 
-		System.out.println("***************** Even ************************");
+		System.out.println("***************** create new list with only even nos  ************************");
 		result = numbers.stream().filter(num -> num % 2 == 0).collect(Collectors.toList());
 		System.out.println(result);
 
-		System.out.println("***************** Odd ************************");
+		System.out.println("***************** create new list with only odd nos  ************************");
 		result = numbers.stream().filter(num -> num % 2 != 0).collect(Collectors.toList());
 		System.out.println(result);
 
-		System.out.println("***************** Sort ************************");
+		System.out.println("***************** create new list with ASC order  ************************");
 		result = numbers.stream().sorted().collect(Collectors.toList());
 		System.out.println(result);
 
-		System.out.println("***************** Reverse Sort ************************");
+		System.out.println("***************** create new list with DESC order ************************");
 		result = numbers.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
 		System.out.println(result);
 
-		System.out.println("***************** Duplicate ************************");
+		System.out.println("***************** create new list with Removing duplicate ************************");
 		result = numbers.stream().distinct().collect(Collectors.toList());
 		System.out.println(result);
 
-		System.out.println("***************** Sort & Duplicate ************************");
+		System.out.println("***************** create new list with Sort & Removing duplicate  ************************");
 		result = numbers.stream().sorted().distinct().collect(Collectors.toList());
 		System.out.println(result);
 
@@ -48,17 +48,5 @@ public class Ex0 {
 		System.out.println("***************** limit and skip  ************************");
 		result = numbers.stream().skip(1).limit(2).collect(Collectors.toList());
 		System.out.println(result);
-
-		System.out.println("***************** has match  ************************");
-		boolean hasAnyEven = numbers.stream().anyMatch(i -> i % 2 == 0);
-		boolean hasAllEven = numbers.stream().allMatch(i -> i % 2 == 0);
-		boolean hasNoMatch = numbers.stream().noneMatch(i -> i % 10 == 0);
-		boolean allPositive = numbers.stream().allMatch(i -> i > 0);
-		
-		System.out.println(allPositive);
-		System.out.println(hasAllEven);
-		System.out.println(hasAnyEven);
-		System.out.println(hasNoMatch);
-
 	}
 }

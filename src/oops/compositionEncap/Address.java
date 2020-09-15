@@ -1,4 +1,4 @@
-package com.mnp.compositionEncap;
+package oops.compositionEncap;
 
 public class Address {
 	private String hno;
