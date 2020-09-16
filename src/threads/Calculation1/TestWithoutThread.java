@@ -15,5 +15,7 @@ public class TestWithoutThread {
 		System.out.println("sub =" + (num1 - num2));
 		System.out.println("mul=" + num1 * num2);
 		System.out.println("div=" + num1 / num2);
+		
+		System.out.println("END");
 	}
 }

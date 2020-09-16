@@ -6,20 +6,20 @@ package threads;
  * 
  * by default java uses main thread.
  */
-public class TestMyThread {
+public class TestMyThread11 {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("start");
 
-		MyThread th1 = new MyThread();
+		MyThread1 th1 = new MyThread1();
 		th1.setName("my Thread1"); // thread name
 		th1.setPriority(10);// thread priority [ 1 to 10]
 		
-		MyThread th2 = new MyThread();
+		MyThread1 th2 = new MyThread1();
 		th2.setName("my Thread2");
 		th2.setPriority(5);
 
-		MyThread th3 = new MyThread();
+		MyThread1 th3 = new MyThread1();
 		th3.setName("my Thread3");
 		th3.setPriority(2);
 
@@ -30,3 +30,4 @@ public class TestMyThread {
 		System.out.println("Bye");
 	}
 }
+//4 threads are running in parallel

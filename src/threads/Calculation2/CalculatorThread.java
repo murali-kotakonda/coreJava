@@ -14,7 +14,6 @@ public class CalculatorThread extends Thread {
 		this.num2 = num2;
 	}
 
-	@Override
 	public void run() {
 		if (operation.equals("add")) {
 			System.out.println("add "+ ( num1 + num2 ));

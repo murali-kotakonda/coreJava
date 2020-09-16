@@ -5,16 +5,16 @@ public class TestThreadJoin {
 	 public static void main(String[] args) throws InterruptedException {
 		 System.out.println("main starts");
 		
-		 Thread th = new MyThread();
+		 Thread th = new MyThread1();
 		th.setName("my Thread1");
 		
 		
-		Thread th2 = new MyThread();
+		Thread th2 = new MyThread1();
 		th2.setName("my Thread2");
 		th2.setPriority(10);
 		
 		
-		Thread th3 = new MyThread();
+		Thread th3 = new MyThread1();
 		th3.setName("my Thread3");
 		
 		th.start();

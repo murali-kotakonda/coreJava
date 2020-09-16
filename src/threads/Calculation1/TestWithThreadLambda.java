@@ -10,8 +10,8 @@ public class TestWithThreadLambda {
 
 		//take inputs
 		System.out.println("Enter 2 nums");
-		int num1 = 100;//sc.nextInt();
-		int num2 = 50;//sc.nextInt();
+		int num1 =  sc.nextInt();
+		int num2 =  sc.nextInt();
 
 		//create 4 annnymous class + objects
 		Runnable r1 = () -> {
@@ -30,18 +30,11 @@ public class TestWithThreadLambda {
 			System.out.println("div = "+ (num1/num2));
 		};
 		
-		//create thread objects
-		Thread th1 = new Thread(r1,"add thread");
-		Thread th2 = new Thread(r2,"sub thread");
-		Thread th3 = new Thread(r3,"mul thread");
-		Thread th4 = new Thread(r4,"div thread");
-		
-		//start the threads
-		th1.start();
-		th2.start();
-		th3.start();
-		th4.start();
-		
+		//create ANS start thread objects
+		  new Thread(r1,"add thread").start(); 
+		  new Thread(r2,"sub thread").start();
+		  new Thread(r3,"mul thread").start();
+		  new Thread(r4,"div thread").start();
 		
 		System.out.println("main ends");
 		

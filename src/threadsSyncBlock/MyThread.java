@@ -12,7 +12,7 @@ public class MyThread extends Thread {
 	public void run() {
 		try {
 			Thread.sleep(7000);
-			synchronized (this.person) {
+			synchronized (person) {
 				person.count = person.count + 5;
 			}
 		} catch (InterruptedException e) {

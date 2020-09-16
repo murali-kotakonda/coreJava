@@ -1,5 +1,14 @@
 package threadsSyncBlock;
 
+
+/**
+ Req:
+account obj is shared across multiple threds.
+every thred is performing withdraw on same account obj.
+ensure the data consistency.
+
+
+ */
 public class TestSyncronized {
 	public static void main(String[] args) {
 		Account account = new Account();
@@ -14,12 +23,15 @@ public class TestSyncronized {
 }
 
 class Account {
-	int bal = 600;
+	int bal = 6000;
 	public  void withdraw(int amt) {
-			synchronized(this){
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			bal = bal-amt;
 			System.out.println("amt withdraw = "+amt +"final bal=" +bal);
-		}
 	}
 }
 
