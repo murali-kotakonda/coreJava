@@ -1,7 +1,3 @@
-
-
-
-
 Interface:
 -> should be used only in inheritance.
 ->we cannot create object
@@ -27,7 +23,7 @@ SBI : child class for RBI
   
    }
    
-
+//use implements for creating child class
 syntax for child class for a interface:
 public class SBI implements RBI {
   //overriding the display() and show() are mandatory....

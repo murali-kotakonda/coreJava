@@ -22,7 +22,6 @@ RULE:
 In a Person class add the equals() and hashcode() methods.
 If we dont write equals() and hashcode()  then duplicates cannot be removed.
 
-
  */
 public class TestPerson {
 public static void main(String[] args) {
@@ -34,9 +33,9 @@ public static void main(String[] args) {
 	Person p1 = new Person(1000, "user1", 27);
 	Person p2 = new Person(1001, "user2", 28);
 	Person p3 = new Person(1002, "user3", 29);
-	Person p4 = new Person(1002, "user3", 29); // p4 is a duplicate for p3 , so will not added
+	Person p4 = new Person(1002, "user3", 29);  
 	
-	// set avoids duplicates objects
+
 	
 	//add the person objs
 	persons.add(p1);
@@ -54,3 +53,8 @@ public static void main(String[] args) {
 	
 }
 }
+
+// set avoids duplicates objects
+//Person p4 = new Person(1002, "user3", 29); // p4 is a duplicate for p3 , so will not added
+
+

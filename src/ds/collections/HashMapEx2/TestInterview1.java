@@ -17,7 +17,7 @@ public class TestInterview1 {
 		System.out.println(map.get("133"));
 		
 		System.out.println("********** Add dupliacte key ***********");
-		map.put("128", "user111");  // user1 is replaced with user111
+		map.put("128", "user111");  
 		map.put("131", "user44");  
 		// get the size
 		System.out.println(map.size());  // 
@@ -25,6 +25,8 @@ public class TestInterview1 {
 		System.out.println(map.get("128")) ;  //  
 	}
 }
+
+//user1 is replaced with user111
 /**
 
 128- user111

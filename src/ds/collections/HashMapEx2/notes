@@ -72,8 +72,7 @@
     //get only values
     map.values()
     
-    //get both keys + values
-    //get all entries 
+    //get both keys + values [ get all entries ]
     //every entry has key + value
 		map.entrySet(); returns all keys + values
   

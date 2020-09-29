@@ -19,8 +19,7 @@ public class TestInterview3 {
 		persons.remove(p2); 
 		
 		System.out.println("size = " + persons.size());
+		System.out.println("contains p1 = " + persons.contains(p1));
 	}
 }
-
-
 //if p2 is removed then p1 is also removed from set because p1 and p2 are duplicates.

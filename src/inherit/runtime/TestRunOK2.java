@@ -37,6 +37,7 @@ public class TestRunOK2 {
 	}
 }
 
+//r can refer to hdfc obj or icici obj or sbi obj
 // r.processLoan() from class the logic is executed can be predicted only at runtime...
 // that depends on the object pointed by r.
-// r can refer to hdfc obj or icici obj or sbi obj
+

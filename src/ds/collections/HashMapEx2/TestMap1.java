@@ -4,9 +4,10 @@ Requirement:
 Create map with string as key , string as value.
 */
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.Map.Entry;
-import java.util.Set;
 
 
 public class TestMap1 {
@@ -14,6 +15,8 @@ public class TestMap1 {
 		System.out.println("************** HashMap ********************");
 		//create hashmap
 		Map<String, String> map = new HashMap<>();
+		//Map<String, String> map = new TreeMap()<>();
+		//Map<String, String> map = new LinkedHashMap()<>();
 		
 		//add elements
 		map.put("129", "user2");

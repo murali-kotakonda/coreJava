@@ -6,8 +6,10 @@ Advantages:
 -> List internally uses array
 -> Search by position is fast
 -> search by content is slow
--> Insert in between and delete in between is slow
 -> delete an element is slow
+
+-> Insert in between and delete in between is slow
+
 
 
 List (interface)
@@ -30,33 +32,33 @@ List  names= new LinkedList();   // LinkedList that stores and manages any datat
 
 ArrayList:
 ----------------------------
--->List<String> names= new ArrayList<String>();  // array list that stores and manages only string
--->List<Integer> names= new ArrayList<Integer>();  // array list that stores and manages only Integer
--->List<Float> nums= new ArrayList<Float>();   // create arraylist for Float
--->List<Person> persons= new ArrayList<Person>();   // create arraylist for Person
+-->List<String> names= new ArrayList<>();  // array list that stores and manages only string
+-->List<Integer> names= new ArrayList<>();  // array list that stores and manages only Integer
+-->List<Float> nums= new ArrayList<>();   // create arraylist for Float
+-->List<Person> persons= new ArrayList<>();   // create arraylist for Person
 
 
 Vector:
 -------------
--->List<String> names= new Vector<String>();  // Vector that stores and manages only string
--->List<Integer> names= new Vector<Integer>();  // Vector that stores and manages only Integer
--->List<Float> nums= new Vector<Float>();   // create Vector for Float
--->List<Person> persons= new Vector<Person>();   // create Vector for Person
+-->List<String> names= new Vector<>();  // Vector that stores and manages only string
+-->List<Integer> names= new Vector<>();  // Vector that stores and manages only Integer
+-->List<Float> nums= new Vector<>();   // create Vector for Float
+-->List<Person> persons= new Vector<>();   // create Vector for Person
 
  
 LinkedList:
 -------------
--->List<String> names= new LinkedList<String>();  // LinkedList that stores and manages only string
--->List<Integer> names= new LinkedList<Integer>();  // LinkedList that stores and manages only Integer
--->List<Float> nums= new LinkedList<Float>();   // create LinkedList for Float
--->List<Person> persons= new LinkedList<Person>();   // LinkedList Vector for Person
+-->List<String> names= new LinkedList<>();  // LinkedList that stores and manages only string
+-->List<Integer> names= new LinkedList<>();  // LinkedList that stores and manages only Integer
+-->List<Float> nums= new LinkedList<>();   // create LinkedList for Float
+-->List<Person> persons= new LinkedList<>();   // LinkedList Vector for Person
 
 
 
 Methods(Arraylist/vector/linkedlist): 
 -------------------------------------------
 
-List<String> names = new ArrayList<String>();
+List<String> names = new ArrayList<>();
 
 
 // add new element use add() method
@@ -100,3 +102,8 @@ names.remove("user2");
 
 
 
+
+
+import java util.Arrays;
+List<String> names = Arrays.asList("Cow", "Zebra","Bat", "Apple","Elephant","Mango");
+List<Integer> nums = Arrays.asList(10,34,913,34,2,24,365,121,5,2,4,65);

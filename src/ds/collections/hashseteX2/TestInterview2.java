@@ -13,6 +13,7 @@ public class TestInterview2 {
 		System.out.println(p3.hashCode());
 	}
 }
+
 //If two objs are equal then their hashcode will also be same.
 
 

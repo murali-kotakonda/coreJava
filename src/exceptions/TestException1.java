@@ -1,7 +1,7 @@
 package exceptions;
 
 import java.util.Scanner;
-public class TestException0 {
+public class TestException1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the age::");

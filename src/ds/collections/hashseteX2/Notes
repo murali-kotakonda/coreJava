@@ -20,7 +20,7 @@ search by position is not applicable in set.
 
 HashSet:
 ---------------------------
-Set<String> names = new HashSet<String>() ;  // HashSet for string 
+Set<String> names = new HashSet<>() ;  // HashSet for string 
 Set<Integer> names = new HashSet<>() ;  // HashSet for Integer 
 Set<Person> names = new HashSet<>() ;  // HashSet for Person objs 
 
@@ -71,4 +71,4 @@ Insertion order is not maintained.
 
 
 
-Insertion order : the order in whiuch data is added to the set
+insertion order : the order in which data is added to the set

@@ -26,7 +26,7 @@ import java.util.Scanner;
 
 public class TestThrows {
 	
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter num1");
 		int num1 = sc.nextInt();
@@ -72,4 +72,5 @@ public class TestThrows {
 		System.out.println("exit m4");
 		return num1 / num2;
 	}
+	
 }

@@ -27,9 +27,9 @@ Can we avoid exception during runtime?? NO
 
 exception handling:
 ---------------------
+Exception handling is what to do when there is an exception..
 To handle negative scenarios
 Exception handling will be required when there is an exception...
-Exception handling is what to do when there is an exception..
 
 
 
@@ -54,6 +54,10 @@ Introduce three blocks
 1. try block
 2. catch block
 3. finally block
+
+
+syntax:
+------------------------
 
 try{
   <write code that has chances for exception>

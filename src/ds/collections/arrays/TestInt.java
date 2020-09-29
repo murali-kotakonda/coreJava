@@ -30,9 +30,8 @@ public class TestInt {
 	
 	//Read all using enhanced for loop
 	System.out.println("*********** Read all elements ***************");
-	for( int n : nums) {
-		System.out.println(n);
+	for( int x : nums) {
+		System.out.println(x);
 	}
-	
 }
 }

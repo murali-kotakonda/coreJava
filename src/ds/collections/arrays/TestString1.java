@@ -1,7 +1,5 @@
 package ds.collections.arrays;
 
-import java.util.Scanner;
-
 /**
  Create a string array of size 6 and perform
  - Insert

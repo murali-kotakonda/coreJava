@@ -26,6 +26,9 @@ public class TestWithRuntimepoly {
 		String salBank = sc.next();
 		
 		RBI r = null; // Creating the RBI variable , without obj
+		
+		// r can refer to either hdfc obj or sbi obj or icici obj.
+
 		if (salBank.equals("hdfc")) {
 			r = new Hdfc(); //create obj for HDFC and refer by RBI
 		} else if (salBank.equals("sbi")) {
@@ -36,7 +39,6 @@ public class TestWithRuntimepoly {
 		
 		r.createAcc();
 		r.processLoan();
-		// r can refer to either hdfc obj or sbi obj or icici obj.
 		
 	}
 

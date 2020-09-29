@@ -21,31 +21,26 @@ Arrays:
 -> position numbers starts from zero.
 
 syntax:
+--------------
  1. Create array for int for size of 5
-int[] numbers = new int[5];  
-or int numbers[] = new int[5];  // int array with size as 5
-numbers -> is the array
-
+int[] numbers = new int[5];    // int array with size as 5 , numbers -> is the array.
+ numbers array can store 5 elements from 0 position to 4 position
 
 2. Create array for string with size of 6
-String[] data = new String[6]; // string array with size of 6
- data -> is the array
- 
+String[] data = new String[6];  // string array with size of 6  data -> is the array
+ data array can store 6 elements from 0 position to 5 position
 
 3. Create array for float with size of 10
-float[] nums = new float[10]; // float array with size of 10
- nums -> is the array
- 
+float[] nums = new float[10]; // float array with size of 10  nums -> is the array
+ nums array can store 10 elements from 0 position to 9 position
+
 4. Create array for person with size of 7
-Person[] persons = new Person[7]; // string array with size of 7
- persons  -> is the array
+Person[] persons = new Person[7];  
+// Person array with size of 7  persons  -> is the array
+ persons array can store 7 elements from 0 position to 6 position
  
-
-
-
-String[] data = new String[6]; // string array with size of 6
- data -> is the array
- data array can store 6 elements from 0 position to 5 position
+ 
+ 
   
 How to Add data to an array:
 ----------------------------------

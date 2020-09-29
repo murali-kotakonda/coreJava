@@ -26,8 +26,9 @@ public class TestPersons {
 		persons.add(p3);
 		
 		//show 3 objs from the list
-		System.out.println("Entered persons ARE :");
+		System.out.println("******************Entered persons ARE :***************");
 		for (Person p : persons) {
+			System.out.println();
 			System.out.println(p.getId());
 			System.out.println(p.getName());
 			System.out.println(p.getAge());

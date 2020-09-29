@@ -24,7 +24,7 @@ public class TestPersons {
 		//read all
 		System.out.println("*******show all persons**********************");
 		for(Person p : persons) {
-			System.out.println(p.id + " -  " + p.name);
+			System.out.println(p.getId() + " -  " + p.getName());
 		}
 	}
 }

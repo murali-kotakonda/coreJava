@@ -68,13 +68,12 @@ sort it in order
 
 
 
-
-ask for id name age
-then if you wish to continue? If yes then 
-ask for id name age
-if no print all the data
-add person objects in arraylist, size as an input, do you wish to add person
-
+a)input for id name age
+b)store id,name ,age in person obj
+c)add person obj to arraylist
+d)if you wish to continue? If yes then repeat [a], [b], [c]
+e) if you wish to continue? If no then stop taking input; exit loop
+f)finally print all person objs inside the list
 
 
 

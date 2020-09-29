@@ -8,7 +8,7 @@ import java.util.Map.Entry;
 
 /**
   
-Proces sthe i/p and print the number of times every word is repeated.
+Process the i/p and print the number of times every word is repeated.
 i/P : words
 "java", "php", "android", "sap", 
 					"php", "java", "win", "ios", "win", "hana",

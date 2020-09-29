@@ -8,7 +8,7 @@ public class TestException {
 	How to convert string to int?
 	->Use Integer.parseInt(age)
 	 */
-	public static void main1(String[] args) {
+	public static void main3(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the age::");
 		//take string as input
@@ -46,31 +46,6 @@ public class TestException {
  */
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	/**
 	if num2 is zero , then exception occurs; because division by 0 is not possible.
 	o/p:
@@ -79,7 +54,9 @@ public class TestException {
 
 	java creates ArithmeticException object.
 	 */
-	public static void main9(String[] args) {
+	
+	
+	public static void main12(String[] args) {
 		int num1 = 20;
 		int num2 = 0;
 
@@ -88,25 +65,6 @@ public class TestException {
 		System.out.println("Program ends");
 	}
 
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	/**
 	o/p:
 	Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
@@ -116,32 +74,32 @@ public class TestException {
 
 	 */
 	
-	public static void main8(String[] args) {
+	public static void mainad(String[] args) {
 		int nums[] = new int[5]; // array size is 5
 		System.out.println(nums[9]); // access 10 element
 	}
-
 	
+	/**
+	 O/p:
+	 Exception in thread "main" java.lang.NullPointerException
+	at exceptions.TestException.main(TestException.java:106)
 	
+	method cannot be called without obj creation.
+	Here java created NullPointerException obj
 	
-	public static void main5(String[] args) {
+	 */
+	public static void main(String[] args) {
 		String name = null;
 		int len =name.length();
 		System.out.println("length = "+len);
 	}
 
-	
-	
-	
-	
-	
-	
 	/**
  	  solution: try with multiple catches
  			at a time only one exception is created.
  			at a time only one catch block is executed.
 	 */
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
 		String name = null;
 		int num1= 20;
 		int num2 = 0;
@@ -163,5 +121,4 @@ public class TestException {
 		
 		System.out.println("END");
 	}
-
 }

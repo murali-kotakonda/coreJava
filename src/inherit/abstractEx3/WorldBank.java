@@ -1,7 +1,7 @@
 package inherit.abstractEx3;
 
 /**
-Multi-level inherit:
+Multi-level inherit for abstract classes:
 --------------------------------------------
 
  - Can a abstract class extend another abstract class?

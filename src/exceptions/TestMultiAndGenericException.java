@@ -23,12 +23,6 @@ catch (Exception ex) {// for any exception
 			//global exception handling 
 			System.out.println("server error" + ex.getMessage());
 } 
-    
-    
-
-
-
-
 * 
  */
 public class TestMultiAndGenericException {

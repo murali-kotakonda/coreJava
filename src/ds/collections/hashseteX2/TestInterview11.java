@@ -3,7 +3,7 @@ package ds.collections.hashseteX2;
 import java.util.HashSet;
 import java.util.Set;
 
-public class TestInterview4 {
+public class TestInterview11 {
 	public static void main(String[] args) {
         //create set
 		Set<Person> persons = new HashSet<>();

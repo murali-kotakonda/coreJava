@@ -16,7 +16,7 @@ public class TestTryWithMultipleCatches {
 		int nums[] = new int[5];
 		try {
 			//can fail due to number format
-			int num = Integer.parseInt("1243");
+			int num = Integer.parseInt("123");
 			System.out.println(" after conversion ::"+num);
 			
 			// possibility of exception due to divide by zero

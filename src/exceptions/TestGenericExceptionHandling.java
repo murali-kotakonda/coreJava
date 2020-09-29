@@ -41,5 +41,4 @@ public class TestGenericExceptionHandling {
 		
 		System.out.println("Program ends");
 	}
-
 }

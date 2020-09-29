@@ -42,9 +42,11 @@
 8.    input username  and  password
       if username value ="admin" and password value is "admin"  o/p => login success
       if not => login failure
+      
 9. take cityname as input 
    if cityname is "hyd"  or "chennai" or "bangalore" or "mumbai" o/p=> service is provided
-   if cityname is other than what is mentioned above o/p => servcie is not provided.
+   if cityname is other than what is mentioned above o/p => service is not provided.
+
 10.  take input for
     id(int) , age(int) , usertype(string)
     validations
