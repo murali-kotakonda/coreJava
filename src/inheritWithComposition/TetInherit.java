@@ -51,7 +51,6 @@ public class TetInherit {
 		// set relatn between emp and address
 		e1.setAddress(a2);
 
-		
 		// display
 		e1.displayPerson();
 		e1.displayEmp();

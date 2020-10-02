@@ -17,23 +17,12 @@ public class Employee extends Person{
 		System.out.println(pfNo);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public Employee(String name, int age, int id, Address address) {
+		super(name, age, id, address);
+	}
+
+	public Employee() {
+	}
 
 	public String getPan() {
 		return pan;

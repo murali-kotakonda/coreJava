@@ -6,8 +6,6 @@ public class TetIcici {
 		Icici icici = new Icici();
 		icici.createAccount();
 		icici.processLoan(); 
-		icici.getKYC();
-		
 	}
 }
 
