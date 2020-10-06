@@ -5,7 +5,7 @@ final class cannot be inherited
 final method cannot be OVERRIDDEN
 final variable cannot be changed
 
-              class             instance variables/static varibales               instance  methods/static methods       local variables
+           class             instance variables/static variables               instance  methods/static methods       local variables
 
 public        Y                           Y                                              Y                                   N
 private       N                           Y					                             Y                                   N
@@ -30,7 +30,7 @@ Differt class [same pkg]
 Differt class [diff pkg]
 Differt class , but child class [diff pkg]
 
-					Within same class          Differt class [same pkg]          Differt class [diff pkg]                    child class [diff pkg]
+                     Within same class          Differt class [same pkg]          Differt class [diff pkg]                    child class [diff pkg]
 
 public                      Y                              Y                                Y                                           Y
 private                     Y                              N                                N                                           N

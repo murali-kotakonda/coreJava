@@ -21,8 +21,14 @@ public class ReadAllFiles {
 		for (File f : listFiles) {
 			boolean isFile = f.isFile();
 			boolean isDir = f.isDirectory();
+			//  isFile ? "File name = " : "folder name =  " 
+			if(isFile) {
+				System.out.println("File name = " + f.getName());
+			}else{
+				System.out.println("folder name = " + f.getName());
+			}
 			
-			System.out.println(( isFile ?"File name = " :"folder name =  " ) + f.getName());
+			// System.out.println(( isFile ? "File name = " : "folder name =  " ) + f.getName());
 		}
 	}
 }

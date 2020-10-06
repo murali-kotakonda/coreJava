@@ -12,16 +12,18 @@ Case#2:
 dev is creating exception
 dev is handling exception
 
-
 ex:
 division of two nums:
 if the second num is zero then throw the exception
 
-main()
--take 2 nums as input and call getDivisionResult() method
+main() - handle exception
+-take 2 nums as input and call getDivisionResult() method with try and catch
 
-getDivisionResult()
- - we need to throw the exception obj
+
+getDivisionResult() - create exception
+ - we need to throw the exception obj if the second num is zero 
+ 
+ 
  
  
  */

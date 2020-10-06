@@ -1,4 +1,4 @@
-package properties;
+package files.properties;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,6 +18,8 @@ public class GetProps {
 		// get the property value and print it out
 		
 		String results = prop.getProperty("reultsperpage");
+		System.out.println(results);
+		
 		System.out.println(prop.getProperty("name"));
 		System.out.println(prop.getProperty("user"));
 		System.out.println(prop.getProperty("pass"));
@@ -27,7 +29,6 @@ public class GetProps {
 
 		System.out.println(prop.getProperty("dbName"));
 		
-		System.out.println(results);
  		input.close();
 	}
 }

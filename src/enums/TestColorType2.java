@@ -20,8 +20,8 @@ public class TestColorType2 {
 		String input= sc.next();
 
 		//get all objs
-		boolean validColor = ColorType.isValidColor(input);
-		if(validColor) {
+		boolean validColor = ColorType. isValidColor(input);
+		if( validColor) {
 			System.out.println("Valid color");
 		}else {
 			System.out.println("invalid color");

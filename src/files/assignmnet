@@ -1,13 +1,24 @@
+maintain a db for persons
+every person has id,name,age
+id is unique.
+
+for every person create one file
+and file should store id, name , age
+file name = <id>.txt
+
 Menu:
 ---------
-  1.insert
+1.insert
   2.update
   3.read all    --> print the id,name,age for all files
   4.read by id  -->  print the id,name,age for given input id
+  i/p: 1000
+  p/p: 1000, user1, 34
+
   5.delete      --> i/p: 1000  then delete 1000.txt file
-  6.exit
-  
-  
+  6.exit  
+
+ 
 Insert : take input for id,name,age
 ex: 
 1.  1000, user1, 34
@@ -21,6 +32,13 @@ ex:
    
    
 
+  
+  
+  2. File search by using file name
+i/p: any file name
+o/p: show the fil/folder names matcing with input
+
+  
   
   
   

@@ -19,6 +19,8 @@ add multiple int in a list
 List<Integer> nums = new ArrayList<>();
 
 
+Use wrappers when we need to use primitives for collections.
+
 1.List of integers
 List<int> list = new ArrayList<>(); // wrong
 List<Integer> list = new ArrayList<>();

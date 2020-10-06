@@ -9,7 +9,7 @@ public class TestForEach3 {
 
 	public static void main(String[] args) {
 
-		List<String> list = new ArrayList<String>();
+		List<String> list = new ArrayList<>();
 		
 		list.add("user1");
 		list.add("user2");
@@ -20,12 +20,11 @@ public class TestForEach3 {
 		list.add("user33");
 		
 		System.out.println("*******Before removal********");
-		list.forEach( data -> System.out.println(data));
+		list.forEach(str -> System.out.println(str));
 		
-		list.removeIf( data -> data.startsWith("user1"));
+		list.removeIf( str  -> str.startsWith("user1"));
 		
 		System.out.println("*******after removal********");
-		list.forEach( data -> System.out.println(data));
-		
+		list.forEach(str -> System.out.println(str));
 	}
 }

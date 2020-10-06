@@ -15,6 +15,7 @@ public class TestFileCreate {
 		try {
 			if(!file.exists())
 				file.createNewFile();
+			System.out.println("file created");
 		} catch (IOException e) {
 			System.out.println("file creation failed");
 		} 

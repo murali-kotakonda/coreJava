@@ -19,10 +19,12 @@
 		*
 		* */
 		
+anonymous : interface that has any number of methods
+Lambda : interface that has only one method
 	
 Lambda:
 ----------------------	
-  allows funtional programming.
+  allows functional programming.
   readable and concise code
   easier to use APIs and libs.
   enables support for parallel processing.

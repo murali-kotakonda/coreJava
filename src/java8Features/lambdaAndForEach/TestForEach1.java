@@ -18,19 +18,27 @@ public class TestForEach1 {
 		
 		//print all
 		System.out.println("************************print using enhanced for loop************************");
-		for(String data: list) {
+		for(String data :list ) {
 			System.out.println(data);
 		}
 		
 		
-		System.out.println("************************print using forEach approach1 ******************************");
+		System.out.println("************************print using forEach approach2 ******************************");
+		list.forEach( data -> System.out.println(data));
+	}
+}
+
+
+
+
+
+
+
+
+/*
+ System.out.println("************************print using forEach approach1 ******************************");
 		list.forEach((String data)  -> {
 			System.out.println(data);
 		}
 		);
-		
-		System.out.println("************************print using forEach approach2 ******************************");
-		list.forEach(data -> System.out.println(data) ); 
-		//forEach expects lambda arg: each element , expression: print
-	}
-}
+ * */

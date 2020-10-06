@@ -31,15 +31,18 @@ public class TestConversion {
 		System.out.println(floatToStrValue);
 		System.out.println(doubleToStrValue);
 		System.out.println(longToStrValue);
-		System.out.println(foundStr);
 		
-		
-		Integer y1 = new Integer(900);  // Integer z= 899; 
+
+	}
+}
+
+
+/*
+ Integer y1 = new Integer(900);  // Integer z= 899; 
 		Float y2 = new Float(900.878787); // Float y2 = 900.878787; 
 		Long y3 = new Long(90013131); //Long y3 = 90013131;
 		Double y4 = new Double(900.1113131);
 		Character y5 = new Character('c');
 		Boolean y6 = new Boolean(true);
-
-	}
-}
+ * */
+ 

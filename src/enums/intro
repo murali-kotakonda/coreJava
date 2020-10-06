@@ -15,7 +15,7 @@
   
   Ex:
   if LoanType is a class
-  We have only 6 types of loans Personal, Home, education , Vehical i.e. we should allow to create only 4 objs.
+  We have only 4 types of loans Personal, Home, education , Vehical i.e. we should allow to create only 4 objs.
   ex: How do you know what are loantypes supported...???
 
   ex: LoanType , UserType , CardType , PaymentMode ,
@@ -30,18 +30,27 @@
 
   public enum ColorType { // ColorType is a enum 
 
-    BLUE,  // ColorType BLUE = new ColorType();
-    RED,  // ColorType RED = new ColorType();
+    BLUE,  
+    RED,   
     BLACK,
     GREEN,
     WHITE;
 
   }
 
+here 
+  BLUE,  // ColorType BLUE = new ColorType();
+    RED,  // ColorType RED = new ColorType();
+    
+    
+    ColorType x = new ColorType() ; // gives compilation...
+   ColorType x = ColorType.BLUE;
+   ColorType y = ColorType.RED;
+   ColorType z = ColorType.BLACK;
+   ColorType a = ColorType.GREEN;
+   ColorType b = ColorType.WHITE;
 
- ColorType x = new ColorType() ; // gives compilation...
-
-Get objs for enum:
+Get existing objs for enum:
 --------------------------
 ColorType x = ColorType.BLUE; // get already created obj
 

@@ -5,7 +5,8 @@ syntax for creating exception:
 ----------------------------------
 throw keyword is used to create exception.
 
-
+steps:
+-------------
 1.Create exception obj
 2.throw exception
 
@@ -36,7 +37,7 @@ public void m4() throws SQLException{
 <some logic here>
 
 }
-m4 method will not hadnle the SQLException
+m4 method will not handle the SQLException
 m4 method will not write the try + catch block for SQLException
 
 
@@ -61,6 +62,8 @@ Requirement:
 main() calls m2()
 m2() calls m3()
 m3() calls m4()
+
+main() --> m2() ----> m3() ---> m4()
 
 
 

@@ -10,7 +10,7 @@ public class TestVarArgs {
 		display("hi");
 		display("hi","how");
 		display("java programming",".net","c++"); 
-		display("welcome","to","java");
+		display("welcome","to","java","python","selenium","testing","hana");
 	}
 
 	public static void display(String... data){

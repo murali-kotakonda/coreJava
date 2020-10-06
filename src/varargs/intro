@@ -19,9 +19,10 @@ Case#1:
  
 Case#2:
    // write a var-arg method
- public void display(String... data){ // method will accept any no of string
- 
- }
+ // write a method
+  public void display(String... data){  // datatype of data is string array and method will accept any no of string
+  
+  }
  here display()method is a var-arg method.
  datatype of data is array
  
@@ -29,7 +30,7 @@ Case#2:
   display("1");
   display("hi" , "hello" ,"kumar");
   display("hi" , "hello" ,"kumar", "ram","shyam");
- );
+ 
   
   
  -> var arg argument must be the last argument in the function.

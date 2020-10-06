@@ -14,8 +14,10 @@ public static void main(String[] args) {
 	 //sort primitives array like int array
     Integer[] intArr = {5,9,1,10,3,10,78,23,4,7};
    
+    System.out.println("Before sort:: " +Arrays.toString(intArr));
+    
     Arrays.sort(intArr , Collections.reverseOrder());
     
-    System.out.println(Arrays.toString(intArr));
+    System.out.println("Before sort:: " +Arrays.toString(intArr));
 }
 }

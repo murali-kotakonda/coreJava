@@ -3,25 +3,22 @@ package innerEx.anonymous;
 public class TestService2 {
 	public static void main(String[] args) {
 
-		Service s = new Service() {
-			@Override
+		//  creating child child + overriding the process method + creating obj
+		Service c1 = new Service() {
 			public void process() {
 				System.out.println("Hello");
 			}
 		};
+		c1.process();
 		
+		 
 		//  creating child child + overriding the process method + creating obj
-		s.process();
-		
-		
-		Service s2 = new Service() {
-			@Override
+		Service c2 = new Service() {
 			public void process() {
-			 System.out.println("Bye");
+						System.out.println("Bye");				
 			}
 		};
-		//  creating child child + overriding the process method + creating obj
-		s2.process();
 		
+		c2.process();
 	}
 }

@@ -10,8 +10,7 @@ package system;
 4.call the format() method using SimpleDateFormat object  by passing the date obj
 
 
-
-	 dd-MM-yy	31-01-12
+    dd-MM-yy	31-01-12
 	dd-MM-yyyy	31-01-2012
 	MM-dd-yyyy	01-31-2012
 	yyyy-MM-dd	2012-01-31
@@ -38,7 +37,7 @@ public class D22 {
 public static void main(String[] args) {
 	Date dateObj = new Date();
 	
-	String pattern = "MMMMM dd  yyyy HH:mm:ss";
+	String pattern = "yyyy-MM-dd";
 	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 	
 	String date = simpleDateFormat.format(dateObj);
