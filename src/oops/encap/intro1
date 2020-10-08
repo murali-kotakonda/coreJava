@@ -1,7 +1,7 @@
 Encapsulation & abstraction:
 ----------------------------
 -> Required for better designing the classes.
-->Guidelines & sense for creating class.
+->Guidelines & common sense for creating class.
 
 Encapsulation:
 ->Class is a building block for instance variables & methods
