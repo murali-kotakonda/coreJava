@@ -21,8 +21,11 @@ public class MyThread3Test {
 			}
 		};
 		
-		Thread  th =  new Thread(r);
-		th.start();
+		Thread  th1 =  new Thread(r);
+		th1.start();
+		
+		Thread  th2 =  new Thread(r);
+		th2.start();
 		
 		System.out.println("main :end");
 	}

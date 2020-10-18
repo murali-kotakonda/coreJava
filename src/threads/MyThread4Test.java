@@ -15,7 +15,9 @@ public class MyThread4Test {
 	public static void main(String[] args) {
 		System.out.println("main : start");
 		
-		Runnable  r = () ->  { System.out.println("Thread " + Thread.currentThread() + " is running");	};
+		Runnable  r = () ->  { 
+			System.out.println("Thread " + Thread.currentThread() + " is running");	
+		};
 		
 		Thread  th1 =  new Thread(r);
 		Thread  th2 =  new Thread(r);

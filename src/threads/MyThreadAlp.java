@@ -13,8 +13,7 @@ public class MyThreadAlp extends Thread {
 			System.out.print(ch);
 			try {
 				Thread.sleep(250);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+			} catch ( Exception e) {
 			}
 		}
 	}

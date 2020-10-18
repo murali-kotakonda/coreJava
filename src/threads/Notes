@@ -31,6 +31,9 @@ Threads:
 	   
 	  we cannot determine when the thread would start or end.
 	  
+	  	 by default java creates main thread.
+		using main thread developer will create additional threads.
+		
 	  thread states:
 	  1. ready state -- when the developer creates the thread and adds to the cpu job list
 	  2. running -- when cpu gives appointment to the thread
@@ -39,8 +42,7 @@ Threads:
 	  		b. wait state : we don't know the time
 	  		c. sleep state : we will know for how long it is going to know sleep
 	  
-	 by default java creates main thread.
-		using main thread developer will create additional threads.
+
 
  
  How to create a thread:
