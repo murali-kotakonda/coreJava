@@ -13,7 +13,7 @@ Threads:
 	  -every thread is independent
 	  
 	  Process:
-	  -ex:eclipse, skype, chrome are processes
+	  -ex:eclipse, intellij, pycharm, skype, chrome are processes
 	  -every process requires separate memory
 	  -a thread is a single unit under a process
 	  -every thread does not require separate memory
@@ -108,7 +108,7 @@ Threads:
 	 use join() funtion
 	 
 	 
-	     1. ready state -- th.start()
+	   1. ready state -- th.start()
 	  2. running -- when cpu gives appointment to the thread, run() method is called.
 	  3. possible 3 states after running state
 	  		a. dead state or completed state    - run() method execution is complted 

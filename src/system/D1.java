@@ -1,5 +1,8 @@
 package system;
 
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 /**
@@ -19,6 +22,11 @@ public class D1 {
 		//1601709625989
 		
 		Date d2 = new Date(111111111111L); // create date using milliseconds
-		System.out.println("Date is " + d2);
+		System.out.println("Date is =" + d2);
+		
+		String europeanDatePattern = "dd/MM/yyyy HH:mm:ss";
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern(europeanDatePattern);
+		ZonedDateTime parse = ZonedDateTime.parse("10/10/2020"+" 00:00:00",formatter.withZone(ZoneId.systemDefault()));
+		System.out.println(parse);
 	}
 }

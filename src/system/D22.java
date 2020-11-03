@@ -37,7 +37,7 @@ public class D22 {
 public static void main(String[] args) {
 	Date dateObj = new Date();
 	
-	String pattern = "yyyy-MM-dd";
+	String pattern = "dd/MM/yy";
 	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 	
 	String date = simpleDateFormat.format(dateObj);
