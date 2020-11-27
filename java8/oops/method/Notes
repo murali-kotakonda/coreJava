@@ -1,0 +1,18 @@
+instance variables:   
+variables created inside the class
+memory is created in heap area
+memory is created when obj is created
+memory is deleted when obj is deleted
+
+
+
+
+LOCAL Variables   :
+variables created inside the method
+memeory is created in stack
+memory is created when method is called.
+memory is deleted once the method execution completes.
+
+
+
+

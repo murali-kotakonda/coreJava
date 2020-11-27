@@ -34,6 +34,17 @@ public class D3StringToDate {
 		return date;
 	}
 	
+	
+	private static Date getDate2(String dateStr, String format) {
+		//String dateFormat = "dd-M-yyyy hh:mm:ss";
+		//String inputDate = "31-11-2001 11:12:56";
+		//String pattern = "dd/MM/yy";
+		SimpleDateFormat sdf = new SimpleDateFormat(format);
+		Date date = sdf.parse(dateStr);
+		return date;
+	}
+	
+	
 	public static void main(String[] args) {
 		Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.MONTH, 0);

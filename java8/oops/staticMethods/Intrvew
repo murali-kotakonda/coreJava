@@ -1,0 +1,32 @@
+
+methods and constr:
+----------------------
+
+consr                                                        method
+---------------------------------------------------------------------------
+1.constr name = class name                                1. method name can be anything
+2.constr is implicit call                                 2.method is a explicit call
+3.contr there is no retunn type                           3. there is a return type or void
+4.contsr logic has                                        4. method write any logic
+only initilizing the instace variables
+5.constr is called during obj creation                   5. methiod should be called after obj creation.
+
+
+
+
+
+Instance variable                                    static variables                                     local variables
+---------------------------------------------------------------------------------------- ----------------------------------
+1. inside a class                                1.inside a class with static                              1.inside the method
+2.memory  is created during                      2.  memory is created during class loading                2. memory is created when method is called
+obj creation 
+3.memory is created every time when obj          3. memory is created one time                             3.memory is creaed every time when method is called,
+is creaed
+4.memory is deleted when                         4.memory is deleted when prog stops/class is unloaded     4.memeory is deleted when method execution is complted
+obj is garbage collected. 
+5.memory is created in heap                      5. memory is creaed in class area                        5. memory is created in stack
+6.access using the object                        6.access using the class name                            6. access within the classs 
+7.to represent specific data                     7.to represent common data                               7. temorary variables for processing
+
+
+ 

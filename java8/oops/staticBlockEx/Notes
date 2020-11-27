@@ -1,0 +1,20 @@
+ static block:
+------------------
+-> static block is exceuted only 1 time , during class loading
+-> static block contains code ; code only for initializing the static variables.
+-> static block is exceuted before the constr.
+  
+
+syntax:
+static{
+  
+  
+  
+}
+
+
+instance varibles + instace method + constr   ---> 1 set
+(sepcifc data)        ( any logic)     ( initialzing the i.v. when obj is created)
+
+static varibles + static methods + static block ---> 1 set
+(common data)      ( logic for s.v.)  ( intilizing the s.v. during class loading)
