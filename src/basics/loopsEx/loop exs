@@ -32,18 +32,19 @@ o/p:
 print numbers from 1 to 10
 print all evens from 1 to 10
 print all odd from 2 to 10
-Find the factorial of 5
-sum of nums till 10
-Print multiplication table
-
-5. Input hw many nums and what are the nums:
-and print sum , big , small nums
-
-6.Help teacher to find first rank for input
+->Find the factorial for given input
+->sum of nums till input
+->Print multiplication table for given input
+->
+->Help teacher to find first rank for input
 Take input for no of students
 For every student  take input for name + sub1 + sub2 + sub3
 
 print the student name who got first rank
+
+5. Input hw many nums and what are the nums:
+and print sum , big , small nums
+
 
 
 7.input 3:

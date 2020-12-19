@@ -18,6 +18,7 @@ Java?
   Exception hanlding[to handle the unexpected scenarios that occurs at run time]
 ->Arhitecural neutral:  Java memory alloca is stable for all platforms.
 ->MultiThreading : To execute multiple progs at the same time. ex: response time.
+
 ->Diff apps:
   standalone app/desktop app
   web app
@@ -30,10 +31,44 @@ Java?
   frameworks: springs , hibernate
 
 
+
+
+
+  setup:
+-----------
+1. download and Install  java8
+2. download and install eclipse 
   
-  
-  
-    Setup:
+https://drive.google.com/drive/folders/1qEYiff8p6216-CFwa_9yu_AF44M8NkQB
+
+3. set path for java jdk path :
+open commnad promot and type:
+a. javac  -> jdk is available
+b. java   -> jre is available
+
+copy the path "C:\Program Files\Java\jdk1.8.0_231\bin"
+and add the jdk bin location to the environment variable "path".
+
+
+once eclipse is opened it will ask for the "workspace".
+workspace -> is the location in the syatem where the projects are created
+provide the workpsace path and  click on launch.
+
+eclipse:
+------------------------
+1.create the java project
+a java project contains two components:
+JRE  -> java library 
+src  -> developer has to create/write the code
+
+
+2.under the project> src  create the package
+package -> package is the folder that contains the related java files.
+we create seperate package and maintain our files.
+
+3.Under the package create the class
+
+Setup:
 -----
   a) Java 8 software  + env variable config
   b) IDE ex: Eclipse, netbeans , Injellij
@@ -48,7 +83,7 @@ Java?
   12																																					10
   JDK+JRE        JRE          JRE          JRE          JRE              JRE
   
-  SET PATH: make the command available every where
+ SET PATH: make the command available every where
   
         
 Steps:
@@ -78,13 +113,13 @@ large no files to share with the team , then create jar file that contains .clas
     
 Structure of java file:
 -----------------------------
-  Hello.java
-  
-  
+  Ex1.java
+    
   1.package name
   2.import statements
-  3.  class name
-  4.inside a class we can define  instance variables + methods + conctr + static variables + static methods + static block...
+  3. class name
+  4.inside a class we can define  
+  instance variables + methods + constructr + static variables + static methods + static block...
   
   public class Hello{}
 
@@ -92,5 +127,26 @@ Structure of java file:
 To run a program main() method is mandatory.
   
 
+method or funtion refers the same.
+
+in java the code should be always written inside the method/function.
+
+if a java file has the main method then only it is eligible for running.
+
+syntax for main method:
+------------------------------
+
+ public static void main(String[] args) {
+ 
+ }
+ 
+ 
+ public ->  scope is global so that JRE can access
+ static -> defines the method is static
+ void -> no return type
+ main -> function name or method name
+ args -> input arguments 
+ 
+ 
 
 

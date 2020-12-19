@@ -4,23 +4,22 @@ public class DataTypes {
 public static void main(String[] args) {
 	/*
 	//variables : hold the real time static/dynamic data
-		//memory allocation/processing for the data depends on tyep of data ..
+	//memory allocation/processing for the data depends on TYPE of data ..
 		
-		
-		//datatypes : [type of the data ]. EVERY Variable is created by specifying the datatype.
+	//datatypes : [type of the data ]. EVERY Variable is created by specifying the datatype.
 		
 		/*
-		 datatype           size (in bytes)
+		  datatype           size (in bytes)
 		 ----------------------------------------------  
 		 byte               1    ( byte is the DT that represents any Data type )
 		                          when we need to communicate with third party.
-		 						ex: DB, FILE, WEB etc...
-		 
+		 						               ex: DB, FILE, WEB etc...
+		 [natural numbers]
 		 short              2      -32768 to 32767                                    
 		 int                4      number
 		 long               8      bigger number
 		 
-		 
+		 [decimal numbers]
 		 float              4      -> decimal
 		 double             8      -> bigger decimal
 		 
@@ -28,8 +27,14 @@ public static void main(String[] args) {
 		 String             depends on no of chars
 		 
 		 boolean            1 bit    -> true/false  
-	
-	byte:
+  
+  
+char data type hold only single char 
+ex: [0-9] , [a-z], [A-Z] , !@#$%^&*()_+-=~`?><:"';[]{}
+
+string is group of characters.
+
+byte:
 		This can hold whole number between -128 and 127. 
 	Default size of this data type: 1 byte.	
 	
@@ -53,14 +58,16 @@ public static void main(String[] args) {
 		
 	double: Sufficient for holding 15 decimal digits
 		size: 8 bytes
-		
+		ex: 435355.123456789012345
 		
 	float: Sufficient for holding 6 to 7 decimal digits
-		size: 4 bytes
+		size: 4 bytes     
+    ex: 1313.131313
+		
+		
 		
 		// how to create a varaible datatype + variable name
-		
-		
+	
 		rules for variable names
 		1.[a-z[A-Z][0-9] [ _ $ ]
 		2.start with alphabet or _ or $ , but not with number. 

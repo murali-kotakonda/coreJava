@@ -1,0 +1,316 @@
+
+
+
+Given below are the Classes and Interfaces that are available in Collections:
+
+Interfaces:
+
+Collection
+List
+Set
+Map
+Sorted Set
+Sorted Map
+Queue
+Classes:
+
+Lists:
+Array List
+Vector
+Linked List
+Sets:
+
+Hash set
+Linked Hash Set
+Tree Set
+Maps:
+
+Hash Map
+Hash Table
+TreeMap
+Linked Hashed Map
+Queue:
+
+Priority Queue
+
+
+
+Q #26) What is meant by Ordered and Sorted in collections?
+
+Answer:
+
+Ordered: It means the values that are stored in a collection is based on the values that are added to the collection. So we can iterate the values from the collection in a specific order.
+
+Sorted: Sorting mechanisms can be applied internally or externally so that the group of objects sorted in a particular collection is based on the properties of the objects.
+
+Q #27) Explain the different lists available in the collection.
+
+Answer: Values added to the list are based on the index position and it is ordered by index position. Duplicates are allowed.
+
+The types of Lists are:
+
+a) Array List:
+
+Fast iteration and fast Random Access.
+It is an ordered collection (by index) and not sorted.
+It implements the Random Access Interface.
+Example:
+
+public class Fruits{
+public static void main (String [ ] args){
+ArrayList <String>names=new ArrayList <String>();
+names.add (“apple”);
+names.add (“cherry”);
+names.add (“kiwi”);
+names.add (“banana”);
+names.add (“cherry”);
+System.out.println (names);
+}
+}
+Output:
+
+[Apple, cherry, kiwi, banana, cherry]
+
+From the output, Array List maintains the insertion order and it accepts the duplicates. But it’s not sorted.
+
+b) Vector:
+
+It is the same as Array List.
+
+Vector methods are synchronized.
+Thread safety.
+It also implements Random Access.
+Thread safety usually causes a performance hit.
+Example:
+
+public class Fruit {
+public static void main (String [ ] args){
+Vector <String> names = new Vector <String> ( );
+ names.add (“cherry”);
+names.add (“apple”);
+names.add (“banana”);
+names.add (“kiwi”);
+names.add (“apple”);
+System.out.println (“names”);
+}
+}
+Output:
+
+[cherry,apple,banana,kiwi,apple]
+
+Vector also maintains the insertion order and accepts the duplicates.
+
+c) Linked List:
+
+Elements are doubly linked to one another.
+Performance is slower than the Array list.
+Good choice for insertion and deletion.
+In Java 5.0 it supports common queue methods peek( ), Pool ( ), Offer ( ) etc.
+Example:
+
+public class Fruit {
+public static void main (String [ ] args){
+Linkedlist <String> names = new linkedlist <String> ( ) ;
+names.add(“banana”);
+names.add(“cherry”);
+names.add(“apple”);
+names.add(“kiwi”);
+names.add(“banana”);
+System.out.println (names);
+}
+}
+Output:
+
+[ banana,cherry,apple,kiwi,banana]
+
+Maintains the insertion order and accepts the duplicates.
+
+Q #28) Explain about Set and their types in a collection.
+
+Answer: Set cares about uniqueness. It doesn’t allow duplications. Here “equals ( )” method is used to determine whether two objects are identical or not.
+
+a) Hash Set:
+
+Unordered and unsorted.
+Uses the hash code of the object to insert the values.
+Use this when the requirement is “no duplicates and don’t care about the order”.
+Example:
+
+public class Fruit {
+public static void main (String[ ] args){
+HashSet<String> names = new HashSet <=String>( ) ;
+names.add(“banana”);
+names.add(“cherry”);
+names.add(“apple”);
+names.add(“kiwi”);
+names.add(“banana”);
+System.out.println (names);
+}
+}
+Output:
+
+[banana, cherry, kiwi, apple]
+
+It doesn’t follow any insertion order. Duplicates are not allowed.
+
+b) Linked Hash set:
+
+An ordered version of the hash set is known as Linked Hash Set.
+Maintains a doubly-Linked list of all the elements.
+Use this when an iteration order is required.
+Example:
+
+public class Fruit {
+public static void main (String[ ] args){
+LinkedHashSet<String>; names = new LinkedHashSet <String>( ) ;
+ names.add(“banana”);
+ names.add(“cherry”);
+ names.add(“apple”);
+ names.add(“kiwi”);
+ names.add(“banana”);
+ System.out.println (names);
+ }
+}
+Output:
+
+[banana, cherry, apple, kiwi]
+
+It maintains the insertion order in which they have been added to the Set. Duplicates are not allowed.
+
+c) Tree Set:
+
+It is one of the two sorted collections.
+Uses the “Read-Black” tree structure and guarantees that the elements will be in ascending order.
+We can construct a tree set with the constructor by using a comparable (or) comparator.
+Example:
+
+public class Fruits{
+public static void main (String[ ]args) {
+Treeset<String> names= new TreeSet<String>( ) ;
+names.add(“cherry”);
+names.add(“banana”);
+names.add(“apple”);
+names.add(“kiwi”);
+names.add(“cherry”);
+System.out.println(names);
+}
+}
+Output:
+
+[apple, banana, cherry, kiwi]
+
+TreeSet sorts the elements in ascending order. And duplicates are not allowed.
+
+Q #29) Explain about Map and its types.
+
+Answer: Map cares about the unique identifier. We can map a unique key to a specific value. It is a key/value pair. We can search a value, based on the key. Like the set, the map also uses the “equals ( )” method to determine whether two keys are the same or different.
+
+Map is of following types:
+
+a) Hash Map:
+
+Unordered and unsorted map.
+Hashmap is a good choice when we don’t care about the order.
+It allows one null key and multiple null values.
+Example:
+
+Public class Fruit{
+Public static void main(String[ ] args){
+HashMap<Sting,String> names =new HashMap<String,String>( );
+names.put(“key1”,“cherry”);
+names.put (“key2”,“banana”);
+names.put (“key3”,“apple”);
+names.put (“key4”,“kiwi”);
+names.put (“key1”,“cherry”);
+System.out.println(names);
+}
+ }
+Output:
+
+{key2 =banana, key1=cherry, key4 =kiwi, key3= apple}
+
+Duplicate keys are not allowed in Map.
+
+It doesn’t maintain any insertion order and is unsorted.
+
+b) Hash Table:
+
+Like the vector key, methods of the class are synchronized.
+Thread safety and therefore slows the performance.
+It doesn’t allow anything that is null.
+Example:
+
+public class Fruit{
+public static void main(String[ ]args){
+Hashtable<Sting,String> names =new Hashtable<String,String>( );
+names.put(“key1”,“cherry”);
+names.put(“key2”,“apple”);
+names.put(“key3”,“banana”);
+names.put(“key4”,“kiwi”);
+names.put(“key2”,“orange”);
+System.out.println(names);
+}
+ }
+Output:
+
+{key2=apple, key1=cherry,key4=kiwi, key3=banana}
+
+Duplicate keys are not allowed.
+
+c) Linked Hash Map:
+
+Maintains insertion order.
+Slower than Hash map.
+I can expect a faster iteration.
+Example:
+
+public class Fruit{
+public static void main(String[ ] args){
+LinkedHashMap<Sting,String> names =new LinkedHashMap<String,String>( );
+ names.put(“key1”,“cherry”);
+ names.put(“key2”,“apple”);
+ names.put(“key3”,“banana”);
+ names.put(“key4”,“kiwi”);
+ names.put(“key2”,“orange”);
+ System.out.println(names);
+ }
+ }
+Output:
+
+{key2=apple, key1=cherry,key4=kiwi, key3=banana}
+
+Duplicate keys are not allowed.
+
+d) TreeMap:
+
+Sorted Map.
+Like Tree set, we can construct a sort order with the constructor.
+Example:
+
+public class Fruit{
+public static void main(String[ ]args){
+TreeMap<Sting,String> names =new TreeMap<String,String>( );
+names.put(“key1”,“cherry”);
+names.put(“key2”,“banana”);
+names.put(“key3”,“apple”);
+names.put(“key4”,“kiwi”);
+names.put(“key2”,“orange”);
+System.out.println(names);
+}
+}
+Output:
+
+{key1=cherry, key2=banana, key3 =apple, key4=kiwi}
+
+It is sorted in ascending order based on the key. Duplicate keys are not allowed.
+
+Q #30) Explain the Priority Queue.
+
+Answer: Queue Interface
+
+Priority Queue: Linked list class has been enhanced to implement the queue interface. Queues can be handled with a linked list. The purpose of a queue is “Priority-in, Priority-out”.
+
+Hence elements are ordered either naturally or according to the comparator. The elements ordering represents their relative priority.
+
+
+

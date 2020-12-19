@@ -107,3 +107,6 @@ names.remove("user2");
 import java util.Arrays;
 List<String> names = Arrays.asList("Cow", "Zebra","Bat", "Apple","Elephant","Mango");
 List<Integer> nums = Arrays.asList(10,34,913,34,2,24,365,121,5,2,4,65);
+
+
+
