@@ -58,7 +58,8 @@ public class TestPerson4 {
 }
 
 
-/*
- 
-		
- * */
+//as p1 and p2 are pointng to same obj , 
+//if we change p1 , it will change p2 also
+//if we change p2 , it will change p1 also
+
+

@@ -15,7 +15,7 @@ public class Ex1 {
 	/*
       for loop requires below 3 sections:
       int i=1;  initialization            - 1 time 
-      i<=10;    condition                  - every time before for block
+      i<=10;    condition                 - every time before for block
       i++;    increment/decrement         - every time after the for block
 	 * */
 	

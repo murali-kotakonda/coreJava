@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Ex13 {
 
 	/**
-	 take cityname as input 
+	take cityname as input 
    	if cityname is "hyd"  or "chennai" or "bangalore" or "mumbai" o/p=> service is provided
    	if cityname is other than what is mentioned above o/p => service is not provided.
 	 */

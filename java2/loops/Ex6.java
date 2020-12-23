@@ -2,6 +2,22 @@ package loops;
 
 import java.util.Scanner;
 
+/**
+
+take size as input
+print the factorial of number
+
+ex: 
+input : 5
+output : 120
+
+
+input : 6
+output : 720
+
+*/
+
+
 public class Ex6 {
 
 	public static void main(String[] args) {
@@ -10,9 +26,12 @@ public class Ex6 {
 		System.out.println("enter size");
 		int size= sc.nextInt();
 		
-		for(int i=1; i<=10; i++){
-			int res = size*i;
-			System.out.println(size +" * " + i + " = " +res);
+		int fact = 1;
+		
+		 for(int i=1; i<=size; i++){
+			  fact = fact * i;
 		}
+		 System.out.println("factorial = " + fact);
+    
 	}
 }

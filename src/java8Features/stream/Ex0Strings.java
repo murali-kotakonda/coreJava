@@ -48,6 +48,8 @@ public class Ex0Strings {
 		List<String> filtered = strings.stream().filter(string -> string!=null && !string.isEmpty()).collect(Collectors.toList());
 		System.out.println(filtered);
 
+		
+		
 	}
 }
 

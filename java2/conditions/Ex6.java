@@ -2,16 +2,15 @@ package conditions;
 
 import java.util.Scanner;
 
-/**
- * @author I335484
- //take id (int), age(int) , userType(str) as input.
-        
-// perform validation
-// if id is positive then print valid id else print invalid id
-// if age is gt 18  then print valid age else print invalid age
-// if userType value is "admin" then print valid userType else print invalid userType
-		
- */
+/*
+take id (int), age(int) , userType(str) as input.
+perform validation
+
+if id is positive then print valid id else print invalid id
+if age is gt 18  then print valid age else print invalid age
+if userType value is "admin" then print valid userType else print invalid userType
+
+*/
 public class Ex6 {
 	public static void main(String[] args) {
 		//take id (int), age(int) , userType(str) as input.

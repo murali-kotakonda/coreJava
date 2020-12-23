@@ -2,21 +2,33 @@ package conditions;
 
 import java.util.Scanner;
 
-/**
- * @author I335484
-        
-//assignment
-//take id (int), age(int) , userType(str) as input.
+/*
+take id (int), age(int) , userType(str) as input.
+perform validation
 
-//perform validation
-//if id is positive then print valid id else print invalid id
-//if age is gt 18  then print valid age else print invalid age
-//if userType value is "admin" then print valid userType else print invalid userType
-	
-//if id is valid then only validate the age
-//if age is valid then only validate the usertype.	
-		
- */
+if id is positive then print valid id else print invalid id
+if age is gt 18  then print valid age else print invalid age
+if userType value is "admin" then print valid userType else print invalid userType
+
+if id is valid then only validate the age
+if age is valid then only validate the usertype.
+ 
+ 
+ solution:
+ ->Nested If
+ 
+ if (){
+ 		if(){
+    	if(){
+      
+      }
+    }
+ }
+ ->if and else if
+ 
+*/
+
+ 
 public class Ex7 {
 	
 	public static void main(String[] args) {

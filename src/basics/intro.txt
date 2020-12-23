@@ -54,6 +54,19 @@ once eclipse is opened it will ask for the "workspace".
 workspace -> is the location in the syatem where the projects are created
 provide the workpsace path and  click on launch.
 
+
+How to check JDK is installed?
+try "javac" command in command window
+
+
+How to check JRE is installed?
+try "java" command in command window
+
+
+How to check java version?
+java -version
+
+
 eclipse:
 ------------------------
 1.create the java project
@@ -133,14 +146,14 @@ in java the code should be always written inside the method/function.
 
 if a java file has the main method then only it is eligible for running.
 
-syntax for main method:
-------------------------------
+ 
+syntax of main method:
+----------------------
+public static void main(String[] args) {
 
- public static void main(String[] args) {
- 
- }
- 
- 
+
+}
+
  public ->  scope is global so that JRE can access
  static -> defines the method is static
  void -> no return type

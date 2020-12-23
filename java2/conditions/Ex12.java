@@ -23,4 +23,9 @@ public class Ex12 {
 		  - compare one variable with diff values 
 		  - there is a dependency between the conditions
 		  - at a time only one condition is satisfied
+		  
+		   // switch  will have variable
+    // write case for every value
+    // and breaks is mandatory for every case
+    
 		 * */

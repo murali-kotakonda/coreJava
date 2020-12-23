@@ -15,6 +15,12 @@ public class Ex4 {
 		/*
 		 dont use == for comparing two strings.
 		 Use equals() method for comparing two strings.  [ case sensitive ]
+		 Use equalsIgnoreCase() method for comparing two strings.  [ case insensitive ]
+		 
+		 syntax:
+		     str1. equals( str2 ) 
+		     str2. equals( str1 ) 
+     
 		 * */
 		if( str1.equals(str2)) {
 			System.out.println("strings are equal");

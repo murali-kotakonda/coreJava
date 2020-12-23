@@ -35,6 +35,9 @@ ex: Company, Branch , Dep, sub-dept, Project , Employee ,
 
  
 syntax for a class:
+A person is a entity
+A Person has id,name and age as properties.
+
 
 class Person{
   
@@ -93,6 +96,17 @@ System.out.println(p1.age);
 #call the method
 p1.show();
 
+diff between normal variable and obj?
+----------------------------------------------
+
+x = 90
+
+p1= Person()
+
+# x can hold only one value
+# p1 can hold multiple varibles.  in this case p1 internally have  3 values
+
+
 
 USE "." ON A OBJECT FOR ACCESING THE instance variables and methods.
 
@@ -103,8 +117,8 @@ USE "." ON A OBJECT FOR ACCESING THE instance variables and methods.
 
 1.Requirement to capture id,name,age for 10 persons.
 solution:
-without oops we have to create 30 varibles
-without oops we have to create 10 varibles
+without oops we have to create 30 variables
+without oops we have to create 10 variables
 
 
 
@@ -113,13 +127,15 @@ without oops we have to create 10 varibles
 Class:
 -----
 -> Class is a user defined data type
-->Class is a blue print for object creation
+
 -> class is a template, defines structure.
 -> class is a logical memory , but not physical memory
 -> class represents the real time entity. 
 For every entity we need to create class
   ex: Company, Department , Project , Employee , Address
 -> Class determines how an obj will behave and what the object will contain.
+->Class is a blue print for object creation
+
 
  -> Userdefined datatype
 -> Class is used to represent the real time entities/structure/model.

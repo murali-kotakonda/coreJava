@@ -2,6 +2,18 @@ package basics.conditionsEx;
 
 import java.util.Scanner;
 
+/**
+ can we write multiple conditions in one if statement?
+ --------------------------------------------------------
+    Yes
+    
+ ways?
+--------------
+ &&  -> block is executed if all conditions are satisfied
+ ||  -> block is executed if atleast one condition is satisfied
+ 
+ 
+ */
 public class TestLogicalAnd0 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

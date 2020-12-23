@@ -13,11 +13,18 @@ public class Ex2 {
 		System.out.println("enter num2");
 		int n2 = sc.nextInt();
 		
-		if( n1< n2) {
-			System.out.println("small = "+ n1);
-		}else {
-			System.out.println("small = "+n2);
-		}
+		  
+	    if( n1  >  n2){
+	    	System.out.println("smaller = " + n2);
+	    }else{
+	   		 System.out.println("smaller = " + n1);
+	    }
+	    
+	     if( n1  <  n2){
+	    	System.out.println("smaller = " + n1);
+	    }else{
+	   		 System.out.println("smaller = " + n2);
+	    }
 	}
 	/*
 	   int/float/long/double

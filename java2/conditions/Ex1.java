@@ -13,6 +13,24 @@ public class Ex1 {
 		 3. if and else if
 		 4. switch
 		 5. ternary
+
+		int/float/double/long:
+		------------------------
+		==
+		!=
+		>
+		<=
+		<
+		<=
+		
+		char:
+		-----
+		==
+		
+		String
+		--------------
+		==
+		equals()
 		 * */
 		
 		Scanner sc = new Scanner(System.in);// sc is point of contact for console

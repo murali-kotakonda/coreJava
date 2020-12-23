@@ -1,5 +1,6 @@
 """
 1.
+
 Input = 5
 O/p :
 1
@@ -35,12 +36,36 @@ print all odd from 2 to 10
 ->Find the factorial for given input
 ->sum of nums till input
 ->Print multiplication table for given input
-->
-->Help teacher to find first rank for input
+
+
+
+->Help teacher to find first student who git 1st rank
 Take input for no of students
 For every student  take input for name + sub1 + sub2 + sub3
-
 print the student name who got first rank
+
+
+how many students: 3
+Enter student-1 name: kumar
+Enter Sub-1 : 90
+Enter Sub-2 : 50
+Enter Sub-3 : 60
+
+Enter student-2 name: Raj
+Enter Sub-1 : 90
+Enter Sub-2 : 80
+Enter Sub-3 : 85
+
+Enter student-1 name: Ram
+Enter Sub-1 : 80
+Enter Sub-2 : 70
+Enter Sub-3 : 80
+
+Output:
+Raj got the 1st rank with marks :255
+
+
+
 
 5. Input hw many nums and what are the nums:
 and print sum , big , small nums

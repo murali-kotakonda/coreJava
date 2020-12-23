@@ -64,8 +64,6 @@ byte:
 		size: 4 bytes     
     ex: 1313.131313
 		
-		
-		
 		// how to create a varaible datatype + variable name
 	
 		rules for variable names

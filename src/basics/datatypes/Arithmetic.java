@@ -1,9 +1,9 @@
 package basics.datatypes;
-
+//arithmetic operations
 public class Arithmetic {
 
 	public static void main(String[] args) {
-		//arithmetic operations
+	
 		int a= 60;
 		int b = 20;
 		

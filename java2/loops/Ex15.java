@@ -26,7 +26,25 @@ public class Ex15 {
 	   1.take input numbers continuosly
 	   2.perform the sum of nums
 	   3.if sum reaches 100 then stop and display final sum
-	   4.if the input is negative no; then dont perform any sum
+	   4.if the input is negative no; then don't perform any sum
 	   
+	   Input:
+-----------
+enter num
+30
+enter num
+20
+enter num
+-30
+enter num
+-20
+enter num
+40
+enter num
+40
+
+output:
+sum is : 130
+
 	 * */
 }
