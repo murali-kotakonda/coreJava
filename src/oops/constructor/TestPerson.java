@@ -3,7 +3,6 @@ package oops.constructor;
 public class TestPerson {
 
 	public static void main(String[] args) {
-		
 		System.out.println("***********create obj with zero arg constr***************");
 		//without constr
 		Person p = new Person(); // calls zero arg const

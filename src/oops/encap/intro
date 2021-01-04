@@ -75,7 +75,8 @@ changes in class:
   
   
   
-1. make instance variables as private
+How to  make instance variables as private
+------------------------------------------------
    
 public class Person {
 	// instance variables are private 
@@ -89,10 +90,8 @@ public class Person {
   
   
  
- 2.expose the methods to set data and read data (setters & getters)
- 
- ex:
- 
+ 2.How to write setters & getters:
+ ------------------------------------------------------------------
  public int getId() {
 		return id;
 }

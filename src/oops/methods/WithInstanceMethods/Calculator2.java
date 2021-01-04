@@ -9,7 +9,6 @@ data we need to pass for every method.
 Approach#1: Calculator2.java and TestCalculator2.java
 Approach#2: Calculator.java and TestCalculator.java
 
-
 * */
 
 public class Calculator2 {

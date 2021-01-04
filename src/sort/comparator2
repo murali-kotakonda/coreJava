@@ -1,0 +1,41 @@
+custom sorting using Comparator:
+--------------------------------------
+steps:
+-----------
+1.create the child class for comparator
+2.override the compare() method
+and write the logic for sorting strategy
+3.call Collections.sort() method by passing two params
+  a) list
+  b) comparator obj
+
+solution:
+------------
+use lambda ( anaonumous inner class  - crate class + override method + create obj )
+
+
+sort empList based on name:
+-----------------------------
+Comparator<Employee> c1 = (e1,e2) -> e1.getName().compareTo(e2.getName());
+Collections.sort(empList,c1);
+
+sort  empList based on age:
+--------------------------------
+Comparator<Employee> c2 = (e1,e2) -> e1.getAge() - e2.getAge();
+Collections.sort(empList,c2);
+
+
+sort  empList based on salary:
+--------------------------------------
+Comparator<Employee> c3 = (e1,e2) -> (int) ( e1.getSalary() - e2.getSalary()) ;
+Collections.sort(empList,c3);
+
+
+
+summary:
+----------
+Collections(empList); -> sorts based on id   -> use Comparable interface and override compareTo()
+Collections.sort(empList,c1);-> sorts based on Name -> Use Compator interface and override compare()
+Collections.sort(empList,c2);-> sorts based on Age -> Use Compator interface and override compare()
+Collections.sort(empList,c3);-> sorts based on Salary -> Use Compator interface and override compare()
+

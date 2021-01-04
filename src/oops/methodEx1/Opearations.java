@@ -1,28 +1,8 @@
 package oops.methodEx1;
 
-/**
-  create methods.
-  
-  call methods.
-  
-  sytax:
-  
-  <scope> <return+type> <method_name> (<input args> ) {
-     <method body>
-     <return statement>
-  }
-  
-  method:
-     group of statements/code.
-     
-  Adv:
-  code reusability.
-  write code once and reuse any no of times.
-     
-     
- */
 public class Opearations {
 
+	// method not returning any value : use void
 	//with no input and no return type
 	public void show() {
 		System.out.println("inside show method");

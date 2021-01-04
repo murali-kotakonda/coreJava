@@ -11,12 +11,13 @@ public class EmpListSort3 {
 		List<Employee> empList = new ArrayList<Employee>();
 		empList.add(new Employee(10, "Murali", 25, 10000));
 		empList.add(new Employee(50, "Arun", 29, 20000));
-		empList.add(new Employee(6, "lakshman", 35, 5000));
-		empList.add(new Employee(7, "lalith", 32, 50000));
+		empList.add(new Employee(6, "Lakshman", 35, 5000));
+		empList.add(new Employee(7, "Lalith", 32, 50000));
 
 		 // sorting by id employees array using Comparable interface
 		System.out.println("before :");
 		show(empList);
+		
 		System.out.println("\n\nsorting based on id:------");
 		Collections.sort(empList);
 		show(empList);

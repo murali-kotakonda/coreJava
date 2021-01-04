@@ -5,8 +5,8 @@ Polymorphism:
   b) runtime polymorphism or method overriding    -->(inheritence)
 
 
-compile time poly:
--------------
+compile time Polymorphism:
+-----------------
 - also called as method overloading .
 
 within the same class we can have different methods having same method name 
@@ -48,8 +48,9 @@ No of args:
 		return sum;
 	}
 
-add(20,30)  -> calls add method with 2 int args 
-add(1,2,3)  -> calls add method with 3 int args 
+code for calling:
+add(10,20); -> calls add method with 2 int args 
+add(1,2,3); -> calls add method with 3 int args 
   
   
   
@@ -65,6 +66,7 @@ public void add(int a, float b ) {
 		System.out.println(a + b);
 	}
   
+code for calling:
 add(  5,  6.45f )   -> calls add method with int and float as args
 add(  10.78f , 7899) ->  calls add method with   float and int as args
   
@@ -82,7 +84,7 @@ datatype of args:
 		return sum;
 	}
 
-
+code for calling:
 add(1313131L ,131313131L)-> calls add method with two long as args
 add(14214124.5454f , 235353.343f)-> calls add method with two float as args
   

@@ -9,7 +9,13 @@ public class Person {
 		  // logic here 
 	 }
 }
-// Here id,name,age are instance variables.
-// show() is a method
 
 
+/*
+points:
+-------------
+
+class: Person
+instance variables: id , name ,age
+method : show()
+*/

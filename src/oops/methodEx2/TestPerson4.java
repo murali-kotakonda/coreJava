@@ -8,7 +8,7 @@ import java.util.Scanner;
   set data
   display data
   write print logic one time and reuse for all objs
-  simplify the logic for create obj + set data
+  simplify the logic for create obj + set data by taking input from console
   
   solution:
   write a method that returns obj ; method should take care of  create obj + set data

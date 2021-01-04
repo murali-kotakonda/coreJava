@@ -1,11 +1,11 @@
 package oops.methodEx2;
 
 /**
- 
   Req:
   create 3 person objs
   set data
   display data
+  simplify the logic for printing the obj data
   write print logic one time and reuse for all objs.
   
   solution:
@@ -30,11 +30,12 @@ public class TestPerson2 {
 		p3.age= 32;
 		
 		
-		show(p1);
-		show(p2);
-		show(p3);
+		show(p1);// pObj = p1
+		show(p2);// pObj = p2
+		show(p3);// pObj = p3
 	}
 
+	//function that takes obj as input arg
 	private static void show(Person Pobj) {
 		System.out.println(Pobj.id);
 		System.out.println(Pobj.name);

@@ -1,15 +1,26 @@
+ method/function:
+     group of statements/code block Written under a common name
+
+   
   method:
   write code one time and reuse any number of times
   
 -> how to write method
 -> how to call the method
 
+     
+  Adv:
+  code reusability.
+  write code once and reuse any no of times.
+  
+   
+  
   
 syntax for a method:
 ------------------------
 <scope> <return type> <methodname> (<input args>){
   
-  <mehod body>
+  <method body>
   
   
   <return statement>
@@ -17,7 +28,16 @@ syntax for a method:
 
 scope -->public/private/protected
 returnType -> void(no return ) or int/float/long/.....etc
-<methidname> -> ann name
+<methodname> -> any name
 <input args> are optionl
-<return statement> -> is manadatory if returnType is not void
+<return statement> -> is mandatory if returnType is not void
+
+
+ 
+-> how to call the method
+-----------------------------------
+1. Create the object
+2.call the method using the Object
+
+
 

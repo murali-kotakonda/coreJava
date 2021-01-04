@@ -1,0 +1,92 @@
+-What is difference between Comparable and Comparator interface?
+-----------------------------------------------------------------
+
+-> We need these interfaces for sorting the collections
+
+-> Comparable
+   override compareTo() method
+   
+-> Comparator
+   override compare() method
+   
+Req:
+i/p: List of employee Objects
+every emp obj has id,name , age , salary
+
+O/p:
+sort the objects inside the list based on
+-> id
+-> name
+-> age
+-> salary
+
+Comparable -> (natural sorting) most commonly/default sorting used property "ID"
+Comparator  -> (custom sorting)  FOR NAME , age and salary use comparator
+
+solution:
+1.call Collections.sort() method by passing one param
+  a) list      
+  Here Employee class has to implement Comparable interface
+  
+  
+2.call Collections.sort() method by passing two params
+  a) list
+  b) comparator obj
+  create child class for Comparator interface
+ 
+
+
+
+Sorting:
+-------
+-> reorder the elements inside the collection.
+To sort any collection use the method [	Collections.sort(<any list/set>); ]
+
+
+
+1. How to sort List of Employee Objs ?
+
+Sorting is done by the Collections.sort()
+On waht basis should be specified by developer.
+
+Comparable:
+-----------------------------------------------------------------------------------------------------
+Steps:
+  1.Employee class has to implement Comparable 
+  2.Override  compareTo() method; retuns int
+  
+  for ascending order of id:
+  ----------------------
+   @Override
+	public int compareTo(Employee emp) {
+		return (this.id-emp.id);
+		
+	}
+  
+  for descending order of id:
+  ----------------------
+  
+  @Override
+	public int compareTo(Employee emp) {
+			return (emp.id-this.id);
+	}
+  
+  
+ex:
+public class Employee implements Comparable<Employee> {
+
+	private int id;
+	private String name;
+	private int age;
+	private long salary;
+
+	
+	@Override
+	public int compareTo(Employee emp) {//compareTo specifies on what basis sorting should happen ...
+		 return (this.id-emp.id);
+    // return (this.age-emp.age);
+   // return (int)(this.salary-emp.salary);
+    //return (this.name.compareTo(emp.name));
+	}
+
+}

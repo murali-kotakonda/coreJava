@@ -1,0 +1,44 @@
+
+ //diff
+ 1.constr is called one time
+ method can b called any no of times
+ 
+ 2.constr name = class name
+ method  name can be anything
+ 
+ 3.contsr doesnt have any return type(not even void)
+ method have return type(atleast void) ...
+ 
+ 4.cosntr is called during obj creation
+  method should be called after obj created.
+ 
+ 
+5.constr is automatic call
+method is explict call
+ 
+6. constr logic -> only initializing instance variables
+ method logic -> any logic
+ 
+  
+ public class Person {
+	int id;
+	String name;
+	int age;
+	
+	public Person(int id, String name, int age) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+  
+  public  void show(){
+    //some logic
+  }
+ 
+}
+
+class: Person
+instance variables: id , name,age
+method: show()
+
+  

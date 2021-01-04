@@ -1,8 +1,14 @@
-Annonymous Inner class:
-----------------------------------
-is required only for abstract class and interface.
-Annonymous class : class without name  
- 
+Anonymous Inner Class:
+------------------------
+- Annonymous class : class without name  
+- short hand notation for writing code 
+- using this concept we can avoid creating a seperate files for child classes.
+- used only for interfaces and abstract classes
+
+advantage:
+----------------
+1.create child class + override the method + create the child object can we written in one step
+
  
 Ex:
 
@@ -21,8 +27,13 @@ Solution:
 2.With Anonymous
 
 
-1.Without Anonymous 
----------------------------------------
+
+without anonymous:
+--------------------
+1.Child1
+2.Child2
+3.TestService
+
 1.Create child class 1 for Service
 2.Override for process() method for printing "Hello"
 3.Create child class 2 for Service
@@ -68,7 +79,9 @@ c2.process();
 
 
 2.With Annonymous
------------------------------- 
+---------------------
+1.TestService2
+
 annonymous class : class without name  
 
 adv of annonymous :
@@ -80,7 +93,6 @@ steps:
 1.create the object c1 for Service anonymous +  provide the logic  and call the process method
 1.create the object c2 for Service anonymous +  provide the logic  and call the process method
  
-
 
 
 

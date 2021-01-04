@@ -15,6 +15,7 @@ public class TestOpearations2 {
 	public static void main(String[] args) {
 		Opearations op = new Opearations(); //Create the object
 		op.process("kumar");
-		op.process("raj");
+		   op.process("ram");
+		   op.process("raj");
 	}
 }

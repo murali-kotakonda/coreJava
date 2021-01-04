@@ -1,0 +1,49 @@
+User defined Exception handling or custom exception handling:
+---------------------------------------------------------------
+
+
+Requirement:
+-> Input
+-> validation     
+-> process
+
+
+solution:
+-----------------
+-> Input and deligate -> write the try and catch to handle the exception  
+-> validation   -> throw the exception     
+-> process
+
+
+
+User defined Exception takes place between "Validation" and "Input"
+
+if validation fails the only code to execute is show the error message.
+
+1.is it possible for java to throw exception when id<0 ?
+NO
+
+-> WHEN validation fails throw exception
+
+why to throw exception?
+--------------------------
+to stop the flow when validation fails
+
+If you throw the exception , then is exception handling required?
+Yes
+
+During the validation of input data , the following steps has to be performed:
+---------------------------------------------------------------------------------------
+Dev will create  exception class --> because existing class are not useful 
+Dev will create exception obj -----> to stop flow
+Dev will handle the exception ----> to give meaning ful msg to customer
+
+
+
+
+
+
+
+
+
+

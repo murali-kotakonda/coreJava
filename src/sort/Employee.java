@@ -9,11 +9,6 @@ public class Employee implements Comparable<Employee> {
 	private long salary;
 
 	
-	@Override
-	public int compareTo(Employee emp) {
-		return (this.id-emp.id);
-	}
-
 
 	public int getId() {
 		return id;
@@ -36,6 +31,13 @@ public class Employee implements Comparable<Employee> {
 		this.name = name;
 		this.age = age;
 		this.salary = salary;
+	}
+
+	
+	@Override
+	public int compareTo(Employee emp) {
+		//return (this.id-emp.id);
+		return (this.id-emp.id);
 	}
 
 	@Override

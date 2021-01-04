@@ -7,6 +7,7 @@ public class Person {
 	private int age;
 	private int sal;
 	
+
 	// setters and getters
 	public int getId() {
 		return id;
@@ -32,4 +33,6 @@ public class Person {
 	public void setSal(int sal) {
 		this.sal = sal;
 	}
-}
+	
+	
+	}

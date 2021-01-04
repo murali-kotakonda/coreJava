@@ -1,7 +1,37 @@
 local variable:
 --------------------------
 local variables are created inside method
-memory is alocatd in stack
+memory is allocated in stack
 memory is created when method is called
 memory is deleted when method execution completes.
-scope is only within method.[ one local variable in one method is visible only till that method; and it isnot visisble outside the method]
+scope is only within method.- s [cannot access outside the method]
+[ one local variable in one method is visible only till that method; and it is not visible outside the method]
+
+
+
+instance variables:
+-----------------------------
+- declared inside the class
+- memory is created in heap
+- memory is created when object is created.
+- memory is deleted when object is deleted.
+- scope till obj availability.
+- instance  variables are always associated with object.
+
+
+ex: class Person{
+    int id;
+    String name;
+    int age;
+    
+    public void show(){
+    int x=90;
+    int y =40;
+    
+    }
+
+}
+
+class: Person
+instance variables: id , name , age
+local variables : x ,y

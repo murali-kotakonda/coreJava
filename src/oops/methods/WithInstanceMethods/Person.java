@@ -8,6 +8,19 @@ public class Person {
 	int age;
 	
 	
+	public Person() {
+		super();
+	}
+
+
+	public Person(int id, String name, int age) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+
+
 	//display() is the instance method
 	// from the instance method we can access the instance variables.
 	public void display(){

@@ -2,13 +2,12 @@ package oops.poly;
 
 public class TestData {
 	public static void main(String[] args) {
-		Data data = new Data();
-		 
+		Data d = new Data();
+		d.save("hello");
+		
+		//as the save method expects person obj , we need to create the person obj
 		Person p = new Person();
-		data.save(p);
-		
-		
-		data.save("hello");
+		d.save(p);
 		
  	}
 }

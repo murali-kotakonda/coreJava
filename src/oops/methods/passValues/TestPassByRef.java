@@ -5,7 +5,7 @@ import oops.methodEx2.Person;
 public class TestPassByRef {
 	public static void main(String[] args) {
 		//create obj
-		Person p1 = new Person();
+		Person p1 = new Person();// new obj created for p1
 		
 		//set data
 		p1.id= 2001;
@@ -13,13 +13,15 @@ public class TestPassByRef {
 		p1.age =29;
 		
 		System.out.println("before call");
-		show(p1);
+		System.out.println(p1.id + " "+p1.name + " "+p1.age );
+		//show(p1);
 		
 		//pass obj to the modify method
-		modify(p1);
+		modify(p1); // Person p2 = p1
 		
 		System.out.println("after call");
-		show(p1);
+		System.out.println(p1.id + " "+p1.name + " "+p1.age );
+		//show(p1);
 		
 	}
 	
@@ -31,7 +33,7 @@ public class TestPassByRef {
 		System.out.println(pObj.age);
 	}
 	
-	public static void modify(Person p2){
+	public static void modify(Person p2){ // p2 and p1 are same objects ;
 		//p2 is local variable in modify method
 		p2.id= 4000;
 		p2.name= "user11";

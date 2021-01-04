@@ -34,8 +34,6 @@ with constr:  [requires 1 lines]
 Person p = new Person(1000,"user1",45); // set the data along with obj creation
 
 
-
-
 points:
 ------------
 Constr name is equal to class name.
@@ -66,7 +64,7 @@ class Person
 		System.out.println("zero arg constructr");
 	}
 
-	// param arg bconstructor
+	// param arg constructor
 	public Person(int id, int age, String pName) {  
 		this.id = id;
 		this.age = age;
@@ -80,34 +78,6 @@ class Person
 }
   
   
-main(){
-  
-  
-  Person p = new Person();
-  Person p1 = new Person(200,"user3",45);  
-    
-}
-  
-  
-  
- //diff
- 1.constr is called one time
- method can b called any no of times
- 
- 2.constr name = class name
- method  name can be anything
- 
-  3.contsr doesnt have any return type(not even void)
- method have return type(atleast void) ...
- 
- 4.cosntr is called during obj creation
-  method should be called after obj created.
- 
- 
-5.constr is automatic call
-method is explict call
- 
-6. constr logic -> only initializing i.v
- method logic -> any logic
- 
+Person p = new Person(); // internally calls zero-arg constr  
+Person p1 = new Person(2000,23, "user1" ); // internally calls param-arg constr    
   

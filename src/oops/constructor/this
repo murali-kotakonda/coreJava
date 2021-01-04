@@ -14,7 +14,49 @@ public class Person {
 		this.name = name;
 	}
 	
+	
+	// param arg constructor [3 args]
+	public Person(int pid, int page, String pname) {// local variables
+		System.out.println("3 args constructr");
+    int x =90;
+		id = pid; // local variable value assigning to the instance variable
+		age = page;
+		name = pname;
+  }
+	
 }
+
+
+
+
+local varibles:
+varibles created inside the method, constructor
+ex: main method ,
+
+
+instance variables:
+variables created inside the class
+
+
+Person - is a class
+instance variables : id , name, age
+local variables in constr : id, name , age , x
+
+can a local variable and inst variable name same? YES
+
+if local variable and instance variable names are same, how to differentiate them?
+solution) use keyword "this" while referring to instance variables
+ex:
+to access instance variable use :
+this.id
+this.name
+this.age
+
+to access local variable use :
+id
+name
+age
+
 
 
 
@@ -22,6 +64,5 @@ public class Person {
 this keyword:
 -------------------
 this refers to the current object
-
-If the instance variables name and local variables names are same , then use this keyword to differeentiate.
-
+If the instance variables name and local variables names are same , 
+then use "this" keyword to differentiate.

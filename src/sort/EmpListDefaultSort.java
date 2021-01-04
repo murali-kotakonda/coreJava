@@ -8,16 +8,17 @@ public class EmpListDefaultSort {
 	
 	public static void main(String[] args) {
 		List<Employee> empList = new ArrayList<Employee>();
-		empList.add(new Employee(10, "manju", 25, 10000));
-		empList.add(new Employee(50, "arun", 29, 20000));
-		empList.add(new Employee(6, "laxman", 35, 5000));
-		empList.add(new Employee(7, "shyam", 32, 50000));
+		empList.add(new Employee(10, "Murali", 25, 10000));
+		empList.add(new Employee(50, "Arun", 29, 20000));
+		empList.add(new Employee(6, "lakshman", 35, 5000));
+		empList.add(new Employee(7, "lalith", 32, 50000));
 
 		 
 		System.out.println("before :");
 		show(empList);
 		
-		Collections.sort(empList);
+		 Collections.sort(empList);// every emp obj has compareTo() method
+		    //sort internally calls the compareTo() method for sorting the objects.
 		
 		System.out.println("\n\nsorting based on id:------");
 		show(empList);

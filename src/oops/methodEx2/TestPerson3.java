@@ -24,6 +24,7 @@ public class TestPerson3 {
 		show(p3);
 	}
 
+	//function that returns the object
 	public static Person getPersonObj( int id,	String name, int age){
 		Person obj = new Person();
 		obj.id= id;

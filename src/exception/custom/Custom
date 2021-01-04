@@ -17,7 +17,7 @@ here ArithmeticException is a predefined class.
 case#3 :
 -> Dev will create Exception class
 -> Dev will create exception obj & throw
--> Dev will handle the exception
+-> Dev will handle the exception using try and catch
 
 
 custom Exception/User Defined Exception:
@@ -32,7 +32,7 @@ ArithmeticException is a exception class from java lib..
 Can we create our own exception class??
 Yes
 
-  Why should we create exception class?
+ Why should we create exception class?
 ans) To handle the neagtive sceanrios in the project.
 
 ex: 
@@ -42,7 +42,7 @@ if invalid data is identified for id , name , usertype then we have to create ex
 age < 18 cannot be ArithmeticException.
 
 
-Steps for creating exception class:
+How to create custom exception class:
 -----------------------------------------------------------------
 1.create a exception class which is a child class for java.lang.Exception
 2.from the constructor call the parent constructor 
@@ -66,10 +66,27 @@ public class BusinessException extends Exception {
 
 }
 
+How to create the custom exception obj and how to thrwo obj:
+---------------------------------------------------
+BusinessException ex = new BusinessException("Invalid age", 3001);
+throw ex 
 
 
 
+How to handle the custom exception:
+------------------------------------------
 
+try {
+	input();
+	}
+	catch(BusinessException ex) {
+			System.out.println(ex.getErrCode());
+			System.out.println(ex.getMessage());
+	}
+		
+		
+		
+		
 
 req:
 

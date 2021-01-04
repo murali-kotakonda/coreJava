@@ -50,9 +50,6 @@ If the customer comes to show-room then create obj for  Data and set values for 
 
 
 
-
-
-
 Problems:
   1.This class has unrelated instance variables.
   2. Memory wastage
@@ -100,13 +97,14 @@ Problem:
   2.Memory waste
 
   
-  solution:
+ solution:
     -> remove sum() futn from Person class
+
 
 class Cal:
    void sum(x,y):
       print(x+y)
           
-  p = Cal()
-  p.sum(10,20)
-          
+  Cal c = new Cal()
+  c.sum(10,20)
+   

@@ -49,7 +49,7 @@ class Person{
 	public void  show(){
 		System.out.println("hello inside show")
 	}
-//show is a instance method.
+//show() is a instance method.
 
 }
 	
@@ -68,8 +68,22 @@ ex: create a variable for Person ===> object
 Obj is created in heap memory
 
 
+
 #Syntax for obj creation
+
+int x = 90;
+int ->datatye
+x -> variable
+90 -> value
+
+
 Person p1 = new Person();
+
+Person -> is a data type
+p1 -> reference variable
+p1 internally has id,name,age
+
+
 Person p2 = new Person();
 
 
@@ -82,16 +96,19 @@ p2 has seperate memory has id,name,age.
 #Obj will decide property values..
 
 
-#Set data
-p1.id =30000;
-p1.name ="user1";
-p1.age=45;
 
+syntax for setting data for a object:
+--------------------------------------------
+p1.id = 9000;
+p1.name ="kumar";
+p1.age=90;
 
-#display data
+syntax for printing data for a object:
+--------------------------------------------
 System.out.println(p1.id);
 System.out.println(p1.name);
 System.out.println(p1.age);
+
 
 #call the method
 p1.show();

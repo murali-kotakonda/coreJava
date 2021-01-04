@@ -1,6 +1,6 @@
 package oops.objCompare;
 
-public class TestConst2 {
+public class TestCompare2 {
 public static void main(String[] args) {
 	Person p1 = new Person(2000,"user1",30 );
 	

@@ -1,7 +1,4 @@
 
-1.
-Take 
-
 Product.java:
 --------------------
 productName
@@ -12,6 +9,8 @@ productPrice
 productDiscount
 
 
+input()
+showProduct()
 finalPrice()
 
 

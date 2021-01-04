@@ -28,5 +28,25 @@ public class TestPerson {
 		
 		//System.out.println(p.sal);
 		System.out.println(p.getSal());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }

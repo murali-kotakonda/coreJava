@@ -1,18 +1,18 @@
 package oops.constructor;
 
-public class TestConst {
+public class TestConst2AndInstanceMethod {
 public static void main(String[] args) {
-	//old approach
+	//old approach with zero arg constr
 	Person p1 = new Person();// calls zero-arg constr
 	p1.id=20001;
 	p1.name="user1";
 	p1.age=29;
 	
-	//new approach
+	//new approach using 3 arg constr
 	Person p3 = new Person(20003,31, "user3");// calls 3-arg constr
 	Person p4 = new Person(20004,32, "user4");// calls 3-arg constr
 
-
+	//new approach using 2 arg constr
 	Person p5 = new Person(39, "user5");// calls 2-arg constr
 	p5.id= 20005;
 	

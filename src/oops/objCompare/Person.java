@@ -1,11 +1,11 @@
 package oops.objCompare;
 
 /**
-   Generate the equals method in the person class 
-   
-   p1==p2 , will not compare the content of objs
-   use p1.equals(p2) for comparing the objs. 
- 
+How to compare two objects?
+----------------------------------
+steps:
+1.provide equals() method in Person.java
+2. use p1.equals(p2)  or p2.equals(p1) for comparing two objs
  */
 public class Person {
 	int id;
@@ -48,4 +48,6 @@ public class Person {
 			return false;
 		return true;
 	}
+
+	 	
 }
