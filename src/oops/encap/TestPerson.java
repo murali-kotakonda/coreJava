@@ -9,10 +9,13 @@ public class TestPerson {
 		//set data
 		//p.id = 2000;
 		p.setId(2000);
+		
 		//p.name="kumar";
 		p.setName("kumar");
+		
 		//p.age=34;
 		p.setAge(34);
+		
 		//p.sal=11111;
 		p.setSal(11111);
 		
@@ -28,22 +31,6 @@ public class TestPerson {
 		
 		//System.out.println(p.sal);
 		System.out.println(p.getSal());
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		

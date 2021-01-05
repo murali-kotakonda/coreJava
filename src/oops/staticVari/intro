@@ -11,6 +11,8 @@ static variables:
   
   static variables we need to write inside the class.
   
+  syntax:
+  --------------
   class Person{
     int id; // instance variable
     static int count; // static variable
@@ -22,7 +24,6 @@ static variables:
     
 
   class Student{
-  
   #instance  variables
   int id;
   String name;
@@ -31,20 +32,21 @@ static variables:
   static String colleageName ; //  static variable memory allocated one time
   
 }
-
+  we can call static variable as "class variables"
     
   -> for accessing static variable object is not required, Class name is sufficient.
-  we can call static varibale as "class variables"
   -> for accessing instance variable object is required.
   
   Syntax:
   ------------------------------
-  #change static varible
-  Student.colleageName ="KMR";
+  #change static variable
+  Student.colleageName ="GVR Engg college";
   
   
   #access static variable
-  System.outr.println(Student.colleageName)   ;
+  System.out.println(Student.colleageName)   ;
+  
+  
   
  #access instance variables by creating obj
     Student s = new Student();
@@ -59,11 +61,11 @@ static variables:
     syso(p.id)
     
     
-    2.acces sstatic varia
+    2.acces static varia
     Person.count =
   
   
-  static methods:
+static methods:
 ---------------
 
 static methods can be called without object creation.
@@ -75,12 +77,12 @@ static methods cannot access instance variables.
 to operate on instance variable we need instance methods.
 to operate on static variables we need static methods.
 
- instance methods -> set/read data for instance variables
-  static  methods -> set/read data for static variables
+ instance methods -> set/read/process data for instance variables
+  static  methods -> set/read/process data for static variables
   
   
-syntax:
-
+syntax for writing a static method:
+--------------------------
 public class Data{
  
     //static method
@@ -100,3 +102,7 @@ call the static method:
 -----------------------------------------------------------
 Data.showCount();
 //static methods should be called using class name.
+
+
+
+

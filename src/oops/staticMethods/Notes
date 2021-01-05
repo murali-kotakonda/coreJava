@@ -22,7 +22,7 @@ m3() (s.m)         N                        Y                        N          
   
                   
 static method can access only static methods and static variables.
-instance method can access both instance and static variables.
+instance method can access both instance + static variables and instance + static method
 
                 
 
