@@ -1,9 +1,10 @@
 package exceptions;
 
-import java.sql.SQLException;
-import java.util.Scanner;
+
+
 
 /*
+ Req:
  to perform divison of two numbers
   
   main() -> take two nums as input
@@ -12,18 +13,17 @@ import java.util.Scanner;
          
   m2() -> calls m3()
   
-  m3()  -> m4()
+  m3()  -> calls m4()
   
   m4() -> if the num2 is zero throw exception , if not perform division.
   
   
   1.create exception in m4() using throw keyword
   2.m2, m3, ,m4() will  not handle exception , write throws keyword at method declaration
-  3.main() write try catch
-  
-  
+  3.main() will handle the exception write try catch
 */
-
+import java.util.Scanner;
+import java.sql.SQLException;
 public class TestThrows {
 	
 	public static void main1(String[] args) {

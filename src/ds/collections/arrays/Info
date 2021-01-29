@@ -5,12 +5,13 @@ Collections/Data Structures:
 ->Operations : searching, sorting, insertion, manipulation, deletion, updation. 
   
 Topics:
+-----------------------------------------
 Arrays , 
 List (ArrayList + LinkedList + Vector) 
 Set(HashSet + TreeSet +LinkedHashSet) 
 Map(HashMap + TreeMap + LinkedHashMap)
 
-java.util -> all the Collection classes.
+import the java.util package while working with  the Collection classes.
   
 
 Arrays:
@@ -35,44 +36,66 @@ float[] nums = new float[10]; // float array with size of 10  nums -> is the arr
  nums array can store 10 elements from 0 position to 9 position
 
 4. Create array for person with size of 7
-Person[] persons = new Person[7];  
+Person[] persons = new Person[7];  // multiple objs
 // Person array with size of 7  persons  -> is the array
  persons array can store 7 elements from 0 position to 6 position
  
+ Person p = new Person(); // single obj  
  
  
   
 How to Add data to an array:
 ----------------------------------
-data[0] = "kumar"; // add "kumar" inside an array at position 1
-data[1] = "shyam";   // add "shyam" inside an array at position 2
-data[5] = "ram";   // add "ram" inside an array at position 6
 
+String[] data = new String[6]; 
+if size is 6
+stire elements from 0 position to 5 position uisng array.
+
+data[0] = "kumar"; // add "kumar" inside an array at position 1
+data[1] = "shyam"; // add "shyam" inside an array at position 2
+data[2] = "ram"; // add "ram" inside an array at position 3
+data[3] = "satya"; // add "satya" inside an array at position 4
+data[4] = "siva"; // add "siva" inside an array at position 5
+data[5] = "raj"; // add "raj" inside an array at position 6
 
   
 How to Read data from an array:
 -------------------------------------
-Systm.out.println(data[0]) ;   // prints "kumar" 
-Systm.out.println(data[1]) ;   // prints "shyam" 
-Systm.out.println(data[5]) ;   // prints "ram" 
+Systm.out.println(data[0]); // kumar
+Systm.out.println(data[1]); //shyam
+Systm.out.println(data[2]); //  ram
+Systm.out.println(data[3]); // satya
+Systm.out.println(data[4]); // siva
+Systm.out.println(data[5]);  // raj 
+
+Read using loops:
+---------------------------
+for ( String d: data){
+	Systm.out.println(d);
+}
 
 
-How to Update data from an array:
+How to Update data in an array:
 ---------------------------------------
-data[0] = "kumar varma"; // updates "kumar varma" inside an array at position 1
-data[1] = "shyam kumar";   // updates "shyam kumar" inside an array at position 2
-data[5] = "ram prasad";   // updates "ram prasad" inside an array at position 6
+data[0] = "kumar1"; // add "kumar" inside an array at position 1
+data[1] = "shyam1"; // add "shyam" inside an array at position 2
+data[2] = "ram1"; // add "ram" inside an array at position 3
+data[3] = "satya1"; // add "satya" inside an array at position 4
+data[4] = "siva1"; // add "siva" inside an array at position 5
+data[5] = "raj1"; // add "raj" inside an array at position 6
+
+ 
+Delete elements is not possible...
+data[5] = "";
+data[5] = null;
  
  
- Delete elements is not possible...
- 
- 
- 
- 
-disadvantages:
+Disadvantages:
+------------------
 -> Specify size early. Fixed length.
 -> Size cannot be increased or decreased 
--> insert in between[multiple right shift operations] or remove in between[multiple left shift operations] is costly.
+-> insert in between[multiple right shift operations] is costly
+-> remove in between[multiple left shift operations] is costly.
 -> search by content is costly
 
 

@@ -6,7 +6,7 @@ public class Employee extends Person {
 	String pan;
 
 	public Employee(int id, String name, int age, String pfNo, String pan) {
-		super(id, name, age);//call the person constr ..
+		super(id, name, age); // call the person constr
 		this.pfNo = pfNo;
 		this.pan = pan;
 	}

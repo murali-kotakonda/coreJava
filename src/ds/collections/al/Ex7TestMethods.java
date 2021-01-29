@@ -3,7 +3,7 @@ package ds.collections.al;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestMethods {
+public class Ex7TestMethods {
 	public static void main(String[] args) {
 		List<String> names = new ArrayList<String>();
 		

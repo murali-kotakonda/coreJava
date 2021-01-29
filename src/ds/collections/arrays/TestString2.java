@@ -1,5 +1,12 @@
 package ds.collections.arrays;
 
+/**
+ array with data:
+----------------------
+String[] names = {"kumar" ,"shyam" ,"ram" ,  "raj" , "nandini" ,  "teju"} ;
+int[] nums = {1,214,3,3,12434,63,47,8769,3,58,36};
+
+ */
 public class TestString2 {
 	public static void main(String[] args) {
 		

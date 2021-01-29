@@ -23,13 +23,20 @@ public class Ex2 {
 		
 		
 		
-		
+		"".
 		//print all product names
 		products.stream().forEach(p-> System.out.println(p.name));
 		products.forEach(p->System.out.println(p.name));
 		
 		//print whose price==3000
 		System.out.println("*********print name whose price==3000*************");
+		add(20,20L);
+	}
+	public static void add(Integer a, Long b) {
+		
+	}
+	
+public static void add(Long   a, Integer b) {
 		
 	}
 }

@@ -53,14 +53,14 @@ public class Address {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-
 	public Address(String hno, String pinCode, String city, String state, String country) {
-		super();
 		this.hno = hno;
 		this.pinCode = pinCode;
 		this.city = city;
 		this.state = state;
 		this.country = country;
 	}
+
+	
 
 }

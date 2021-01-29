@@ -1,13 +1,15 @@
 package inherit.abstractEx1;
 
 /**
-  For Hdfc overriding the createPPF() method is mandatory.
-  if Hdfc doesnt override , we will get compilation.
- 
- */
-public class Hdfc extends RBIBank{
+For Hdfc overriding the createPPF() method is mandatory.
+if Hdfc doesnt override , we will get compilation.
 
+*/
+public class Hdfc extends RBI{
+
+	@Override
 	public void createPPF() {
-		System.out.println("HDFC : createPPF completed");
+		System.out.println("HDFC: createPPF comeplted");
 	}
+
 }

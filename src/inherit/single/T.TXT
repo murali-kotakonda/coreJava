@@ -13,7 +13,6 @@ Public properties and methods are inherited/available to child class from parent
 private, static are not eligible for Inheritance.
 
 
-
 Parent class doesnt know what are the child specific properties/methods.
 Relation ship is between parent class and child class , but not betweeen the parent obj and child obj.
 i.e. parent obj and child obj are independent to each other
@@ -122,13 +121,13 @@ public class Employee extends Person{// Here Employee is the Child class and Per
   }
 }
 
-    
-How many I.V are in Person : 3 
-How many I.V are in Employee : 5 
-  
-How many METHODS are in Person : 1 
-How many METHODS are in Employee : 2
-  
+
+How many I.V are in Person : 3  [id,name, age ]
+How many I.V are in Employee : 5 [id,name, age,pan ,pfNo ]
+
+
+How many METHODS are in Person : 1 [m1()]
+How many METHODS are in Employee : 2 [ m1() and m2() ]
   
  Case#2:
  ---------------------------------------------------------------------------------
@@ -158,6 +157,12 @@ Eligible for inheritence:
 1.id,name, age 
 2. m1() 
 
+
+count is not eligible as it is private
+m3() is not eligible as it is private
+m4() is not eligible as it is static
+
+
 How many I.V are in Person :   
 How many I.V are in Employee :   
   
@@ -170,6 +175,6 @@ Types of Inheritance:
 1.Single
 2.Multi Level
 3.Hierarchial
-4.Multiple Inheritance is not allowed n java
+4.Multiple Inheritance is not allowed in java
 
 

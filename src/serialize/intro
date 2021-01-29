@@ -1,3 +1,25 @@
+seralization:
+-save obj state to the file 
+-send over network
+
+
+deseralization:
+- convert file back to obj
+
+
+steps:
+-----------
+1.the class has to inmplement the Serializable interface
+ex:
+Entity class 
+Form class
+Dto class 
+
+only the obj that hold the data requires the seralization
+
+-Controller, Service , DAO => bean classes doent require the seralization
+
+
 Serialization:
 ----------------
 -> process for storing obj state in the file system or when we need to send obj over the network..
@@ -16,8 +38,8 @@ Steps:
    
    Serialize:
     1.create file obj
-    2.create FileOutputStream obj usinh file obj
-    3.create ObjectOutputStream ising FOS OBJ
+    2.create FileOutputStream obj using file obj
+    3.create ObjectOutputStream using FileOutputStream OBJ
     4.use writeObject method and pass the obj to serialize 
     
     

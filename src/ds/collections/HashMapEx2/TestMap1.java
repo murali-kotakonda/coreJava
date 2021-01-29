@@ -1,22 +1,15 @@
 package ds.collections.HashMapEx2;
-/**
-Requirement:
-Create map with string as key , string as value.
-*/
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.TreeMap;
 import java.util.Map.Entry;
+import java.util.*;
 
 
 public class TestMap1 {
 	public static void main(String[] args) {
 		System.out.println("************** HashMap ********************");
 		//create hashmap
-		Map<String, String> map = new HashMap<>();
-		//Map<String, String> map = new TreeMap()<>();
-		//Map<String, String> map = new LinkedHashMap()<>();
+		//Map<String, String> map = new HashMap<>();
+		//Map<String, String> map = new TreeMap<>();
+		Map<String, String> map = new LinkedHashMap<>();
 		
 		//add elements
 		map.put("129", "user2");
@@ -36,3 +29,34 @@ public class TestMap1 {
 		}
 	}
 }
+
+/*
+ 
+
+************** HashMap ********************
+key === 132  value ==abcd
+key === 133  value ==user6
+key === 128  value ==user1
+key === 129  value ==user2
+key === 130  value ==user3
+key === 131  value ==user4
+
+
+************** TreeMap ********************
+key === 128  value ==user1
+key === 129  value ==user2
+key === 130  value ==user3
+key === 131  value ==user4
+key === 132  value ==abcd
+key === 133  value ==user6
+
+
+************** LinkedHashMap ********************
+key === 129  value ==user2
+key === 132  value ==abcd
+key === 128  value ==user1
+key === 133  value ==user6
+key === 130  value ==user3
+key === 131  value ==user4
+
+ * */

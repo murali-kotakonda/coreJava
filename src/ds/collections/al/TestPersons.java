@@ -13,7 +13,7 @@ public class TestPersons {
 	public static void main(String[] args) {
 		
 		// create arraylist
-		List<Person> persons = new ArrayList<Person>(); 
+		List<Person> persons = new ArrayList<>(); 
 
 		//create 3 objs
 		Person p1 = new Person(1000, "user1", 27);

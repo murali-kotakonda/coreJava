@@ -1,7 +1,5 @@
 package inherit.interfaceEx2MultiLevel;
 
-import javax.management.PersistentMBean;
-
 /**
  
  Can one interface extend another Interface
@@ -23,11 +21,11 @@ extends  ----> applicable for class / interface
            | 
          RBIBank   - [interface]   extends WorldBank
            |
-           |  createAccount  - abstract
+           |  createAccount()  - abstract
            |    
          Icici   - [class] implements RBIBank
            |
-           | - has to override all abstarct methods 
+           | - has to override all abstract methods 
            |
 
 

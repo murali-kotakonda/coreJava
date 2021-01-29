@@ -1,21 +1,18 @@
 package exceptions;
-
 /**
 How to do generic exception handling??
 ----------------------------------------
-
 COMMON CATCH BLOCK FOR ANY EXCEPTION
  catch (Exception ex) {
 		 
 }   // this catch block can handle any exception.
 
-
 ->Exception is a parent class
 ->ArithmeticException , NullPointerException ,  ArrayIndexOutOfBoundsException , NumberFormatException are child classes
 of Exception class.
-
  */
-public class TestGenericExceptionHandling {
+
+public class TestException16GenericExceptionHandling {
 	public static void main(String[] args) {
 		String name = "";
 		int num1= 20;
@@ -38,7 +35,6 @@ public class TestGenericExceptionHandling {
 		} catch (Exception ex) {
 			System.out.println("Exception created. due to ::" + ex.getMessage());
 		} 
-		
 		System.out.println("Program ends");
 	}
 }

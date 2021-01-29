@@ -6,14 +6,14 @@ Unexpected scenario/event that occurs at the run time.
 what happens when there is an exception:
 --------------------------
 -> Prog will stop/ the flow would break.
--> customer will see the technical message instead of meaning ful message.
+-> customer will see the technical message instead of meaningful message.
 -> affect the business 
 
 
 
 
 Why do we have Exception?:
-----------------
+------------------------
 ->Bad coding practices
 ->3rd party/ server/ hardware ex: db down , server is down , file is deleted
 -> Missing testing the scenario
@@ -34,15 +34,19 @@ Exception handling will be required when there is an exception...
 
 
 Adv:
+---------------
+-> resume the application flow
 -> choice for retry/ continue/ stop
 ->prepare meaning msg to the customer..
--> resume the application flow
 ->write the technical messages like exception reason+ cause to the server logs
 
 
 What is java role?
 ->Java creates the exception object based on the reason
-->Exception obj contains the exception msg + what are the class+method+line nos involved for exeption(stacktrace)
+->Exception obj contains 
+   a)the exception msg + 
+   b)what are the class+method+
+   c)line nos involved for exeption(stacktrace)
 ->Java stops the application flow..
 
 

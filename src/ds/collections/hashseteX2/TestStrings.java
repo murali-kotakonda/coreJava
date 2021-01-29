@@ -1,9 +1,6 @@
 package ds.collections.hashseteX2;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  Req:
@@ -14,11 +11,10 @@ print all names in the set
  */
 public class TestStrings {
 	public static void main(String[] args) {
-
 		//create  HashSet for strings
-		Set<String> names = new  HashSet<>();
+		//Set<String> names = new  HashSet<>();
 		//Set<String> names = new  TreeSet<>();
-		//Set<String> names = new  LinkedHashSet<String>();
+		Set<String> names = new  LinkedHashSet<>();
 		
 		//add text in  HashSet
 		names.add("java");

@@ -1,4 +1,5 @@
-
+throw vs throw:
+-----------------
 throw:
 to create new exception
 throw logic write in method body.

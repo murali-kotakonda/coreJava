@@ -1,7 +1,7 @@
 package inherit.interfaceEx2Multiple;
 
 
-public class TetInherit2 {
+public class TestIcici {
 	public static void main(String[] args) {
 		
 		 Icici i = new Icici(); // create obj

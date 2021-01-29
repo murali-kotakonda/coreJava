@@ -4,7 +4,7 @@ public class PersonDetails {
 
 	public String name;
 	public int id;
-	private Address currAddress;
+	public Address currAddress;
 
 	public PersonDetails() {
   
@@ -15,8 +15,9 @@ public class PersonDetails {
 		System.out.println(id);
 	}
 
+	
+
 	public PersonDetails(String name, int id) {
-		super();
 		this.name = name;
 		this.id = id;
 	}

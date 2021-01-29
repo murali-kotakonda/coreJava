@@ -18,7 +18,7 @@ public class TestMapMethods {
 		boolean b1 = map.containsKey("128");
 		System.out.println("key 128 status    : " + b1);
 		
-		//check if the key 128 exists
+		//check if the key 131 exists
 		boolean b2 = map.containsKey("131");
 		System.out.println("key 131 status    : " + b2);
 		

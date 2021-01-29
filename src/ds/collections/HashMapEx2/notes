@@ -74,7 +74,13 @@
     
     //get both keys + values [ get all entries ]
     //every entry has key + value
-		map.entrySet(); returns all keys + values
-  
+	//how to iterare a map 
+	map.entrySet(); returns all keys + values
+	
+	for( Entry<String, String> entry : map.entrySet() ){
+		String key = entry.getKey();
+	    String value = entry.getValue();
+		
+	}
   
  */

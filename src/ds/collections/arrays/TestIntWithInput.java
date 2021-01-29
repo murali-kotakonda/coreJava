@@ -33,3 +33,27 @@ public class TestIntWithInput {
 		}
 	}
 }
+
+
+/*
+ output:
+ --------------
+ Enter the size
+5
+enter number : 1
+23
+enter number : 2
+35
+enter number : 3
+67
+enter number : 4
+98
+enter number : 5
+56
+**********print all elements****************
+23
+35
+67
+98
+56
+ * */

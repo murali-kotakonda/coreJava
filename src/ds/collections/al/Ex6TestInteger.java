@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class TestInteger {
+public class Ex6TestInteger {
 	public static void main(String[] args) {
 		
 		//1.Create arraylist for int

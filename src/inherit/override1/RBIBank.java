@@ -5,6 +5,7 @@ package inherit.override1;
  RBIBank is the parent class.
  RBI  provides loan @ 9%.
  
+ SBI, HDFC, ICICI ARE child classes
  
  HDFC is a child; HDFC wants to give loan @ 12%.
  

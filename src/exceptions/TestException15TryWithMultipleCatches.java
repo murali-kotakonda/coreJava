@@ -1,14 +1,38 @@
 package exceptions;
 
 /**
+/**
+	 
+	
+can we write try with multiple catch blockes?
+Yes
+
+at a time only one cathc block is executed.
+
+try{
+	
+}
+catch(ArithmeticException ex){
+	
+	
+}
+catch(NullPointerException ex){
+	
+}
+catch(ArrayIndexOutOfBoundsException ex ){
+	
+}
+
 solution: try with multiple catches
  at a time only one exception is created.
   solution: try with multiple catches
 		at a time only one exception is created.
 		at a time only one catch block is executed.
+		
+		
 */
 
-public class TestTryWithMultipleCatches {
+public class TestException15TryWithMultipleCatches {
 	public static void main(String[] args) {
 		String name = null;
 		int num1= 20;

@@ -4,7 +4,6 @@ public class Staff extends Employee {
 
 	String contractID;
 	String contractPeriod;
-
 	 
 	public Staff(int id, String name, int age, String pfNo, String pan, String contractID, String contractPeriod) {
 		super(id, name, age, pfNo, pan);//call the employee constr

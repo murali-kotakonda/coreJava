@@ -15,7 +15,8 @@ Vector vs ArrayList
 LinkedList vs ArrayList/Vector
 ---------------------------
 ->Arraylist/Vector interally uses arrays
-->LinkedList internally uses linked DataStructure , every element contain data and reference of next data.
+->LinkedList internally uses linked DataStructure , 
+every element contain data and reference of next data.
   chain of data.
   10 -> 20-> 30-> 40
   
@@ -45,8 +46,6 @@ list.add(5, "kumar");  // fast in Linkedlist , but slow for AL/Vector.
 
 -> AL/Vector : Can grow , but cannot decrease  size
 -> LinkedList : Can grow and can decrease for LinkedList
-
-
 
 
 ->Memory allocated and no of elements are not same in AL/Vector.  => Leads to memory wasted.

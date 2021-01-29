@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class TestStringAvoidDuplicates {
+public class Ex4TestStringAvoidDuplicates {
 	public static void main(String[] args) {
 		// 1. input size
 		Scanner sc = new Scanner(System.in);

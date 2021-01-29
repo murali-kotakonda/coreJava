@@ -4,36 +4,60 @@ special classes in inheritance:
 
 BOTH ARE PARENT CLASSES
 
-abstract class:
+Abstract class:
+------------------------------
 -> should be used only in Inheritance.
 -> always a parent class.
-->we cannot create object
--> abstract class has  concrete methods  [ abstract methods and non-abstract methods ]
+->we cannot create object for abstarct class .
+-> abstarct class has two types of methods:  
+  a) abstract methods
+  b) non abstract methods 
  -> If a class has one abstract method then class has to be abstract class...
 ->syntax for abstract class:
 
-public abstract class RBI{
-  
-  public void display(){
-   
-   }
-   
-   public abstract void display1();
-}
+->syntax for abstract class:
+--------------------------------
 
-The only way to use abstract class is by creating child class
+public abstarct class RBI{
 
-->Abstract class has two types of methods:
-   1. Non abstract methods  (method declaration + method body)
    public void display(){
    
    }
-   2. abstract methods (has only method declaration ; abstract method does not have any logic)
-   public abstract void display1();
-   
+ 
+   public abstarct void display1();
+	
+}
 
+observations:
+------------------
+RBI is a abstract class
+display() is a instance method( non abstract method )
+display1() is a abstarct method 
+
+
+
+Non abstract methods:
+----------------------
+(method declaration + method body)
+   public void display(){
+   
+   }
+abstract methods:
+------------------
+->has only method declaration ; 
+->abstract method does not have any logic / no body 
+-> abstarct method has to be written only in abstarct class  
+  public abstract void display1();
   
---> create a class that extends the Abstract class [ only way to use abstract class]  
+ 
+ Impact:
+ --------------
+ Overriding the abstract method is mandatory for child class
+ 
+ 
+ 
+ The only way to use abstract class is by creating child class
+ --> create a class that extends the Abstract class [ only way to use abstract class]  
 -->  For a child class overriding is mandatory for the abstract methods, 
 
  CREATE CHILD CLASS FOR ABSTRACT CLASS

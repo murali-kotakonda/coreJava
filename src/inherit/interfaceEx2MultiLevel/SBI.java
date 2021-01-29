@@ -1,6 +1,6 @@
 package inherit.interfaceEx2MultiLevel;
 
-public class SBI implements RBIBank{
+public class SBI implements RBI{
 
 	public void createAccount() {
 		System.out.println("SBI: createAccount");

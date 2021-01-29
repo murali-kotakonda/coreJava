@@ -3,14 +3,20 @@ package exceptions;
 import java.util.Scanner;
 
 /**
- Case#1:
+ Case#1:(Earlier)
 java is creating exception
 dev is handling exception
 
 
-Case#2:
+Case#2:(Now)
 dev is creating exception
 dev is handling exception
+
+
+solution:
+---------------
+main()   -> handle the exception 
+getDivisionResult() -> throw the exception
 
 ex:
 division of two nums:
@@ -22,8 +28,6 @@ main() - handle exception
 
 getDivisionResult() - create exception
  - we need to throw the exception obj if the second num is zero 
- 
- 
  
  
  */

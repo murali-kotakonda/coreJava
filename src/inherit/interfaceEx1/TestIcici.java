@@ -1,6 +1,6 @@
 package inherit.interfaceEx1;
 
-public class TetInherit2 {
+public class TestIcici {
 	public static void main(String[] args) {
 		
 		RBI r =  new Icici();// create obj for child and refer by RBI

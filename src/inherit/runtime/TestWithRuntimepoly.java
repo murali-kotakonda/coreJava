@@ -20,7 +20,6 @@ public class TestWithRuntimepoly {
 	public static void main(String[] args) {
 	
 	//Take Bank name as input
-	
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your salary bankname:");
 		String salBank = sc.next();

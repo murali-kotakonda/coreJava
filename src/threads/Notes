@@ -31,7 +31,7 @@ Threads:
 	   
 	  we cannot determine when the thread would start or end.
 	  
-	  	 by default java creates main thread.
+	  	by default java creates main thread.
 		using main thread developer will create additional threads.
 		
 	  thread states:

@@ -7,6 +7,15 @@ package inherit.override6;
  Person: parent class
  Employee: Child class
  
+ Req:
+ Person p = new Person();
+ p.input(); //take input id,name ,age
+ p.display();//print id,name ,age
+ 
+ Employee e = new Employee();
+ e.input();//take input id,name ,age,pan , pf
+ e.display();//print id,name ,age,pan , pf
+ 
  
  1.Person class : 
    write display() method in 

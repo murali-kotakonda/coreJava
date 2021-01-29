@@ -1,12 +1,8 @@
 package inherit.interfaceEx2MultiLevel;
 
-import java.util.Scanner;
-
-
-
-public class TetInherit {
+public class TestIcici {
 	public static void main(String[] args) {
-	 	RBIBank r = new  Icici();
+	 	RBI r = new  Icici();
 	 	r.createAccount(); // Icici
 	 	r.processLoan();   // Icici
 	}

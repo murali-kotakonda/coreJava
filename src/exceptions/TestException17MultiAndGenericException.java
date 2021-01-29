@@ -25,7 +25,7 @@ catch (Exception ex) {// for any exception
 } 
 * 
  */
-public class TestMultiAndGenericException {
+public class TestException17MultiAndGenericException {
 	public static void main(String[] args) {
 		String name = "";
 		int num1 = 20;

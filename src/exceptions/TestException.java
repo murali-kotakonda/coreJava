@@ -2,12 +2,13 @@ package exceptions;
 
 import java.util.Scanner;
 
+/**
+How to convert string to int?
+->Use Integer.parseInt(age)
+
+Take string as input and convert to int
+ */
 public class TestException {
-	
-	/**
-	How to convert string to int?
-	->Use Integer.parseInt(age)
-	 */
 	public static void main3(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the age::");

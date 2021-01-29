@@ -1,6 +1,6 @@
 package inherit.interfaceEx2MultiLevel;
 
-public class Icici implements RBIBank{
+public class Icici implements RBI{
 
 	public void createAccount() {
 		System.out.println("ICICI: createAccount");

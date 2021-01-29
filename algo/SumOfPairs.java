@@ -13,7 +13,6 @@ public class SumOfPairs {
 		// do for each element
 		for (int i = 0; i < A.length; i++) {
 			// check if pair (A[i], sum-A[i]) exists
-
 			// if difference is seen before, print the pair
 			if (map.containsKey(sum - A[i])) {
 				System.out.println("Pair found at index " + map.get(sum - A[i]) + " and " + i);

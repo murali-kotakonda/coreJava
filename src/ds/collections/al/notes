@@ -3,14 +3,17 @@ Advantages:
 -> No need to specify the size
 -> we have inbuilt methods for the operations 
 -> List is dynamically growing ...
--> List internally uses array
 -> Search by position is fast
+
+
+-> List internally uses array
 -> search by content is slow
 -> delete an element is slow
 
 -> Insert in between and delete in between is slow
 
 
+use java.util package
 
 List (interface)
 ---------------------
@@ -61,48 +64,84 @@ Methods(Arraylist/vector/linkedlist):
 List<String> names = new ArrayList<>();
 
 
-// add new element use add() method
-names.add("user1");
-names.add("user2");
-names.add("user4");
+  - How to add new element ?
+    use add() method (adds at last positoion)
+   ex:
+   names.add("kumar");
+   names.add("shyam");
+   names.add("ram");
+   names.add("raju");
+ 
+ - How to add new element in between or insert in between ?
+     names.add(3,"kumar");
+     names.add(2,"shyam");
+	 
+	 Vector - Slow
+     ArrayList - Slow 
+     LinkedList - Fast	
 
+  - How to delete all the element?
+    names.clear(); 
 
-// adds new element at 2nd position
-names.add(2, "user5");  
-
-// deletes all elements
-names.clear(); 
-
-
-
-// search by position . ex: gets the element at 2nd position.
-String data = names.get(1);   
-
-
- // search by content returns boolean , 
-boolean found = names.contains("user4");
-if(found) {
+  - How to search by position?
+    ex:
+	   get the element at 2nd position
+	   String data = names.get(1); // shyam
+	   Vector - Fast
+       ArrayList - Fast 
+       LinkedList - slow	
+	      
+  - How to search by content?   
+    use contains () function
+	
+	boolean found1 = names.contains("kumar"); //true 
+	boolean found2 = names.contains("krishna");//false
+	 if(found) {
 			System.out.println("  available");
-}else {
+      }else {
 			System.out.println( " is not available");
-}
-
+      }
+      
+	Vector - slow
+    ArrayList - slow 
+    LinkedList - slow
+    
 
 // returns boolean to check whether list is empty or not
 boolean content = names.isEmpty(); 
 
+ 
+ - Find the length?
+   int size = names.size();
 
-// to find size
-int count = names.size(); 
+ - How to delete an element?
+   use remove() method
+   names.remove("kumar");  
+
+   Vector - slow
+   ArrayList - slow 
+   LinkedList - slow   
 
 
-// to remove element
-names.remove("user2"); 
 
-
-
-
-
+ - How to iterate the list ?
+   for(String data : names ){
+	   
+	   System.out.println(data);
+   }
+ 
+ 
+ 
+ Req1:  [search by position ]
+ --------------
+ collection has 500 cities ,get element at 400 position
+ 
+ 
+ Req2: [search by content]
+ --------------------------------
+ collection has 500 cities ,check if "Delhi" exists
+ 
+ 
 
 import java util.Arrays;
 List<String> names = Arrays.asList("Cow", "Zebra","Bat", "Apple","Elephant","Mango");
