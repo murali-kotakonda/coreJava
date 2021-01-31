@@ -43,8 +43,8 @@ class Data:
   custMobile
   
   
-If the vehicle comes to show-room then create obj for  Data and set values for vehicleId  +  vehicelName  + vechicleBrand
-If the customer comes to show-room then create obj for  Data and set values for custId  + custName + custMobile
+If the vehicle comes to show-room then create obj for  Data class and set values for vehicleId  +  vehicleName  + vechicleBrand
+If the customer comes to show-room then create obj for  Data class and set values for custId  + custName + custMobile
 
 
 
