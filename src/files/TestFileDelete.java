@@ -3,9 +3,9 @@ package files;
 import java.io.File;
 
 /**
+How to delete a file?
 1.create file obj by specifying file path. [ make sure folder and file exists ]
 2. call delete(); method
-
  */
 public class TestFileDelete {
 	public static void main(String[] args) {

@@ -44,7 +44,8 @@ Take input for no of students
 For every student  take input for name + sub1 + sub2 + sub3
 print the student name who got first rank
 
-
+sample Run:
+-------------------------------
 how many students: 3
 Enter student-1 name: kumar
 Enter Sub-1 : 90

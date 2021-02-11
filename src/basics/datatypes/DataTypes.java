@@ -65,7 +65,13 @@ byte:
     ex: 1313.131313
 		
 		// how to create a varaible datatype + variable name
-	
+	   How to declare a variable:
+   <dataType> <variable>;
+   
+   How to assign value?
+   <variable> = <value>?
+   
+   
 		rules for variable names
 		1.[a-z[A-Z][0-9] [ _ $ ]
 		2.start with alphabet or _ or $ , but not with number. 

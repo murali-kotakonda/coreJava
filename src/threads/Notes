@@ -35,6 +35,7 @@ Threads:
 		using main thread developer will create additional threads.
 		
 	  thread states:
+	  --------------------------
 	  1. ready state -- when the developer creates the thread and adds to the cpu job list
 	  2. running -- when cpu gives appointment to the thread
 	  3. possible 3 states after running state
@@ -56,6 +57,16 @@ Threads:
 	  -thread will be in ready state
 	   - start method() - internally  calls the run method when the cpu is available.
 	  
+
+
+
+How to create a thread class:
+--------------------------------------------
+There are two ways:
+1. By extending the Thread class
+2. By implementing the "Runnable" interface.
+
+
 	 
 	  
     create the thread class:
@@ -108,7 +119,7 @@ Threads:
 	 use join() funtion
 	 
 	 
-	   1. ready state -- th.start()
+	  1. ready state -- th.start()
 	  2. running -- when cpu gives appointment to the thread, run() method is called.
 	  3. possible 3 states after running state
 	  		a. dead state or completed state    - run() method execution is complted 

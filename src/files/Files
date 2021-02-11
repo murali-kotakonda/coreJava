@@ -14,11 +14,14 @@ File obj is used to represent a file or folder.
 
 ->There are two types of files.
 1. charater stream  ex: only text files
+2. Byte stream   ex: text and non text files image, pdf, document, etc....
+
+charater stream 
 Write : FileWriter class
 Read : FileReader class
 
 
-2. Byte stream   ex: text and non text files image, pdf, document, etc....
+Byte stream   
 Write : FileOutputStream class
 Read : FileInputStream class
 

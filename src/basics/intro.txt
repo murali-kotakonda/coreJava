@@ -91,7 +91,7 @@ Setup:
   JDK -> Commands + lib for compilations
   JRE -> commands for execution
   
-  In every server we hav the application running & testers will do testings on these systems.
+  In every server we have the application running & testers will do testings on these systems.
   Dev1  --->     TS1    -->    TS2 -->     TS3 -->     PRE-PRD --->     Live  [consumed by customers]   
   12																																					10
   JDK+JRE        JRE          JRE          JRE          JRE              JRE
@@ -116,11 +116,30 @@ Steps to run java file:
   java Hello
   result : <some output>       
   
-    
+
+ what is a jar?
+ --------------------
+ 
 jar:    [java archive] - exposing the code 
 java library. 
 contains multiple .class files
 large no files to share with the team , then create jar file that contains .class files.
+ 
+ A jar file contains multiple .class files.
+ A jar file is nothing but a zip file but contains only .class files.
+ 
+ Req:
+ Dev1 has 500 java files.
+ Dev1 has to share with Dev2
+ 
+ solution:
+ 1.Dev1 will compile 500 .java files.
+  result : 500 .class are generated
+ 
+ 2.Dev1 will create the jar file
+ 3.Dev1 will share the jar file to Dev2
+ 4.Dev2 will import the jar file in his project
+ 
   
   
     
@@ -137,15 +156,14 @@ Structure of java file:
   public class Hello{}
 
 
-To run a program main() method is mandatory.
-  
 
 method or funtion refers the same.
 
 in java the code should be always written inside the method/function.
 
 if a java file has the main method then only it is eligible for running.
-
+To run a program main() method is mandatory.
+  
  
 syntax of main method:
 ----------------------

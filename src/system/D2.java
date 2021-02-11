@@ -16,7 +16,7 @@ public class D2 {
 		
 		System.out.println(d2.before(d3));  
 		
-		System.out.println(d2.after(d3));
+		System.out.println(d2.after(d1));
 		
 		
 		

@@ -3,16 +3,17 @@ OOPS:
 Object Oriented Programming
 ->Programming style that defines the common rules , regulations,standards , guidelines for writing better programming
 
--> Programming style
--> ex: java, .net , python , php , groovy ,go , php , javascript , anagular js
+ 
+-> ex: java, .net , python , php , groovy ,go , php , javascript , angular js
 
 Adv:
 --------
 Modularity
-Easy to read and write
+Easy to read and write, understand.
 Avoids complexity
-code Maintainance
-future enhancements.
+code Maintainance and code simplicity , reduce code
+future enhancements. 
+ 
 
 Topics:
 -> class, object , enapsulation , abstraction , inheritance, polymorphism.
@@ -57,7 +58,6 @@ class Person{
 
 Object:
 ---------
- 
 create a variable for a class  ===> object
 ex: create a variable for Person ===> object
 ->variable for the class

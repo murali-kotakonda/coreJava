@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
+How to create a file?
 1.create file obj by specifying file path. [ make sure folder exists ]
 2.call createNewFile(); method
 

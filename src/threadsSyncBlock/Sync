@@ -29,7 +29,7 @@ at a time only one thread should modify the object/variable.
 	
  This will lock all the lines inside the run method ; 
  at a time only one thread will execute run method
- this leads to perforamce issue.
+ this leads to Performance issue.
  
  
  synchronized block:
