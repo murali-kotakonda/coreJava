@@ -25,18 +25,25 @@ public class TestPassByRef {
 		
 	}
 	
-	// if method1() calls method2() by passing obj , if the method2() is modifying obj ,
-	//then it will have impact on method1()
+
 	public static void show(Person pObj){
 		System.out.println(pObj.id);
 		System.out.println(pObj.name);
 		System.out.println(pObj.age);
 	}
 	
-	public static void modify(Person p2){ // p2 and p1 are same objects ;
-		//p2 is local variable in modify method
+	public static void modify(Person p2){ 
 		p2.id= 4000;
 		p2.name= "user11";
 		p2.age =45;
 	}
 }
+
+
+
+	// if method1() calls method2() by passing obj , if the method2() is modifying obj ,
+	//then it will have impact on method1()
+	
+	
+	// p2 and p1 are same objects ;
+    //p2 is local variable in modify method

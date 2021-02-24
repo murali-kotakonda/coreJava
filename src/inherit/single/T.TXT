@@ -38,7 +38,7 @@ Req:
 ---------------------------------------------------------------
 Person has id,name, age
 Employee has id, name, age, pan , pf
-
+create class and create object
 
 Without Inheritance:
 ----------------------------------------------------------------

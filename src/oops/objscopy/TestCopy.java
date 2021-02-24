@@ -23,6 +23,10 @@ public class TestCopy {
 
 		//copy p2 to p1
 		Person p2 = p1;
+		// no new object is created; same obj is referred by p1 and p2.
+	//both p1 and p2 has same address
+	//if p1 is modified then p2 is impacted.
+	//if p2 is modified then p1 is impacted.
 		
 		System.out.println("showing P1");
 		show(p1);

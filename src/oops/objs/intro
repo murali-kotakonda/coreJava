@@ -85,7 +85,7 @@ p1 internally has id,name,age
 
 
 Person p2 = new Person();
-
+p2 internally contains  id,name,age
 
 //here p1 and p2 are  objects.
 p1 has seperate memory has id,name,age.

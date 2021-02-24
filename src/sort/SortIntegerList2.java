@@ -8,8 +8,8 @@ import java.util.List;
  Sorting collections:
 ------------------------
 
-use  Collections.sort() method to sort any array in ASC order
-use  Collections.sort() method with Collections.reverseOrder()  to sort any array in DESC order
+use  Collections.sort() method to sort any collection in ASC order
+use  Collections.sort() method with Collections.reverseOrder()  to sort any collection in DESC order
  
 
 

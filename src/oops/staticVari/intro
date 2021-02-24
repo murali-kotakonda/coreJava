@@ -1,16 +1,16 @@
 static variables:
   --------------
   -> static variable is declared inside the class
-  global variables.
-  memory is created only one time
-  static variables are like the common data for all objs
+  ->global variables.
+  ->memory is created only one time
+  ->static variables are like the common data for all objs
   
-  for instance variables , memory is created every time when obj is created.
+  ->
+  For instance variables , memory is created every time when obj is created.
   static variables memory is created one time during class loading.
   
   
-  static variables we need to write inside the class.
-  
+ 
   syntax:
   --------------
   class Person{
@@ -32,15 +32,14 @@ static variables:
   static String colleageName ; //  static variable memory allocated one time
   
 }
-  we can call static variable as "class variables"
-    
-  -> for accessing static variable object is not required, Class name is sufficient.
-  -> for accessing instance variable object is required.
+ ->we can call static variable as "class variables"
+ -> for accessing static variable object is not required, Class name is sufficient.
+ -> for accessing instance variable object is required.
   
   Syntax:
   ------------------------------
   #change static variable
-  Student.colleageName ="GVR Engg college";
+  Student.colleageName ="GPR  Engg college";
   
   
   #access static variable
@@ -67,6 +66,49 @@ static variables:
   
 static methods:
 ---------------
+
+
+public class Person{
+
+
+	int id;
+	static int count;
+	
+	
+	public void show(){
+	
+	}
+
+   public static void process(){
+   
+   
+   }
+
+}
+
+class: Person
+instance variable : id
+static variable: count
+
+instance method : show()
+static method: process()
+
+
+
+if a method has "static" keyword in the method declaration then the method is termed as "static method".
+
+- instance method can be called only by creating the object
+- static method can be called without creating the object.
+
+- static method can access only static variables ;
+ i.e. from static method we cannot access the instance variables
+
+-  static method can call/access only static methods
+ i.e. from static method we cannot call/access  the instance methods.
+ 
+- from the instance methods we can access everything : ( instance variables + instance mthods + static variables +
+static methods)
+
 
 static methods can be called without object creation.
 instance methods should be called only after object creation.
@@ -98,11 +140,16 @@ public class Data{
 }
   
 
-call the static method:
+ call the static method:
 -----------------------------------------------------------
-Data.showCount();
 //static methods should be called using class name.
+Data.showCount();
+ 
 
+call instance method
+-------------------------------------------------------------
+Data d = new Data();
+d.display();
 
 
 

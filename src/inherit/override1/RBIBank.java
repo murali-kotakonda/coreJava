@@ -13,7 +13,7 @@ package inherit.override1;
  
  solution: 
  - method overriding.
- - parent class and child class has the same method name & method signature.
+ - parent class and child class has the same method name & method signature , but with different logic
  
  */
 public class RBIBank {

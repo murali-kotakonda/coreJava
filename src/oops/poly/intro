@@ -14,7 +14,8 @@ but different method signature.
 
 
 ex:
-  public class Calc{
+
+public class Calc{
     
     public void show(){
        
@@ -28,8 +29,14 @@ ex:
            
     }
     
-  }
-  
+    
+    public void show(String x){
+           
+    }
+    
+    
+    
+ }
   
 Method signature:
   -> no of args

@@ -1,6 +1,6 @@
 Constructor:
 -------------------
-- constr we need to write inside the classs.
+- we need to write inside the classs.
 - When obj is created constr is called automatically.
 - With constr we can set the data during obj creation.
   

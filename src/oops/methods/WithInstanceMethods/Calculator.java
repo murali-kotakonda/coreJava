@@ -14,6 +14,11 @@ package oops.methods.WithInstanceMethods;
 1.Calculator   -> sum(), sub(), mul() , div()
 2.TestCalcualtor  -> main()
 
+#Approach#2:
+ create class with instance variables for n1 and n2
+ provide methods for every operation  by accessing the instance variables
+ 
+ #instance method can access the instance variables
  * */
 
 public class Calculator {
