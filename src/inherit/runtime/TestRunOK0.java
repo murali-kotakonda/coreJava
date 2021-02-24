@@ -26,6 +26,19 @@ public class TestRunOK0 {
 }
 
 
+/*
+ 3 types of methods:
+ createAcc() -> inherited method
+ processLoan() -> overridden method
+ demat() -> child specific method.
+ 
+ There are two ways of obj creation?
+ 1.Hdfc h = new Hdfc(); //create obj for hdfc and refer by Hdfc variable
+   [ we can call all the three types of methods ]
+ 2.RBI h = new Hdfc();   //create obj for hdfc and refer by RBI variable
+   [ cannot call the child specific methods ]
+ * */
+
 
 
 
