@@ -20,6 +20,5 @@ public class Ex3 {
 				products.stream()
 				.collect(Collectors.summingDouble(product -> product.price));
 		System.out.println(totalPrice3);
-
 	}
 }

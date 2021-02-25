@@ -47,9 +47,6 @@ public class Ex0Strings {
 		List<String>strings = Arrays.asList("abc", "", null,"bc", "efg", "abcd","", "jkl");
 		List<String> filtered = strings.stream().filter(string -> string!=null && !string.isEmpty()).collect(Collectors.toList());
 		System.out.println(filtered);
-
-		
-		
 	}
 }
 
@@ -60,4 +57,3 @@ public class Ex0Strings {
 4.create new list with ASC ORDER
 5.create new list with DESC ORDER
  * */
- 

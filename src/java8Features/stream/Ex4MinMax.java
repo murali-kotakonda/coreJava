@@ -13,7 +13,6 @@ public class Ex4MinMax {
 		products.add(new Product(4, "Sony Laptop", 28000f));
 		products.add(new Product(5, "Apple Laptop", 90000f));
 		
-		
 		System.out.println("******print max price**********");
 		Product p = products
 		.stream()

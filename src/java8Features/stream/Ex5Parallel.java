@@ -1,7 +1,6 @@
 package java8Features.stream;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 //Stream API will allow sequential as well as parallel execution.
@@ -18,7 +17,5 @@ public class Ex5Parallel {
 
 		System.out.println("*******process parallel**********");
 		myList.parallelStream().filter(p -> p%2==0).forEach(p -> System.out.println("Even = " + p));
-
 	}
-
 }

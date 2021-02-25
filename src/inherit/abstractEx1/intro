@@ -13,8 +13,7 @@ Abstract class:
   a) abstract methods
   b) non abstract methods 
  -> If a class has one abstract method then class has to be abstract class...
-->syntax for abstract class:
-
+ 
 ->syntax for abstract class:
 --------------------------------
 
@@ -41,12 +40,15 @@ Non abstract methods:
 (method declaration + method body)
    public void display(){
    
-   }
+     <some logic here>
+   
+}
+   
 abstract methods:
 ------------------
 ->has only method declaration ; 
 ->abstract method does not have any logic / no body 
--> abstarct method has to be written only in abstarct class  
+-> abstract method has to be written only in abstract class  
   public abstract void display1();
   
  

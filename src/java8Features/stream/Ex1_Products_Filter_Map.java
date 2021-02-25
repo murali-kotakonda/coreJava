@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Ex1 {
+public class Ex1_Products_Filter_Map {
 	public static void main(String[] args) {
 		List<Product> products = new ArrayList<Product>();
 		// Adding Products

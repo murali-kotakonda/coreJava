@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Ex4 {
+public class Ex4_Products_findFirst {
 	public static void main(String[] args) {
 		List<Product> products = new ArrayList<Product>();
 		// Adding Products
@@ -31,7 +31,6 @@ public class Ex4 {
 		System.out.println(pro);
 		
 		System.out.println("*********get single dell instance 2*************");
-		
 		pro = products.stream()
 			      .filter(e -> e.name.equals("Dell"))
 			      .findFirst()

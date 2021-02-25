@@ -2,7 +2,6 @@ package java8Features.stream;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Ex5Match {
 	public static void main(String[] args) {

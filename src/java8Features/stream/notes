@@ -1,4 +1,3 @@
-
 Streams:
 ---------------------------
 This new functionality – java.util.stream – supports functional-style operations on streams of elements, such as map-reduce transformations on collections.
@@ -28,7 +27,6 @@ skip()
 
 
 
-
 Terminal Operations:[ returns non stream like primitive or obj or collection]
 -------------------------------------------------------------------------
 Terminal operations mark the end of the stream and return the result.
@@ -49,8 +47,6 @@ anymatch()
 allmatch()
 nonematch()
 findany()
-
-
 
 
 

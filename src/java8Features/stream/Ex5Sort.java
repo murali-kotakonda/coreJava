@@ -15,7 +15,6 @@ public class Ex5Sort {
 		productsList.add(new Product(6, "Dell Laptop", 100000f));
 		productsList.add(new Product(3, "Lenevo Laptop", 28000f));
 		productsList.add(new Product(4, "Sony Laptop", 28000f));
-         
 		
 		System.out.println("****************************************Print before sorting***************************************");
 		productsList.forEach( p -> System.out.println(p));

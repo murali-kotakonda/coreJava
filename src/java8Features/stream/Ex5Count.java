@@ -7,10 +7,12 @@ import java.util.List;
 public class Ex5Count {
 	public static void main(String[] args) {
 		List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
-
-		//get count of empty string
-		long count1 = strings.parallelStream().filter(string -> string.isEmpty()).count();
 		
+		//get count of empty string
+		long count1 = strings
+					.parallelStream()
+					.filter(string -> string.isEmpty()).count();
+
 		List<Product> products = new ArrayList<Product>();
 		// Adding Products
 		products.add(new Product(1, "HP Laptop", 25000f));
