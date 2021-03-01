@@ -38,7 +38,7 @@ float[] nums = new float[10]; // float array with size of 10  nums -> is the arr
 4. Create array for person with size of 7
 Person[] persons = new Person[7];  // multiple objs
 // Person array with size of 7  persons  -> is the array
- persons array can store 7 elements from 0 position to 6 position
+  persons array can store 7 objects from 0 position to 6 position
  
  Person p = new Person(); // single obj  
  
@@ -49,7 +49,7 @@ How to Add data to an array:
 
 String[] data = new String[6]; 
 if size is 6
-stire elements from 0 position to 5 position uisng array.
+store elements from 0 position to 5 position uisng array.
 
 data[0] = "kumar"; // add "kumar" inside an array at position 1
 data[1] = "shyam"; // add "shyam" inside an array at position 2
@@ -61,17 +61,17 @@ data[5] = "raj"; // add "raj" inside an array at position 6
   
 How to Read data from an array:
 -------------------------------------
-Systm.out.println(data[0]); // kumar
-Systm.out.println(data[1]); //shyam
-Systm.out.println(data[2]); //  ram
-Systm.out.println(data[3]); // satya
-Systm.out.println(data[4]); // siva
-Systm.out.println(data[5]);  // raj 
+System.out.println(data[0]); // kumar
+System.out.println(data[1]); //shyam
+System.out.println(data[2]); //  ram
+System.out.println(data[3]); // satya
+System.out.println(data[4]); // siva
+System.out.println(data[5]);  // raj 
 
 Read using loops:
 ---------------------------
 for ( String d: data){
-	Systm.out.println(d);
+	System.out.println(d);
 }
 
 

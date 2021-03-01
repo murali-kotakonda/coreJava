@@ -1,0 +1,161 @@
+Has-A relationship:
+----------------------------
+
+package : has-a
+
+ - Relating two classes.
+ 
+Req:
+Person has person info and address info
+Student has student info and address info
+create classes
+
+without - has a relation
+---------------------------------------------------------------
+- create two classes
+
+class Person:
+       id,name,age,streetNo,city,state,country,pin
+       
+class Student:
+       id,firstname,lastname,branch,semno,streetNo,city,state,country,pin
+       
+
+with has-a:
+----------------------------------------------
+- create three classes
+- Object as a instance variable.
+
+
+
+Person class has adress object as instance variable
+Student class has adress object as instance variable
+
+
+class Address:
+    String streetNo, String city, String state, String country, String pin
+    
+class Person:
+       int id;
+       String name;
+       int age;
+       Address addr;
+       
+class Student:
+       int id;
+       String firstname;
+       String lastname;
+       int branch;
+       int semno;
+       Address addr;
+        
+           
+    
+   
+
+person has 3 addresses:
+--------------------------
+
+class Person:
+       id,name,age,addrObj1,addrObj2,addrObj3
+       # here addrObj1,addrObj2,addrObj3 are the Address obj
+
+In future if we need to add additional properties for Address then we need to change Person and Student class.
+
+Req#1:
+create obj for Person and Student.
+Set data and dispalay
+
+
+
+Req#2:
+Person has 3 addresses.
+then no of i.v = 3 + 15  =>18
+
+
+
+Re#2: provide landmark for every address.
+then all classes are impacted.
+
+
+
+
+
+Solution:
+->We need seperate class for address..
+-> One entity class for one Model
+->Since addres is used across multiple classes , we need to create seperate class for Address,
+
+New:
+--------------
+class Address:
+   streetNo,city,state,country,pin
+
+class Person:
+       id,name,age,AddressObj
+
+ class Student:
+       id,firstname,lastname,branch,semno,addressObj
+
+
+Object as a instance variable.
+
+In future if we need to add additional properties for Address then we need to change only address class
+
+=> Object as instance variable... [obj cobtaining obj ]
+=> person obj contains address obj
+=> Student obj contains address obj
+
+- provide landmark for every address.
+ only Address class is impacted.
+
+- Person has 3 addresses.
+then no of i.v = 3 + 3 = 6
+class Person:
+       id,name,age,addr1,addr2,addr3
+       #addr1,addr2,addr3 are obj
+	   
+
+Assignment
+---------------------------------------
+
+#Person with 3 addresses
+#Person has address, emp has address, student has address
+
+
+1.A person has 3 addresses
+present address
+permanent address
+office address
+
+Req:
+create obj and set data for person with 3 addresses and print.
+
+
+
+2.
+A person can have any no of addresses?
+Every person has any no of addresses.
+ex: p1 have only 1 address
+    p2 has 3 addresses
+    p3 doesnt have any address
+
+Req:
+Take input for person details ( id,name,age)
+Take input for the no of addresses ? ex: 2
+then a person shiuld have only 2 addresses
+and take input for 2 addresses. (streetNo,city,state,country,pin)
+
+Finally print person info and 2 addresses.
+
+
+
+
+ 
+    
+
+
+
+
+       
+       
