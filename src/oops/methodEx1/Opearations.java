@@ -47,6 +47,29 @@ public class Opearations {
 	}
 	
 	//call methods within class
+
+
+		//input: two nums
+	//return :  big value
+	public int big(int a, int b) {
+		if(a>b) {
+			return a;
+		}else {
+			return b;
+		}
+	}
+	
+	
+	//input: two nums
+	// return : big value
+	public int small(int a, int b) {
+		if (a < b) {
+			return a;
+		} else {
+			return b;
+		}
+	}
+	
 }
 
 

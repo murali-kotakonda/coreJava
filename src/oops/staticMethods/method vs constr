@@ -27,7 +27,7 @@ obj is garbage collected.
 5.memory is created in heap                      5. memory is creaed in class area                        5. memory is created in stack
 6.access using the object                        6.access using the class name                            6. access within the method 
 7.to represent specific data                     7.to represent common data                               7. temporary variables for processing
-
+8.is associated with obj                         8. associated with class                                  8.associated with method
 
 Garbage Collection:
 ------------------------

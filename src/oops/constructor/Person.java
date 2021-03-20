@@ -7,11 +7,11 @@ public class Person {
 	int age;
 
 	// param arg constructor [3 args]
-	public Person(int id, int age, String name) {// local variables
+	public Person(int id, String name , int age ) {// local variables
 		System.out.println("3 args constructr");
 		this.id = id; // local variable value assigning to the instance variable
-		this.age = age;
 		this.name = name;
+		this.age = age;
 	}
 
 	// param arg constructor [ 2 args]

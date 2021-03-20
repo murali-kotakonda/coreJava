@@ -27,12 +27,7 @@ public class TestCalculator {
 		c2.div();
 		c2.mul();
 		
-		
-		
-		
-		
-		
-		
+		 
 		
 
 		System.out.println("****c3 obj operations *****");

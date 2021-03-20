@@ -12,7 +12,7 @@ How to create a file?
 public class TestFileCreate {
 	public static void main(String[] args) {
 		//create a file
-		File file = new File("C:\\test\\test12.txt");
+		File file = new File("C:\\test1\\test1.txt");
 		try {
 			if(!file.exists())
 				file.createNewFile();

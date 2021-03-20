@@ -1,14 +1,16 @@
 Polymorphism:
 ---------------------
 - exhibiting the features in diff forms.
-- a) compile-time polymorphism  or method overloading  
-  b) runtime polymorphism or method overriding    -->(inheritence)
 
 
-compile time Polymorphism:
------------------
-- also called as method overloading .
+We have two types of Polymorphism:
+----------------------------------------------------------------
+a).compile time Polymorphism   or method overloading   
+b) runtime polymorphism or method overriding   (possible only in inheritence)
 
+
+compile time Polymorphism  or method overloading
+-------------------------------------------------
 within the same class we can have different methods having same method name 
 but different method signature.
 

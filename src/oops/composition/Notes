@@ -27,7 +27,7 @@ with has-a:
 - Object as a instance variable.
 
 
-
+Address class has streetNo,city,state,country,pin
 Person class has adress object as instance variable
 Student class has adress object as instance variable
 

@@ -1,7 +1,8 @@
 OOPS:
 -------
 Object Oriented Programming
-->Programming style that defines the common rules , regulations,standards , guidelines for writing better programming
+->Programming style that defines the common rules , regulations,standards , guidelines for writing better 
+programming
 
  
 -> ex: java, .net , python , php , groovy ,go , php , javascript , angular js
@@ -22,7 +23,7 @@ Topics:
 --------------------------
  -> Userdefined datatype
 -> Class is used to represent the real time entities/structure/model.
-ex: Company, Branch , Dep, sub-dept, Project , Employee ,
+ex: Company, Branch , Dep, sub-dept, Project , Employee ,Address
 -> Class doesnt contain any data.
 -> class is created before run-time
 ->class is a logical representation
@@ -54,6 +55,7 @@ class Person{
 
 }
 	
+// from instance methods we can access the instance variables  
 .......
 
 Object:
@@ -113,6 +115,11 @@ System.out.println(p1.age);
 #call the method
 p1.show();
 
+
+using the object we need to access instance variables and methods;
+
+USE "." ON A OBJECT FOR ACCESING THE instance variables and methods.
+
 diff between normal variable and obj?
 ----------------------------------------------
 
@@ -125,7 +132,7 @@ p1= Person()
 
 
 
-USE "." ON A OBJECT FOR ACCESING THE instance variables and methods.
+
 
 
 # instance variables -----> inside class    ---> every time when obj is crated , access with obj
@@ -135,7 +142,7 @@ USE "." ON A OBJECT FOR ACCESING THE instance variables and methods.
 1.Requirement to capture id,name,age for 10 persons.
 solution:
 without oops we have to create 30 variables
-without oops we have to create 10 variables
+with oops we have to create 10 variables (10 object, every obj cotains id,name,age)
 
 
 

@@ -49,6 +49,8 @@ Use Extends --> normal class+ abstarct class
 Use implements --> interface  
 
 
+Is multiple inheritance allowed in java?
+Yes only by using interfaces
 
 Interface supports multiple inheritance.
  -> normal class+ abstarct class does not support multiple inheritance.

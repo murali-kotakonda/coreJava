@@ -25,7 +25,7 @@ syntax:
 --------------
  1. Create array for int for size of 5
 int[] numbers = new int[5];    // int array with size as 5 , numbers -> is the array.
- numbers array can store 5 elements from 0 position to 4 position
+numbers array can store 5 elements from 0 position to 4 position
 
 2. Create array for string with size of 6
 String[] data = new String[6];  // string array with size of 6  data -> is the array
@@ -77,23 +77,25 @@ for ( String d: data){
 
 How to Update data in an array:
 ---------------------------------------
-data[0] = "kumar1"; // add "kumar" inside an array at position 1
-data[1] = "shyam1"; // add "shyam" inside an array at position 2
-data[2] = "ram1"; // add "ram" inside an array at position 3
-data[3] = "satya1"; // add "satya" inside an array at position 4
-data[4] = "siva1"; // add "siva" inside an array at position 5
-data[5] = "raj1"; // add "raj" inside an array at position 6
+data[0] = "kumar1"; // update "kumar1" inside an array at position 1
+data[1] = "shyam1"; // update "shyam1" inside an array at position 2
+data[2] = "ram1"; // update "ram1" inside an array at position 3
+data[3] = "satya1"; // update "satya1" inside an array at position 4
+data[4] = "siva1"; // update "siva1" inside an array at position 5
+data[5] = "raj1"; // update "raj1" inside an array at position 6
 
  
 Delete elements is not possible...
 data[5] = "";
 data[5] = null;
  
+ serach by position is fast.
+
  
 Disadvantages:
 ------------------
--> Specify size early. Fixed length.
--> Size cannot be increased or decreased 
+-> Specify size early. 
+->Fixed length. Size cannot be increased or decreased 
 -> insert in between[multiple right shift operations] is costly
 -> remove in between[multiple left shift operations] is costly.
 -> search by content is costly

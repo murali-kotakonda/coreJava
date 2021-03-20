@@ -24,14 +24,14 @@ static variables:
     
 
   class Student{
-  #instance  variables
-  int id;
-  String name;
-  int semNo;
+    #instance  variables
+    int id;
+    String name;
+    int semNo;
+    
+    static String colleageName ; //  static variable memory allocated one time
+  }
   
-  static String colleageName ; //  static variable memory allocated one time
-  
-}
  ->we can call static variable as "class variables"
  -> for accessing static variable object is not required, Class name is sufficient.
  -> for accessing instance variable object is required.

@@ -5,8 +5,7 @@ package wrapper;
   convert the int/float/long/double/boolean to string.
   solution:
   use String.valueOf() method
-  
-  
+    
  */
 public class TestConversion {
 	public static void main(String[] args) {
@@ -31,7 +30,7 @@ public class TestConversion {
 		System.out.println(floatToStrValue);
 		System.out.println(doubleToStrValue);
 		System.out.println(longToStrValue);
-		
+		System.out.println(foundStr);
 
 	}
 }

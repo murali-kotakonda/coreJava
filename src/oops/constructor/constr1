@@ -5,8 +5,6 @@ Constructor:
 - With constr we can set the data during obj creation.
   
   
-   
-  
   
 class Person{
   int id;
@@ -23,7 +21,8 @@ Req: create obj + set data
 
 without constr:  [requires 4 lines]
 ---------------------
-Person p = new Person(); //set the data after obj creation
+Person p = new Person(); 
+//set the data after obj creation
 p.id =1000;
 p.name="user1";
 p.age=45;

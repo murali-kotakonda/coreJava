@@ -10,6 +10,7 @@ relationship between two classes.
     
     
 Public properties and methods are inherited/available to child class from parent class.
+
 private, static are not eligible for Inheritance.
 
 

@@ -14,7 +14,7 @@ Platform Independence:
   
   For running a prog we need a) Conmpilation 2) Execution
   
-  Compilationn checks for  syntax erros and prog lang rules.
+  Compilation-> checks for  syntax erros and prog lang rules.
   Excution -> running prog + interpretor ( convert from hight level lang to low level lang )  
   If compilation fails then execution never happens..
     
@@ -24,11 +24,7 @@ Platform Independence:
   - Java ----->>If compilation is scucess it genarted .class +  Run the .class file
    							Hello.java (source code)  -------Compile------> Hello.class (byte code/ compiled file)
 
-    
-   
-    
-    
-    
+     
     
     Dev1  ---->  XP  uses  Java lang  Hello.java[source code] ----> Hello.class[compiled files]
     
@@ -59,7 +55,7 @@ Platform Independence:
       
       
 	  
-	  Java Basics + OOPS + Collections + exception handling
+Java Basics + OOPS + Collections + exception handling
 Selenium Framework
 Test NG framework with reporting
 
@@ -109,4 +105,182 @@ TEST_Java_PROJECT ------------Internet---------------------> || Webapp  |||
     
     
     
+    Role of tester after app development:
+--------------
+->check if the app is working as per the requirements.
+ex: 
+the app alreday has 50 features 
+existing feature has 600 test cases.
+
+and new feature is yet to release.
+the new feature has 30 test cases
+
+as a tester 
+-> funtional testing   ( 30 test cases ) at tester env
+-> regression tetsing  ( 600 test cases)
+-> perf testing  630
+-> compatability testing 630
+-> load testing 30 + impacted areas 
+-> UAT 30 test cases at client env
+
+Testing 30 test cases manual/auto -> doesnt matter
+Testing 600 test cases manual -> takes lot of time and effort
+test the existing test cases 600 using the automation tool( selenium/tosqa/hp QA/etc...)
+
+adv:
+---
+complete testing in a short time 
+test anytime(adhoc)
+no human presence required
+complete testing parallaly across multiple browsers.
+600 * 3 ( browsers) ===> 1800
+
+
+
+ 
+ 
+Agenda:
+-----------
+Java
+sql
+html
+selenium
+frameworks ( hydrid/key/pom)
+workshop ( project where we need to testthe aplication)
+cucumber ( bdd framework)
+
+
+Tester   ----------------------------> Web app
+                [TEST]
+               
+Tester   ---------- JAVA ------------------> Web app
+                [TEST]
+
+ex: 
+enter username  ( write java code)
+enter pass ( write java code)
+click on login button  ( write java code)
+
+
+Problm:
+----------
+how to  integrate the java code and web app
+
+solution:
+------------
+use selenium
+seleinum fills the bridge between java and web app
+the web interaction code is simplified using selenium.
+
+
+Tester   ---------- JAVA  + selenium-----------------> Web app
+                       [TEST]
     
+    
+    
+  JAVA ---------> [ SELENIUM] -------------> WEB App
+  
+  
+
+
+Why java?
+------------
+-Java is a simple, poratable lang
+-is a platform independent lang.
+compile in one system and run in diff system.
+ex: compile in xp/win7/ and run in any dif operating system.
+-java is secured, roboust, artificial neutral ..
+- no pointers 
+memory allocation and deallocation is taken care by java.
+garbage collector takes care of cleanup of unused data
+very strong in type checking.
+strong mechanism for exception handling
+-java has the biggeest lib support
+- java has support for multithredaing ( parallel programming)
+- support diff types of aplications:
+  a) web apps
+  b) GUI/standtardsalone apps
+  c)web services
+  d)enterprise apps ( bigdata, hadoop, cloud services, content mangmt)
+  e)tools like hybris , atg , selenium , jmeter
+  f) embedded / ML / AI / IOT /smart card apps ( support from embedded along with java)
+- java is obj oriented langugae
+   class/obj/encapsulation/abstraction/polymorphsim/inheritence
+- java supports distributed programming
+- has support for many  protocals.
+ex: http, https, ftp , smtp , soap etc....
+protocol supported code is available from java lib
+- used for developing many frameworks.
+ex: Hibernate, springs , jpa, selenium
+
+
+
+
+
+who can use java?
+-----------------
+-Developer
+-tester
+-R&D engineer
+   
+setup:
+-----------
+1. download and Install  java8
+2. download and install eclipse 
+  
+https://drive.google.com/drive/folders/1qEYiff8p6216-CFwa_9yu_AF44M8NkQB
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+     
+
+
+
+
+               
+               
+               
+               
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

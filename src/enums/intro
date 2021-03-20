@@ -26,6 +26,11 @@
   application supports only 5 colors -> use enum
   application supports only 4 LoanTypes -> use enum
 
+
+
+1.how to create the enum with values
+2.How to access the enum
+
   syntax:
 
   public enum ColorType { // ColorType is a enum 
@@ -39,7 +44,7 @@
   }
 
 here 
-  BLUE,  // ColorType BLUE = new ColorType();
+    BLUE,  // ColorType BLUE = new ColorType();
     RED,  // ColorType RED = new ColorType();
     
     

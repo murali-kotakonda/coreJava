@@ -3,8 +3,9 @@ package wrapper;
 /**
 		// converting String to int 
 		 use  Integer.parseInt() ; // Integer is wrapper class and parseInt() is method
-		 Ex:
-		 String intStr = "12";
+		
+		Ex:
+		String intStr = "12";
 		int fromInt = Integer.parseInt(intStr);
 		
 		

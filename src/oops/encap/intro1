@@ -10,11 +10,20 @@ Encapsulation:
 
 
 Case#1:
-Class Person:
-  id, name , age,aadhar
+Class Person{
+  int id;
+  String name;
+  int  age;
+  String aadhar;
+}
   
 Class PersonDetails:
-  id,name,age,pan
+  int id;
+  String name;
+  int  age;
+  String pan;
+}
+
   
 Req: 
 -Create a obj and set data for id,name,age, which class should we use?
@@ -23,8 +32,14 @@ solution:
 delete any one of the two classes and maintain only one class.
 delete PersonDetails class and retain the details  only in person class.
 
-Class Person:
-    id,name,age,pan,aadhar
+
+Class Person{
+  int id;
+  String name;
+  int  age;
+  String aadhar;
+  String pan;
+}
 
 
 
@@ -34,13 +49,20 @@ Case#2:
 Maintain a vehicle show-room .
 capture vehicle & customer info.
 
-class Data:
-  vehicleId
-  vehicelName
-  vechicleBrand
-  custId
-  custName
-  custMobile
+
+
+class Data{
+  
+  String vehicleId;
+  String vehicelName;
+  String vechicleBrand;
+  String custId;
+  String  custName;
+  String custMobile;
+  
+ }
+  
+  
   
   
 If the vehicle comes to show-room then create obj for  Data class and set values for vehicleId  +  vehicleName  + vechicleBrand
@@ -60,18 +82,22 @@ solutions:
   create seperate class for vehicle info
   and create seperate class for customer info
 
-class Vehicle:
-  vehicleId
-  vehicelName
-  vechicleBrand
+  
+  class Vehicle{
+    String vehicleId;
+    String vehicelName;
+    String vechicleBrand;
+   }
 
-class Customer:
-  custId
-  custName
-  custMobile  
+class Customer{
+  String custId;
+    String  custName;
+    String custMobile;
   
+  }
+
   
-  
+
 Case#3:
 class Person{
   int id; 

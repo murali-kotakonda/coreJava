@@ -1,7 +1,7 @@
 
 Checked Exceptions:
 Exception handling is mandatory
-if we dont write it will give compilations
+if we dont write Exception handling, then it will give compilations
 ex:IOException , FileException , SQLException ...
 use either try + catch or use Throws.
 

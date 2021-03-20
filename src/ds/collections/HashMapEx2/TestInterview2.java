@@ -18,7 +18,7 @@ public class TestInterview2 {
 		//create variable2  that has same value as variable1
 		String str2 = "127";
 		
-		//perform all opeartions on variable2
+		//perform all opeartions on str2
 		System.out.println(map.get(str2)); //returns user5 : str1 And str2 are duplicates
 		System.out.println(map.containsKey(str2)); //returns true; str1 And str2 are duplicates
 		

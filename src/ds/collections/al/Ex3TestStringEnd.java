@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 /**
-- Take input for multiple names and and store every name inside the array
-- If the input is "STOP" then stop taking anymore input.
-- display the data using the array.
+- Take input for multiple names and and store every name inside the arraylist
+- If the input is "END" then stop taking anymore input.
+- display the data using the arraylist.
 
 */
 public class Ex3TestStringEnd {
@@ -22,7 +22,7 @@ public class Ex3TestStringEnd {
 		while (true) {// infinite loop 
 			System.out.println("Enter name :");
 			String name = sc.next();
-			if ("STOP".equals(name)) {
+			if ("END".equals(name)) {
 				break;  // exit from loop
 			}
 			names.add(name); // add to the arraylist
