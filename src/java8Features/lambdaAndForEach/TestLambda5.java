@@ -3,6 +3,7 @@ package java8Features.lambdaAndForEach;
 interface Service3 {
 	public String process(String name);
 }
+
 // lambda with a return
 public class TestLambda5 {
 	public static void main(String[] args) {

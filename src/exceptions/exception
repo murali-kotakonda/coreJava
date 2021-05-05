@@ -9,18 +9,13 @@ what happens when there is an exception:
 -> customer will see the technical message instead of meaningful message.
 -> affect the business 
 
-
-
-
+ 
 Why do we have Exception?:
 ------------------------
 ->Bad coding practices
 ->3rd party/ server/ hardware ex: db down , server is down , file is deleted
 -> Missing testing the scenario
 -> edge case 
-
-
-
 
 
 Can we avoid exception during runtime?? NO

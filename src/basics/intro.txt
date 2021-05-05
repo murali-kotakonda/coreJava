@@ -1,10 +1,11 @@
 Java?
 ------
+
 ->Platform independence 
   Compile once + Run AnyTime
 ->Object Oriented LANGUAGE (OOPS):
  ex: Java, .net, python
- :OOPS defines the common rule/regulations/guidelines for writing better progs.
+OOPS defines the common rule/regulations/guidelines for writing better progs.
  :Modularity 
  :Reusability
  :Easy to understand and easy to represent any complex model
@@ -15,9 +16,10 @@ Java?
   Memory allocation & meomory dealloca is taken care by java
   Unused memory is cleanup using garbage collection.
   Java is very strong in type checking.  [Compilation]
-  Exception hanlding[to handle the unexpected scenarios that occurs at run time]
-->Arhitecural neutral:  Java memory alloca is stable for all platforms.
+  Exception hanlding at the run time.[to handle the unexpected scenarios that occurs at run time]
+->Arhitecural neutral:  Java memory allocatn is stable for all platforms.
 ->MultiThreading : To execute multiple progs at the same time. ex: response time.
+
 
 ->Diff apps:
   standalone app/desktop app
@@ -26,7 +28,7 @@ Java?
   enterprise apps
   mobile
   gaming
-  Machine learning , AI , ..etc....
+  Machine learning , AI , embedded apps ..etc....
   tools : selenium , hybris , oracle ATG, Pega
   frameworks: springs , hibernate
 
@@ -108,39 +110,6 @@ Steps:
   
     1.Hello.java 
 
-Steps to run java file:
-1.Compilation  
-  javac Hello.java 
-  result: Hello.class is generated[byte code file]
-2.Execution 
-  java Hello
-  result : <some output>       
-  
-
- what is a jar?
- --------------------
- 
-jar:    [java archive] - exposing the code 
-java library. 
-contains multiple .class files
-large no files to share with the team , then create jar file that contains .class files.
- 
- A jar file contains multiple .class files.
- A jar file is nothing but a zip file but contains only .class files.
- 
- Req:
- Dev1 has 500 java files.
- Dev1 has to share with Dev2
- 
- solution:
- 1.Dev1 will compile 500 .java files.
-  result : 500 .class are generated
- 
- 2.Dev1 will create the jar file
- 3.Dev1 will share the jar file to Dev2
- 4.Dev2 will import the jar file in his project
- 
-  
   
     
 Structure of java file:
@@ -161,10 +130,13 @@ method or funtion refers the same.
 
 in java the code should be always written inside the method/function.
 
+how to run a java program:
+-----------------------------
+
+-> write the main() method.
 if a java file has the main method then only it is eligible for running.
 To run a program main() method is mandatory.
-  
- 
+
 syntax of main method:
 ----------------------
 public static void main(String[] args) {
@@ -178,6 +150,67 @@ public static void main(String[] args) {
  main -> function name or method name
  args -> input arguments 
  
+
+
+ Steps to run java file:
+1.Compilation  
+  javac Hello.java 
+  result: Hello.class is generated[byte code file]
+2.Execution 
+  java Hello
+  result : <some output>       
+ 
+
+ 
+ how to run the prog?
+--------------------------
+1. compilation
+2.execution
+
+-> compilation:
+  javac Ex1.java
+  
+  for compilation we need .java file 
+  if compilation is success , it generates .class file 
+  
+-> execution:
+  java Ex1 
+  
+  for execution we need .class file.
  
 
 
+ what is a jar?
+ --------------------
+ 
+jar:    [java archive] - exposing the code 
+java library. 
+contains multiple .class files
+large no files to share with the team , then create jar file that contains .class files.
+ 
+ A jar file contains multiple .class files.
+ A jar file is nothing but a zip file but contains only .class files.
+ 
+ Req:
+ Dev1 has 500 java files.
+ Dev1 has to share with Dev2
+ 
+ dev2 has to use the 500 files but not change the code.
+ 
+ if dev1 shares 500 .java files the dev2 can use and he can modify it. --> not recommended
+ if dev1 shares 500 .class files the dev2 can use and he cannot modify it. --> recommended
+ if dev1 shares a jar file [ jar file internally contains 500 .class files] to  the dev2 can use and he cannot modify it. --> strongly recommended
+ 
+ 
+ solution:
+ 1.Dev1 will compile 500 .java files.
+  result : 500 .class are generated
+ 
+ 2.Dev1 will create the jar file usimg 500 .classfiles
+ 3.Dev1 will share the jar file to Dev2
+ 4.Dev2 will import the jar file in his project
+ 
+
+
+ 
+ 

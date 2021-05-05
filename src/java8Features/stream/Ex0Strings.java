@@ -40,7 +40,7 @@ public class Ex0Strings {
 		boolean matched = names.stream().anyMatch((s) -> s.startsWith("A"));
 		System.out.println(matched);
 
-		String firstMatchedName = names.stream().filter((s) -> s.startsWith("L")).findFirst().get();
+		String firstMatchedName = names.stream().filter((s) -> s.startsWith("A")).findFirst().get();
 		System.out.println(firstMatchedName);
 
 		//remove blank and null

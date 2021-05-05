@@ -3,7 +3,7 @@ package exceptions;
 import java.util.Scanner;
 /*
  
-write common exception handling for
+write common exception handling for group of exception classes.
 ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException   ==> print "client error"
 
 and write global exception  ==========> print "server error"   
@@ -23,6 +23,12 @@ catch (Exception ex) {// for any exception
 			//global exception handling 
 			System.out.println("server error" + ex.getMessage());
 } 
+
+order of catch blocks:
+-> write specific catch blocks 1st
+-> write generic/global catch block at last.
+
+
 * 
  */
 public class TestException17MultiAndGenericException {

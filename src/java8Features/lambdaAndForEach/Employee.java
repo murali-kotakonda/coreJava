@@ -1,6 +1,5 @@
 package java8Features.lambdaAndForEach;
 
-
 public class Employee implements Comparable<Employee> {
 
 	private int id;

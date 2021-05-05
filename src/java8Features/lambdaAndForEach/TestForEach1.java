@@ -5,7 +5,6 @@ import java.util.*;
 public class TestForEach1 {
 
 	public static void main(String[] args) {
-
 		List<String> list = new ArrayList<String>();
 		
 		list.add("user1");
