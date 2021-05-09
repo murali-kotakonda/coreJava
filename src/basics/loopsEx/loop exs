@@ -29,6 +29,41 @@ o/p:
 5 4 3 2
 5 4 3 2 1
 
+
+i/p:5
+O/p:
+5 4 3 2 1
+5 4 3 2
+5 4 3
+5 4
+5
+
+
+
+
+7.input 3:
+
+O/p:
+1 2 3
+4 5 6
+7 8 9
+
+and  print diagonal
+1 5 9
+3 5 7
+
+
+
+
+i/p:5
+O/p:
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+
+
 4. Take inputL 10
 print numbers from 1 to 10
 print all evens from 1 to 10
@@ -72,17 +107,6 @@ Raj got the 1st rank with marks :255
 and print sum , big , small nums
 
 
-
-7.input 3:
-
-O/p:
-1 2 3
-4 5 6
-7 8 9
-
-and  print diagonal
-1 5 9
-3 5 7
 
 
 

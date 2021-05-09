@@ -13,22 +13,22 @@ Steps for taking input from command prompt:
 1. //create a scanner object
 		Scanner sc = new Scanner(System.in);
  
-How to take word as input?
+2.How to take word as input?
 String n5 = sc.next();
 
-How to take sentence as input?
+3.How to take sentence as input?
 String n6 = sc.nextLine();
     
-How to take int as input?
+4.How to take int as input?
 int n1 = sc.nextInt();
 
-How to take long as input?
+5.How to take long as input?
 long n2 = sc.nextLong();
 
-How to take float as input?
+6.How to take float as input?
 float n3 = sc.nextFloat();
 
-How to take double as input?
+7.How to take double as input?
 double n4 = sc.nextDouble();
 
 */
