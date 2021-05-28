@@ -2,7 +2,7 @@ package conditions;
  
 /**
 1.Take input for username and password
- if username value ="admin" and password value ="admin" then print ==> "logon success"   
+ if username value ="admin" and password value ="admin" then print ==> "login success"   
  if not print  => "login failure"  
  */
 import java.util.Scanner;

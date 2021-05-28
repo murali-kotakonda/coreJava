@@ -5,13 +5,27 @@
 -> static block is executed before the constructor.
 -> write static block inside the class  
 
+
+purpose:
+----------------
+to initialize the static variable before anyone uses it
+
+
 syntax:
+--------------
+
 class Data{
 
-static{
+ //static variable
+ static int count;
  
-  
-}
+ //static block
+ static{
+   <some jaav code>
+ 
+   count = 890;
+ }
+
 
 }
 

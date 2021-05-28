@@ -11,7 +11,7 @@ package basics;
 /**
  variables : hold the real time static/dynamic data.
  	//memory allocation/processing for the data depends on TYPE of data ..
- 
+    create a varible using the data type.
  
  //datatypes : [type of the data ]. EVERY Variable is created by specifying the datatype.
 		

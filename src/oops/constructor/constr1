@@ -1,8 +1,8 @@
 Constructor:
 -------------------
 - we need to write inside the classs.
-- When obj is created constr is called automatically.
-- With constr we can set the data during obj creation.
+- When obj is created Constructor is called automatically.
+- With Constructor we can set the data during obj creation.
   
   
   
@@ -33,16 +33,22 @@ with constr:  [requires 1 lines]
 Person p = new Person(1000,"user1",45); // set the data along with obj creation
 
 
+
 points:
 ------------
 Constr name is equal to class name.
 Constr doesnt have any return type.
-We can have any number of constr in a single class -> constr overloading..
+we can have any number of constr in a single class -> constr overloading..
 A constr is called only one time for one obj..
 
 
 Adv:
-  creat obj + set the data in single line.
+  - creat obj + set the data in single line.
+  - set data during obj creation
+
+
+
+
 
 
 

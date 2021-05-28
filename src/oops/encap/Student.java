@@ -1,5 +1,12 @@
 package oops.encap;
 
+// A student has id, name, branch and semister .
+//create obj for student
+//set the data 
+// print data
+
+//make instance variables  private
+
 public class Student {
 	private String name;
 	private String id;

@@ -1,4 +1,5 @@
 package oops.objs;
+
 public class Person {
 	
 	int id;
@@ -6,10 +7,9 @@ public class Person {
 	int age;
 	
 	 public void show(){
-		  // logic here 
+		  System.out.println("Hello from show()");
 	 }
 }
-
 
 /*
 points:
@@ -17,5 +17,5 @@ points:
 
 class: Person
 instance variables: id , name ,age
-method : show()
+instance method : show()
 */

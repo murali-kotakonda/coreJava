@@ -21,16 +21,19 @@ method is explict call
  
   
  public class Person {
+ //instance variables:
 	int id;
 	String name;
 	int age;
 	
+	//constr
 	public Person(int id, String name, int age) {
 		this.id = id;
 		this.name = name;
 		this.age = age;
 	}
   
+  //instance method
   public  void show(){
     //some logic
   }
@@ -42,3 +45,25 @@ instance variables: id , name,age
 method: show()
 
   
+
+  How to write a constructor:
+------------------------------------
+	// param arg constructor [3 args]
+	public Person(int id, String name, int age) {// local variables
+		System.out.println("3 args constructr");
+		this.id = id; // local variable value assigning to the instance variable
+		this.name = name;
+		this.age = age;
+	}
+
+	// zero arg constructor
+	public Person() {
+		System.out.println("zero arg constructr");
+	}
+
+	// param arg constructor [ 2 args]
+	public Person(int age, String name) {
+		System.out.println("2 args constructr");
+		this.age = age;
+		this.name = name;
+	}

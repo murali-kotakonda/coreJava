@@ -3,8 +3,7 @@ Interface:
 ->we cannot create object for interface
 
 Interface = 100 % abstract class
-->Interface has only abstract methods  
-and only public static final variables.
+->Interface has only abstract methods and only public static final variables.
 -> No instance variables + constr 
 ->interface method cannot be static
 

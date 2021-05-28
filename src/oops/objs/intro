@@ -1,8 +1,7 @@
 OOPS:
 -------
 Object Oriented Programming
-->Programming style that defines the common rules , regulations,standards , guidelines for writing better 
-programming
+->Programming style that defines the common rules , regulations,standards , guidelines for writing better programming
 
  
 -> ex: java, .net , python , php , groovy ,go , php , javascript , angular js
@@ -19,8 +18,13 @@ future enhancements.
 Topics:
 -> class, object , enapsulation , abstraction , inheritance, polymorphism.
 
+
+
 # Class
 --------------------------
+Can a developer create his own data type?
+Yes, Using class
+
  -> Userdefined datatype
 -> Class is used to represent the real time entities/structure/model.
 ex: Company, Branch , Dep, sub-dept, Project , Employee ,Address
@@ -28,11 +32,12 @@ ex: Company, Branch , Dep, sub-dept, Project , Employee ,Address
 -> class is created before run-time
 ->class is a logical representation
 ->class is a template
+-> class is a blue print for obj
 
 
--> Class is  block for instance variables + functions
-    a)instance variables to hold data for entity
-    b)function logic would operate on instance variables
+-> Class is  block for instance variables + methods
+    a)instance variables to hold data for entity   -> state
+    b)instance methods logic would operate on instance variables  -> behaviour
 
 
  
@@ -55,6 +60,10 @@ class Person{
 
 }
 	
+
+instance variables -> variables created inside a class
+
+
 // from instance methods we can access the instance variables  
 .......
 
@@ -142,7 +151,12 @@ p1= Person()
 1.Requirement to capture id,name,age for 10 persons.
 solution:
 without oops we have to create 30 variables
-with oops we have to create 10 variables (10 object, every obj cotains id,name,age)
+with oops we have to create 10 variables (10 objects, every obj cotains id,name,age)
+
+
+new Person()  ---> create the obj
+Person p1 = null; //no object
+    Person p2 = new Person(); //create obj
 
 
 

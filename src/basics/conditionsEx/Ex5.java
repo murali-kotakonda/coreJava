@@ -22,10 +22,17 @@ import java.util.Scanner;
        invalid id
        valid age
        valid usertype
+
+     3) -20 12 agent
+    
+       invalid id
+       invalid age
+       invalid usertype
  */
 public class Ex5 {
 public static void main(String[] args) {
 
+//take input for id , age , usertype
 	Scanner sc = new Scanner(System.in);
 	
 	System.out.println("Enter id");

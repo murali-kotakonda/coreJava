@@ -206,7 +206,7 @@ large no files to share with the team , then create jar file that contains .clas
  1.Dev1 will compile 500 .java files.
   result : 500 .class are generated
  
- 2.Dev1 will create the jar file usimg 500 .classfiles
+ 2.Dev1 will create the jar file using 500 .classfiles
  3.Dev1 will share the jar file to Dev2
  4.Dev2 will import the jar file in his project
  

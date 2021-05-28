@@ -1,6 +1,6 @@
 package oops.staticBlockEx;
 
-public class TestService2 {
+public class MyTestService {
 	public static void main(String[] args) {
 		 Service s1 = new Service("oracle");//static block and constructr are executed
 		 Service s2 = new Service("sql");//only constructr is executed

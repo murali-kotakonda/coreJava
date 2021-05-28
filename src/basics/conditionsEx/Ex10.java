@@ -12,6 +12,16 @@ package conditions;
   If all 3 inputs are valid o/p=>Valid Data
   If any input is wrong o/p => Invalid Data
     
+      can we write multiple conditions in one if statement?
+ --------------------------------------------------------
+    Yes
+    		  
+  	ways?
+--------------	  
+  	&&  ->  block is executed if all conditions are satisfied
+  	||  ->	block is executed if atleast one condition is satisfied  
+  	
+  	
   solution:
   - use nested if statement  		  
  */

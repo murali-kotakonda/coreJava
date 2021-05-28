@@ -9,10 +9,12 @@ public class Service {
 
 	// instance method
 	public void m1() {
-		System.out.println(v1); // access i.v.
+		System.out.println(v1); // access instance variable
 		System.out.println(v2); // access static variable
-		m2(); // access i.m.
-		m4(); // access s.m.
+		
+		m2(); // access instance method 
+		
+		m4();// access static method
 	}
 
 	// instance method
@@ -22,10 +24,11 @@ public class Service {
 
 	// static method
 	public static void m3() {
-		//System.out.println(v1); // access i.v.
+			//System.out.println(v1); //cannot access instance variable
 		System.out.println(v2); // access static variable
-		//m2(); // access i.m.
-		m4(); // access s.m.
+		
+		//m2(); // cannot access instance method 
+		m4();// access static method
 	}
 
 	// static method

@@ -15,14 +15,14 @@ public class TestPersonInstanceMethod {
 
 		
 		
-		// create obj
+	
+		// cal the display function	// create obj
 		Person p2 = new Person();
 		// set the data
 		p2.id = 2011;
 		p2.name = "user3";
 		p2.age = 26;
 		System.out.println("**************printing p2****************");
-		// cal the display function
 		p2.display();// prints the id,name, age for p2 obj
 
 		

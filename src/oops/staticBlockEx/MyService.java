@@ -1,6 +1,6 @@
 package oops.staticBlockEx;
 
-public class Service {
+public class MyService {
 	//instance varible
 	String dbName;
 	

@@ -66,6 +66,7 @@ class Data{
   
   
 If the vehicle comes to show-room then create obj for  Data class and set values for vehicleId  +  vehicleName  + vechicleBrand
+
 If the customer comes to show-room then create obj for  Data class and set values for custId  + custName + custMobile
 
 
@@ -112,8 +113,8 @@ class Person{
 
 
 req: call sum funtion
-  Person p = Person()
-  p.sum(10,20)
+  Person p = Person();
+ p.sum(10,20);
 
 
 Problem:
@@ -124,11 +125,10 @@ Problem:
  solution:
     -> remove sum() futn from Person class
 
-
 class Cal:
    void sum(x,y):
       print(x+y)
-          
-  Cal c = new Cal()
-  c.sum(10,20)
-   
+      
+      
+  Cal c = new Cal();
+  c.sum(10,20);   

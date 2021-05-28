@@ -1,3 +1,90 @@
+
+static methods:
+---------------
+ 
+if a method has "static" keyword in the method declaration then the method is termed as "static method".
+
+to operate on instance variable we need instance methods.
+to operate on static variables we need static methods.
+
+
+instance methods -> set/read/process data for instance variables
+  static  methods -> set/read/process data for static variables
+
+
+- instance method can be called only by creating the object
+- static method can be called without creating the object.
+static method can be called using the class name
+
+- static method can access only static variables ;
+ i.e. from static method we cannot access the instance variables
+
+ -  static method can call/access only static methods
+ i.e. from static method we cannot call/access  the instance methods.
+ 
+- from the instance methods we can access everything : ( instance variables + instance mthods + static variables +
+static methods)
+
+ 
+ 
+  
+  
+syntax for writing a static method:
+--------------------------
+public class Data{
+ 
+    //static method
+    public static void showCount(){
+	 			 // some logic
+		}
+	
+		//instance method
+		public  void display(){
+	 			 // some logic
+		}
+  
+}
+  
+
+ call the static method:
+-----------------------------------------------------------
+//static methods should be called using class name.
+Data.showCount();
+ 
+
+call instance method
+-------------------------------------------------------------
+Data d = new Data();
+d.display();
+
+
+
+public class Person{
+
+
+	int id;
+	static int count;
+	
+	
+	public void show(){
+	
+	}
+
+   public static void process(){
+   
+   
+   }
+
+}
+
+class: Person
+instance variable : id
+static variable: count
+
+instance method : show()
+static method: process()
+
+
 class Service{
   
   // v1 -> instance variable
@@ -20,6 +107,13 @@ m1() (i.m)         Y                        Y                        Y          
 m3() (s.m)         N                        Y                        N                               Y
 ---------------------------------------------------------------------------------------------------------------------------------
   
+  i.v -> instance variable
+s.v -> static variable
+
+i.m.->instance method
+s.m-> static method
+
+
                   
 static method can access only static methods and static variables.
 instance method can access both instance + static variables and instance + static method

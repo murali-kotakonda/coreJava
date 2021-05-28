@@ -1,7 +1,7 @@
 package oops.methods.WithInstanceMethods;
 /*
 
-1.take input for 2 nums and perform operations
+1.take 2 nums and perform operations
 
 2.	Create a calculator class
 	and provide

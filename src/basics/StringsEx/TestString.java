@@ -49,8 +49,21 @@ public static void main(String[] args) {
 	System.out.println("To Trim:--"+data.trim()+"--");
 
 	//how to find the substring for the given string : use substring() method
- 
-	input = "Java is a program language";
+ 	input = "Java is a program language";
+ 			//how to find the substring for the given string : use substring() method
+		System.out.println("*************Substring*******************");
+		input = "Java is a program language";
+		System.out.println(input.substring(0));//print from 1st char till end 
+		System.out.println(input.substring(1));//print from 2nd char till end
+		
+		System.out.println(input.substring(0,1));//from 0 to 0
+		System.out.println(input.substring(0,2));//from 0 to 1
+		System.out.println(input.substring(0,3));//from 0 to 2
+		
+		System.out.println(input.substring(3,7));//from 3 to 6
+		
+		System.out.println(input.substring(5,10));//from 5 to 9
+		
 	System.out.println("sub string from 6 to 10:: "+input.substring(5, 10));
 	System.out.println("sub string from 6 to end:: "+input.substring(5));
 	

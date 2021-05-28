@@ -1,18 +1,6 @@
 package basics.loopsEx;
 
-/**
-  Loops/Iteration:
-  ------------------
-  - execute same code multiple times but every time on different data until the 
-    condition is satisfied.
-  
-  In Java we have 3 types of loops :
-  ->for 
-  ->while 
-  ->do while
-  
- */
-
+ 
 
 /**
   print numbers from 1 to 100.
