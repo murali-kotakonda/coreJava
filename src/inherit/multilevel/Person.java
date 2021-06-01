@@ -16,7 +16,15 @@ Staff class will get inheritance from Person and Employee.
 Employee class Extends Person class
 Staff class Extends Employee class.
 
-
+   Person
+     |
+     |
+     |
+  Employee  
+     |
+     |
+     |
+  Staff
 
 */
 public class Person {

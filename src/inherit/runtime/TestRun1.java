@@ -19,9 +19,8 @@ public class TestRunOK0 {
 		r.processLoan(); // HDFC
 		//r.demat(); // this gives compilation; cannot call child specific method
 
-		//Hdfc r2 =  new RBI();
-		// create obj for parent class and refer by child class.- not possible and it gives compilation
-
+	 
+		
 	}
 }
 
@@ -37,6 +36,10 @@ public class TestRunOK0 {
    [ we can call all the three types of methods ]
  2.RBI h = new Hdfc();   //create obj for hdfc and refer by RBI variable
    [ cannot call the child specific methods ]
+
+ 3.Hdfc h = new RBI(); // compilation;
+// create obj for parent class and refer by child class.- not possible and it gives compilation
+
  * */
 
 

@@ -15,8 +15,11 @@ but with diff logic
 Logic will come from child class:::
 
 
-Method overloading is performed within class.
-Method overriding occurs in two classes
+
+
+Method overloading is performed within class.  =>same methodName + different method signature 
+Method overriding occurs in two classes. parent class and child class  =>same methodName + same method signature 
+
 
 
 Method overloading  example:

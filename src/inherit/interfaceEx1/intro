@@ -26,6 +26,12 @@ SBI : child class for RBI
    }
    
 
+ Observations:
+ RBI is a interface
+ count = static variable
+ display() - is a abstract method
+ show() - is a abstract method
+
 syntax for creating child class for a interface:
 ------------------------------------------------
 //use implements for creating child class
@@ -76,7 +82,7 @@ public interface WorldBank {
 }
 
 SBI.java:
-----------------
+---------------- [ SBI as child class for  RBI,WorldBank ]
 public class SBI implements RBI,WorldBank{
 	
 //overriding the display() and show()  ppf() and draft()  are mandatory....

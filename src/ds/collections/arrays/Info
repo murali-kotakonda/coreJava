@@ -89,7 +89,7 @@ Delete elements is not possible...
 data[5] = "";
 data[5] = null;
  
- serach by position is fast.
+serach by position is fast.
 
  
 Disadvantages:

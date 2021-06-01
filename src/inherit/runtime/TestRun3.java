@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class TestDowncast {
 	public static void main(String[] args) {
-		RBI  r = new Hdfc(); // Upcasting
+		RBI  r = new Hdfc(); // Upcasting  ,// create obj for HDFC and refer by RBI
 		r.createAcc (); //RBI 
 		r.processLoan(); // HDFC
 		
@@ -21,7 +21,7 @@ public class TestDowncast {
 		//the obj should be referred by HDFC
 		
 		if( r instanceof Hdfc)  { // check if r is referring to Hdfc
-			Hdfc h = (Hdfc) r; //downcasting
+			Hdfc h = (Hdfc) r; //downcasting ,// obj for HDFC is refered by Hdfc
 			// h and r are pointing to the same object
 			// h is the HDFC variable
 			// r is the RBI variable
