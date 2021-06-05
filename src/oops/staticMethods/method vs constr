@@ -17,10 +17,9 @@ only initilizing the instace variables
 
 Instance variable                                    static variables                                     local variables
 ---------------------------------------------------------------------------------------- ----------------------------------
-1. inside a class                                1.inside a class with static                              1.inside the method
-2.memory  is created during                      2.  memory is created during class loading                2. memory is created when method is called
-obj creation 
-3.memory is created every time when obj          3. memory is created one time                             3.memory is created every time when method is called,
+1. inside a class                                1.inside a class with static                            1.inside the method
+2.memory  is created during obj creation         2.memory is created during class loading                2. memory is created when method is called
+3.memory is created every time when obj          3. memory is created one time                           3.memory is created every time when method is called,
 is created
 4.memory is deleted when                         4.memory is deleted when prog stops/class is unloaded     4.memory is deleted when method execution is completed
 obj is garbage collected. 

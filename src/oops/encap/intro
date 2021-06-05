@@ -68,7 +68,7 @@ conclusion:
 
 changes in class:
   1. make instance variables as private
-  2.expose the methods to set data and read data (setters & getters)
+  2.expose the methods to set data and read data using setters & getters.
   for every instance variables provide setter and getter 
   
   private instance variables cannot be accessed outside the class.

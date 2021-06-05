@@ -14,23 +14,19 @@ public class TestPassByRef {
 		
 		System.out.println("before call");
 		System.out.println(p1.id + " "+p1.name + " "+p1.age );
-		//show(p1);
+		 
 		
 		//pass obj to the modify method
-		modify(p1); // Person p2 = p1
+		modify(p1);  
 		
 		System.out.println("after call");
 		System.out.println(p1.id + " "+p1.name + " "+p1.age );
-		//show(p1);
+		 
 		
 	}
 	
 
-	public static void show(Person pObj){
-		System.out.println(pObj.id);
-		System.out.println(pObj.name);
-		System.out.println(pObj.age);
-	}
+	 
 	
 	public static void modify(Person p2){ 
 		p2.id= 4000;

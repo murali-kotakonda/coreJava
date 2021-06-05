@@ -9,7 +9,6 @@ Advantages:
 -> List internally uses array
 -> search by content is slow
 -> delete an element is slow
-
 -> Insert in between and delete in between is slow
 
 
@@ -76,7 +75,7 @@ List<String> names = new ArrayList<>();
      names.add(3,"kumar");
      names.add(2,"shyam");
 	 
-	 Vector - Slow
+	   Vector - Slow
      ArrayList - Slow 
      LinkedList - Fast	
 
@@ -87,7 +86,7 @@ List<String> names = new ArrayList<>();
     ex:
 	   get the element at 2nd position
 	   String data = names.get(1); // shyam
-	   Vector - Fast
+	     Vector - Fast
        ArrayList - Fast 
        LinkedList - slow	
 	      
@@ -102,7 +101,7 @@ List<String> names = new ArrayList<>();
 			System.out.println( " is not available");
       }
       
-	Vector - slow
+	  Vector - slow
     ArrayList - slow 
     LinkedList - slow
     

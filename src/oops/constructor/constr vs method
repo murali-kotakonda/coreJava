@@ -1,5 +1,6 @@
 
- //diff
+ //diff between constr and method:
+ --------------------------------------------------------
  1.constr is called one time
  method can b called any no of times
  

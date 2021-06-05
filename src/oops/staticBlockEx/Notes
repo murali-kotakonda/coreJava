@@ -4,7 +4,7 @@
 -> static block contains code  only for initializing the static variables.
 -> static block is executed before the constructor.
 -> write static block inside the class  
-
+-> static block is a automatic call
 
 purpose:
 ----------------

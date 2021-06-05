@@ -1,6 +1,4 @@
 /*
-    
-  
  - Map   is A interface
   
   child classes:
@@ -13,7 +11,7 @@
   every entry contains two elements  1.Key and 2.Value 
   
     key can be any datatype
-    , value can be any datatype.
+    value can be any datatype.
     
    //In Map Key is always unique; duplicate keys are not allowed.
  
@@ -42,7 +40,8 @@
   
 
   methods:
-     Map<String, String> map = new HashMap<>();
+  ------------------------
+  Map<String, String> map = new HashMap<>();
     
     // add new entry
      map.put("133", "user7"); //key as 133 and value as user7
@@ -78,7 +77,7 @@
 	map.entrySet(); returns all keys + values
 	
 	for( Entry<String, String> entry : map.entrySet() ){
-		String key = entry.getKey();
+		  String key = entry.getKey();
 	    String value = entry.getValue();
 		
 	}

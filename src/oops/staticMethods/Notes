@@ -9,7 +9,7 @@ to operate on static variables we need static methods.
 
 
 instance methods -> set/read/process data for instance variables
-  static  methods -> set/read/process data for static variables
+static  methods -> set/read/process data for static variables
 
 
 - instance method can be called only by creating the object

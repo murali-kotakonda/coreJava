@@ -3,7 +3,7 @@ Constructor:
 - we need to write inside the classs.
 - When obj is created Constructor is called automatically.
 - With Constructor we can set the data during obj creation.
-  
+-initialize the instance variables during obj creation 
   
   
 class Person{
@@ -17,20 +17,27 @@ Req: create obj + set data
 
 
  
-
-
 without constr:  [requires 4 lines]
----------------------
+----------------------------------------------------
 Person p = new Person(); 
+
 //set the data after obj creation
 p.id =1000;
 p.name="user1";
 p.age=45;
 
+set the data after object creation
+initialize the instance variables after obj creation
+
+
 
 with constr:  [requires 1 lines]
----------------------
-Person p = new Person(1000,"user1",45); // set the data along with obj creation
+---------------------------------------------
+Person p = new Person(1000,"user1",45);
+
+set the data along with obj creation
+initialize the instance variables during obj creation
+
 
 
 
@@ -45,6 +52,14 @@ A constr is called only one time for one obj..
 Adv:
   - creat obj + set the data in single line.
   - set data during obj creation
+
+
+
+Types of constr:
+-----------------
+1.Default constr
+2.zero arg constr
+3.param-arg constr
 
 
 
