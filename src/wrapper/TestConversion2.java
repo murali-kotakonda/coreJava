@@ -1,7 +1,7 @@
 package wrapper;
 
 /**
-		// converting String to int 
+		1.converting String to int 
 		 use  Integer.parseInt() ; // Integer is wrapper class and parseInt() is method
 		
 		Ex:
@@ -9,23 +9,30 @@ package wrapper;
 		int fromInt = Integer.parseInt(intStr);
 		
 		
-		// 	converting String to float 
+		2.converting String to float 
 		use Float.parseFloat()
 		Ex:
 		String floatstr = "134.00";
 		float fromfloat = Float.parseFloat(floatstr);
 		 
-		// converting String to double 
+		3.converting String to double 
 		use   Double.parseDouble()
 		Ex:
 		String doubleStr = "346.00567";
 		double fromdouble = Double.parseDouble(doubleStr);
 		    
-		// converting String to long 
+		4.converting String to long 
 		use Long.parseLong()
 		Ex:
 		String longStr = "346877997";
 		long fromlong = Long.parseLong(longStr);
+
+
+	   5.converting String to Boolean 
+		use Boolean.parseBoolean(data5)
+
+		String data5 = "true";
+		boolean booleanData5= Boolean.parseBoolean(data5);
     
  */
 

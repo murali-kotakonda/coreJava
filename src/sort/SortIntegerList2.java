@@ -9,9 +9,10 @@ import java.util.List;
 ------------------------
 
 use  Collections.sort() method to sort any collection in ASC order
+
+
 use  Collections.sort() method with Collections.reverseOrder()  to sort any collection in DESC order
  
-
 
 how to create arraylist with data in a singleline?
 -----------------------------------------------------------

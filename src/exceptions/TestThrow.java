@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**
  
 
- Case#1:(Earlier)
+Case#1:(Earlier)
 java is creating exception
 dev is handling exception
 
-can a developer reate/throw exception?
+can a developer create/throw exception?
 yes
 
 Case#2:(Now)

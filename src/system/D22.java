@@ -19,7 +19,7 @@ package system;
 	yyyy-MM-dd HH:mm:ss.SSSZ	2012-01-31 23:59:59.999+0100
 	EEEEE MMMMM yyyy HH:mm:ss.SSSZ	Saturday November 2012 10:45:42.720+0100
 	
-	yyyy => 4 digit year
+yyyy => 4 digit year
 MM   => 2 digit month (you must type MM in ALL CAPS)
 dd   => 2 digit "day of the month"
 
@@ -27,6 +27,7 @@ HH   => 2-digit "hour in day" (0 to 23)
 mm   => 2-digit minute (you must type mm in lowercase)
 ss   => 2-digit seconds
 SSS  => milliseconds
+MMMMM => full month name
 *
 */
 
@@ -38,9 +39,9 @@ public static void main(String[] args) {
 	Date dateObj = new Date();
 	
 	String pattern = "dd/MM/yyyy";
-	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 	
-	String date = simpleDateFormat.format(dateObj);
+	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+    String date = simpleDateFormat.format(dateObj);
 	System.out.println(date);	
 }
 }

@@ -8,11 +8,16 @@ package threads;
 public class MyThread5 extends Thread {
 
 	public void run() {
-		System.out.println("Thread stated:" + Thread.currentThread().getName()+ " is running");
+		String msg1= "Hi from "+Thread.currentThread();
+		System.out.println(msg1);
+		
 		try {
-			Thread.sleep(5000);// sleep for 5 seconds
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
-		System.out.println("Thread ended" + Thread.currentThread().getName() + " ended");
+		
+		String msg2= "Bye from "+Thread.currentThread();
+		System.out.println(msg2);
 	}
 }

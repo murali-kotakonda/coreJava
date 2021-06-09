@@ -4,6 +4,7 @@ Threads:
 	 [ Parallel programming means Executing multiple programs at the time]
 	  
 	  advantage of thread:
+	  ------------------------------------------
 	  -response time is improved
 	  -utilization of resources
 	  
@@ -26,24 +27,16 @@ Threads:
 	  - TEST the application in multiple browsers
 	  - Test multiple modules of application.
 	  
-	  -when the thread is created it would not start immediately, because it is decided
-	  by the cpu, then it would run
-	   
-	  we cannot determine when the thread would start or end.
-	  
-	  	by default java creates main thread.
-		using main thread developer will create additional threads.
-		
-	  thread states:
-	  --------------------------
-	  1. ready state -- when the developer creates the thread and adds to the cpu job list
-	  2. running -- when cpu gives appointment to the thread
-	  3. possible 3 states after running state
-	  		a. dead state or completed state
-	  		b. wait state : we don't know the time
-	  		c. sleep state : we will know for how long it is going to know sleep
-	  
 
+	  Thread Nature:
+	  ----------------------
+	  -when the thread is created it would not start immediately, because it is decided
+	  by the cpu
+	  - we cannot determine when the thread would start or end.
+	  - By default java creates main thread.
+	  -	using main thread developer will create additional threads.
+		
+	  
 
  
  How to create a thread:
@@ -52,7 +45,7 @@ Threads:
 2. provide run method 
 	  - contain the thread activity
     - run method specifies what the thread has to do.
-3. create the thread object
+3. create the thread object inside the thread class
 4. call the start method
 	  -thread will be in ready state
 	   - start method() - internally  calls the run method when the cpu is available.
@@ -67,25 +60,24 @@ There are two ways:
 2. By implementing the "Runnable" interface.
 
 
-	 
-	  
-    create the thread class:
-    ----------------------------
-    1. create a class extending Thread class and provide run method
+  
+create the thread class:
+----------------------------
+1. create a class extending Thread class and provide run method
     	public class MyThread extends Thread {
 			public void run() {
 				System.out.println("Hi");
 			}
 		}
 
-    2A.create a class implements Runnable interface and provide run method
+2A.create a class implements Runnable interface and provide run method
       public class MyThread implements Runnable {
 			public void run() {
 			System.out.println("Hi");
 			}
 		}
 
-    2B. Using anonymous inner class
+2B. Using anonymous inner class
 
       Runnable r3 = new Runnable() {
 			public void run() {
@@ -102,6 +94,18 @@ There are two ways:
     
 	 */
 	 
+	 thread states:
+	  --------------------------
+	  1. ready state -- when the developer creates the thread and adds to the cpu job list
+	  2. running -- when cpu gives appointment to the thread
+	  3. possible 3 states after running state
+	  		a. dead state or completed state
+	  		b. wait state : we don't know the time
+	  		c. sleep state : we will know for how long it is going to know sleep
+	  
+
+
+
 	 thread props:
 	 -----------------
 	 every thread has thread name and thread priority

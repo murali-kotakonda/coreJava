@@ -12,24 +12,45 @@ character		Character
 boolan		    Boolean
 
 
+Why do we need wrappers:
+--------------------------------------------
+1.Use wrappers when we need to use primitives for collections.
+
+2. wrapper classes are used for convertions.
+int/float/long/double/boolean to string
+string to int/float/long/double/boolean 
+
+
+
+int x1 =90;
+Integer x2 = new Integer(90);
+
+//here x1 is int variable ; x2 is int object.
+
 
 Req:
-add multiple int in a list
-
-List<Integer> nums = new ArrayList<>();
-
-
-Use wrappers when we need to use primitives for collections.
+1.Use wrappers when we need to use primitives for collections.
 
 1.List of integers
 List<int> list = new ArrayList<>(); // wrong
 List<Integer> list = new ArrayList<>();
 
+2.List of float
+List<float> list = new ArrayList<>(); // wrong
+List<Float> list = new ArrayList<>();
+
+3.List of double
+List<double> list = new ArrayList<>(); // wrong
+List<Double> list = new ArrayList<>();
+
+
+4.List of long
+List<long> list = new ArrayList<>(); // wrong
+List<Long> list = new ArrayList<>();
+
+
 2.If a method is expecting object, then we have to pass integer obj but not int value..
-3.
-
-
-for all collections we need to store primitive values using wrappers.
+3.for all collections we need to store primitive values using wrappers.
 
 
 declaration:
@@ -48,9 +69,17 @@ x is a variable , not an obj.. and x cannot be null
 
 public class Student {
 
-	Integer sub2; // default value is null
-	int sub1; // default value is 0
+	Integer sub2; 
+	int sub1; 
 }
+
+// default value for sub2 is null
+// default value sub1 is 0
+
+-> student dint attend exam            0         null
+-> student got 35 marks               35          35
+-> student got zero marks              0           0
+
 
 // null means student is absent
 // 0 means he got 0 marks

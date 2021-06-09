@@ -19,8 +19,9 @@ Case#1:
  
 Case#2:
    // write a var-arg method
- // write a method
-  public void display(String... data){  // datatype of data is string array and method will accept any no of string
+ 
+  public void display(String... data){  
+  // datatype of data is string array and method will accept any no of string
   
   }
  here display()method is a var-arg method.

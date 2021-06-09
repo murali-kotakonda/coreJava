@@ -11,10 +11,7 @@ create the thread obj and call the start method
 
 How to get the current Thread details?
 Thread.currentThread()
-
-
-
-
+ 
  */
 
 

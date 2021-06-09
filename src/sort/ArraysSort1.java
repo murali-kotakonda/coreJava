@@ -7,7 +7,16 @@ import java.util.Arrays;
 ------------------------
 
 use  Arrays.sort() method to sort any array in ASC order
-use Arrays.toString() method for printing
+
+How to create the array with data in a single line:
+---------------------------------------------------
+Integer[] intArr = {5,9,1,10,3,10,78,23,4,7};
+	 
+For asc order:
+use Arrays.sort(<array>);
+
+For desc order:
+Arrays.sort(<array>,Collections.reverseOrder());
 
  */
 public class ArraysSort1 {

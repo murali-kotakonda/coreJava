@@ -18,6 +18,11 @@ package exceptions;
   m4() -> if the num2 is zero throw exception , if not perform division.
   
   
+  throw --->to create the exception obj
+
+  throws:
+      - to specify method is not responsible for handling the exception
+
   1.create exception in m4() using throw keyword
   2.m2, m3, ,m4() will  not handle exception , write throws keyword at method declaration
   3.main() will handle the exception write try catch

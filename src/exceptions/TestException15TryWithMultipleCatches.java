@@ -1,10 +1,10 @@
 package exceptions;
 
-/**
+ 
 /**
 	 
 	
-can we write try with multiple catch blockes?
+can we write try with multiple catch blockes in a single try block?
 Yes
 
 at a time only one catch block is executed.
@@ -24,7 +24,7 @@ catch(ArrayIndexOutOfBoundsException ex ){
 }
 
 solution: try with multiple catches
- at a time only one exception is created.
+ at a time only one exception block is executed.
     	
 		
 */

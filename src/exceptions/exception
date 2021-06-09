@@ -18,7 +18,8 @@ Why do we have Exception?:
 -> edge case 
 
 
-Can we avoid exception during runtime?? NO
+Can we avoid exception during runtime?? 
+NO
 
 exception handling:
 ---------------------
@@ -43,10 +44,8 @@ What is java role?
    b)what are the class+method+
    c)line nos involved for exeption(stacktrace)
 ->Java stops the application flow..
-
-
-
-
+ 
+ 
 How to do exception handling:
 ----------------------------
 Introduce three blocks

@@ -1,5 +1,19 @@
 package inherit.runtime;
 
+/*
+
+Upcasting:
+  --------------
+  create obj for child class and refer by parent class
+  RBI r = new Hdfc(); 
+  Here RBIis the   parent class
+  Hdfc is the child class.
+
+ 
+  Using upcasting we can call only the inherited method and  overridden method.
+  we cannot call the child specific method.
+
+*/
 public class TestRunOK0 {
 	//createAcc() -> is inherited method
 	//processLoan() -> overridden method
@@ -7,18 +21,18 @@ public class TestRunOK0 {
 	
 	public static void main(String[] args) {
 		
+		System.out.println("************[Approach1 ]Hdfc operations **************");
 		Hdfc h = new Hdfc(); // create obj for child class and refer by child class
 		h.createAcc();    //RBI
 		h.processLoan(); //Hdfc 
 		h.demat();   // Hdfc
 		
 		
-
+		System.out.println("************[Approach2 ]Hdfc operations **************");
 		RBI r = new Hdfc(); // create obj for child class and refer by parent class.[upcasting]
 		r.createAcc(); // RBI
 		r.processLoan(); // HDFC
 		//r.demat(); // this gives compilation; cannot call child specific method
-
 	 
 		
 	}
