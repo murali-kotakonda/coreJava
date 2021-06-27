@@ -17,15 +17,16 @@ Abstract class:
 ->syntax for abstract class:
 --------------------------------
 
-public abstarct class RBI{
+public abstract class RBI{ // class is abstract
 
    public void display(){
    
    }
  
-   public abstarct void display1();
-	
+   public abstract void display1(); // method is abstract
+  
 }
+
 
 observations:
 ------------------

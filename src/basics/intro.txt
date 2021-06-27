@@ -13,11 +13,11 @@ OOPS defines the common rule/regulations/guidelines for writing better progs.
 ->Simple,easy to learn/ understand /code..
 ->Robust:
   No pointers . [gives access to the memory location]
-  Memory allocation & meomory dealloca is taken care by java
+  Memory allocation & memory deallocation is taken care by java
   Unused memory is cleanup using garbage collection.
   Java is very strong in type checking.  [Compilation]
-  Exception hanlding at the run time.[to handle the unexpected scenarios that occurs at run time]
-->Arhitecural neutral:  Java memory allocatn is stable for all platforms.
+  Exception handling at the run time.[to handle the unexpected scenarios that occurs at run time]
+->Arhitecural neutral:  Java memory allocation is stable for all platforms.
 ->MultiThreading : To execute multiple progs at the same time. ex: response time.
 
 
@@ -32,12 +32,10 @@ OOPS defines the common rule/regulations/guidelines for writing better progs.
   tools : selenium , hybris , oracle ATG, Pega
   frameworks: springs , hibernate
 
+ 
 
-
-
-
-  setup:
------------
+Setup:
+-----
 1. download and Install  java8
 2. download and install eclipse 
   
@@ -52,11 +50,6 @@ copy the path "C:\Program Files\Java\jdk1.8.0_231\bin"
 and add the jdk bin location to the environment variable "path".
 
 
-once eclipse is opened it will ask for the "workspace".
-workspace -> is the location in the syatem where the projects are created
-provide the workpsace path and  click on launch.
-
-
 How to check JDK is installed?
 try "javac" command in command window
 
@@ -69,8 +62,25 @@ How to check java version?
 java -version
 
 
+  Java: JDK + JRE
+  JDK -> Commands + lib for compilations
+  JRE -> commands for execution
+  
+  In every server we have the application running & testers will do testings on these systems.
+  Dev1  --->     TS1    -->    TS2 -->     TS3 -->     PRE-PRD --->     Live  [consumed by customers]   
+  JDK+JRE        JRE          JRE          JRE          JRE              JRE
+  
+ SET PATH: make the command available every where
+  
+        
 eclipse:
 ------------------------
+
+once eclipse is opened it will ask for the "workspace".
+workspace -> is the location in the syatem where the projects are created
+provide the workpsace path and  click on launch.
+
+
 1.create the java project
 a java project contains two components:
 JRE  -> java library 
@@ -83,24 +93,6 @@ we create seperate package and maintain our files.
 
 3.Under the package create the class
 
-Setup:
------
-  a) Java 8 software  + env variable config
-  b) IDE ex: Eclipse, netbeans , Injellij
-  
-  
-  Java: JDK + JRE
-  JDK -> Commands + lib for compilations
-  JRE -> commands for execution
-  
-  In every server we have the application running & testers will do testings on these systems.
-  Dev1  --->     TS1    -->    TS2 -->     TS3 -->     PRE-PRD --->     Live  [consumed by customers]   
-  12																																					10
-  JDK+JRE        JRE          JRE          JRE          JRE              JRE
-  
- SET PATH: make the command available every where
-  
-        
 Steps:
 1.create java project
 2.create package

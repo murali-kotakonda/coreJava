@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="algo"/>
 	<classpathentry kind="src" path="java2"/>
 	<classpathentry kind="src" path="java6"/>
 	<classpathentry kind="src" path="java8"/>

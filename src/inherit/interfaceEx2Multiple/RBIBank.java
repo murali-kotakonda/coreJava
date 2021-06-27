@@ -13,13 +13,13 @@ package inherit.interfaceEx2Multiple;
   
      RBIBank  - [interface ]        
        |								
-       | - createAccount()
+       | - createAccount()  - abstarct methods
        |                             
        
   
     WorldBank - [interface ]
        |
-       | - processLoan()
+       | - processLoan()  - abstarct methods
        |
    
      - How many methods are mandatory for icici to override?
