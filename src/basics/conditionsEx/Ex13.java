@@ -32,3 +32,17 @@ public static void main(String[] args) {
 	
 }
 }
+
+
+
+
+/*     
+	//approach2
+	switch(city) {
+		case "hyderabad" : System.out.println("service is provided"); break;
+		case "chennai" : System.out.println("service is provided"); break;
+		case "bangalore" : System.out.println("service is provided"); break;
+		case "mumbai" : System.out.println("service is provided"); break;
+		default : System.out.println("service is not provided"); break;
+	}
+ * */

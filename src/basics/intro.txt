@@ -77,7 +77,7 @@ eclipse:
 ------------------------
 
 once eclipse is opened it will ask for the "workspace".
-workspace -> is the location in the syatem where the projects are created
+workspace -> is the location in the system where the projects are created
 provide the workpsace path and  click on launch.
 
 
@@ -176,12 +176,15 @@ public static void main(String[] args) {
  --------------------
  
 jar:    [java archive] - exposing the code 
+A jar file is nothing but a zip file but contains only .class files.
+A jar file contains multiple .class files.
+
 java library. 
 contains multiple .class files
 large no files to share with the team , then create jar file that contains .class files.
  
- A jar file contains multiple .class files.
- A jar file is nothing but a zip file but contains only .class files.
+
+
  
  Req:
  Dev1 has 500 java files.

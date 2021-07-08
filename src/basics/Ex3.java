@@ -1,47 +1,5 @@
 package basics;
-
-	// single line comment
-	//
-	
-	/*
-	 * 
-	 * multi line comment
-	 * 
-	 */
-/**
- variables : hold the real time static/dynamic data.
- 	//memory allocation/processing for the data depends on TYPE of data ..
  
- 
- //datatypes : [type of the data ]. EVERY Variable is created by specifying the datatype.
-		
-	     datatype           size (in bytes)
-		 ----------------------------------------------  
-		 byte               1    ( byte is the DT that represents any Data type )
-		                          when we need to communicate with third party.
-		 						               ex: DB, FILE, WEB etc...
-		 [natural numbers]
-		 short              2      -32768 to 32767                                    
-		 int                4      number
-		 long               8      bigger number
-		 
-		 [decimal numbers]
-		 float              4      -> decimal
-		 double             8      -> bigger decimal
-		 
-		 char               2           
-		 String             depends on no of chars
-		 
-		 boolean            1 bit    -> true/false 
-		 
-		  	
-		  	int x ;  // declare the variable
-		  	x= 90 ;// assign 90 to x
-		  	
-		  	
-		  	int x = 90 ;// declaration + assigning the value
-
-*/
 public class Ex3 {
 
 public static void main(String[] args) {

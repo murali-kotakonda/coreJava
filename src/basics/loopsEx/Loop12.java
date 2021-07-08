@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
 While loop:
 -use while loop when we dont know the number of  itereations/runs/size.
--every for loop cna be converted to while loop
+-every for loop can be converted to while loop
 - for while loop only condition is mandatory ; others are optional
 
 for loop:

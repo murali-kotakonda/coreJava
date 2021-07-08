@@ -9,9 +9,10 @@ package basics;
 	 * 
 	 */
 /**
- variables : hold the real time static/dynamic data.
- 	//memory allocation/processing for the data depends on TYPE of data ..
-    create a varible using the data type.
+ variable:
+ hold the real time static/dynamic data.
+ create a variable using the data type.
+ memory allocation/processing for the data depends on TYPE of data ..
  
  //datatypes : [type of the data ]. EVERY Variable is created by specifying the datatype.
 		
@@ -35,11 +36,23 @@ package basics;
 		 boolean            1 bit    -> true/false 
 		 
 		  	
-		  	int x ;  // declare the variable
-		  	x= 90 ;// assign 90 to x
-		  	
-		  	
-		  	int x = 90 ;// declaration + assigning the value
+How to create a variable?
+ solution)
+ 
+ <data-type> <variable-name>;
+ 
+ //declaration
+ int x;
+ float y;
+ long z;
+ 
+ How to assign the value to a variable?
+ solution)
+ int x;
+ x = 67;  //assignment 
+ 
+ 
+ int y =90; // declaration + assign value
 
 */
 public class Ex2 {
