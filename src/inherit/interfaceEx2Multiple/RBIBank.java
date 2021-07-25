@@ -7,7 +7,7 @@ package inherit.interfaceEx2Multiple;
   - One class can implements any number of interfaces.
   
   
-  RBI , WorldBank are two interfaces.
+  RBIBank , WorldBank are two interfaces.
   Icici implements both RBIBank and WorldBank.
   
   
@@ -17,10 +17,14 @@ package inherit.interfaceEx2Multiple;
        |                             
        
   
+
+
+
     WorldBank - [interface ]
        |
        | - processLoan()  - abstarct methods
        |
+   
    
      - How many methods are mandatory for icici to override?
      2 ( createAccount()  and  processLoan() )

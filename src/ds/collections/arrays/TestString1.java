@@ -17,7 +17,7 @@ public class TestString1 {
 		names[1] = "shyam";
 		names[2] = "ram";
 		names[3] = "raj";
-		names[4] = "nandini";
+		names[4] = "nandu";
 		names[5] = "teju";
 		
 		//read by position

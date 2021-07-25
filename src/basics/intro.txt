@@ -87,7 +87,7 @@ JRE  -> java library
 src  -> developer has to create/write the code
 
 
-2.under the project> src  create the package
+2.under the project> src>  create the package
 package -> package is the folder that contains the related java files.
 we create seperate package and maintain our files.
 
@@ -111,12 +111,25 @@ Structure of java file:
   1.package name
   2.import statements
   3. class name
+    class name  == file name 
+    one java file should contain only one class 
   4.inside a class we can define  
-  instance variables + methods + constructr + static variables + static methods + static block...
+  instance variables + methods + constructr +
+  static variables + static methods + static block...
   
   public class Hello{}
 
 
+window sSTYLE: com/tcs/ecommerce/consumer/db;
+  JAVA style : com.tcs.ecommerce.consumer.db;
+  
+  
+  ex : 
+  com.tcs.ecommerce.consumer.db;
+  com.tcs.ecommerce.consumer.request;
+  com.tcs.ecommerce.consumer.response;
+  com.tcs.ecommerce.consumer.util;
+  
 
 method or funtion refers the same.
 
@@ -125,7 +138,7 @@ in java the code should be always written inside the method/function.
 how to run a java program:
 -----------------------------
 
--> write the main() method.
+-> write the main() method inside the class.
 if a java file has the main method then only it is eligible for running.
 To run a program main() method is mandatory.
 
@@ -146,10 +159,11 @@ public static void main(String[] args) {
 
  Steps to run java file:
 1.Compilation  
-  javac Hello.java 
-  result: Hello.class is generated[byte code file]
+  javac Ex1.java 
+  result: Ex1.class is generated[byte code file]
+
 2.Execution 
-  java Hello
+  java Ex1
   result : <some output>       
  
 
@@ -174,7 +188,6 @@ public static void main(String[] args) {
 
  what is a jar?
  --------------------
- 
 jar:    [java archive] - exposing the code 
 A jar file is nothing but a zip file but contains only .class files.
 A jar file contains multiple .class files.

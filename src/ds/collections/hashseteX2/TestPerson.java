@@ -13,7 +13,7 @@ Set<Person> persons = new HashSet<>() ;  // HashSet for Person
 
 add person obj:
 ---------------
-Person p1 = new Person()
+Person p1 = new Person();
 persons.add(p1);
 
  

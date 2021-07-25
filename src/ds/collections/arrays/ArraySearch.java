@@ -11,19 +11,20 @@ import java.util.Scanner;
   search "delhi" inside the array [search by content]
  
   -How many searches will it takes?
-   500 (liner search)  
+   500 (liner search)    [for arraylist /linkedlist / vector] 
   
   Case#2: an array has 500 elements and assume "delhi" exists inside the array at 400 position.
   search "delhi" inside the array [search by content]
  
   -How many searches will it takes?
-   400 (liner search)  
+   400 (liner search)    [for arraylist /linkedlist / vector] 
     
   Case#3: an array has 500 elements 
   Get the element at 400 position [search by position]
  
   -How many searches will it takes?
-   1 [ search by position is fast ] 
+   1 [ search by position is fast for vector and arraylist] 
+   400 [for linked list]
   
   
  search by content.

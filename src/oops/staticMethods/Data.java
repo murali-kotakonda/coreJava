@@ -13,3 +13,11 @@ public class Data {
 	}
 	
 }
+
+
+/*
+class:  Data
+instance method : show()
+static method:  print()
+
+*/

@@ -14,9 +14,10 @@ package basics;
  create a variable using the data type.
  memory allocation/processing for the data depends on TYPE of data ..
  
- //datatypes : [type of the data ]. EVERY Variable is created by specifying the datatype.
-		
-	     datatype           size (in bytes)
+ datatypes : [type of the data ].
+  - Every Variable is created by specifying the datatype.
+	
+		     datatype           size (in bytes)
 		 ----------------------------------------------  
 		 byte               1    ( byte is the DT that represents any Data type )
 		                          when we need to communicate with third party.
@@ -41,19 +42,24 @@ How to create a variable?
  
  <data-type> <variable-name>;
  
+  
+ How to declare a variable?
+ solution:
+
  //declaration
  int x;
  float y;
  long z;
- 
- How to assign the value to a variable?
- solution)
- int x;
- x = 67;  //assignment 
- 
- 
- int y =90; // declaration + assign value
 
+How to assign a value to variable?
+int x; // declaration
+x = 90; //assigning value
+
+
+
+
+
+int x =90 ; //declartaion + initializing value
 */
 public class Ex2 {
 

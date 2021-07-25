@@ -45,10 +45,24 @@ Set<Person> names = new LinkedHashSet<>() ;  // LinkedHashSet for Person
 
 Methods:
 -----------------
+
+1.How to add new element?
 names.add("java");  -> add element and avoids duplicates
+
+
+2.How to perform search by content?
 boolean contains = names.contains("user1");   -> serach by content
+
+
+3.How to remoev all elements?
 names.clear();                ->to remove all elements
-names.isEmpty(); //returns boolean  -> to check if the set is empty or not
+
+
+4.how to check if set is empty or not?
+use names.isEmpty();
+//returns boolean  -> to check if the set is empty or not
+
+
 names.remove("user2"); -> remove by content
 names.size();   -> returns the no of elements added
 
@@ -58,6 +72,7 @@ for(String p : names){
 			System.out.println(p);
 }
 
+//using java 8
 names.forEach( name -> System.out.println(name));
 
 

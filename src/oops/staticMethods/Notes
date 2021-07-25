@@ -16,19 +16,7 @@ static  methods -> set/read/process data for static variables
 - static method can be called without creating the object.
 static method can be called using the class name
 
-- static method can access only static variables ;
- i.e. from static method we cannot access the instance variables
-
- -  static method can call/access only static methods
- i.e. from static method we cannot call/access  the instance methods.
  
-- from the instance methods we can access everything : ( instance variables + instance mthods + static variables +
-static methods)
-
- 
- 
-  
-  
 syntax for writing a static method:
 --------------------------
 public class Data{
@@ -58,7 +46,7 @@ Data d = new Data();
 d.display();
 
 
-
+ 
 public class Person{
 
 
@@ -67,12 +55,12 @@ public class Person{
 	
 	
 	public void show(){
-	
+	  int b=45;
 	}
 
    public static void process(){
    
-   
+     int a= 90;
    }
 
 }
@@ -83,7 +71,23 @@ static variable: count
 
 instance method : show()
 static method: process()
+local variables : a,b
 
+
+
+
+Access:
+--------------------
+- static method can access only static variables ;
+ i.e. from static method we cannot access the instance variables
+
+ -  static method can call/access only static methods
+ i.e. from static method we cannot call/access  the instance methods.
+ 
+- from the instance methods we can access everything : ( instance variables + instance mthods + static variables +
+static methods)
+
+  
 
 class Service{
   
@@ -107,7 +111,7 @@ m1() (i.m)         Y                        Y                        Y          
 m3() (s.m)         N                        Y                        N                               Y
 ---------------------------------------------------------------------------------------------------------------------------------
   
-  i.v -> instance variable
+i.v -> instance variable
 s.v -> static variable
 
 i.m.->instance method

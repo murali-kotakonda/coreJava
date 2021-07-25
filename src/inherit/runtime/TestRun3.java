@@ -2,6 +2,14 @@ package inherit.runtime;
 
 import java.util.Scanner;
 
+
+/**
+ How to call the child specific method?
+
+ solution:
+ perform the down-casting and call the method.
+ */
+ 
 	//createAcc() -> is inherited method
 	//processLoan() -> overridden method
 	//demat()  -> child specific method

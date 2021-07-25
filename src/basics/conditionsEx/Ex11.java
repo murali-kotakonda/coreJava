@@ -40,17 +40,50 @@ public static void main(String[] args) {
 	System.out.println("Enter usertype");
 	String usertype = sc.next();
 	
-	//using &&
-	if(id>0 && age>18 && usertype.equals("admin")) {
-		System.out.println("valid data");
-	}else {
-		System.out.println("invalid data");
-	}
+	 
+		//approach1
+		if (id > 0 && age > 18 && usertype.equals("admin")) {
+			System.out.println("Valid data");
+		} else {
+			System.out.println("invalid data");
+		}
+
+		// approach2
+		if (id < 0 || age < 18 || !usertype.equals("admin")) {
+			System.out.println("invalid data");
+		} else {
+			System.out.println("valid data");
+		}
 	
-	//using ||
-	if(id<0  || age< 18 || !usertype.equals("admin")) {
-		System.out.println("invalid data");
-	}else {
-		System.out.println("valid data");
-	}
+		// approach3
+		if (!(id > 0 && age > 18 && usertype.equals("admin"))) {
+			System.out.println("invalid data");
+		} else {
+			System.out.println("valid data");
+		}
+
+		// approach4
+		if (!(id < 0 || age < 18 || !usertype.equals("admin"))) {
+			System.out.println("Valid data");
+		} else {
+			System.out.println("invalid data");
+		}
+
+		
 }}
+
+
+
+/*
+
+The following are conditions are same
+!(id>0 && age>18 && usertype.equals("admin") ) 
+id<0 || age<18 || !usertype.equals("admin")
+
+
+
+!(id < 0 || age < 18 || !usertype.equals("admin"))
+id>0 && age>18 && usertype.equals("admin") 
+
+
+*/

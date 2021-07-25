@@ -19,15 +19,16 @@ public class TestInterview2 {
 		String str2 = "127";
 		
 		//perform all opeartions on str2
-		System.out.println(map.get(str2)); //returns user5 : str1 And str2 are duplicates
-		System.out.println(map.containsKey(str2)); //returns true; str1 And str2 are duplicates
-		
+		System.out.println(map.get(str2)); 
+		System.out.println(map.containsKey(str2));  
 		//remove
-		map.remove(str2);//this will remove 127 + user5 from the map
-		System.out.println(map.size());
+	 
+		map.remove(str2); //this will remove 127 + user5 from the map
+		System.out.println(map.containsKey(str1)); //false
+		System.out.println(map.size());// zero
 	}
 }
 
-//Line 24: returns user5 : str1 And str2 are duplicates
-//Line 25: returns true; str1 And str2 are duplicates
-//Line 28  this will remove 127 + user5 from the map
+//Line 22: returns user5 : str1 And str2 are duplicates
+//Line 23: returns true; str1 And str2 are duplicates
+//Line 25  this will remove 127 + user5 from the map

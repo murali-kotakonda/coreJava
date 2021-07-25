@@ -30,3 +30,18 @@ Run#2:
 enter the key to search
 user2
 user2 is   available .
+
+
+
+
+- Create array for Strings and avoid duplicates
+i/p:
+String names[] ={"user1","user2","user1","user4","user2","user6","user7","user8","user4"};
+
+o/p:
+"user1","user2","user4","user6","user7","user8"
+
+
+
+
+

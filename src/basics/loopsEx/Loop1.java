@@ -11,6 +11,14 @@ package basics.loopsEx;
   ->while 
   ->do while
   
+
+
+for loop requires below 3 sections:
+->initialization          
+->condition              
+->increment/decrement 
+
+
  */
 
 

@@ -60,7 +60,14 @@ class Person{
 
 }
 	
+Person : class
 
+id,name, age : instance variables
+
+show() : instance method
+
+
+ 
 instance variables -> variables created inside a class
 
 
@@ -157,6 +164,22 @@ with oops we have to create 10 variables (10 objects, every obj cotains id,name,
 new Person()  ---> create the obj
 Person p1 = null; //no object
     Person p2 = new Person(); //create obj
+
+Employee:
+--------------------
+id
+firstName
+lastName
+salary
+pfNo
+
+
+
+- create class
+- create obj
+- set data for obj
+- show data for obj
+
 
 
 

@@ -87,7 +87,7 @@ public class Person {
 
 
 public : visible outside the class
-private : visible only insidethe class
+private : visible only inside the class
 
 
 impact:

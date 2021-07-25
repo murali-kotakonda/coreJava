@@ -24,7 +24,7 @@ public class TestRunTimeMethod {
 	}
 
 	//if method is expecting parent obj then method can be called by passing parent obj or child obj 
-	//if method is expecting child  obj then method cannot  be called by passing parent obj 
+	//if method is expecting child  obj then method cannot  be called by passing child obj 
 	private static void execute(RBI r) {
 		r.createAcc();
 		r.processLoan(); 

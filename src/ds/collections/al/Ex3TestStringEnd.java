@@ -8,6 +8,10 @@ import java.util.Scanner;
 - If the input is "END" then stop taking anymore input.
 - display the data using the arraylist.
 
+solution:
+dont use arrays
+use any list
+
 */
 public class Ex3TestStringEnd {
 	public static void main(String[] args) {
@@ -16,7 +20,7 @@ public class Ex3TestStringEnd {
 		
 		// input string till 'STOP' is encountered
 		// 3. input the names
-		System.out.println("Enter names and type STOP to stop :");
+		System.out.println("Enter names and type END to stop :");
 		
 		//take input logic
 		while (true) {// infinite loop 

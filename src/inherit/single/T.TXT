@@ -179,3 +179,5 @@ Types of Inheritance:
 4.Multiple Inheritance is not allowed in java
 
 
+
+

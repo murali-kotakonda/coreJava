@@ -36,6 +36,9 @@ method is explict call
   
   //instance method
   public  void show(){
+     //local variables
+	  int x=90;
+	  int y =40;
     //some logic
   }
  

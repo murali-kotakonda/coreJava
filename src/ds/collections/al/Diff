@@ -52,13 +52,14 @@ list.add(5, "kumar");  // fast in Linkedlist , but slow for AL/Vector.
 1.add 100 elements
 2.delete 60 elements
 ==>memory: 100
-==>how many elements:  40
+==>how many elements are utilized:  40
 
 ->Memory allocated and no of elements are same in LinkedList.
 1.add 100 elements
 2.delete 60 elements
 ==>memory: 40
-==>how many element:  40
+==>how many elements are utilized:  40
+  
   
 
 

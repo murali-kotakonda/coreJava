@@ -29,7 +29,7 @@ syntax for a method:
 scope -->public/private/protected
 returnType -> void(no return ) or int/float/long/.....etc
 <methodname> -> any name
-<input args> are optionl
+<input args> are optional
 <return statement> -> is mandatory if returnType is not void
 
 

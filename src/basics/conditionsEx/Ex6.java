@@ -16,10 +16,11 @@ import java.util.Scanner;
        if id is incorrect stop prog immediately
        if age is incorrect stop prog immediately
        
-         if id is wrong, then dont check for age 
-         if id is valid , then only check for age
-         if age is wrong, then dont check for userType 
-         if age is valid , then only check for userType
+       if id is wrong, then dont check for age 
+       if id is valid , then only check for age
+       
+       if age is wrong, then dont check for userType 
+       if age is valid , then only check for userType
   
   
  solution:

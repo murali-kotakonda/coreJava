@@ -32,6 +32,10 @@ public class WordsCount {
 					"php", "java", "win", "ios", "win", "hana",
 					"android","ios","ios");
 	
+		//create a  map
+	// key : Word [String]
+	// value: count [Integer]
+	
 	Map<String,Integer> wordsCount = new HashMap<>(); // 
 	//create a hash map key as string  and integer as value
 	//process each word and add to map using the loop

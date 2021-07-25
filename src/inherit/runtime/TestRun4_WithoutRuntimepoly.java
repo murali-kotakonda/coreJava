@@ -17,7 +17,6 @@ import java.util.Scanner;
  
  */
 
-
 public class TestWithoutRuntimepoly {
 	public static void main(String[] args) {
 	

@@ -20,7 +20,7 @@ static variables:
   }
   
   static variables ---> common data for all obj
-  inst variables ---> specific data for every obj.
+  instance variables ---> specific data for every obj.
     
 
   class Student{

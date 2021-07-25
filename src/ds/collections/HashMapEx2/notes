@@ -46,11 +46,14 @@
     // add new entry
      map.put("133", "user7"); //key as 133 and value as user7
      
-     // get by value based on the key 
-	   String d= map.get("133"); // i/p is a key and return is a value...returns "user7"
+    // get by value based on the key 
+   String d= map.get("133"); // i/p is a key and return is a value...returns "user7"
+   String d1= map.get("134"); // returns null
+  
+    // check if the key exist
+   boolean x= map.containsKey("133");// returns boolean ; true
+   boolean y= map.containsKey("134");// returns boolean ; false
      
-     // check if the key exist
-	   boolean x= map.containsKey("133"); // returns boolean
      
     //remove the entry using key 
     map.remove("133"); // removes key + value

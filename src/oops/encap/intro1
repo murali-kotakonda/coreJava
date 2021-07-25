@@ -17,7 +17,7 @@ Class Person{
   String aadhar;
 }
   
-Class PersonDetails:
+Class PersonDetails{
   int id;
   String name;
   int  age;
@@ -113,8 +113,8 @@ class Person{
 
 
 req: call sum funtion
-  Person p = Person();
- p.sum(10,20);
+Person p = new Person();
+p.sum(10,20);
 
 
 Problem:
@@ -124,10 +124,12 @@ Problem:
   
  solution:
     -> remove sum() futn from Person class
-
-class Cal:
-   void sum(x,y):
-      print(x+y)
+    
+class Cal{
+   void sum(int x, int y){
+    print("sum = " , (x+y))
+   }
+   }
       
       
   Cal c = new Cal();

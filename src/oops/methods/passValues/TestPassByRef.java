@@ -36,7 +36,6 @@ public class TestPassByRef {
 }
 
 
-
 	// if method1() calls method2() by passing obj , if the method2() is modifying obj ,
 	//then it will have impact on method1()
 	

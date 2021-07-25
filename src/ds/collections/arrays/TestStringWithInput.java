@@ -3,7 +3,7 @@ package ds.collections.arrays;
 import java.util.Scanner;
  /**String array 
   - Take size as input
-  - Take data as input for size number of times
+  - Take name as input for size number of times
   - store every data inside the array
   - display the data using the array.
   

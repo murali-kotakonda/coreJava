@@ -63,8 +63,11 @@ public class TestMapMethods {
 		boolean empty = map.isEmpty();
 		System.out.println("map status :"+empty);
 		
+	   
+	    System.out.println("**********deletes all entries**************");
 		map.clear(); // deletes all entries 
 		System.out.println("map status :"+map.isEmpty());
+		System.out.println("map status :"+map.size());
 	}
 
 	private static void print(Map<String, String> map) {

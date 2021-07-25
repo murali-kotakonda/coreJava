@@ -25,8 +25,11 @@ Method overriding occurs in two classes. parent class and child class  =>same me
 Method overloading  example:
 -----------------------------------------------
 class caclculator{  
- int add(int a,int b){return a+b;}  
- int add(int a,int b,int c){return a+b+c;}  
+	 int add(int a,int b)
+	 {return a+b;}  
+	 
+	 int add(int a,int b,int c)
+	 {return a+b+c;}  
 }
 
   
@@ -34,18 +37,18 @@ class caclculator{
 Method overriding example:
 -----------------------------------------------
 public class Service{  
-  public void process()
-  {
-  	System.out.println(" process cust info");
-  }  
+	  public void process()
+	  {
+	  	System.out.println(" process cust info");
+	  }  
 }  
 
 public class AgentService extends Service 
  {  
-    public void process()
-  	{
-  		System.out.println(" process  Agent info");
-  	}
+	    public void process()
+	  	{
+	  		System.out.println(" process  Agent info");
+	  	}
 } 
 
 

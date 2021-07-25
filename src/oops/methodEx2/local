@@ -33,5 +33,6 @@ ex: class Person{
 }
 
 class: Person
+instance method: show()
 instance variables: id , name , age
 local variables : x ,y

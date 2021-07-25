@@ -73,7 +73,9 @@ public class Opearations {
 }
 
 
-
+//small of two nums
+//big of threee numbers
+//big of 4 numbers
 
 
 

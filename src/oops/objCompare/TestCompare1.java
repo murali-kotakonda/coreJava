@@ -15,3 +15,8 @@ public static void main(String[] args) {
 	//dont use == for comparing 2 objs
 }
 }
+
+
+//O/P: Objs are not equal
+// '==' compares the object address but not obj data
+ 
