@@ -140,7 +140,7 @@ public class Person {
   
   private int count;
   
-  pubic void m1(){
+  pubLic void m1(){
     
   }
   
