@@ -6,6 +6,13 @@ public class TestStr3 {
 		String text6= new String("user3"); // new memory allocated
 		
 		if (text5 == text6) {
+			System.out.println("text5, text6 String address are same");
+		}else {
+			System.out.println("text5, text6 String address are diff");
+		}
+		
+		
+		if (text5 .contentEquals(text6)) {
 			System.out.println("text5, text6 String content are same");
 		}else {
 			System.out.println("text5, text6 String content are diff");

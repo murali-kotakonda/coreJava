@@ -139,9 +139,9 @@ USE "." ON A OBJECT FOR ACCESING THE instance variables and methods.
 diff between normal variable and obj?
 ----------------------------------------------
 
-x = 90
+int x = 90
 
-p1= Person()
+Person p1= Person()
 
 # x can hold only one value
 # p1 can hold multiple varibles.  in this case p1 internally have  3 values
@@ -158,10 +158,10 @@ p1= Person()
 1.Requirement to capture id,name,age for 10 persons.
 solution:
 without oops we have to create 30 variables
-with oops we have to create 10 variables (10 objects, every obj cotains id,name,age)
+with oops we have to create 10 variables (10 objects, every obj contains id,name,age)
 
 
-new Person()  ---> create the obj
+Person p1= new Person()  ---> create the obj
 Person p1 = null; //no object
     Person p2 = new Person(); //create obj
 

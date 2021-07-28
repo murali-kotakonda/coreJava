@@ -15,6 +15,7 @@ public class TestStr2 {
 }
 //How many memory locations are allocated
 // 1
+//string uses the string pooling mechanism
 
 
 

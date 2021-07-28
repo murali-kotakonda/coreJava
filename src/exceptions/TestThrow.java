@@ -3,8 +3,6 @@ package exceptions;
 import java.util.Scanner;
 
 /**
- 
-
 Case#1:(Earlier)
 java is creating exception
 dev is handling exception

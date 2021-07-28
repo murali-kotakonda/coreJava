@@ -50,6 +50,13 @@ public static void main(String[] args) {
 
 	//how to find the substring for the given string : use substring() method
  	input = "Java is a program language";
+
+ 	//get the single char at a give position
+	 System.out.println(input.charAt(0));
+	 System.out.println(input.charAt(1));
+	 
+
+	 
  			//how to find the substring for the given string : use substring() method
 		System.out.println("*************Substring*******************");
 		input = "Java is a program language";

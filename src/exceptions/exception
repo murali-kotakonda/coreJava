@@ -38,12 +38,13 @@ Adv:
 
 
 What is java role?
+->Java stops the application flow..
 ->Java creates the exception object based on the reason
 ->Exception obj contains 
    a)the exception msg + 
    b)what are the class+method+
    c)line nos involved for exeption(stacktrace)
-->Java stops the application flow..
+
  
  
 How to do exception handling:
