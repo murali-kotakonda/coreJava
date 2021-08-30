@@ -12,7 +12,7 @@ public class TestStr3 {
 		}
 		
 		
-		if (text5 .contentEquals(text6)) {
+		if (text5 .equals(text6)) {
 			System.out.println("text5, text6 String content are same");
 		}else {
 			System.out.println("text5, text6 String content are diff");

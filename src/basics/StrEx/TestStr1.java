@@ -1,5 +1,13 @@
 package basics.StrEx;
 
+
+/*
+ There are two ways for string creation:
+ String text1 = "user1";
+ String text1 = new String("user1");
+ 
+ */
+ 
 public class TestStr1 {
 	public static void main(String[] args) {
 		String text1 = new String("user1");// new memory is allocated

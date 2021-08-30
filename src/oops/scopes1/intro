@@ -20,8 +20,8 @@ volatile      N                           Y (I.V.) , N(S.V.)                    
 
 public   : access any where [ inside the class/outside class [same pkg] /outside class [diff pkg]
 private  : access only within the class
-DEFAULT  : access only within the packge
-protected : access only within the packge or access available only for child classes.
+DEFAULT  : access only within the package
+protected : access only within the package or access available only for child classes.
 
 
 
@@ -30,6 +30,9 @@ Differt class [same pkg]
 Differt class [diff pkg]
 Differt class , but child class [diff pkg]
 
+
+Access:
+-------------------------------------------------------------------------------------------------------------------------------------------------------       
                      Within same class          Differt class [same pkg]          Differt class [diff pkg]                    child class [diff pkg]
 
 public                      Y                              Y                                Y                                           Y

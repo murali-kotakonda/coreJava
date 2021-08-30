@@ -3,6 +3,7 @@ package ds.collections.al;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 /**
 - Take input for multiple names and and store every name inside the arraylist
 - If the input is "END" then stop taking anymore input.

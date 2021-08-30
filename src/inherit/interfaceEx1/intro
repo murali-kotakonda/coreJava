@@ -60,11 +60,16 @@ Yes only by using interfaces
 Interface supports multiple inheritance.
  -> normal class+ abstarct class does not support multiple inheritance.
  
- RBI : interface
+ 
+ 
+ Normal class  -> all methods has logic + we can create obj + multiple inherit not suppported
+abstract class -> some methods have logic and some meyhods doent have logic + we cannot create obj + multiple inherit not suppported
+interface  -> all methods doent have logic + we cannot create obj  + multiple inherit is suppported
+
+
+RBI : interface
  WorldBank : interface
  SBI is the child class for RBI and WorldBank.
- 
- 
 
   RBI.java:
   ------------

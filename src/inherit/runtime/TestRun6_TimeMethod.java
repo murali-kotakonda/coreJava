@@ -22,7 +22,20 @@ public class TestRunTimeMethod {
 			execute(r);
 		}
 	}
-
+public static void main(String[] args) {
+		 
+			Hdfc h = new Hdfc();
+			execute(h);
+			
+			SBI s = new SBI();
+			execute(s);
+			
+			Icici i = new Icici();
+			execute(i);
+			
+			RBI r = new RBI();
+			execute(r);
+	}
 	//if method is expecting parent obj then method can be called by passing parent obj or child obj 
 	//if method is expecting child  obj then method cannot  be called by passing child obj 
 	private static void execute(RBI r) {

@@ -37,12 +37,20 @@ package basics;
 		 boolean            1 bit    -> true/false 
 		 
 		  	
+	 
+		 		  	
 How to create a variable?
  solution)
  
  <data-type> <variable-name>;
  
-  
+ ex:
+ int a;
+ float b;
+ double c;
+ String d;
+
+
  How to declare a variable?
  solution:
 
@@ -51,13 +59,17 @@ How to create a variable?
  float y;
  long z;
 
-How to assign a value to variable?
+
 int x; // declaration
 x = 90; //assigning value
 
+How to assign a value to variable?
+int x;
+x=90;
 
+int x =90;
 
-
+ 
 
 int x =90 ; //declartaion + initializing value
 */
